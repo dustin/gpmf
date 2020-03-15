@@ -86,7 +86,7 @@ parseValue '\0' l rpt = do
     Right x -> pure (GNested <$> x)
 parseValue 'F' 4 rpt = replicateM rpt (GFourCC <$> parseFourCC)
 parseValue 'L' l rpt = replicatedParser 4 l rpt anyWord32be GUint32
-parseValue 'l' l rpt = replicatedParser 4 l rpt (fromIntegral <$> anyWord32be) GUint32
+parseValue 'l' l rpt = replicatedParser 4 l rpt (fromIntegral <$> anyWord32be) GInt32
 parseValue 'c' l rpt = replicateM rpt (parseString (fromIntegral l))
 parseValue 's' l rpt = replicatedParser 2 l rpt (fromIntegral <$> anyWord16be) GInt16
 parseValue 'S' l rpt = replicatedParser 2 l rpt anyWord16be GUint16
