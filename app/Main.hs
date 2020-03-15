@@ -1,9 +1,10 @@
 module Main where
 
-import           GoPro.GPMF
-
 import qualified Data.Attoparsec.ByteString.Lazy as A
 import qualified Data.ByteString.Lazy            as BL
+import           System.Environment              (getArgs)
+
+import           GoPro.GPMF
 
 showValues :: Int -> [Value] -> IO ()
 showValues n = mapM_ showValue
@@ -16,7 +17,7 @@ showTelemetry n (FourCC (a,b,c,d),vs) =  putStrLn ((replicate n ' ') <> [a,b,c,d
 
 main :: IO ()
 main = do
-  b <- BL.readFile "test.in"
+  b <- BL.readFile . head =<< getArgs
   case A.parse (A.many1 parseGPMF) b of
     A.Fail r x y -> print (r, x,y)
     A.Done _ x   -> mapM_ (showTelemetry 0) x
