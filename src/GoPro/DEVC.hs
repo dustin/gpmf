@@ -1,11 +1,13 @@
 module GoPro.DEVC where
 
+import           Control.Monad         (guard)
+import           Data.List             (transpose)
 import           Data.Map.Strict       (Map)
 import qualified Data.Map.Strict       as Map
 import           Data.Maybe            (fromMaybe, mapMaybe)
 import           Data.Time.Clock       (UTCTime (..))
 import           Data.Time.Clock.POSIX (posixSecondsToUTCTime)
-import           Data.Word             (Word32, Word64)
+import           Data.Word             (Word64)
 import           Debug.Trace
 
 import           GoPro.GPMF
@@ -28,6 +30,8 @@ data TVals = TVUnknown [Value]
   | TVGyro Gyroscope
   | TVFaces Faces
   | TVGPS GPS
+  | TVAudioLevel AudioLevel
+  | TVScene [Map Location Float]
   deriving Show
 
 data Accelerometer = Accelerometer {
@@ -67,6 +71,13 @@ data GPSReading = GPSReading {
   gpsrSpeed3D :: Double
   } deriving Show
 
+data AudioLevel = AudioLevel {
+  audioRMS  :: [Int],
+  audioPeak :: [Int]
+  } deriving Show
+
+data Location = Snow | Urban | Indoor | Water | Vegetation | Beach deriving (Show, Eq, Ord)
+
 mkDEVC :: FourCC -> [Value] -> DEVC
 mkDEVC (FourCC ('D','E','V','C')) = foldr addItem (DEVC 0 "" mempty)
   where
@@ -75,19 +86,27 @@ mkDEVC (FourCC ('D','E','V','C')) = foldr addItem (DEVC 0 "" mempty)
     addItem (GNested (FourCC ('S','T','R','M'), vals))          o@(DEVC{..}) = o {devTelems=addTelem devTelems vals}
     addItem _ o                                                              = o
 
-    addTelem m vals = let t =  foldr updTele (Telemetry 0 0 "" (TVUnknown vals)) vals in
-                        Map.insert (teleName t) (compVals (teleName t) t) m
+    addTelem m vals = let t =  foldr updTele (Telemetry 0 0 "" tvals) vals in
+                        Map.insert (teleName t) t m
       where
         updTele (GNested (FourCC ('S','T','M','P'), [GUint64 [x]])) o = o {teleStmp = x}
         updTele (GNested (FourCC ('T','S','M','P'), [GUint32 [x]])) o = o {teleTsmp = fromIntegral x}
         updTele (GNested (FourCC ('S','T','N','M'), [GString x])) o = o {teleName = x}
         updTele _ o = o
 
-        compVals "Accelerometer" t = t { teleValues = TVAccl (grokAccl vals) }
-        compVals "Gyroscope" t     = t { teleValues = TVGyro (grokGyro vals) }
-        compVals "Face Coordinates and details" t = t { teleValues = TVFaces (grokFaces vals) }
-        compVals "GPS (Lat., Long., Alt., 2D speed, 3D speed)" t = t { teleValues = TVGPS (grokGPS vals) }
-        compVals _ t               = t
+        tvals :: TVals
+        tvals = ($ vals) . foldr findGrokker TVUnknown . concatMap four $ vals
+          where
+            four (GNested (x, _)) = [x]
+            four _                = []
+
+            findGrokker (FourCC ('A','C','C','L')) _ = TVAccl . grokAccl
+            findGrokker (FourCC ('G','Y','R','O')) _ = TVGyro . grokGyro
+            findGrokker (FourCC ('F','A','C','E')) _ = TVFaces . grokFaces
+            findGrokker (FourCC ('G','P','S','5')) _ = TVGPS . grokGPS
+            findGrokker (FourCC ('A','A','L','P')) _ = TVAudioLevel . grokAudioLevel
+            findGrokker (FourCC ('S','C','E','N')) _ = TVScene . grokScene
+            findGrokker _ o                          = o
 
 mkDEVC f = error ("I can't make a DEVC out of " <> show f)
 
@@ -156,3 +175,28 @@ grokGPS vals = fromMaybe (GPS 9999 (posixSecondsToUTCTime 0) []) $ do
                    [gpsrLat,gpsrLon,gpsrAlt,gpsrSpeed2D,gpsrSpeed3D] -> [GPSReading{..}]
                    _ -> []
                 )
+
+grokAudioLevel :: [Value] -> AudioLevel
+grokAudioLevel vals = fromMaybe (AudioLevel [] []) $ do
+  alps <- transpose . fmap (\(GInt8 xs) -> fmap fromIntegral xs) <$> findVal (FourCC ('A','A','L','P')) vals
+  guard $ length alps == 2
+  pure $ AudioLevel (alps !! 0) (alps !! 1)
+
+grokScene :: [Value] -> [Map Location Float]
+grokScene = fmap mkScene . findAll (FourCC ('S','C','E','N'))
+  where
+    mkScene :: [Value] -> Map Location Float
+    mkScene = Map.fromList . mapMaybe mkOne
+
+    mkOne :: Value -> Maybe (Location, Float)
+    mkOne (GComplex "Ff" [GFourCC f, GFloat [p]]) = l f >>= \x -> Just (x, p)
+    mkOne _                                       = Nothing
+
+    l :: FourCC -> Maybe Location
+    l (FourCC ('S','N','O','W')) = Just Snow
+    l (FourCC ('U','R','B','A')) = Just Urban
+    l (FourCC ('I','N','D','O')) = Just Indoor
+    l (FourCC ('W','A','T','R')) = Just Water
+    l (FourCC ('V','E','G','E')) = Just Vegetation
+    l (FourCC ('B','E','A','C')) = Just Beach
+    l _                          = Nothing
