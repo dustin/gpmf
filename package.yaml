@@ -27,6 +27,9 @@ dependencies:
 - binary
 - data-binary-ieee754
 - time
+- transformers
+- mtl
+- containers
 
 library:
   source-dirs: src

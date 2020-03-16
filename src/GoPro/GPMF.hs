@@ -1,11 +1,13 @@
 {-# LANGUAGE TupleSections #-}
 
-module GoPro.GPMF where
+module GoPro.GPMF (Value(..), FourCC(..), parseGPMF) where
 
 import           Control.Monad                    (replicateM)
+import           Control.Monad.State              (StateT, evalStateT, get,
+                                                   lift, put)
 import           Data.Attoparsec.Binary           (anyWord16be, anyWord32be,
                                                    anyWord64be)
-import qualified Data.Attoparsec.ByteString.Char8 as A
+import qualified Data.Attoparsec.ByteString.Char8 as AC
 import qualified Data.Attoparsec.ByteString.Lazy  as A
 import           Data.Binary.Get                  (runGet)
 import           Data.Binary.IEEE754              (getFloat32be)
@@ -43,66 +45,93 @@ newtype FourCC = FourCC (Char, Char, Char, Char) deriving (Show, Eq)
 data Value = GInt8 [Int8] | GUint8 [Word8] | GString String | GDouble Double | GFloat [Float]
            | GFourCC FourCC | GUUID [Word8] | GInt64 [Int64] | GUint64 [Word64] | GInt32 [Int32]
            | GUint32 [Word32] | GQ32 [Word32] | GQ64 [Word64] | GInt16 [Int16] | GUint16 [Word16]
-           | GTimestamp UTCTime | GComplex () | GNested (FourCC, [Value])
+           | GTimestamp UTCTime | GComplex String [Value] | GNested (FourCC, [Value])
            | GUnknown (Char, Int, Int, [[Word8]])
            deriving (Show)
+
+type Parser = StateT String A.Parser
 
 int8 :: A.Parser Int8
 int8 = fromIntegral <$> A.anyWord8
 
-parseGPMF :: A.Parser (FourCC, [Value])
-parseGPMF = do
-  fourcc <- parseFourCC
-  t <- A.anyChar
-  ss <- fromIntegral <$> A.anyWord8
-  rpt <- fromIntegral <$> anyWord16be
+parseGPMF :: BL.ByteString -> A.Result [(FourCC, [Value])]
+parseGPMF = A.parse (evalStateT (A.many1 parseNested) "")
+
+parseNested :: Parser (FourCC, [Value])
+parseNested = do
+  fourcc <- lift parseFourCC
+  t <- lift AC.anyChar
+  ss <- fromIntegral <$> lift A.anyWord8
+  rpt <- fromIntegral <$> lift anyWord16be
   let padding = (4 - (fromIntegral ss * rpt) `mod` 4) `mod` 4
 
   stuffs <- parseValue t ss rpt
-  _ <- replicateM padding A.anyWord8
+
+  case (fourcc, stuffs) of
+    (FourCC ('T', 'Y', 'P', 'E'), [GString x]) -> put x
+    _                                          -> pure ()
+
+  _ <- lift $ replicateM padding A.anyWord8
   pure (fourcc, stuffs)
 
 parseString :: Int -> A.Parser Value
-parseString l = GString . reverse  . dropWhile (== '\0') . reverse <$> replicateM l A.anyChar
+parseString l = GString . reverse  . dropWhile (== '\0') . reverse <$> replicateM l AC.anyChar
 
 parseFloat :: A.Parser Float
-parseFloat = do
-  bytes <- A.take 4
-  pure $ runGet getFloat32be (BL.fromStrict bytes)
+parseFloat = runGet getFloat32be . BL.fromStrict <$> A.take 4
 
-replicatedParser :: Int -> Int -> Int -> A.Parser a -> ([a] -> Value) -> A.Parser [Value]
+replicatedParser :: Int -> Int -> Int -> A.Parser a -> ([a] -> Value) -> Parser [Value]
+replicatedParser 0 l rpt _ _ = lift $ replicateM (l*rpt) A.anyWord8 >> pure []
 replicatedParser one l rpt p cons = do
-  ns <- replicateM rpt (replicateM (l `div` one) p)
+  ns <- lift $ replicateM rpt (replicateM (l `div` one) p)
   pure (cons <$> ns)
 
 parseTimestamp :: A.Parser UTCTime
-parseTimestamp = parseTimeM False defaultTimeLocale "%y%m%d%H%M%S%Q" =<< replicateM 16 A.anyChar
+parseTimestamp = parseTimeM False defaultTimeLocale "%y%m%d%H%M%S%Q" =<< replicateM 16 AC.anyChar
 
-parseValue :: Char -> Int -> Int -> A.Parser [Value]
+singleParser :: Char -> (Int, A.Parser Value)
+singleParser 'F' = (4, GFourCC <$> parseFourCC)
+singleParser 'f' = (4, GFloat . (:[]) <$> parseFloat)
+singleParser 'L' = (4, GUint32 . (:[]) <$> anyWord32be)
+singleParser 'B' = (1, GUint8 . (:[]) <$> A.anyWord8)
+singleParser x   = error ("unsupported parser: " <> show x)
+
+parseComplex :: Int -> Int -> Parser [Value]
+parseComplex l rpt = do
+  fmt <- get
+  let sz = foldr (\x o -> (fst . singleParser) x + o) 0 fmt
+  let parsers = traverse (snd . singleParser) fmt
+  replicatedParser sz l rpt parsers (GComplex fmt . mconcat)
+
+parseValue :: Char -> Int -> Int -> Parser [Value]
 parseValue '\0' l rpt = do
-  inp <- A.take (l * rpt)
-  case A.parseOnly (A.many1 parseGPMF) inp of
-    Left x  -> fail x
-    Right x -> pure (GNested <$> x)
-parseValue 'F' 4 rpt = replicateM rpt (GFourCC <$> parseFourCC)
+  inp <- lift $ A.take (l * rpt)
+  t <- get
+  xs <- case A.parse (evalStateT (A.many1 parseNested) t) (BL.fromStrict inp) of
+          A.Fail _ _ y -> fail y
+          A.Done _ xs  -> pure xs
+  pure (GNested <$> xs)
+parseValue 'F' 4 rpt = lift $ replicateM rpt (GFourCC <$> parseFourCC)
 parseValue 'L' l rpt = replicatedParser 4 l rpt anyWord32be GUint32
 parseValue 'l' l rpt = replicatedParser 4 l rpt (fromIntegral <$> anyWord32be) GInt32
-parseValue 'c' l rpt = replicateM rpt (parseString (fromIntegral l))
+parseValue 'c' l rpt = (:[]) <$> (lift . parseString $ (l * rpt))
 parseValue 's' l rpt = replicatedParser 2 l rpt (fromIntegral <$> anyWord16be) GInt16
 parseValue 'S' l rpt = replicatedParser 2 l rpt anyWord16be GUint16
 parseValue 'J' l rpt = replicatedParser 8 l rpt anyWord64be GUint64
 parseValue 'f' l rpt = replicatedParser 4 l rpt parseFloat GFloat
-parseValue 'b' l rpt = replicateM rpt (GInt8 <$> replicateM l int8)
-parseValue 'B' l rpt = replicateM rpt (GUint8 <$> replicateM l A.anyWord8)
-parseValue 'U' 16 1 = (:[]) . GTimestamp <$> parseTimestamp
+parseValue 'b' l rpt = lift $ replicateM rpt (GInt8 <$> replicateM l int8)
+parseValue 'B' l rpt = lift $ replicateM rpt (GUint8 <$> replicateM l A.anyWord8)
+parseValue 'U' 16 1 = (:[]) . GTimestamp <$> lift parseTimestamp
+parseValue '?' l rpt = parseComplex l rpt
 parseValue x l rpt = do
-  u <- replicateM rpt (replicateM l A.anyWord8)
+  u <- lift $ replicateM rpt (replicateM l A.anyWord8)
   pure [GUnknown (x, l, rpt, u)]
 
 parseFourCC :: A.Parser FourCC
 parseFourCC = do
-  a <- A.anyChar
-  b <- A.anyChar
-  c <- A.anyChar
-  d <- A.anyChar
+  a <- AC.anyChar
+  b <- AC.anyChar
+  c <- AC.anyChar
+  d <- AC.anyChar
   pure $ FourCC (a,b,c,d)
+
