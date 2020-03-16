@@ -28,7 +28,7 @@ data Telemetry = Telemetry {
 data TVals = TVUnknown [Value]
   | TVAccl Accelerometer
   | TVGyro Gyroscope
-  | TVFaces Faces
+  | TVFaces [Face]
   | TVGPS GPS
   | TVAudioLevel AudioLevel
   | TVScene [Map Location Float]
@@ -51,10 +51,6 @@ data Face = Face {
   faceW     :: Float,
   faceH     :: Float,
   faceSmile :: Float
-  } deriving Show
-
-newtype Faces = Faces {
-  faces :: [Face]
   } deriving Show
 
 data GPS = GPS {
@@ -149,8 +145,8 @@ grokAccl = grokSens (FourCC ('A','C','C','L')) Accelerometer
 grokGyro :: [Value] -> Gyroscope
 grokGyro = grokSens (FourCC ('G','Y','R','O')) Gyroscope
 
-grokFaces :: [Value] -> Faces
-grokFaces = Faces . mapMaybe mkFace . findAll (FourCC ('F','A','C','E'))
+grokFaces :: [Value] -> [Face]
+grokFaces = mapMaybe mkFace . findAll (FourCC ('F','A','C','E'))
     where
       mkFace :: [Value] -> Maybe Face
       mkFace [GComplex "Lffffff" [GUint32 [fid], GFloat [x], GFloat [y], GFloat [w], GFloat [h], _, GFloat [s]]] =
