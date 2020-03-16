@@ -8,7 +8,6 @@ import           Data.Maybe            (fromMaybe, mapMaybe)
 import           Data.Time.Clock       (UTCTime (..))
 import           Data.Time.Clock.POSIX (posixSecondsToUTCTime)
 import           Data.Word             (Word64)
-import           Debug.Trace
 
 import           GoPro.GPMF
 
@@ -153,7 +152,7 @@ grokFaces = mapMaybe mkFace . findAll (FourCC ('F','A','C','E'))
         Just (Face (fromIntegral fid) x y w h s)
       mkFace [GComplex "Lffff" [GUint32 [fid], GFloat [x], GFloat [y], GFloat [w], GFloat [h]]] =
         Just (Face (fromIntegral fid) x y w h 0)
-      mkFace f = traceShowM f >> Nothing
+      mkFace _ = Nothing
 
 grokGPS :: [Value] -> GPS
 grokGPS vals = fromMaybe (GPS 9999 (posixSecondsToUTCTime 0) []) $ do
