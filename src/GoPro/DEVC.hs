@@ -2,15 +2,14 @@
 
 module GoPro.DEVC where
 
-import           Control.Lens          hiding (cons)
-import           Control.Monad         (guard)
-import           Data.List             (transpose)
-import           Data.Map.Strict       (Map)
-import qualified Data.Map.Strict       as Map
-import           Data.Maybe            (fromMaybe, mapMaybe)
-import           Data.Time.Clock       (UTCTime (..))
-import           Data.Time.Clock.POSIX (posixSecondsToUTCTime)
-import           Data.Word             (Word64)
+import           Control.Lens    hiding (cons)
+import           Control.Monad   (guard)
+import           Data.List       (transpose)
+import           Data.Map.Strict (Map)
+import qualified Data.Map.Strict as Map
+import           Data.Maybe      (fromMaybe, mapMaybe)
+import           Data.Time.Clock (UTCTime (..))
+import           Data.Word       (Word64)
 
 import           GoPro.GPMF
 
@@ -113,17 +112,17 @@ mkDEVC (FourCC ('D','E','V','C')) = foldr addItem (DEVC 0 "" mempty)
         updTele _ o = o
 
         tvals :: TVals
-        tvals = ($ vals) . foldr findGrokker TVUnknown . concatMap four $ vals
+        tvals = (fromMaybe (TVUnknown vals) . ($ vals)) . foldr findGrokker (const Nothing) . concatMap four $ vals
           where
             four (GNested (x, _)) = [x]
             four _                = []
 
-            findGrokker (FourCC ('A','C','C','L')) _ = TVAccl . grokAccl
-            findGrokker (FourCC ('G','Y','R','O')) _ = TVGyro . grokGyro
-            findGrokker (FourCC ('F','A','C','E')) _ = TVFaces . grokFaces
-            findGrokker (FourCC ('G','P','S','5')) _ = TVGPS . grokGPS
-            findGrokker (FourCC ('A','A','L','P')) _ = TVAudioLevel . grokAudioLevel
-            findGrokker (FourCC ('S','C','E','N')) _ = TVScene . grokScene
+            findGrokker (FourCC ('A','C','C','L')) _ = fmap TVAccl . grokAccl
+            findGrokker (FourCC ('G','Y','R','O')) _ = fmap TVGyro . grokGyro
+            findGrokker (FourCC ('F','A','C','E')) _ = fmap TVFaces . grokFaces
+            findGrokker (FourCC ('G','P','S','5')) _ = fmap TVGPS . grokGPS
+            findGrokker (FourCC ('A','A','L','P')) _ = fmap TVAudioLevel . grokAudioLevel
+            findGrokker (FourCC ('S','C','E','N')) _ = fmap TVScene . grokScene
             findGrokker _ o                          = o
 
 mkDEVC f = error ("I can't make a DEVC out of " <> show f)
@@ -148,8 +147,8 @@ shead :: [a] -> Maybe a
 shead []    = Nothing
 shead (x:_) = Just x
 
-grokSens :: FourCC -> (Float -> [(Float, Float, Float)] -> a) -> [Value] -> a
-grokSens sens cons vals = fromMaybe (cons 0 []) $ do
+grokSens :: FourCC -> (Float -> [(Float, Float, Float)] -> a) -> [Value] -> Maybe a
+grokSens sens cons vals = do
   GFloat templ <- shead =<< findVal (FourCC ('T','M','P','C')) vals
   GInt16 scall <- shead =<< findVal (FourCC ('S','C','A','L')) vals
   readings <- findVal sens vals
@@ -161,14 +160,14 @@ grokSens sens cons vals = fromMaybe (cons 0 []) $ do
 
   pure $ cons temp scaled
 
-grokAccl :: [Value] -> Accelerometer
+grokAccl :: [Value] -> Maybe Accelerometer
 grokAccl = grokSens (FourCC ('A','C','C','L')) Accelerometer
 
-grokGyro :: [Value] -> Gyroscope
+grokGyro :: [Value] -> Maybe Gyroscope
 grokGyro = grokSens (FourCC ('G','Y','R','O')) Gyroscope
 
-grokFaces :: [Value] -> [Face]
-grokFaces = mapMaybe mkFace . findAll (FourCC ('F','A','C','E'))
+grokFaces :: [Value] -> Maybe [Face]
+grokFaces = Just . mapMaybe mkFace . findAll (FourCC ('F','A','C','E'))
     where
       mkFace :: [Value] -> Maybe Face
       mkFace [GComplex "Lffffff" [GUint32 [fid], GFloat [x], GFloat [y], GFloat [w], GFloat [h], _, GFloat [s]]] =
@@ -177,31 +176,30 @@ grokFaces = mapMaybe mkFace . findAll (FourCC ('F','A','C','E'))
         Just (Face (fromIntegral fid) x y w h 0)
       mkFace _ = Nothing
 
-grokGPS :: [Value] -> GPS
-grokGPS vals = fromMaybe (GPS 9999 (posixSecondsToUTCTime 0) []) $ do
+grokGPS :: [Value] -> Maybe GPS
+grokGPS vals = do
   GUint16 [gpsp] <- shead =<< findVal (FourCC ('G','P','S','P')) vals
   GTimestamp time <- shead =<< findVal (FourCC ('G','P','S','U')) vals
   scals <- fmap (\(GInt32 [x]) -> realToFrac x) <$> findVal (FourCC ('S','C','A','L')) vals
   g5s <- findVal (FourCC ('G','P','S','5')) vals
+  rs <- mconcat <$> traverse (readings scals) g5s
 
-  pure $ GPS (fromIntegral gpsp) time (convg5s scals g5s)
+  pure $ GPS (fromIntegral gpsp) time rs
 
   where
-    convg5s :: [Double] -> [Value] -> [GPSReading]
-    convg5s scals =
-      concatMap (\(GInt32 ns) -> case zipWith (\s n -> realToFrac n / s) scals ns of
-                   [_gpsr_lat,_gpsr_lon,_gpsr_alt,_gpsr_speed2d,_gpsr_speed3d] -> [GPSReading{..}]
-                   _ -> []
-                )
+    readings scals (GInt32 ns) = case zipWith (\s n -> realToFrac n / s) scals ns of
+                                   [_gpsr_lat,_gpsr_lon,_gpsr_alt,_gpsr_speed2d,_gpsr_speed3d] -> Just [GPSReading{..}]
+                                   _ -> Nothing
+    readings _ _ = Nothing
 
-grokAudioLevel :: [Value] -> AudioLevel
-grokAudioLevel vals = fromMaybe (AudioLevel [] []) $ do
+grokAudioLevel :: [Value] -> Maybe AudioLevel
+grokAudioLevel vals = do
   alps <- transpose . fmap (\(GInt8 xs) -> fmap fromIntegral xs) <$> findVal (FourCC ('A','A','L','P')) vals
   guard $ length alps == 2
   pure $ AudioLevel (alps !! 0) (alps !! 1)
 
-grokScene :: [Value] -> [Map Location Float]
-grokScene = fmap mkScene . findAll (FourCC ('S','C','E','N'))
+grokScene :: [Value] -> Maybe [Map Location Float]
+grokScene = Just . fmap mkScene . findAll (FourCC ('S','C','E','N'))
   where
     mkScene :: [Value] -> Map Location Float
     mkScene = Map.fromList . mapMaybe mkOne
