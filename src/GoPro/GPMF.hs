@@ -7,10 +7,11 @@ import           Control.Monad.State              (StateT, evalStateT, get,
                                                    lift, put)
 import           Data.Attoparsec.Binary           (anyWord16be, anyWord32be,
                                                    anyWord64be)
+import qualified Data.Attoparsec.ByteString       as A
 import qualified Data.Attoparsec.ByteString.Char8 as AC
-import qualified Data.Attoparsec.ByteString.Lazy  as A
 import           Data.Binary.Get                  (runGet)
 import           Data.Binary.IEEE754              (getFloat32be)
+import qualified Data.ByteString                  as BS
 import qualified Data.ByteString.Lazy             as BL
 import           Data.Int                         (Int16, Int32, Int64, Int8)
 import           Data.Time.Clock                  (UTCTime)
@@ -54,8 +55,8 @@ type Parser = StateT String A.Parser
 int8 :: A.Parser Int8
 int8 = fromIntegral <$> A.anyWord8
 
-parseGPMF :: BL.ByteString -> A.Result [(FourCC, [Value])]
-parseGPMF = A.parse (evalStateT (A.many1 parseNested) "")
+parseGPMF :: BS.ByteString -> Either String [(FourCC, [Value])]
+parseGPMF = A.parseOnly (evalStateT (A.many1 parseNested) "")
 
 parseNested :: Parser (FourCC, [Value])
 parseNested = do
@@ -107,9 +108,9 @@ parseValue :: Char -> Int -> Int -> Parser [Value]
 parseValue '\0' l rpt = do
   inp <- lift $ A.take (l * rpt)
   t <- get
-  xs <- case A.parse (evalStateT (A.many1 parseNested) t) (BL.fromStrict inp) of
-          A.Fail _ _ y -> fail y
-          A.Done _ xs  -> pure xs
+  xs <- case A.parseOnly (evalStateT (A.many1 parseNested) t) inp of
+          Left y   -> fail y
+          Right xs -> pure xs
   pure (GNested <$> xs)
 parseValue 'F' 4 rpt = lift $ replicateM rpt (GFourCC <$> parseFourCC)
 parseValue 'L' l rpt = replicatedParser 4 l rpt anyWord32be GUint32

@@ -1,10 +1,9 @@
 module Main where
 
-import qualified Data.Attoparsec.ByteString.Lazy as A
-import qualified Data.ByteString.Lazy            as BL
-import           Data.List                       (intercalate)
-import qualified Data.Map.Strict                 as Map
-import           System.Environment              (getArgs)
+import qualified Data.ByteString    as BS
+import           Data.List          (intercalate)
+import qualified Data.Map.Strict    as Map
+import           System.Environment (getArgs)
 
 import           GoPro.DEVC
 import           GoPro.GPMF
@@ -66,10 +65,10 @@ showGPS GPSReading{..} = "(" <> show gpsrLat <> "," <> show gpsrLon <> ") alt=" 
 
 main :: IO ()
 main = do
-  b <- BL.readFile . head =<< getArgs
+  b <- BS.readFile . head =<< getArgs
   case parseGPMF b of
-    A.Fail r x y -> print (r, x,y)
-    A.Done _ xs   -> do
+    Left y -> print y
+    Right xs   -> do
       -- let x@(f,v) = head xs
       -- showDEVC (mkDEVC f v)
       mapM_ (showDEVC . uncurry mkDEVC) xs
