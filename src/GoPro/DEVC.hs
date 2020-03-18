@@ -194,9 +194,13 @@ grokGPS vals = do
 
 grokAudioLevel :: [Value] -> Maybe AudioLevel
 grokAudioLevel vals = do
-  alps <- transpose . fmap (\(GInt8 xs) -> fmap fromIntegral xs) <$> findVal (FourCC ('A','A','L','P')) vals
+  alps <- transpose . fmap de <$> findVal (FourCC ('A','A','L','P')) vals
   guard $ length alps == 2
   pure $ AudioLevel (alps !! 0) (alps !! 1)
+
+  where de (GInt8 xs)      = fmap fromIntegral xs
+        de (GComplex _ xs) = concatMap de xs
+        de xs              = error $ "weird audio thing: " <> show xs
 
 grokScene :: [Value] -> Maybe [Map Location Float]
 grokScene = Just . fmap mkScene . findAll (FourCC ('S','C','E','N'))
