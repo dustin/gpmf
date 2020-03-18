@@ -63,7 +63,7 @@ data AudioLevel = AudioLevel {
 
 makeLenses ''AudioLevel
 
-data Location = Snow | Urban | Indoor | Water | Vegetation | Beach deriving (Show, Eq, Ord)
+data Location = Snow | Urban | Indoor | Water | Vegetation | Beach deriving (Show, Read, Eq, Ord)
 
 makePrisms ''Location
 
