@@ -30,6 +30,7 @@ dependencies:
 - transformers
 - mtl
 - containers
+- lens
 
 library:
   source-dirs: src

@@ -1,5 +1,8 @@
+{-# LANGUAGE TemplateHaskell #-}
+
 module GoPro.DEVC where
 
+import           Control.Lens          hiding (cons)
 import           Control.Monad         (guard)
 import           Data.List             (transpose)
 import           Data.Map.Strict       (Map)
@@ -11,18 +14,59 @@ import           Data.Word             (Word64)
 
 import           GoPro.GPMF
 
-data DEVC = DEVC {
-  devID     :: Int,
-  devName   :: String,
-  devTelems :: Map String Telemetry
+data Accelerometer = Accelerometer {
+  _acc_temp :: Float,
+  _acc_vals :: [(Float,Float,Float)]
   } deriving Show
 
-data Telemetry = Telemetry {
-  teleStmp   :: Word64,
-  teleTsmp   :: Int,
-  teleName   :: String,
-  teleValues :: TVals
+makeLenses ''Accelerometer
+
+data Gyroscope = Gyroscope {
+  _gyro_temp :: Float,
+  _gyro_vals :: [(Float, Float, Float)]
   } deriving Show
+
+makeLenses ''Gyroscope
+
+data Face = Face {
+  _face_id    :: Int,
+  _face_x     :: Float,
+  _face_y     :: Float,
+  _face_w     :: Float,
+  _face_h     :: Float,
+  _face_smile :: Float
+  } deriving Show
+
+makeLenses ''Face
+
+data GPSReading = GPSReading {
+  _gpsr_lat     :: Double,
+  _gpsr_lon     :: Double,
+  _gpsr_alt     :: Double,
+  _gpsr_speed2d :: Double,
+  _gpsr_speed3d :: Double
+  } deriving Show
+
+makeLenses ''GPSReading
+
+data GPS = GPS {
+  _gps_p        :: Int,
+  _gps_time     :: UTCTime,
+  _gps_readings :: [GPSReading]
+  } deriving Show
+
+makeLenses ''GPS
+
+data AudioLevel = AudioLevel {
+  _audio_rms  :: [Int],
+  _audio_peak :: [Int]
+  } deriving Show
+
+makeLenses ''AudioLevel
+
+data Location = Snow | Urban | Indoor | Water | Vegetation | Beach deriving (Show, Eq, Ord)
+
+makePrisms ''Location
 
 data TVals = TVUnknown [Value]
   | TVAccl Accelerometer
@@ -33,60 +77,39 @@ data TVals = TVUnknown [Value]
   | TVScene [Map Location Float]
   deriving Show
 
-data Accelerometer = Accelerometer {
-  accTemp :: Float,
-  accVals :: [(Float,Float,Float)]
+makePrisms ''TVals
+
+data Telemetry = Telemetry {
+  _tele_stmp   :: Word64,
+  _tele_tsmp   :: Int,
+  _tele_name   :: String,
+  _tele_values :: TVals
   } deriving Show
 
-data Gyroscope = Gyroscope {
-  gyroTemp :: Float,
-  gyroVals :: [(Float, Float, Float)]
+makeLenses ''Telemetry
+
+data DEVC = DEVC {
+  _dev_id     :: Int,
+  _dev_name   :: String,
+  _dev_telems :: Map String Telemetry
   } deriving Show
 
-data Face = Face {
-  faceID    :: Int,
-  faceX     :: Float,
-  faceY     :: Float,
-  faceW     :: Float,
-  faceH     :: Float,
-  faceSmile :: Float
-  } deriving Show
-
-data GPS = GPS {
-  gpsP        :: Int,
-  gpsTime     :: UTCTime,
-  gpsReadings :: [GPSReading]
-  } deriving Show
-
-data GPSReading = GPSReading {
-  gpsrLat     :: Double,
-  gpsrLon     :: Double,
-  gpsrAlt     :: Double,
-  gpsrSpeed2D :: Double,
-  gpsrSpeed3D :: Double
-  } deriving Show
-
-data AudioLevel = AudioLevel {
-  audioRMS  :: [Int],
-  audioPeak :: [Int]
-  } deriving Show
-
-data Location = Snow | Urban | Indoor | Water | Vegetation | Beach deriving (Show, Eq, Ord)
+makeLenses ''DEVC
 
 mkDEVC :: FourCC -> [Value] -> DEVC
 mkDEVC (FourCC ('D','E','V','C')) = foldr addItem (DEVC 0 "" mempty)
   where
-    addItem (GNested (FourCC ('D','V','I','D'), [GUint32 [x]])) o            = o {devID=fromIntegral x}
-    addItem (GNested (FourCC ('D','V','N','M'), [GString x]))   o            = o {devName=x}
-    addItem (GNested (FourCC ('S','T','R','M'), vals))          o@(DEVC{..}) = o {devTelems=addTelem devTelems vals}
+    addItem (GNested (FourCC ('D','V','I','D'), [GUint32 [x]])) o            = o {_dev_id=fromIntegral x}
+    addItem (GNested (FourCC ('D','V','N','M'), [GString x]))   o            = o {_dev_name=x}
+    addItem (GNested (FourCC ('S','T','R','M'), vals))          o@(DEVC{..}) = o {_dev_telems=addTelem _dev_telems vals}
     addItem _ o                                                              = o
 
     addTelem m vals = let t =  foldr updTele (Telemetry 0 0 "" tvals) vals in
-                        Map.insert (teleName t) t m
+                        Map.insert (_tele_name t) t m
       where
-        updTele (GNested (FourCC ('S','T','M','P'), [GUint64 [x]])) o = o {teleStmp = x}
-        updTele (GNested (FourCC ('T','S','M','P'), [GUint32 [x]])) o = o {teleTsmp = fromIntegral x}
-        updTele (GNested (FourCC ('S','T','N','M'), [GString x])) o = o {teleName = x}
+        updTele (GNested (FourCC ('S','T','M','P'), [GUint64 [x]])) o = o {_tele_stmp = x}
+        updTele (GNested (FourCC ('T','S','M','P'), [GUint32 [x]])) o = o {_tele_tsmp = fromIntegral x}
+        updTele (GNested (FourCC ('S','T','N','M'), [GString x])) o = o {_tele_name = x}
         updTele _ o = o
 
         tvals :: TVals
@@ -167,7 +190,7 @@ grokGPS vals = fromMaybe (GPS 9999 (posixSecondsToUTCTime 0) []) $ do
     convg5s :: [Double] -> [Value] -> [GPSReading]
     convg5s scals =
       concatMap (\(GInt32 ns) -> case zipWith (\s n -> realToFrac n / s) scals ns of
-                   [gpsrLat,gpsrLon,gpsrAlt,gpsrSpeed2D,gpsrSpeed3D] -> [GPSReading{..}]
+                   [_gpsr_lat,_gpsr_lon,_gpsr_alt,_gpsr_speed2d,_gpsr_speed3d] -> [GPSReading{..}]
                    _ -> []
                 )
 
