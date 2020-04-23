@@ -1,6 +1,17 @@
+{-|
+Module: GoPro.GPMF
+Description: Parser for GoPro GPMF telemetry data.
+Copyright: (c) Dustin Sallings, 2020
+License: BSD3
+Maintanier: dustin@spy.net
+Stability: experimental
+
+A low-level parser for <https://github.com/gopro/gpmf-parser GPMF> telemetry data.
+-}
+
 {-# LANGUAGE TupleSections #-}
 
-module GoPro.GPMF (Value(..), FourCC(..), parseGPMF) where
+module GoPro.GPMF (parseGPMF, Value(..), FourCC(..)) where
 
 import           Control.Monad                    (replicateM)
 import           Control.Monad.State              (StateT, evalStateT, get,
@@ -43,18 +54,37 @@ null	Nested metadata	uint32_t	The data within is GPMF structured KLV data
 
 newtype FourCC = FourCC (Char, Char, Char, Char) deriving (Show, Eq)
 
-data Value = GInt8 [Int8] | GUint8 [Word8] | GString String | GDouble Double | GFloat [Float]
-           | GFourCC FourCC | GUUID [Word8] | GInt64 [Int64] | GUint64 [Word64] | GInt32 [Int32]
-           | GUint32 [Word32] | GQ32 [Word32] | GQ64 [Word64] | GInt16 [Int16] | GUint16 [Word16]
-           | GTimestamp UTCTime | GComplex String [Value] | GNested (FourCC, [Value])
-           | GUnknown (Char, Int, Int, [[Word8]])
-           deriving (Show)
+data Value = GInt8 [Int8]
+    | GUint8 [Word8]
+    | GString String
+    | GDouble Double
+    | GFloat [Float]
+    | GFourCC FourCC
+    | GUUID [Word8]
+    | GInt64 [Int64]
+    | GUint64 [Word64]
+    | GInt32 [Int32]
+    | GUint32 [Word32]
+    | GQ32 [Word32]
+    | GQ64 [Word64]
+    | GInt16 [Int16]
+    | GUint16 [Word16]
+    | GTimestamp UTCTime
+    | GComplex String [Value]
+    | GNested (FourCC, [Value])
+    | GUnknown (Char, Int, Int, [[Word8]])
+    deriving (Show)
 
 type Parser = StateT String A.Parser
 
 int8 :: A.Parser Int8
 int8 = fromIntegral <$> A.anyWord8
 
+-- | Parse GPMF data from a telemetry stream.  A successful return
+-- value contains a list of FourCC tagged value lists.
+--
+-- Note that the input is the telemetry stream itself, not the
+-- container that contains it.
 parseGPMF :: BS.ByteString -> Either String [(FourCC, [Value])]
 parseGPMF = A.parseOnly (evalStateT (A.many1 parseNested) "")
 

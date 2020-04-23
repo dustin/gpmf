@@ -1,3 +1,18 @@
+{-|
+Module: GoPro.DEVC
+Description: Higher level representation of GPMF DEVC data.
+Copyright: (c) Dustin Sallings, 2020
+License: BSD3
+Maintanier: dustin@spy.net
+Stability: experimental
+
+DEVC is one of the GPMF data types that contains the bulk of
+interesting telemetry data from within GPMF streams.  This module
+doesn't currently provide high level access to *all* DEVC data (some
+of it remains low level), but it currently has useful representations
+of things that seemed interesting to the author.
+-}
+
 {-# LANGUAGE TemplateHaskell #-}
 
 module GoPro.DEVC where
@@ -13,85 +28,99 @@ import           Data.Word       (Word64)
 
 import           GoPro.GPMF
 
-data Accelerometer = Accelerometer {
-  _acc_temp :: Float,
-  _acc_vals :: [(Float,Float,Float)]
-  } deriving Show
+data Accelerometer = Accelerometer
+    { _acc_temp :: Float
+    , _acc_vals :: [(Float, Float, Float)]
+    }
+    deriving Show
 
 makeLenses ''Accelerometer
 
-data Gyroscope = Gyroscope {
-  _gyro_temp :: Float,
-  _gyro_vals :: [(Float, Float, Float)]
-  } deriving Show
+data Gyroscope = Gyroscope
+    { _gyro_temp :: Float
+    , _gyro_vals :: [(Float, Float, Float)]
+    }
+    deriving Show
 
 makeLenses ''Gyroscope
 
-data Face = Face {
-  _face_id    :: Int,
-  _face_x     :: Float,
-  _face_y     :: Float,
-  _face_w     :: Float,
-  _face_h     :: Float,
-  _face_smile :: Float
-  } deriving Show
+data Face = Face
+    { _face_id    :: Int
+    , _face_x     :: Float
+    , _face_y     :: Float
+    , _face_w     :: Float
+    , _face_h     :: Float
+    , _face_smile :: Float
+    }
+    deriving Show
 
 makeLenses ''Face
 
-data GPSReading = GPSReading {
-  _gpsr_lat     :: Double,
-  _gpsr_lon     :: Double,
-  _gpsr_alt     :: Double,
-  _gpsr_speed2d :: Double,
-  _gpsr_speed3d :: Double
-  } deriving Show
+data GPSReading = GPSReading
+    { _gpsr_lat     :: Double
+    , _gpsr_lon     :: Double
+    , _gpsr_alt     :: Double
+    , _gpsr_speed2d :: Double
+    , _gpsr_speed3d :: Double
+    }
+    deriving Show
 
 makeLenses ''GPSReading
 
-data GPS = GPS {
-  _gps_p        :: Int,
-  _gps_time     :: UTCTime,
-  _gps_readings :: [GPSReading]
-  } deriving Show
+data GPS = GPS
+    { _gps_p        :: Int
+    , _gps_time     :: UTCTime
+    , _gps_readings :: [GPSReading]
+    }
+    deriving Show
 
 makeLenses ''GPS
 
-data AudioLevel = AudioLevel {
-  _audio_rms  :: [Int],
-  _audio_peak :: [Int]
-  } deriving Show
+data AudioLevel = AudioLevel
+    { _audio_rms  :: [Int]
+    , _audio_peak :: [Int]
+    }
+    deriving Show
 
 makeLenses ''AudioLevel
 
-data Location = Snow | Urban | Indoor | Water | Vegetation | Beach deriving (Show, Read, Eq, Ord)
+data Location = Snow
+    | Urban
+    | Indoor
+    | Water
+    | Vegetation
+    | Beach
+    deriving (Show, Read, Eq, Ord)
 
 makePrisms ''Location
 
 data TVals = TVUnknown [Value]
-  | TVAccl Accelerometer
-  | TVGyro Gyroscope
-  | TVFaces [Face]
-  | TVGPS GPS
-  | TVAudioLevel AudioLevel
-  | TVScene [Map Location Float]
-  deriving Show
+    | TVAccl Accelerometer
+    | TVGyro Gyroscope
+    | TVFaces [Face]
+    | TVGPS GPS
+    | TVAudioLevel AudioLevel
+    | TVScene [Map Location Float]
+    deriving Show
 
 makePrisms ''TVals
 
-data Telemetry = Telemetry {
-  _tele_stmp   :: Word64,
-  _tele_tsmp   :: Int,
-  _tele_name   :: String,
-  _tele_values :: TVals
-  } deriving Show
+data Telemetry = Telemetry
+    { _tele_stmp   :: Word64
+    , _tele_tsmp   :: Int
+    , _tele_name   :: String
+    , _tele_values :: TVals
+    }
+    deriving Show
 
 makeLenses ''Telemetry
 
-data DEVC = DEVC {
-  _dev_id     :: Int,
-  _dev_name   :: String,
-  _dev_telems :: Map String Telemetry
-  } deriving Show
+data DEVC = DEVC
+    { _dev_id     :: Int
+    , _dev_name   :: String
+    , _dev_telems :: Map String Telemetry
+    }
+    deriving Show
 
 makeLenses ''DEVC
 
