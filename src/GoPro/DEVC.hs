@@ -15,7 +15,19 @@ of things that seemed interesting to the author.
 
 {-# LANGUAGE TemplateHaskell #-}
 
-module GoPro.DEVC where
+module GoPro.DEVC (
+  mkDEVC,
+  DEVC(..), dev_id, dev_name, dev_telems,
+  Accelerometer(..), acc_temp, acc_vals,
+  Gyroscope(..), gyro_temp, gyro_vals,
+  Face(..), face_id, face_x, face_y, face_w, face_h, face_smile,
+  GPSReading(..), gpsr_lat, gpsr_lon, gpsr_alt, gpsr_speed2d, gpsr_speed3d,
+  GPS(..), gps_p, gps_time, gps_readings,
+  AudioLevel(..), audio_rms, audio_peak,
+  Location(..), _Snow, _Urban, _Indoor, _Water, _Vegetation, _Beach,
+  TVals(..), _TVUnknown, _TVAccl, _TVGyro, _TVFaces, _TVGPS, _TVAudioLevel, _TVScene,
+  Telemetry(..), tele_stmp, tele_tsmp, tele_name, tele_values
+  ) where
 
 import           Control.Lens    hiding (cons)
 import           Control.Monad   (guard)
@@ -124,6 +136,8 @@ data DEVC = DEVC
 
 makeLenses ''DEVC
 
+-- | Given a FourCC value (specifically, DEVC) and a list of Values,
+-- produce a DEVC value.
 mkDEVC :: FourCC -> [Value] -> DEVC
 mkDEVC (FourCC ('D','E','V','C')) = foldr addItem (DEVC 0 "" mempty)
   where
@@ -137,8 +151,8 @@ mkDEVC (FourCC ('D','E','V','C')) = foldr addItem (DEVC 0 "" mempty)
       where
         updTele (GNested (FourCC ('S','T','M','P'), [GUint64 [x]])) o = o {_tele_stmp = x}
         updTele (GNested (FourCC ('T','S','M','P'), [GUint32 [x]])) o = o {_tele_tsmp = fromIntegral x}
-        updTele (GNested (FourCC ('S','T','N','M'), [GString x])) o = o {_tele_name = x}
-        updTele _ o = o
+        updTele (GNested (FourCC ('S','T','N','M'), [GString x])) o   = o {_tele_name = x}
+        updTele _ o                                                   = o
 
         tvals :: TVals
         tvals = (fromMaybe (TVUnknown vals) . ($ vals)) . foldr findGrokker (const Nothing) . concatMap four $ vals
