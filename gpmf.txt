@@ -50,18 +50,30 @@ instance GHC.Show.Show GoPro.GPMF.FourCC
 --   of it remains low level), but it currently has useful representations
 --   of things that seemed interesting to the author.
 module GoPro.DEVC
+
+-- | Given a FourCC value (specifically, DEVC) and a list of Values,
+--   produce a DEVC value.
+mkDEVC :: FourCC -> [Value] -> DEVC
+data DEVC
+DEVC :: Int -> String -> Map String Telemetry -> DEVC
+[_dev_id] :: DEVC -> Int
+[_dev_name] :: DEVC -> String
+[_dev_telems] :: DEVC -> Map String Telemetry
+dev_id :: Lens' DEVC Int
+dev_name :: Lens' DEVC String
+dev_telems :: Lens' DEVC (Map String Telemetry)
 data Accelerometer
 Accelerometer :: Float -> [(Float, Float, Float)] -> Accelerometer
 [_acc_temp] :: Accelerometer -> Float
 [_acc_vals] :: Accelerometer -> [(Float, Float, Float)]
-acc_vals :: Lens' Accelerometer [(Float, Float, Float)]
 acc_temp :: Lens' Accelerometer Float
+acc_vals :: Lens' Accelerometer [(Float, Float, Float)]
 data Gyroscope
 Gyroscope :: Float -> [(Float, Float, Float)] -> Gyroscope
 [_gyro_temp] :: Gyroscope -> Float
 [_gyro_vals] :: Gyroscope -> [(Float, Float, Float)]
-gyro_vals :: Lens' Gyroscope [(Float, Float, Float)]
 gyro_temp :: Lens' Gyroscope Float
+gyro_vals :: Lens' Gyroscope [(Float, Float, Float)]
 data Face
 Face :: Int -> Float -> Float -> Float -> Float -> Float -> Face
 [_face_id] :: Face -> Int
@@ -70,12 +82,12 @@ Face :: Int -> Float -> Float -> Float -> Float -> Float -> Face
 [_face_w] :: Face -> Float
 [_face_h] :: Face -> Float
 [_face_smile] :: Face -> Float
-face_y :: Lens' Face Float
-face_x :: Lens' Face Float
-face_w :: Lens' Face Float
-face_smile :: Lens' Face Float
 face_id :: Lens' Face Int
+face_x :: Lens' Face Float
+face_y :: Lens' Face Float
+face_w :: Lens' Face Float
 face_h :: Lens' Face Float
+face_smile :: Lens' Face Float
 data GPSReading
 GPSReading :: Double -> Double -> Double -> Double -> Double -> GPSReading
 [_gpsr_lat] :: GPSReading -> Double
@@ -83,19 +95,19 @@ GPSReading :: Double -> Double -> Double -> Double -> Double -> GPSReading
 [_gpsr_alt] :: GPSReading -> Double
 [_gpsr_speed2d] :: GPSReading -> Double
 [_gpsr_speed3d] :: GPSReading -> Double
-gpsr_speed3d :: Lens' GPSReading Double
-gpsr_speed2d :: Lens' GPSReading Double
-gpsr_lon :: Lens' GPSReading Double
 gpsr_lat :: Lens' GPSReading Double
+gpsr_lon :: Lens' GPSReading Double
 gpsr_alt :: Lens' GPSReading Double
+gpsr_speed2d :: Lens' GPSReading Double
+gpsr_speed3d :: Lens' GPSReading Double
 data GPS
 GPS :: Int -> UTCTime -> [GPSReading] -> GPS
 [_gps_p] :: GPS -> Int
 [_gps_time] :: GPS -> UTCTime
 [_gps_readings] :: GPS -> [GPSReading]
+gps_p :: Lens' GPS Int
 gps_time :: Lens' GPS UTCTime
 gps_readings :: Lens' GPS [GPSReading]
-gps_p :: Lens' GPS Int
 data AudioLevel
 AudioLevel :: [Int] -> [Int] -> AudioLevel
 [_audio_rms] :: AudioLevel -> [Int]
@@ -109,12 +121,12 @@ Indoor :: Location
 Water :: Location
 Vegetation :: Location
 Beach :: Location
-_Beach :: Prism' Location ()
-_Vegetation :: Prism' Location ()
-_Water :: Prism' Location ()
-_Indoor :: Prism' Location ()
-_Urban :: Prism' Location ()
 _Snow :: Prism' Location ()
+_Urban :: Prism' Location ()
+_Indoor :: Prism' Location ()
+_Water :: Prism' Location ()
+_Vegetation :: Prism' Location ()
+_Beach :: Prism' Location ()
 data TVals
 TVUnknown :: [Value] -> TVals
 TVAccl :: Accelerometer -> TVals
@@ -123,42 +135,23 @@ TVFaces :: [Face] -> TVals
 TVGPS :: GPS -> TVals
 TVAudioLevel :: AudioLevel -> TVals
 TVScene :: [Map Location Float] -> TVals
-_TVScene :: Prism' TVals [Map Location Float]
-_TVAudioLevel :: Prism' TVals AudioLevel
-_TVGPS :: Prism' TVals GPS
-_TVFaces :: Prism' TVals [Face]
-_TVGyro :: Prism' TVals Gyroscope
-_TVAccl :: Prism' TVals Accelerometer
 _TVUnknown :: Prism' TVals [Value]
+_TVAccl :: Prism' TVals Accelerometer
+_TVGyro :: Prism' TVals Gyroscope
+_TVFaces :: Prism' TVals [Face]
+_TVGPS :: Prism' TVals GPS
+_TVAudioLevel :: Prism' TVals AudioLevel
+_TVScene :: Prism' TVals [Map Location Float]
 data Telemetry
 Telemetry :: Word64 -> Int -> String -> TVals -> Telemetry
 [_tele_stmp] :: Telemetry -> Word64
 [_tele_tsmp] :: Telemetry -> Int
 [_tele_name] :: Telemetry -> String
 [_tele_values] :: Telemetry -> TVals
-tele_values :: Lens' Telemetry TVals
-tele_tsmp :: Lens' Telemetry Int
 tele_stmp :: Lens' Telemetry Word64
+tele_tsmp :: Lens' Telemetry Int
 tele_name :: Lens' Telemetry String
-data DEVC
-DEVC :: Int -> String -> Map String Telemetry -> DEVC
-[_dev_id] :: DEVC -> Int
-[_dev_name] :: DEVC -> String
-[_dev_telems] :: DEVC -> Map String Telemetry
-dev_telems :: Lens' DEVC (Map String Telemetry)
-dev_name :: Lens' DEVC String
-dev_id :: Lens' DEVC Int
-mkDEVC :: FourCC -> [Value] -> DEVC
-findVal :: FourCC -> [Value] -> Maybe [Value]
-findAll :: FourCC -> [Value] -> [[Value]]
-shead :: [a] -> Maybe a
-grokSens :: FourCC -> (Float -> [(Float, Float, Float)] -> a) -> [Value] -> Maybe a
-grokAccl :: [Value] -> Maybe Accelerometer
-grokGyro :: [Value] -> Maybe Gyroscope
-grokFaces :: [Value] -> Maybe [Face]
-grokGPS :: [Value] -> Maybe GPS
-grokAudioLevel :: [Value] -> Maybe AudioLevel
-grokScene :: [Value] -> Maybe [Map Location Float]
+tele_values :: Lens' Telemetry TVals
 instance GHC.Show.Show GoPro.DEVC.DEVC
 instance GHC.Show.Show GoPro.DEVC.Telemetry
 instance GHC.Show.Show GoPro.DEVC.TVals
