@@ -39,9 +39,10 @@ GNested :: (FourCC, [Value]) -> Value
 GUnknown :: (Char, Int, Int, [[Word8]]) -> Value
 newtype FourCC
 FourCC :: (Char, Char, Char, Char) -> FourCC
-instance GHC.Show.Show GoPro.GPMF.Value
 instance GHC.Classes.Eq GoPro.GPMF.FourCC
 instance GHC.Show.Show GoPro.GPMF.FourCC
+instance GHC.Show.Show GoPro.GPMF.Value
+instance Data.String.IsString GoPro.GPMF.FourCC
 
 
 -- | DEVC is one of the GPMF data types that contains the bulk of
