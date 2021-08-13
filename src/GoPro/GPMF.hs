@@ -14,10 +14,8 @@ A low-level parser for <https://github.com/gopro/gpmf-parser GPMF> telemetry dat
 module GoPro.GPMF (parseGPMF, Value(..), FourCC(..)) where
 
 import           Control.Monad                    (replicateM)
-import           Control.Monad.State              (StateT, evalStateT, get,
-                                                   lift, put)
-import           Data.Attoparsec.Binary           (anyWord16be, anyWord32be,
-                                                   anyWord64be)
+import           Control.Monad.State              (StateT, evalStateT, get, lift, put)
+import           Data.Attoparsec.Binary           (anyWord16be, anyWord32be, anyWord64be)
 import qualified Data.Attoparsec.ByteString       as A
 import qualified Data.Attoparsec.ByteString.Char8 as AC
 import           Data.Binary.Get                  (runGet)
@@ -25,11 +23,10 @@ import           Data.Binary.IEEE754              (getFloat32be)
 import qualified Data.ByteString                  as BS
 import qualified Data.ByteString.Lazy             as BL
 import           Data.Int                         (Int16, Int32, Int64, Int8)
+import           Data.String                      (IsString (..))
 import           Data.Time.Clock                  (UTCTime)
-import           Data.Time.Format                 (defaultTimeLocale,
-                                                   parseTimeM)
-import           Data.Word                        (Word16, Word32, Word64,
-                                                   Word8)
+import           Data.Time.Format                 (defaultTimeLocale, parseTimeM)
+import           Data.Word                        (Word16, Word32, Word64, Word8)
 {-
 Type Char	Definition	typedef	Comment
 b	single byte signed integer	int8_t	-128 to 127
@@ -53,6 +50,10 @@ null	Nested metadata	uint32_t	The data within is GPMF structured KLV data
 -}
 
 newtype FourCC = FourCC (Char, Char, Char, Char) deriving (Show, Eq)
+
+instance IsString FourCC where
+  fromString [a,b,c,d] = FourCC (a,b,c,d)
+  fromString _         = error "invalid FourCC"
 
 data Value = GInt8 [Int8]
     | GUint8 [Word8]
