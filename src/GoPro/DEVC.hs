@@ -34,7 +34,7 @@ import           Control.Monad   (guard)
 import           Data.List       (transpose)
 import           Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
-import           Data.Maybe      (fromMaybe, mapMaybe)
+import           Data.Maybe      (fromMaybe, mapMaybe, listToMaybe)
 import           Data.Time.Clock (UTCTime (..))
 import           Data.Word       (Word64)
 
@@ -186,18 +186,14 @@ findAll f = go
                                    else go xs
         go (_:xs) = go xs
 
-shead :: [a] -> Maybe a
-shead []    = Nothing
-shead (x:_) = Just x
-
 grokSens :: FourCC -> (Float -> [(Float, Float, Float)] -> a) -> [Value] -> Maybe a
 grokSens sens cons vals = do
-  GFloat templ <- shead =<< findVal "TMPC" vals
-  GInt16 scall <- shead =<< findVal "SCAL" vals
+  GFloat templ <- listToMaybe =<< findVal "TMPC" vals
+  GInt16 scall <- listToMaybe =<< findVal "SCAL" vals
   readings <- findVal sens vals
 
-  temp <- shead templ
-  scal <- realToFrac <$> shead scall
+  temp <- listToMaybe templ
+  scal <- realToFrac <$> listToMaybe scall
 
   let scaled = map (\(GInt16 [a,b,c]) -> (realToFrac a / scal, realToFrac b / scal, realToFrac c / scal)) readings
 
@@ -221,8 +217,8 @@ grokFaces = Just . mapMaybe mkFace . findAll "FACE"
 
 grokGPS :: [Value] -> Maybe GPS
 grokGPS vals = do
-  GUint16 [gpsp] <- shead =<< findVal "GPSP" vals
-  GTimestamp time <- shead =<< findVal "GPSU" vals
+  GUint16 [gpsp] <- listToMaybe =<< findVal "GPSP" vals
+  GTimestamp time <- listToMaybe =<< findVal "GPSU" vals
   scals <- fmap (\(GInt32 [x]) -> realToFrac x) <$> findVal "SCAL" vals
   g5s <- findVal "GPS5" vals
   rs <- mconcat <$> traverse (readings scals) g5s
