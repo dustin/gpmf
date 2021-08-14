@@ -31,6 +31,7 @@ module GoPro.DEVC (
 
 import           Control.Lens    hiding (cons)
 import           Control.Monad   (guard)
+import           Data.Foldable   (fold)
 import           Data.List       (transpose)
 import           Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
@@ -138,8 +139,8 @@ makeLenses ''DEVC
 
 -- | Given a FourCC value (specifically, DEVC) and a list of Values,
 -- produce a DEVC value.
-mkDEVC :: FourCC -> [Value] -> DEVC
-mkDEVC "DEVC" = foldr addItem (DEVC 0 "" mempty)
+mkDEVC :: FourCC -> [Value] -> Maybe DEVC
+mkDEVC "DEVC" = Just . foldr addItem (DEVC 0 "" mempty)
   where
     addItem (GNested ("DVID", [GUint32 [x]])) o            = o {_dev_id=fromIntegral x}
     addItem (GNested ("DVNM", [GString x]))   o            = o {_dev_name=x}
@@ -168,7 +169,7 @@ mkDEVC "DEVC" = foldr addItem (DEVC 0 "" mempty)
             findGrokker "SCEN" _ = fmap TVScene . grokScene
             findGrokker _ o      = o
 
-mkDEVC f = error ("I can't make a DEVC out of " <> show f)
+mkDEVC _ = const Nothing
 
 findVal :: FourCC -> [Value] -> Maybe [Value]
 findVal f = listToMaybe . findAll f
@@ -183,14 +184,18 @@ grokSens :: FourCC -> (Float -> [(Float, Float, Float)] -> a) -> [Value] -> Mayb
 grokSens sens cons vals = do
   GFloat templ <- listToMaybe =<< findVal "TMPC" vals
   GInt16 scall <- listToMaybe =<< findVal "SCAL" vals
-  readings <- findVal sens vals
+  readings <- mapMaybe ungint <$> findVal sens vals
 
   temp <- listToMaybe templ
   scal <- realToFrac <$> listToMaybe scall
-
-  let scaled = map (\(GInt16 [a,b,c]) -> (realToFrac a / scal, realToFrac b / scal, realToFrac c / scal)) readings
+  scaled <- traverse (trip . fmap (\x -> realToFrac x / scal)) readings
 
   pure $ cons temp scaled
+
+  where ungint (GInt16 xs) = Just xs
+        ungint _           = Nothing
+        trip [a,b,c] = Just (a,b,c)
+        trip _       = Nothing
 
 grokAccl :: [Value] -> Maybe Accelerometer
 grokAccl = grokSens "ACCL" Accelerometer
@@ -220,19 +225,20 @@ grokGPS vals = do
 
   where
     readings scals (GInt32 ns) = case zipWith (\s n -> realToFrac n / s) scals ns of
-                                   [_gpsr_lat,_gpsr_lon,_gpsr_alt,_gpsr_speed2d,_gpsr_speed3d] -> Just [GPSReading{..}]
-                                   _                                                           -> Nothing
+                                   [_gpsr_lat,_gpsr_lon,_gpsr_alt,_gpsr_speed2d,_gpsr_speed3d]
+                                     -> Just [GPSReading{..}]
+                                   _ -> Nothing
     readings _ _ = Nothing
 
 grokAudioLevel :: [Value] -> Maybe AudioLevel
 grokAudioLevel vals = do
-  alps <- transpose . fmap de <$> findVal "AALP" vals
+  alps <- transpose . mapMaybe de <$> findVal "AALP" vals
   guard $ length alps == 2
   pure $ AudioLevel (alps !! 0) (alps !! 1)
 
-  where de (GInt8 xs)      = fmap fromIntegral xs
-        de (GComplex _ xs) = concatMap de xs
-        de xs              = error $ "weird audio thing: " <> show xs
+  where de (GInt8 xs)      = Just $ fmap fromIntegral xs
+        de (GComplex _ xs) = Just . fold . mapMaybe de $ xs
+        de _               = Nothing
 
 grokScene :: [Value] -> Maybe [Map Location Float]
 grokScene = Just . fmap mkScene . findAll "SCEN"
