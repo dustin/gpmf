@@ -1,3 +1,5 @@
 # Changelog for gpmf
 
-## Unreleased changes
+## 0.1.0.3
+
+Added IsString instance of FourCC to simplify specifying stuff.

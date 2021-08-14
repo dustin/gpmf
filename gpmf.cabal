@@ -4,10 +4,10 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: b516c7c9c68c8770857c00c849edab0bec5b38d0f4517ef1711ea91b557a5f2f
+-- hash: a226c64e73dea613c079487cb87686efad33e58d3605de91ab5e026a45275981
 
 name:           gpmf
-version:        0.1.0.2
+version:        0.1.0.3
 description:    Please see the README on GitHub at <https://github.com/dustin/gpmf#readme>
 homepage:       https://github.com/dustin/gpmf#readme
 bug-reports:    https://github.com/dustin/gpmf/issues
