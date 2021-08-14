@@ -54,7 +54,7 @@ module GoPro.DEVC
 
 -- | Given a FourCC value (specifically, DEVC) and a list of Values,
 --   produce a DEVC value.
-mkDEVC :: FourCC -> [Value] -> DEVC
+mkDEVC :: FourCC -> [Value] -> Maybe DEVC
 data DEVC
 DEVC :: Int -> String -> Map String Telemetry -> DEVC
 [_dev_id] :: DEVC -> Int
