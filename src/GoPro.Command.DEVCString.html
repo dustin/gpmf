@@ -1,0 +1,586 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><link rel="stylesheet" type="text/css" href="style.css" /><script type="text/javascript" src="highlight.js"></script></head><body><pre><span class="hs-keyword">module</span><span> </span><span class="hs-identifier">GoPro.Command.DEVCString</span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-2"></span><span>
+</span><span id="line-3"></span><span class="hs-keyword">import</span><span> </span><span class="hs-keyword">qualified</span><span> </span><span class="annot"><span class="hs-identifier">Data.ByteString.Lazy</span></span><span>    </span><span class="hs-keyword">as</span><span> </span><span class="annot"><span class="hs-identifier">BL</span></span><span>
+</span><span id="line-4"></span><span class="hs-keyword">import</span><span> </span><span class="hs-keyword">qualified</span><span> </span><span class="annot"><span class="hs-identifier">Data.ByteString.Lazy.Char8</span></span><span>    </span><span class="hs-keyword">as</span><span> </span><span class="annot"><span class="hs-identifier">BC</span></span><span>
+</span><span id="line-5"></span><span class="hs-keyword">import</span><span> </span><span class="hs-keyword">qualified</span><span> </span><span class="annot"><span class="hs-identifier">Data.Map.Strict</span></span><span>    </span><span class="hs-keyword">as</span><span> </span><span class="annot"><span class="hs-identifier">Map</span></span><span>
+</span><span id="line-6"></span><span class="hs-keyword">import</span><span> </span><span class="annot"><span class="hs-identifier">Data.Foldable</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier">toList</span></span><span class="hs-special">)</span><span>
+</span><span id="line-7"></span><span>
+</span><span id="line-8"></span><span class="hs-keyword">import</span><span>           </span><span class="annot"><a href="GoPro.DEVC.html"><span class="hs-identifier">GoPro.DEVC</span></a></span><span>
+</span><span id="line-9"></span><span class="hs-keyword">import</span><span>           </span><span class="annot"><a href="GoPro.GPMF.html"><span class="hs-identifier">GoPro.GPMF</span></a></span><span>
+</span><span id="line-10"></span><span>
+</span><span id="line-11"></span><span class="annot"><a href="GoPro.Command.DEVCString.html#fourcc"><span class="hs-identifier hs-type">fourcc</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#FourCC"><span class="hs-identifier hs-type">FourCC</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">BL.ByteString</span></span><span>
+</span><span id="line-12"></span><span id="fourcc"><span class="annot"><span class="annottext">fourcc :: FourCC -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#fourcc"><span class="hs-identifier hs-var hs-var">fourcc</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#FourCC"><span class="hs-identifier hs-type">FourCC</span></a></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679137390"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679137390"><span class="hs-identifier hs-var">a</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679137389"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679137389"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679137388"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679137388"><span class="hs-identifier hs-var">c</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679137387"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679137387"><span class="hs-identifier hs-var">d</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;4cc:&quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">[Char] -&gt; ByteString
+</span><span class="hs-identifier hs-var">BC.pack</span></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679137390"><span class="hs-identifier hs-var">a</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679137389"><span class="hs-identifier hs-var">b</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679137388"><span class="hs-identifier hs-var">c</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679137387"><span class="hs-identifier hs-var">d</span></a></span><span class="hs-special">]</span><span>
+</span><span id="line-13"></span><span>
+</span><span id="line-14"></span><span class="annot"><a href="GoPro.Command.DEVCString.html#cval"><span class="hs-identifier hs-type">cval</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">BL.ByteString</span></span><span>
+</span><span id="line-15"></span><span id="cval"><span class="annot"><span class="annottext">cval :: Value -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#cval"><span class="hs-identifier hs-var hs-var">cval</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GFourCC"><span class="hs-identifier hs-type">GFourCC</span></a></span><span> </span><span id="local-6989586621679137383"><span class="annot"><span class="annottext">FourCC
+</span><a href="#local-6989586621679137383"><span class="hs-identifier hs-var">f</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">FourCC -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#fourcc"><span class="hs-identifier hs-var">fourcc</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
+</span><a href="#local-6989586621679137383"><span class="hs-identifier hs-var">f</span></a></span><span>
+</span><span id="line-16"></span><span class="annot"><a href="GoPro.Command.DEVCString.html#cval"><span class="hs-identifier hs-var">cval</span></a></span><span> </span><span id="local-6989586621679137382"><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679137382"><span class="hs-identifier hs-var">x</span></a></span></span><span>           </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Value -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679137382"><span class="hs-identifier hs-var">x</span></a></span><span>
+</span><span id="line-17"></span><span>
+</span><span id="line-18"></span><span class="annot"><a href="GoPro.Command.DEVCString.html#showValues"><span class="hs-identifier hs-type">showValues</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">BL.ByteString</span></span><span>
+</span><span id="line-19"></span><span id="showValues"><span class="annot"><span class="annottext">showValues :: Int -&gt; [Value] -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#showValues"><span class="hs-identifier hs-var hs-var">showValues</span></a></span></span><span> </span><span id="local-6989586621679137379"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679137379"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Value -&gt; ByteString) -&gt; [Value] -&gt; ByteString
+forall (f :: * -&gt; *) a.
+Foldable f =&gt;
+(a -&gt; ByteString) -&gt; f a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#joinMap"><span class="hs-identifier hs-var">joinMap</span></a></span><span> </span><span class="annot"><span class="annottext">Value -&gt; ByteString
+</span><a href="#local-6989586621679137377"><span class="hs-identifier hs-var">showValue</span></a></span><span>
+</span><span id="line-20"></span><span>  </span><span class="hs-keyword">where</span><span>
+</span><span id="line-21"></span><span>    </span><span id="local-6989586621679137377"><span class="annot"><span class="annottext">showValue :: Value -&gt; ByteString
+</span><a href="#local-6989586621679137377"><span class="hs-identifier hs-var hs-var">showValue</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GNested"><span class="hs-identifier hs-type">GNested</span></a></span><span> </span><span id="local-6989586621679137375"><span class="annot"><span class="annottext">(FourCC, [Value])
+</span><a href="#local-6989586621679137375"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; (FourCC, [Value]) -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#showTelemetry"><span class="hs-identifier hs-var">showTelemetry</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679137379"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+forall a. Num a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">+</span></span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">2</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">(FourCC, [Value])
+</span><a href="#local-6989586621679137375"><span class="hs-identifier hs-var">x</span></a></span><span>
+</span><span id="line-22"></span><span>    </span><span class="annot"><a href="#local-6989586621679137377"><span class="hs-identifier hs-var">showValue</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GFourCC"><span class="hs-identifier hs-type">GFourCC</span></a></span><span> </span><span id="local-6989586621679137372"><span class="annot"><span class="annottext">FourCC
+</span><a href="#local-6989586621679137372"><span class="hs-identifier hs-var">f</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[Char] -&gt; ByteString
+</span><span class="hs-identifier hs-var">BC.pack</span></span><span> </span><span class="annot"><span class="annottext">([Char] -&gt; ByteString) -&gt; [Char] -&gt; ByteString
+forall a b. (a -&gt; b) -&gt; a -&gt; b
+</span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Char -&gt; [Char]
+forall a. Int -&gt; a -&gt; [a]
+</span><span class="hs-identifier hs-var">replicate</span></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679137379"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">Char
+</span><span class="hs-char">' '</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">FourCC -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#fourcc"><span class="hs-identifier hs-var">fourcc</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
+</span><a href="#local-6989586621679137372"><span class="hs-identifier hs-var">f</span></a></span><span>
+</span><span id="line-23"></span><span>    </span><span class="annot"><a href="#local-6989586621679137377"><span class="hs-identifier hs-var">showValue</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GComplex"><span class="hs-identifier hs-type">GComplex</span></a></span><span> </span><span id="local-6989586621679137369"><span class="annot"><span class="annottext">[Char]
+</span><a href="#local-6989586621679137369"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621679137368"><span class="annot"><span class="annottext">[Value]
+</span><a href="#local-6989586621679137368"><span class="hs-identifier hs-var">v</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[Char] -&gt; ByteString
+</span><span class="hs-identifier hs-var">BC.pack</span></span><span> </span><span class="annot"><span class="annottext">([Char] -&gt; ByteString) -&gt; [Char] -&gt; ByteString
+forall a b. (a -&gt; b) -&gt; a -&gt; b
+</span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Char -&gt; [Char]
+forall a. Int -&gt; a -&gt; [a]
+</span><span class="hs-identifier hs-var">replicate</span></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679137379"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">Char
+</span><span class="hs-char">' '</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;Complex: &quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">[Char] -&gt; ByteString
+</span><span class="hs-identifier hs-var">BC.pack</span></span><span> </span><span class="annot"><span class="annottext">[Char]
+</span><a href="#local-6989586621679137369"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;: &quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; [ByteString] -&gt; ByteString
+</span><span class="hs-identifier hs-var">BL.intercalate</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;, &quot;</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">(Value -&gt; ByteString) -&gt; [Value] -&gt; [ByteString]
+forall a b. (a -&gt; b) -&gt; [a] -&gt; [b]
+</span><span class="hs-identifier hs-var">map</span></span><span> </span><span class="annot"><span class="annottext">Value -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#cval"><span class="hs-identifier hs-var">cval</span></a></span><span> </span><span class="annot"><span class="annottext">[Value]
+</span><a href="#local-6989586621679137368"><span class="hs-identifier hs-var">v</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-24"></span><span>    </span><span class="annot"><a href="#local-6989586621679137377"><span class="hs-identifier hs-var">showValue</span></a></span><span> </span><span id="local-6989586621679137366"><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679137366"><span class="hs-identifier hs-var">x</span></a></span></span><span>           </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[Char] -&gt; ByteString
+</span><span class="hs-identifier hs-var">BC.pack</span></span><span> </span><span class="annot"><span class="annottext">([Char] -&gt; ByteString) -&gt; [Char] -&gt; ByteString
+forall a b. (a -&gt; b) -&gt; a -&gt; b
+</span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Char -&gt; [Char]
+forall a. Int -&gt; a -&gt; [a]
+</span><span class="hs-identifier hs-var">replicate</span></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679137379"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">Char
+</span><span class="hs-char">' '</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Value -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679137366"><span class="hs-identifier hs-var">x</span></a></span><span>
+</span><span id="line-25"></span><span>
+</span><span id="line-26"></span><span class="annot"><a href="GoPro.Command.DEVCString.html#showTelemetry"><span class="hs-identifier hs-type">showTelemetry</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#FourCC"><span class="hs-identifier hs-type">FourCC</span></a></span><span class="hs-special">,</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span class="hs-special">]</span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">BL.ByteString</span></span><span>
+</span><span id="line-27"></span><span id="showTelemetry"><span class="annot"><span class="annottext">showTelemetry :: Int -&gt; (FourCC, [Value]) -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#showTelemetry"><span class="hs-identifier hs-var hs-var">showTelemetry</span></a></span></span><span> </span><span id="local-6989586621679137365"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679137365"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#FourCC"><span class="hs-identifier hs-type">FourCC</span></a></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679137364"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679137364"><span class="hs-identifier hs-var">a</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679137363"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679137363"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679137362"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679137362"><span class="hs-identifier hs-var">c</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679137361"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679137361"><span class="hs-identifier hs-var">d</span></a></span></span><span class="hs-special">)</span><span class="hs-special">,</span><span id="local-6989586621679137360"><span class="annot"><span class="annottext">[Value]
+</span><a href="#local-6989586621679137360"><span class="hs-identifier hs-var">vs</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span>  </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[Char] -&gt; ByteString
+</span><span class="hs-identifier hs-var">BC.pack</span></span><span> </span><span class="annot"><span class="annottext">([Char] -&gt; ByteString) -&gt; [Char] -&gt; ByteString
+forall a b. (a -&gt; b) -&gt; a -&gt; b
+</span><span class="hs-operator hs-var">$</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int -&gt; Char -&gt; [Char]
+forall a. Int -&gt; a -&gt; [a]
+</span><span class="hs-identifier hs-var">replicate</span></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679137365"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">Char
+</span><span class="hs-char">' '</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[Char] -&gt; [Char] -&gt; [Char]
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679137364"><span class="hs-identifier hs-var">a</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679137363"><span class="hs-identifier hs-var">b</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679137362"><span class="hs-identifier hs-var">c</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679137361"><span class="hs-identifier hs-var">d</span></a></span><span class="hs-special">]</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;\n&quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; [Value] -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#showValues"><span class="hs-identifier hs-var">showValues</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679137365"><span class="hs-identifier hs-var">n</span></a></span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+forall a. Num a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">+</span></span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">2</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[Value]
+</span><a href="#local-6989586621679137360"><span class="hs-identifier hs-var">vs</span></a></span><span>
+</span><span id="line-28"></span><span>
+</span><span id="line-29"></span><span id="local-6989586621679137432"><span class="annot"><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-type">tshow</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Show</span></span><span> </span><span class="annot"><a href="#local-6989586621679137432"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="annot"><a href="#local-6989586621679137432"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">BL.ByteString</span></span></span><span>
+</span><span id="line-30"></span><span id="tshow"><span class="annot"><span class="annottext">tshow :: a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var hs-var">tshow</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Char] -&gt; ByteString
+</span><span class="hs-identifier hs-var">BC.pack</span></span><span> </span><span class="annot"><span class="annottext">([Char] -&gt; ByteString) -&gt; (a -&gt; [Char]) -&gt; a -&gt; ByteString
+forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
+</span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">a -&gt; [Char]
+forall a. Show a =&gt; a -&gt; [Char]
+</span><span class="hs-identifier hs-var">show</span></span><span>
+</span><span id="line-31"></span><span>
+</span><span id="line-32"></span><span id="local-6989586621679137430"><span id="local-6989586621679137431"><span class="annot"><a href="GoPro.Command.DEVCString.html#joinMap"><span class="hs-identifier hs-type">joinMap</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Foldable</span></span><span> </span><span class="annot"><a href="#local-6989586621679137431"><span class="hs-identifier hs-type">f</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="hs-special">(</span><span class="annot"><a href="#local-6989586621679137430"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">BL.ByteString</span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621679137431"><span class="hs-identifier hs-type">f</span></a></span><span> </span><span class="annot"><a href="#local-6989586621679137430"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">BL.ByteString</span></span></span></span><span>
+</span><span id="line-33"></span><span id="joinMap"><span class="annot"><span class="annottext">joinMap :: (a -&gt; ByteString) -&gt; f a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#joinMap"><span class="hs-identifier hs-var hs-var">joinMap</span></a></span></span><span> </span><span id="local-6989586621679137357"><span class="annot"><span class="annottext">a -&gt; ByteString
+</span><a href="#local-6989586621679137357"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; [ByteString] -&gt; ByteString
+</span><span class="hs-identifier hs-var">BL.intercalate</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;\n&quot;</span></span><span> </span><span class="annot"><span class="annottext">([ByteString] -&gt; ByteString)
+-&gt; (f a -&gt; [ByteString]) -&gt; f a -&gt; ByteString
+forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
+</span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">(a -&gt; ByteString) -&gt; [a] -&gt; [ByteString]
+forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
+</span><span class="hs-identifier hs-var">fmap</span></span><span> </span><span class="annot"><span class="annottext">a -&gt; ByteString
+</span><a href="#local-6989586621679137357"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">([a] -&gt; [ByteString]) -&gt; (f a -&gt; [a]) -&gt; f a -&gt; [ByteString]
+forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
+</span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">f a -&gt; [a]
+forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; [a]
+</span><span class="hs-identifier hs-var">toList</span></span><span>
+</span><span id="line-34"></span><span>
+</span><span id="line-35"></span><span class="annot"><a href="GoPro.Command.DEVCString.html#showDEVC"><span class="hs-identifier hs-type">showDEVC</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="GoPro.DEVC.html#DEVC"><span class="hs-identifier hs-type">DEVC</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">BL.ByteString</span></span><span>
+</span><span id="line-36"></span><span id="showDEVC"><span class="annot"><span class="annottext">showDEVC :: DEVC -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#showDEVC"><span class="hs-identifier hs-var hs-var">showDEVC</span></a></span></span><span> </span><span class="annot"><a href="GoPro.DEVC.html#DEVC"><span class="hs-identifier hs-type">DEVC</span></a></span><span class="hs-special">{</span><span id="local-6989586621679137352"><span id="local-6989586621679137353"><span id="local-6989586621679137354"><span class="annot"><span class="annottext">Int
+[Char]
+Map [Char] Telemetry
+_dev_telems :: DEVC -&gt; Map [Char] Telemetry
+_dev_name :: DEVC -&gt; [Char]
+_dev_id :: DEVC -&gt; Int
+_dev_telems :: Map [Char] Telemetry
+_dev_name :: [Char]
+_dev_id :: Int
+</span><a href="GoPro.DEVC.html#_dev_telems"><span class="hs-glyph hs-var hs-var hs-var hs-var hs-var hs-var">..</span></a></span></span></span></span><span class="hs-special">}</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;Device &quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679137354"><span class="hs-identifier hs-var">_dev_id</span></a></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;: &quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">[Char] -&gt; ByteString
+</span><span class="hs-identifier hs-var">BC.pack</span></span><span> </span><span class="annot"><span class="annottext">[Char]
+</span><a href="#local-6989586621679137353"><span class="hs-identifier hs-var">_dev_name</span></a></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;\n&quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">(Telemetry -&gt; ByteString) -&gt; Map [Char] Telemetry -&gt; ByteString
+forall (f :: * -&gt; *) a.
+Foldable f =&gt;
+(a -&gt; ByteString) -&gt; f a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#joinMap"><span class="hs-identifier hs-var">joinMap</span></a></span><span> </span><span class="annot"><span class="annottext">Telemetry -&gt; ByteString
+</span><a href="#local-6989586621679137348"><span class="hs-identifier hs-var">showT</span></a></span><span> </span><span class="annot"><span class="annottext">Map [Char] Telemetry
+</span><a href="#local-6989586621679137352"><span class="hs-identifier hs-var">_dev_telems</span></a></span><span>
+</span><span id="line-37"></span><span>
+</span><span id="line-38"></span><span>  </span><span class="hs-keyword">where</span><span>
+</span><span id="line-39"></span><span>    </span><span id="local-6989586621679137348"><span class="annot"><span class="annottext">showT :: Telemetry -&gt; ByteString
+</span><a href="#local-6989586621679137348"><span class="hs-identifier hs-var hs-var">showT</span></a></span></span><span> </span><span class="annot"><a href="GoPro.DEVC.html#Telemetry"><span class="hs-identifier hs-type">Telemetry</span></a></span><span class="hs-special">{</span><span id="local-6989586621679137343"><span id="local-6989586621679137344"><span id="local-6989586621679137345"><span id="local-6989586621679137346"><span class="annot"><span class="annottext">Int
+[Char]
+Word64
+TVals
+_tele_values :: Telemetry -&gt; TVals
+_tele_name :: Telemetry -&gt; [Char]
+_tele_tsmp :: Telemetry -&gt; Int
+_tele_stmp :: Telemetry -&gt; Word64
+_tele_values :: TVals
+_tele_name :: [Char]
+_tele_tsmp :: Int
+_tele_stmp :: Word64
+</span><a href="GoPro.DEVC.html#_tele_values"><span class="hs-glyph hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">..</span></a></span></span></span></span></span><span class="hs-special">}</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;  &quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">[Char] -&gt; ByteString
+</span><span class="hs-identifier hs-var">BC.pack</span></span><span> </span><span class="annot"><span class="annottext">[Char]
+</span><a href="#local-6989586621679137344"><span class="hs-identifier hs-var">_tele_name</span></a></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot; - stmp:&quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Word64 -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="annot"><span class="annottext">Word64
+</span><a href="#local-6989586621679137346"><span class="hs-identifier hs-var">_tele_stmp</span></a></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot; tsmp:&quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679137345"><span class="hs-identifier hs-var">_tele_tsmp</span></a></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;\n&quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">TVals -&gt; ByteString
+</span><a href="#local-6989586621679137338"><span class="hs-identifier hs-var">showTVal</span></a></span><span> </span><span class="annot"><span class="annottext">TVals
+</span><a href="#local-6989586621679137343"><span class="hs-identifier hs-var">_tele_values</span></a></span><span>
+</span><span id="line-40"></span><span>
+</span><span id="line-41"></span><span>    </span><span id="local-6989586621679137338"><span class="annot"><span class="annottext">showTVal :: TVals -&gt; ByteString
+</span><a href="#local-6989586621679137338"><span class="hs-identifier hs-var hs-var">showTVal</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.DEVC.html#TVUnknown"><span class="hs-identifier hs-type">TVUnknown</span></a></span><span> </span><span id="local-6989586621679137336"><span class="annot"><span class="annottext">[Value]
+</span><a href="#local-6989586621679137336"><span class="hs-identifier hs-var">vals</span></a></span></span><span class="hs-special">)</span><span>           </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;    Unknown type\n&quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; [Value] -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#showValues"><span class="hs-identifier hs-var">showValues</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-number">6</span></span><span> </span><span class="annot"><span class="annottext">[Value]
+</span><a href="#local-6989586621679137336"><span class="hs-identifier hs-var">vals</span></a></span><span>
+</span><span id="line-42"></span><span>    </span><span class="annot"><a href="#local-6989586621679137338"><span class="hs-identifier hs-var">showTVal</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.DEVC.html#TVAccl"><span class="hs-identifier hs-type">TVAccl</span></a></span><span> </span><span class="annot"><a href="GoPro.DEVC.html#Accelerometer"><span class="hs-identifier hs-type">Accelerometer</span></a></span><span class="hs-special">{</span><span id="local-6989586621679137332"><span id="local-6989586621679137333"><span class="annot"><span class="annottext">Float
+[(Float, Float, Float)]
+_acc_vals :: Accelerometer -&gt; [(Float, Float, Float)]
+_acc_temp :: Accelerometer -&gt; Float
+_acc_vals :: [(Float, Float, Float)]
+_acc_temp :: Float
+</span><a href="GoPro.DEVC.html#_acc_vals"><span class="hs-glyph hs-var hs-var hs-var hs-var">..</span></a></span></span></span><span class="hs-special">}</span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;    Temp: &quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Float -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679137333"><span class="hs-identifier hs-var">_acc_temp</span></a></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot; and &quot;</span></span><span>
+</span><span id="line-43"></span><span>                                          </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[(Float, Float, Float)] -&gt; Int
+forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Int
+</span><span class="hs-identifier hs-var">length</span></span><span> </span><span class="annot"><span class="annottext">[(Float, Float, Float)]
+</span><a href="#local-6989586621679137332"><span class="hs-identifier hs-var">_acc_vals</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot; values like &quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">(Float, Float, Float) -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span class="annot"><span class="annottext">((Float, Float, Float) -&gt; ByteString)
+-&gt; ([(Float, Float, Float)] -&gt; (Float, Float, Float))
+-&gt; [(Float, Float, Float)]
+-&gt; ByteString
+forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
+</span><span class="hs-operator hs-var">.</span></span><span class="annot"><span class="annottext">[(Float, Float, Float)] -&gt; (Float, Float, Float)
+forall a. [a] -&gt; a
+</span><span class="hs-identifier hs-var">head</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[(Float, Float, Float)]
+</span><a href="#local-6989586621679137332"><span class="hs-identifier hs-var">_acc_vals</span></a></span><span>
+</span><span id="line-44"></span><span>    </span><span class="annot"><a href="#local-6989586621679137338"><span class="hs-identifier hs-var">showTVal</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.DEVC.html#TVGyro"><span class="hs-identifier hs-type">TVGyro</span></a></span><span> </span><span class="annot"><a href="GoPro.DEVC.html#Gyroscope"><span class="hs-identifier hs-type">Gyroscope</span></a></span><span class="hs-special">{</span><span id="local-6989586621679137324"><span id="local-6989586621679137325"><span class="annot"><span class="annottext">Float
+[(Float, Float, Float)]
+_gyro_vals :: Gyroscope -&gt; [(Float, Float, Float)]
+_gyro_temp :: Gyroscope -&gt; Float
+_gyro_vals :: [(Float, Float, Float)]
+_gyro_temp :: Float
+</span><a href="GoPro.DEVC.html#_gyro_vals"><span class="hs-glyph hs-var hs-var hs-var hs-var">..</span></a></span></span></span><span class="hs-special">}</span><span class="hs-special">)</span><span>     </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;    Temp: &quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Float -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679137325"><span class="hs-identifier hs-var">_gyro_temp</span></a></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot; and &quot;</span></span><span>
+</span><span id="line-45"></span><span>                                          </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[(Float, Float, Float)] -&gt; Int
+forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Int
+</span><span class="hs-identifier hs-var">length</span></span><span> </span><span class="annot"><span class="annottext">[(Float, Float, Float)]
+</span><a href="#local-6989586621679137324"><span class="hs-identifier hs-var">_gyro_vals</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot; values like &quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">(Float, Float, Float) -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span class="annot"><span class="annottext">((Float, Float, Float) -&gt; ByteString)
+-&gt; ([(Float, Float, Float)] -&gt; (Float, Float, Float))
+-&gt; [(Float, Float, Float)]
+-&gt; ByteString
+forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
+</span><span class="hs-operator hs-var">.</span></span><span class="annot"><span class="annottext">[(Float, Float, Float)] -&gt; (Float, Float, Float)
+forall a. [a] -&gt; a
+</span><span class="hs-identifier hs-var">head</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[(Float, Float, Float)]
+</span><a href="#local-6989586621679137324"><span class="hs-identifier hs-var">_gyro_vals</span></a></span><span>
+</span><span id="line-46"></span><span>    </span><span class="annot"><a href="#local-6989586621679137338"><span class="hs-identifier hs-var">showTVal</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.DEVC.html#TVFaces"><span class="hs-identifier hs-type">TVFaces</span></a></span><span> </span><span id="local-6989586621679137320"><span class="annot"><span class="annottext">[Face]
+</span><a href="#local-6989586621679137320"><span class="hs-identifier hs-var">fs</span></a></span></span><span class="hs-special">)</span><span>               </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;    Faces:&quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="hs-special">(</span><span class="hs-keyword">if</span><span> </span><span class="annot"><span class="annottext">[Face] -&gt; Bool
+forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Bool
+</span><span class="hs-identifier hs-var">null</span></span><span> </span><span class="annot"><span class="annottext">[Face]
+</span><a href="#local-6989586621679137320"><span class="hs-identifier hs-var">fs</span></a></span><span> </span><span class="hs-keyword">then</span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;&quot;</span></span><span> </span><span class="hs-keyword">else</span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;\n&quot;</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span>
+</span><span id="line-47"></span><span>                                          </span><span class="annot"><span class="annottext">(Face -&gt; ByteString) -&gt; [Face] -&gt; ByteString
+forall (f :: * -&gt; *) a.
+Foldable f =&gt;
+(a -&gt; ByteString) -&gt; f a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#joinMap"><span class="hs-identifier hs-var">joinMap</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-special">(</span><span class="hs-glyph">\</span><span class="annot"><a href="GoPro.DEVC.html#Face"><span class="hs-identifier hs-type">Face</span></a></span><span class="hs-special">{</span><span id="local-6989586621679137312"><span id="local-6989586621679137313"><span id="local-6989586621679137314"><span id="local-6989586621679137315"><span id="local-6989586621679137316"><span id="local-6989586621679137317"><span class="annot"><span class="annottext">Float
+Int
+_face_smile :: Face -&gt; Float
+_face_h :: Face -&gt; Float
+_face_w :: Face -&gt; Float
+_face_y :: Face -&gt; Float
+_face_x :: Face -&gt; Float
+_face_id :: Face -&gt; Int
+_face_smile :: Float
+_face_h :: Float
+_face_w :: Float
+_face_y :: Float
+_face_x :: Float
+_face_id :: Int
+</span><a href="GoPro.DEVC.html#_face_smile"><span class="hs-glyph hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">..</span></a></span></span></span></span></span></span></span><span class="hs-special">}</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;        &quot;</span></span><span>
+</span><span id="line-48"></span><span>                                                     </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Float -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679137316"><span class="hs-identifier hs-var">_face_x</span></a></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;x&quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Float -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679137315"><span class="hs-identifier hs-var">_face_y</span></a></span><span>
+</span><span id="line-49"></span><span>                                                     </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;, &quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Float -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679137314"><span class="hs-identifier hs-var">_face_w</span></a></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;x&quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Float -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679137313"><span class="hs-identifier hs-var">_face_h</span></a></span><span>
+</span><span id="line-50"></span><span>                                                     </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;, smile=&quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Float -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679137312"><span class="hs-identifier hs-var">_face_smile</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[Face]
+</span><a href="#local-6989586621679137320"><span class="hs-identifier hs-var">fs</span></a></span><span>
+</span><span id="line-51"></span><span>    </span><span class="annot"><a href="#local-6989586621679137338"><span class="hs-identifier hs-var">showTVal</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.DEVC.html#TVGPS"><span class="hs-identifier hs-type">TVGPS</span></a></span><span> </span><span class="annot"><a href="GoPro.DEVC.html#GPS"><span class="hs-identifier hs-type">GPS</span></a></span><span class="hs-special">{</span><span id="local-6989586621679137301"><span id="local-6989586621679137302"><span id="local-6989586621679137303"><span class="annot"><span class="annottext">Int
+[GPSReading]
+UTCTime
+_gps_readings :: GPS -&gt; [GPSReading]
+_gps_time :: GPS -&gt; UTCTime
+_gps_p :: GPS -&gt; Int
+_gps_readings :: [GPSReading]
+_gps_time :: UTCTime
+_gps_p :: Int
+</span><a href="GoPro.DEVC.html#_gps_readings"><span class="hs-glyph hs-var hs-var hs-var hs-var hs-var hs-var">..</span></a></span></span></span></span><span class="hs-special">}</span><span class="hs-special">)</span><span>            </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;    GPS time=&quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">UTCTime -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="annot"><span class="annottext">UTCTime
+</span><a href="#local-6989586621679137302"><span class="hs-identifier hs-var">_gps_time</span></a></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot; p=&quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679137303"><span class="hs-identifier hs-var">_gps_p</span></a></span><span>
+</span><span id="line-52"></span><span>                                                    </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;, len(rs)=&quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[GPSReading] -&gt; Int
+forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Int
+</span><span class="hs-identifier hs-var">length</span></span><span> </span><span class="annot"><span class="annottext">[GPSReading]
+</span><a href="#local-6989586621679137301"><span class="hs-identifier hs-var">_gps_readings</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-53"></span><span>                                                    </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;\n        hd=&quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">GPSReading -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#showGPS"><span class="hs-identifier hs-var">showGPS</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[GPSReading] -&gt; GPSReading
+forall a. [a] -&gt; a
+</span><span class="hs-identifier hs-var">head</span></span><span> </span><span class="annot"><span class="annottext">[GPSReading]
+</span><a href="#local-6989586621679137301"><span class="hs-identifier hs-var">_gps_readings</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-54"></span><span>    </span><span class="annot"><a href="#local-6989586621679137338"><span class="hs-identifier hs-var">showTVal</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.DEVC.html#TVScene"><span class="hs-identifier hs-type">TVScene</span></a></span><span> </span><span id="local-6989586621679137295"><span class="annot"><span class="annottext">[Map Location Float]
+</span><a href="#local-6989586621679137295"><span class="hs-identifier hs-var">ss</span></a></span></span><span class="hs-special">)</span><span>               </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;   Scenes, found &quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[Map Location Float] -&gt; Int
+forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Int
+</span><span class="hs-identifier hs-var">length</span></span><span> </span><span class="annot"><span class="annottext">[Map Location Float]
+</span><a href="#local-6989586621679137295"><span class="hs-identifier hs-var">ss</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;, first:\n&quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span>
+</span><span id="line-55"></span><span>                                          </span><span class="annot"><span class="annottext">((Location, Float) -&gt; ByteString)
+-&gt; [(Location, Float)] -&gt; ByteString
+forall (f :: * -&gt; *) a.
+Foldable f =&gt;
+(a -&gt; ByteString) -&gt; f a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#joinMap"><span class="hs-identifier hs-var">joinMap</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-special">(</span><span class="hs-glyph">\</span><span class="hs-special">(</span><span id="local-6989586621679137294"><span class="annot"><span class="annottext">Location
+</span><a href="#local-6989586621679137294"><span class="hs-identifier hs-var">k</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679137293"><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679137293"><span class="hs-identifier hs-var">v</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span>
+</span><span id="line-56"></span><span>                                                      </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;        &quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Location -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="annot"><span class="annottext">Location
+</span><a href="#local-6989586621679137294"><span class="hs-identifier hs-var">k</span></a></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;=&quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Float -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679137293"><span class="hs-identifier hs-var">v</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span>
+</span><span id="line-57"></span><span>                                           </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Map Location Float -&gt; [(Location, Float)]
+forall k a. Map k a -&gt; [(k, a)]
+</span><span class="hs-identifier hs-var">Map.assocs</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[Map Location Float] -&gt; Map Location Float
+forall a. [a] -&gt; a
+</span><span class="hs-identifier hs-var">head</span></span><span> </span><span class="annot"><span class="annottext">[Map Location Float]
+</span><a href="#local-6989586621679137295"><span class="hs-identifier hs-var">ss</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span>
+</span><span id="line-58"></span><span>    </span><span class="annot"><a href="#local-6989586621679137338"><span class="hs-identifier hs-var">showTVal</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.DEVC.html#TVAudioLevel"><span class="hs-identifier hs-type">TVAudioLevel</span></a></span><span> </span><span class="annot"><a href="GoPro.DEVC.html#AudioLevel"><span class="hs-identifier hs-type">AudioLevel</span></a></span><span class="hs-special">{</span><span id="local-6989586621679137288"><span id="local-6989586621679137289"><span class="annot"><span class="annottext">[Int]
+_audio_peak :: AudioLevel -&gt; [Int]
+_audio_rms :: AudioLevel -&gt; [Int]
+_audio_peak :: [Int]
+_audio_rms :: [Int]
+</span><a href="GoPro.DEVC.html#_audio_peak"><span class="hs-glyph hs-var hs-var hs-var hs-var">..</span></a></span></span></span><span class="hs-special">}</span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;    Audio levels:\n&quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span>
+</span><span id="line-59"></span><span>                                             </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;      rms:  &quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[Int] -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="annot"><span class="annottext">[Int]
+</span><a href="#local-6989586621679137289"><span class="hs-identifier hs-var">_audio_rms</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;\n&quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span>
+</span><span id="line-60"></span><span>                                             </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;      peak: &quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[Int] -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="annot"><span class="annottext">[Int]
+</span><a href="#local-6989586621679137288"><span class="hs-identifier hs-var">_audio_peak</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-61"></span><span>
+</span><span id="line-62"></span><span class="annot"><a href="GoPro.Command.DEVCString.html#showGPS"><span class="hs-identifier hs-type">showGPS</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="GoPro.DEVC.html#GPSReading"><span class="hs-identifier hs-type">GPSReading</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">BL.ByteString</span></span><span>
+</span><span id="line-63"></span><span id="showGPS"><span class="annot"><span class="annottext">showGPS :: GPSReading -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#showGPS"><span class="hs-identifier hs-var hs-var">showGPS</span></a></span></span><span> </span><span class="annot"><a href="GoPro.DEVC.html#GPSReading"><span class="hs-identifier hs-type">GPSReading</span></a></span><span class="hs-special">{</span><span id="local-6989586621679137280"><span id="local-6989586621679137281"><span id="local-6989586621679137282"><span id="local-6989586621679137283"><span id="local-6989586621679137284"><span class="annot"><span class="annottext">Double
+_gpsr_speed3d :: GPSReading -&gt; Double
+_gpsr_speed2d :: GPSReading -&gt; Double
+_gpsr_alt :: GPSReading -&gt; Double
+_gpsr_lon :: GPSReading -&gt; Double
+_gpsr_lat :: GPSReading -&gt; Double
+_gpsr_speed3d :: Double
+_gpsr_speed2d :: Double
+_gpsr_alt :: Double
+_gpsr_lon :: Double
+_gpsr_lat :: Double
+</span><a href="GoPro.DEVC.html#_gpsr_speed3d"><span class="hs-glyph hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">..</span></a></span></span></span></span></span></span><span class="hs-special">}</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;(&quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Double -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679137284"><span class="hs-identifier hs-var">_gpsr_lat</span></a></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;,&quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Double -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679137283"><span class="hs-identifier hs-var">_gpsr_lon</span></a></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot;) alt=&quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Double -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679137282"><span class="hs-identifier hs-var">_gpsr_alt</span></a></span><span>
+</span><span id="line-64"></span><span>                         </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot; spd2d=&quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Double -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679137281"><span class="hs-identifier hs-var">_gpsr_speed2d</span></a></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><span class="hs-string">&quot; spd3d=&quot;</span></span><span> </span><span class="annot"><span class="annottext">ByteString -&gt; ByteString -&gt; ByteString
+forall a. Semigroup a =&gt; a -&gt; a -&gt; a
+</span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Double -&gt; ByteString
+forall a. Show a =&gt; a -&gt; ByteString
+</span><a href="GoPro.Command.DEVCString.html#tshow"><span class="hs-identifier hs-var">tshow</span></a></span><span> </span><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679137280"><span class="hs-identifier hs-var">_gpsr_speed3d</span></a></span><span>
+</span><span id="line-65"></span></pre></body></html>

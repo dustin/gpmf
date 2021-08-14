@@ -49,7 +49,7 @@ U	UTC Date and Time string	char utcdate[16]	Date + UTC Time format yymmddhhmmss.
 null	Nested metadata	uint32_t	The data within is GPMF structured KLV data
 -}</span><span>
 </span><span id="line-51"></span><span>
-</span><span id="line-52"></span><span class="hs-keyword">newtype</span><span> </span><span id="FourCC"><span class="annot"><a href="GoPro.GPMF.html#FourCC"><span class="hs-identifier hs-var">FourCC</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="FourCC"><span class="annot"><a href="GoPro.GPMF.html#FourCC"><span class="hs-identifier hs-var">FourCC</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Char</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Char</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Char</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Char</span></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679135839"><span id="local-6989586621679135841"><span id="local-6989586621679135843"><span class="annot"><span class="annottext">Int -&gt; FourCC -&gt; ShowS
+</span><span id="line-52"></span><span class="hs-keyword">newtype</span><span> </span><span id="FourCC"><span class="annot"><a href="GoPro.GPMF.html#FourCC"><span class="hs-identifier hs-var">FourCC</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="FourCC"><span class="annot"><a href="GoPro.GPMF.html#FourCC"><span class="hs-identifier hs-var">FourCC</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Char</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Char</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Char</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Char</span></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679136717"><span id="local-6989586621679136719"><span id="local-6989586621679136721"><span class="annot"><span class="annottext">Int -&gt; FourCC -&gt; ShowS
 [FourCC] -&gt; ShowS
 FourCC -&gt; String
 (Int -&gt; FourCC -&gt; ShowS)
@@ -62,7 +62,7 @@ show :: FourCC -&gt; String
 $cshow :: FourCC -&gt; String
 showsPrec :: Int -&gt; FourCC -&gt; ShowS
 $cshowsPrec :: Int -&gt; FourCC -&gt; ShowS
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679135834"><span id="local-6989586621679135836"><span class="annot"><span class="annottext">FourCC -&gt; FourCC -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679136712"><span id="local-6989586621679136714"><span class="annot"><span class="annottext">FourCC -&gt; FourCC -&gt; Bool
 (FourCC -&gt; FourCC -&gt; Bool)
 -&gt; (FourCC -&gt; FourCC -&gt; Bool) -&gt; Eq FourCC
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -73,17 +73,17 @@ $c== :: FourCC -&gt; FourCC -&gt; Bool
 </span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">)</span><span>
 </span><span id="line-53"></span><span>
 </span><span id="line-54"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><span class="hs-identifier hs-type">IsString</span></span><span> </span><span class="annot"><a href="GoPro.GPMF.html#FourCC"><span class="hs-identifier hs-type">FourCC</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-55"></span><span>  </span><span id="local-6989586621679135830"><span class="annot"><span class="annottext">fromString :: String -&gt; FourCC
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var">fromString</span></span></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679135829"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679135829"><span class="hs-identifier hs-var">a</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679135828"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679135828"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679135827"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679135827"><span class="hs-identifier hs-var">c</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679135826"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679135826"><span class="hs-identifier hs-var">d</span></a></span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Char, Char, Char, Char) -&gt; FourCC
+</span><span id="line-55"></span><span>  </span><span id="local-6989586621679136708"><span class="annot"><span class="annottext">fromString :: String -&gt; FourCC
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var">fromString</span></span></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679136707"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679136707"><span class="hs-identifier hs-var">a</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679136706"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679136706"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679136705"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679136705"><span class="hs-identifier hs-var">c</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679136704"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679136704"><span class="hs-identifier hs-var">d</span></a></span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Char, Char, Char, Char) -&gt; FourCC
 </span><a href="GoPro.GPMF.html#FourCC"><span class="hs-identifier hs-var">FourCC</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679135829"><span class="hs-identifier hs-var">a</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679135828"><span class="hs-identifier hs-var">b</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679135827"><span class="hs-identifier hs-var">c</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679135826"><span class="hs-identifier hs-var">d</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679136707"><span class="hs-identifier hs-var">a</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679136706"><span class="hs-identifier hs-var">b</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679136705"><span class="hs-identifier hs-var">c</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679136704"><span class="hs-identifier hs-var">d</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-56"></span><span>  </span><span class="annot"><span class="hs-identifier hs-var">fromString</span></span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-identifier">_</span></span><span>         </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String -&gt; FourCC
 forall a. HasCallStack =&gt; String -&gt; a
@@ -109,7 +109,7 @@ forall a. HasCallStack =&gt; String -&gt; a
 </span><span id="line-74"></span><span>    </span><span class="hs-glyph">|</span><span> </span><span id="GComplex"><span class="annot"><a href="GoPro.GPMF.html#GComplex"><span class="hs-identifier hs-var">GComplex</span></a></span></span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span class="hs-special">]</span><span>
 </span><span id="line-75"></span><span>    </span><span class="hs-glyph">|</span><span> </span><span id="GNested"><span class="annot"><a href="GoPro.GPMF.html#GNested"><span class="hs-identifier hs-var">GNested</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#FourCC"><span class="hs-identifier hs-type">FourCC</span></a></span><span class="hs-special">,</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span class="hs-special">]</span><span class="hs-special">)</span><span>
 </span><span id="line-76"></span><span>    </span><span class="hs-glyph">|</span><span> </span><span id="GUnknown"><span class="annot"><a href="GoPro.GPMF.html#GUnknown"><span class="hs-identifier hs-var">GUnknown</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Char</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span class="hs-special">,</span><span> </span><span class="hs-special">[</span><span class="hs-special">[</span><span class="annot"><span class="hs-identifier hs-type">Word8</span></span><span class="hs-special">]</span><span class="hs-special">]</span><span class="hs-special">)</span><span>
-</span><span id="line-77"></span><span>    </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679135800"><span id="local-6989586621679135802"><span id="local-6989586621679135804"><span class="annot"><span class="annottext">Int -&gt; Value -&gt; ShowS
+</span><span id="line-77"></span><span>    </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679136678"><span id="local-6989586621679136680"><span id="local-6989586621679136682"><span class="annot"><span class="annottext">Int -&gt; Value -&gt; ShowS
 [Value] -&gt; ShowS
 Value -&gt; String
 (Int -&gt; Value -&gt; ShowS)
@@ -158,22 +158,22 @@ forall (f :: * -&gt; *) a. Alternative f =&gt; f a -&gt; f [a]
 </span><span id="line-92"></span><span class="annot"><a href="GoPro.GPMF.html#parseNested"><span class="hs-identifier hs-type">parseNested</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#Parser"><span class="hs-identifier hs-type">Parser</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#FourCC"><span class="hs-identifier hs-type">FourCC</span></a></span><span class="hs-special">,</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span class="hs-special">]</span><span class="hs-special">)</span><span>
 </span><span id="line-93"></span><span id="parseNested"><span class="annot"><span class="annottext">parseNested :: StateT String Parser (FourCC, [Value])
 </span><a href="GoPro.GPMF.html#parseNested"><span class="hs-identifier hs-var hs-var">parseNested</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-94"></span><span>  </span><span id="local-6989586621679135793"><span class="annot"><span class="annottext">FourCC
-</span><a href="#local-6989586621679135793"><span class="hs-identifier hs-var">fourcc</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Parser ByteString FourCC -&gt; StateT String Parser FourCC
+</span><span id="line-94"></span><span>  </span><span id="local-6989586621679136671"><span class="annot"><span class="annottext">FourCC
+</span><a href="#local-6989586621679136671"><span class="hs-identifier hs-var">fourcc</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Parser ByteString FourCC -&gt; StateT String Parser FourCC
 forall (t :: (* -&gt; *) -&gt; * -&gt; *) (m :: * -&gt; *) a.
 (MonadTrans t, Monad m) =&gt;
 m a -&gt; t m a
 </span><span class="hs-identifier hs-var">lift</span></span><span> </span><span class="annot"><span class="annottext">Parser ByteString FourCC
 </span><a href="GoPro.GPMF.html#parseFourCC"><span class="hs-identifier hs-var">parseFourCC</span></a></span><span>
-</span><span id="line-95"></span><span>  </span><span id="local-6989586621679135791"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679135791"><span class="hs-identifier hs-var">t</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Parser ByteString Char -&gt; StateT String Parser Char
+</span><span id="line-95"></span><span>  </span><span id="local-6989586621679136669"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679136669"><span class="hs-identifier hs-var">t</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Parser ByteString Char -&gt; StateT String Parser Char
 forall (t :: (* -&gt; *) -&gt; * -&gt; *) (m :: * -&gt; *) a.
 (MonadTrans t, Monad m) =&gt;
 m a -&gt; t m a
 </span><span class="hs-identifier hs-var">lift</span></span><span> </span><span class="annot"><span class="annottext">Parser ByteString Char
 </span><span class="hs-identifier hs-var">AC.anyChar</span></span><span>
-</span><span id="line-96"></span><span>  </span><span id="local-6989586621679135789"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135789"><span class="hs-identifier hs-var">ss</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Word8 -&gt; Int
+</span><span id="line-96"></span><span>  </span><span id="local-6989586621679136667"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136667"><span class="hs-identifier hs-var">ss</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Word8 -&gt; Int
 forall a b. (Integral a, Num b) =&gt; a -&gt; b
 </span><span class="hs-identifier hs-var">fromIntegral</span></span><span> </span><span class="annot"><span class="annottext">(Word8 -&gt; Int)
 -&gt; StateT String Parser Word8 -&gt; StateT String Parser Int
@@ -184,8 +184,8 @@ forall (t :: (* -&gt; *) -&gt; * -&gt; *) (m :: * -&gt; *) a.
 m a -&gt; t m a
 </span><span class="hs-identifier hs-var">lift</span></span><span> </span><span class="annot"><span class="annottext">Parser ByteString Word8
 </span><span class="hs-identifier hs-var">A.anyWord8</span></span><span>
-</span><span id="line-97"></span><span>  </span><span id="local-6989586621679135788"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135788"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Word16 -&gt; Int
+</span><span id="line-97"></span><span>  </span><span id="local-6989586621679136666"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136666"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Word16 -&gt; Int
 forall a b. (Integral a, Num b) =&gt; a -&gt; b
 </span><span class="hs-identifier hs-var">fromIntegral</span></span><span> </span><span class="annot"><span class="annottext">(Word16 -&gt; Int)
 -&gt; StateT String Parser Word16 -&gt; StateT String Parser Int
@@ -196,17 +196,17 @@ forall (t :: (* -&gt; *) -&gt; * -&gt; *) (m :: * -&gt; *) a.
 m a -&gt; t m a
 </span><span class="hs-identifier hs-var">lift</span></span><span> </span><span class="annot"><span class="annottext">Parser ByteString Word16
 </span><span class="hs-identifier hs-var">anyWord16be</span></span><span>
-</span><span id="line-98"></span><span>  </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621679135787"><span class="annot"><span class="annottext">padding :: Int
-</span><a href="#local-6989586621679135787"><span class="hs-identifier hs-var hs-var">padding</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
+</span><span id="line-98"></span><span>  </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621679136665"><span class="annot"><span class="annottext">padding :: Int
+</span><a href="#local-6989586621679136665"><span class="hs-identifier hs-var hs-var">padding</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">4</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-glyph hs-var">-</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int -&gt; Int
 forall a b. (Integral a, Num b) =&gt; a -&gt; b
 </span><span class="hs-identifier hs-var">fromIntegral</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135789"><span class="hs-identifier hs-var">ss</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><a href="#local-6989586621679136667"><span class="hs-identifier hs-var">ss</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">*</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135788"><span class="hs-identifier hs-var">rpt</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><a href="#local-6989586621679136666"><span class="hs-identifier hs-var">rpt</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Integral a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">`mod`</span></span><span> </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">4</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
@@ -214,25 +214,25 @@ forall a. Integral a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">`mod`</span></span><span> </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">4</span></span><span>
 </span><span id="line-99"></span><span>
-</span><span id="line-100"></span><span>  </span><span id="local-6989586621679135784"><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679135784"><span class="hs-identifier hs-var">stuffs</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Char -&gt; Int -&gt; Int -&gt; Parser [Value]
+</span><span id="line-100"></span><span>  </span><span id="local-6989586621679136662"><span class="annot"><span class="annottext">[Value]
+</span><a href="#local-6989586621679136662"><span class="hs-identifier hs-var">stuffs</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Char -&gt; Int -&gt; Int -&gt; Parser [Value]
 </span><a href="GoPro.GPMF.html#parseValue"><span class="hs-identifier hs-var">parseValue</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679135791"><span class="hs-identifier hs-var">t</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135789"><span class="hs-identifier hs-var">ss</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135788"><span class="hs-identifier hs-var">rpt</span></a></span><span>
+</span><a href="#local-6989586621679136669"><span class="hs-identifier hs-var">t</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136667"><span class="hs-identifier hs-var">ss</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136666"><span class="hs-identifier hs-var">rpt</span></a></span><span>
 </span><span id="line-101"></span><span>
 </span><span id="line-102"></span><span>  </span><span class="hs-keyword">case</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">FourCC
-</span><a href="#local-6989586621679135793"><span class="hs-identifier hs-var">fourcc</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679135784"><span class="hs-identifier hs-var">stuffs</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">of</span><span>
+</span><a href="#local-6989586621679136671"><span class="hs-identifier hs-var">fourcc</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">[Value]
+</span><a href="#local-6989586621679136662"><span class="hs-identifier hs-var">stuffs</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">of</span><span>
 </span><span id="line-103"></span><span>    </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#FourCC"><span class="hs-identifier hs-type">FourCC</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Char
 </span><span class="hs-char">'T'</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Char
 </span><span class="hs-char">'Y'</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Char
 </span><span class="hs-char">'P'</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Char
-</span><span class="hs-char">'E'</span></span><span class="hs-special">)</span><span class="hs-special">,</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#GString"><span class="hs-identifier hs-type">GString</span></a></span><span> </span><span id="local-6989586621679135782"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679135782"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">]</span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">String -&gt; StateT String Parser ()
+</span><span class="hs-char">'E'</span></span><span class="hs-special">)</span><span class="hs-special">,</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#GString"><span class="hs-identifier hs-type">GString</span></a></span><span> </span><span id="local-6989586621679136660"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679136660"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">]</span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">String -&gt; StateT String Parser ()
 forall s (m :: * -&gt; *). MonadState s m =&gt; s -&gt; m ()
 </span><span class="hs-identifier hs-var">put</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679135782"><span class="hs-identifier hs-var">x</span></a></span><span>
+</span><a href="#local-6989586621679136660"><span class="hs-identifier hs-var">x</span></a></span><span>
 </span><span id="line-104"></span><span>    </span><span class="annot"><span class="annottext">(FourCC, [Value])
 </span><span class="hs-identifier">_</span></span><span>                                          </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">() -&gt; StateT String Parser ()
 forall (f :: * -&gt; *) a. Applicative f =&gt; a -&gt; f a
@@ -249,18 +249,18 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Parser ByteString Word8 -&gt; Parser ByteString [Word8]
 forall (m :: * -&gt; *) a. Applicative m =&gt; Int -&gt; m a -&gt; m [a]
 </span><span class="hs-identifier hs-var">replicateM</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135787"><span class="hs-identifier hs-var">padding</span></a></span><span> </span><span class="annot"><span class="annottext">Parser ByteString Word8
+</span><a href="#local-6989586621679136665"><span class="hs-identifier hs-var">padding</span></a></span><span> </span><span class="annot"><span class="annottext">Parser ByteString Word8
 </span><span class="hs-identifier hs-var">A.anyWord8</span></span><span>
 </span><span id="line-107"></span><span>  </span><span class="annot"><span class="annottext">(FourCC, [Value]) -&gt; StateT String Parser (FourCC, [Value])
 forall (f :: * -&gt; *) a. Applicative f =&gt; a -&gt; f a
 </span><span class="hs-identifier hs-var">pure</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">FourCC
-</span><a href="#local-6989586621679135793"><span class="hs-identifier hs-var">fourcc</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679135784"><span class="hs-identifier hs-var">stuffs</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679136671"><span class="hs-identifier hs-var">fourcc</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">[Value]
+</span><a href="#local-6989586621679136662"><span class="hs-identifier hs-var">stuffs</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-108"></span><span>
 </span><span id="line-109"></span><span class="annot"><a href="GoPro.GPMF.html#parseString"><span class="hs-identifier hs-type">parseString</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">A.Parser</span></span><span> </span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span>
 </span><span id="line-110"></span><span id="parseString"><span class="annot"><span class="annottext">parseString :: Int -&gt; Parser Value
-</span><a href="GoPro.GPMF.html#parseString"><span class="hs-identifier hs-var hs-var">parseString</span></a></span></span><span> </span><span id="local-6989586621679135780"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135780"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String -&gt; Value
+</span><a href="GoPro.GPMF.html#parseString"><span class="hs-identifier hs-var hs-var">parseString</span></a></span></span><span> </span><span id="local-6989586621679136658"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136658"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String -&gt; Value
 </span><a href="GoPro.GPMF.html#GString"><span class="hs-identifier hs-var">GString</span></a></span><span> </span><span class="annot"><span class="annottext">(String -&gt; Value) -&gt; ShowS -&gt; String -&gt; Value
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">ShowS
@@ -281,7 +281,7 @@ forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-operator hs-var">&lt;$&gt;</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Parser ByteString Char -&gt; Parser ByteString String
 forall (m :: * -&gt; *) a. Applicative m =&gt; Int -&gt; m a -&gt; m [a]
 </span><span class="hs-identifier hs-var">replicateM</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135780"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Parser ByteString Char
+</span><a href="#local-6989586621679136658"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Parser ByteString Char
 </span><span class="hs-identifier hs-var">AC.anyChar</span></span><span>
 </span><span id="line-111"></span><span>
 </span><span id="line-112"></span><span class="annot"><a href="GoPro.GPMF.html#parseFloat"><span class="hs-identifier hs-type">parseFloat</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">A.Parser</span></span><span> </span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span>
@@ -300,12 +300,12 @@ forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-identifier hs-var">A.take</span></span><span> </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">4</span></span><span>
 </span><span id="line-114"></span><span>
-</span><span id="line-115"></span><span id="local-6989586621679135862"><span class="annot"><a href="GoPro.GPMF.html#replicatedParser"><span class="hs-identifier hs-type">replicatedParser</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">A.Parser</span></span><span> </span><span class="annot"><a href="#local-6989586621679135862"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">(</span><span class="hs-special">[</span><span class="annot"><a href="#local-6989586621679135862"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#Parser"><span class="hs-identifier hs-type">Parser</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span class="hs-special">]</span></span><span>
+</span><span id="line-115"></span><span id="local-6989586621679136740"><span class="annot"><a href="GoPro.GPMF.html#replicatedParser"><span class="hs-identifier hs-type">replicatedParser</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">A.Parser</span></span><span> </span><span class="annot"><a href="#local-6989586621679136740"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">(</span><span class="hs-special">[</span><span class="annot"><a href="#local-6989586621679136740"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#Parser"><span class="hs-identifier hs-type">Parser</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span class="hs-special">]</span></span><span>
 </span><span id="line-116"></span><span id="replicatedParser"><span class="annot"><span class="annottext">replicatedParser :: Int -&gt; Int -&gt; Int -&gt; Parser a -&gt; ([a] -&gt; Value) -&gt; Parser [Value]
 </span><a href="GoPro.GPMF.html#replicatedParser"><span class="hs-identifier hs-var hs-var">replicatedParser</span></a></span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><span class="hs-number">0</span></span><span> </span><span id="local-6989586621679135772"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135772"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679135771"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135771"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="annot"><span class="annottext">Parser a
+</span><span class="hs-number">0</span></span><span> </span><span id="local-6989586621679136650"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136650"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679136649"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136649"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="annot"><span class="annottext">Parser a
 </span><span class="hs-identifier">_</span></span><span> </span><span class="annot"><span class="annottext">[a] -&gt; Value
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Parser ByteString [Value] -&gt; Parser [Value]
 forall (t :: (* -&gt; *) -&gt; * -&gt; *) (m :: * -&gt; *) a.
@@ -317,24 +317,24 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Parser ByteString Word8 -&gt; Parser ByteString [Word8]
 forall (m :: * -&gt; *) a. Applicative m =&gt; Int -&gt; m a -&gt; m [a]
 </span><span class="hs-identifier hs-var">replicateM</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135772"><span class="hs-identifier hs-var">l</span></a></span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><a href="#local-6989586621679136650"><span class="hs-identifier hs-var">l</span></a></span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">*</span></span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135771"><span class="hs-identifier hs-var">rpt</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Parser ByteString Word8
+</span><a href="#local-6989586621679136649"><span class="hs-identifier hs-var">rpt</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Parser ByteString Word8
 </span><span class="hs-identifier hs-var">A.anyWord8</span></span><span> </span><span class="annot"><span class="annottext">Parser ByteString [Word8]
 -&gt; Parser ByteString [Value] -&gt; Parser ByteString [Value]
 forall (m :: * -&gt; *) a b. Monad m =&gt; m a -&gt; m b -&gt; m b
 </span><span class="hs-operator hs-var">&gt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Parser ByteString [Value]
 forall (f :: * -&gt; *) a. Applicative f =&gt; a -&gt; f a
 </span><span class="hs-identifier hs-var">pure</span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>
-</span><span id="line-117"></span><span class="annot"><a href="GoPro.GPMF.html#replicatedParser"><span class="hs-identifier hs-var">replicatedParser</span></a></span><span> </span><span id="local-6989586621679135770"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135770"><span class="hs-identifier hs-var">one</span></a></span></span><span> </span><span id="local-6989586621679135769"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135769"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679135768"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135768"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span id="local-6989586621679135767"><span class="annot"><span class="annottext">Parser a
-</span><a href="#local-6989586621679135767"><span class="hs-identifier hs-var">p</span></a></span></span><span> </span><span id="local-6989586621679135766"><span class="annot"><span class="annottext">[a] -&gt; Value
-</span><a href="#local-6989586621679135766"><span class="hs-identifier hs-var">cons</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-118"></span><span>  </span><span id="local-6989586621679135765"><span class="annot"><span class="annottext">[[a]]
-</span><a href="#local-6989586621679135765"><span class="hs-identifier hs-var">ns</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Parser ByteString [[a]] -&gt; StateT String Parser [[a]]
+</span><span id="line-117"></span><span class="annot"><a href="GoPro.GPMF.html#replicatedParser"><span class="hs-identifier hs-var">replicatedParser</span></a></span><span> </span><span id="local-6989586621679136648"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136648"><span class="hs-identifier hs-var">one</span></a></span></span><span> </span><span id="local-6989586621679136647"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136647"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679136646"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136646"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span id="local-6989586621679136645"><span class="annot"><span class="annottext">Parser a
+</span><a href="#local-6989586621679136645"><span class="hs-identifier hs-var">p</span></a></span></span><span> </span><span id="local-6989586621679136644"><span class="annot"><span class="annottext">[a] -&gt; Value
+</span><a href="#local-6989586621679136644"><span class="hs-identifier hs-var">cons</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-118"></span><span>  </span><span id="local-6989586621679136643"><span class="annot"><span class="annottext">[[a]]
+</span><a href="#local-6989586621679136643"><span class="hs-identifier hs-var">ns</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Parser ByteString [[a]] -&gt; StateT String Parser [[a]]
 forall (t :: (* -&gt; *) -&gt; * -&gt; *) (m :: * -&gt; *) a.
 (MonadTrans t, Monad m) =&gt;
 m a -&gt; t m a
@@ -344,21 +344,21 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Parser ByteString [a] -&gt; Parser ByteString [[a]]
 forall (m :: * -&gt; *) a. Applicative m =&gt; Int -&gt; m a -&gt; m [a]
 </span><span class="hs-identifier hs-var">replicateM</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135768"><span class="hs-identifier hs-var">rpt</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int -&gt; Parser a -&gt; Parser ByteString [a]
+</span><a href="#local-6989586621679136646"><span class="hs-identifier hs-var">rpt</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int -&gt; Parser a -&gt; Parser ByteString [a]
 forall (m :: * -&gt; *) a. Applicative m =&gt; Int -&gt; m a -&gt; m [a]
 </span><span class="hs-identifier hs-var">replicateM</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135769"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><a href="#local-6989586621679136647"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Integral a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">`div`</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135770"><span class="hs-identifier hs-var">one</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Parser a
-</span><a href="#local-6989586621679135767"><span class="hs-identifier hs-var">p</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679136648"><span class="hs-identifier hs-var">one</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Parser a
+</span><a href="#local-6989586621679136645"><span class="hs-identifier hs-var">p</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-119"></span><span>  </span><span class="annot"><span class="annottext">[Value] -&gt; Parser [Value]
 forall (f :: * -&gt; *) a. Applicative f =&gt; a -&gt; f a
 </span><span class="hs-identifier hs-var">pure</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[a] -&gt; Value
-</span><a href="#local-6989586621679135766"><span class="hs-identifier hs-var">cons</span></a></span><span> </span><span class="annot"><span class="annottext">([a] -&gt; Value) -&gt; [[a]] -&gt; [Value]
+</span><a href="#local-6989586621679136644"><span class="hs-identifier hs-var">cons</span></a></span><span> </span><span class="annot"><span class="annottext">([a] -&gt; Value) -&gt; [[a]] -&gt; [Value]
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-operator hs-var">&lt;$&gt;</span></span><span> </span><span class="annot"><span class="annottext">[[a]]
-</span><a href="#local-6989586621679135765"><span class="hs-identifier hs-var">ns</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679136643"><span class="hs-identifier hs-var">ns</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-120"></span><span>
 </span><span id="line-121"></span><span class="annot"><a href="GoPro.GPMF.html#parseTimestamp"><span class="hs-identifier hs-type">parseTimestamp</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">A.Parser</span></span><span> </span><span class="annot"><span class="hs-identifier hs-type">UTCTime</span></span><span>
 </span><span id="line-122"></span><span id="parseTimestamp"><span class="annot"><span class="annottext">parseTimestamp :: Parser UTCTime
@@ -435,8 +435,8 @@ forall a b. (Integral a, Num b) =&gt; a -&gt; b
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-operator hs-var">&lt;$&gt;</span></span><span> </span><span class="annot"><span class="annottext">Parser ByteString Word8
 </span><span class="hs-identifier hs-var">A.anyWord8</span></span><span class="hs-special">)</span><span>
-</span><span id="line-130"></span><span class="annot"><a href="GoPro.GPMF.html#singleParser"><span class="hs-identifier hs-var">singleParser</span></a></span><span> </span><span id="local-6989586621679135760"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679135760"><span class="hs-identifier hs-var">x</span></a></span></span><span>   </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String -&gt; (Int, Parser Value)
+</span><span id="line-130"></span><span class="annot"><a href="GoPro.GPMF.html#singleParser"><span class="hs-identifier hs-var">singleParser</span></a></span><span> </span><span id="local-6989586621679136638"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679136638"><span class="hs-identifier hs-var">x</span></a></span></span><span>   </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String -&gt; (Int, Parser Value)
 forall a. HasCallStack =&gt; String -&gt; a
 </span><span class="hs-identifier hs-var">error</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;unsupported parser: &quot;</span></span><span> </span><span class="annot"><span class="annottext">String -&gt; ShowS
@@ -444,39 +444,39 @@ forall a. Semigroup a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Char -&gt; String
 forall a. Show a =&gt; a -&gt; String
 </span><span class="hs-identifier hs-var">show</span></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679135760"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679136638"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-131"></span><span>
 </span><span id="line-132"></span><span class="annot"><a href="GoPro.GPMF.html#parseComplex"><span class="hs-identifier hs-type">parseComplex</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#Parser"><span class="hs-identifier hs-type">Parser</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span class="hs-special">]</span><span>
 </span><span id="line-133"></span><span id="parseComplex"><span class="annot"><span class="annottext">parseComplex :: Int -&gt; Int -&gt; Parser [Value]
-</span><a href="GoPro.GPMF.html#parseComplex"><span class="hs-identifier hs-var hs-var">parseComplex</span></a></span></span><span> </span><span id="local-6989586621679135757"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135757"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679135756"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135756"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-134"></span><span>  </span><span id="local-6989586621679135755"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679135755"><span class="hs-identifier hs-var">fmt</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">StateT String Parser String
+</span><a href="GoPro.GPMF.html#parseComplex"><span class="hs-identifier hs-var hs-var">parseComplex</span></a></span></span><span> </span><span id="local-6989586621679136635"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136635"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679136634"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136634"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-134"></span><span>  </span><span id="local-6989586621679136633"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679136633"><span class="hs-identifier hs-var">fmt</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">StateT String Parser String
 forall s (m :: * -&gt; *). MonadState s m =&gt; m s
 </span><span class="hs-identifier hs-var">get</span></span><span>
-</span><span id="line-135"></span><span>  </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621679135754"><span class="annot"><span class="annottext">sz :: Int
-</span><a href="#local-6989586621679135754"><span class="hs-identifier hs-var hs-var">sz</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Char -&gt; Int -&gt; Int) -&gt; Int -&gt; String -&gt; Int
+</span><span id="line-135"></span><span>  </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621679136632"><span class="annot"><span class="annottext">sz :: Int
+</span><a href="#local-6989586621679136632"><span class="hs-identifier hs-var hs-var">sz</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Char -&gt; Int -&gt; Int) -&gt; Int -&gt; String -&gt; Int
 forall (t :: * -&gt; *) a b.
 Foldable t =&gt;
 (a -&gt; b -&gt; b) -&gt; b -&gt; t a -&gt; b
-</span><span class="hs-identifier hs-var">foldr</span></span><span> </span><span class="hs-special">(</span><span class="hs-glyph">\</span><span id="local-6989586621679135752"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679135752"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span id="local-6989586621679135751"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135751"><span class="hs-identifier hs-var">o</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">(Int, Parser Value) -&gt; Int
+</span><span class="hs-identifier hs-var">foldr</span></span><span> </span><span class="hs-special">(</span><span class="hs-glyph">\</span><span id="local-6989586621679136630"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679136630"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span id="local-6989586621679136629"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136629"><span class="hs-identifier hs-var">o</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">(Int, Parser Value) -&gt; Int
 forall a b. (a, b) -&gt; a
 </span><span class="hs-identifier hs-var">fst</span></span><span> </span><span class="annot"><span class="annottext">((Int, Parser Value) -&gt; Int)
 -&gt; (Char -&gt; (Int, Parser Value)) -&gt; Char -&gt; Int
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">Char -&gt; (Int, Parser Value)
 </span><a href="GoPro.GPMF.html#singleParser"><span class="hs-identifier hs-var">singleParser</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679135752"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><a href="#local-6989586621679136630"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">+</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135751"><span class="hs-identifier hs-var">o</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136629"><span class="hs-identifier hs-var">o</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">0</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679135755"><span class="hs-identifier hs-var">fmt</span></a></span><span>
-</span><span id="line-136"></span><span>  </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621679135749"><span class="annot"><span class="annottext">parsers :: Parser ByteString [Value]
-</span><a href="#local-6989586621679135749"><span class="hs-identifier hs-var hs-var">parsers</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Char -&gt; Parser Value) -&gt; String -&gt; Parser ByteString [Value]
+</span><a href="#local-6989586621679136633"><span class="hs-identifier hs-var">fmt</span></a></span><span>
+</span><span id="line-136"></span><span>  </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621679136627"><span class="annot"><span class="annottext">parsers :: Parser ByteString [Value]
+</span><a href="#local-6989586621679136627"><span class="hs-identifier hs-var hs-var">parsers</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Char -&gt; Parser Value) -&gt; String -&gt; Parser ByteString [Value]
 forall (t :: * -&gt; *) (f :: * -&gt; *) a b.
 (Traversable t, Applicative f) =&gt;
 (a -&gt; f b) -&gt; t a -&gt; f (t b)
@@ -487,7 +487,7 @@ forall a b. (a, b) -&gt; b
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">Char -&gt; (Int, Parser Value)
 </span><a href="GoPro.GPMF.html#singleParser"><span class="hs-identifier hs-var">singleParser</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679135755"><span class="hs-identifier hs-var">fmt</span></a></span><span>
+</span><a href="#local-6989586621679136633"><span class="hs-identifier hs-var">fmt</span></a></span><span>
 </span><span id="line-137"></span><span>  </span><span class="annot"><span class="annottext">Int
 -&gt; Int
 -&gt; Int
@@ -497,12 +497,12 @@ forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 forall a.
 Int -&gt; Int -&gt; Int -&gt; Parser a -&gt; ([a] -&gt; Value) -&gt; Parser [Value]
 </span><a href="GoPro.GPMF.html#replicatedParser"><span class="hs-identifier hs-var">replicatedParser</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135754"><span class="hs-identifier hs-var">sz</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135757"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135756"><span class="hs-identifier hs-var">rpt</span></a></span><span> </span><span class="annot"><span class="annottext">Parser ByteString [Value]
-</span><a href="#local-6989586621679135749"><span class="hs-identifier hs-var">parsers</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String -&gt; [Value] -&gt; Value
+</span><a href="#local-6989586621679136632"><span class="hs-identifier hs-var">sz</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136635"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136634"><span class="hs-identifier hs-var">rpt</span></a></span><span> </span><span class="annot"><span class="annottext">Parser ByteString [Value]
+</span><a href="#local-6989586621679136627"><span class="hs-identifier hs-var">parsers</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String -&gt; [Value] -&gt; Value
 </span><a href="GoPro.GPMF.html#GComplex"><span class="hs-identifier hs-var">GComplex</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679135755"><span class="hs-identifier hs-var">fmt</span></a></span><span> </span><span class="annot"><span class="annottext">([Value] -&gt; Value) -&gt; ([[Value]] -&gt; [Value]) -&gt; [[Value]] -&gt; Value
+</span><a href="#local-6989586621679136633"><span class="hs-identifier hs-var">fmt</span></a></span><span> </span><span class="annot"><span class="annottext">([Value] -&gt; Value) -&gt; ([[Value]] -&gt; [Value]) -&gt; [[Value]] -&gt; Value
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">[[Value]] -&gt; [Value]
 forall a. Monoid a =&gt; [a] -&gt; a
@@ -511,11 +511,11 @@ forall a. Monoid a =&gt; [a] -&gt; a
 </span><span id="line-139"></span><span class="annot"><a href="GoPro.GPMF.html#parseValue"><span class="hs-identifier hs-type">parseValue</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Char</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#Parser"><span class="hs-identifier hs-type">Parser</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span class="hs-special">]</span><span>
 </span><span id="line-140"></span><span id="parseValue"><span class="annot"><span class="annottext">parseValue :: Char -&gt; Int -&gt; Int -&gt; Parser [Value]
 </span><a href="GoPro.GPMF.html#parseValue"><span class="hs-identifier hs-var hs-var">parseValue</span></a></span></span><span> </span><span class="annot"><span class="annottext">Char
-</span><span class="hs-char">'\0'</span></span><span> </span><span id="local-6989586621679135747"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135747"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679135746"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135746"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-141"></span><span>  </span><span id="local-6989586621679135745"><span class="annot"><span class="annottext">ByteString
-</span><a href="#local-6989586621679135745"><span class="hs-identifier hs-var">inp</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Parser ByteString ByteString -&gt; StateT String Parser ByteString
+</span><span class="hs-char">'\0'</span></span><span> </span><span id="local-6989586621679136625"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136625"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679136624"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136624"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-141"></span><span>  </span><span id="local-6989586621679136623"><span class="annot"><span class="annottext">ByteString
+</span><a href="#local-6989586621679136623"><span class="hs-identifier hs-var">inp</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Parser ByteString ByteString -&gt; StateT String Parser ByteString
 forall (t :: (* -&gt; *) -&gt; * -&gt; *) (m :: * -&gt; *) a.
 (MonadTrans t, Monad m) =&gt;
 m a -&gt; t m a
@@ -524,16 +524,16 @@ m a -&gt; t m a
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Parser ByteString ByteString
 </span><span class="hs-identifier hs-var">A.take</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135747"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><a href="#local-6989586621679136625"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">*</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135746"><span class="hs-identifier hs-var">rpt</span></a></span><span class="hs-special">)</span><span>
-</span><span id="line-142"></span><span>  </span><span id="local-6989586621679135744"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679135744"><span class="hs-identifier hs-var">t</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">StateT String Parser String
+</span><a href="#local-6989586621679136624"><span class="hs-identifier hs-var">rpt</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-142"></span><span>  </span><span id="local-6989586621679136622"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679136622"><span class="hs-identifier hs-var">t</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">StateT String Parser String
 forall s (m :: * -&gt; *). MonadState s m =&gt; m s
 </span><span class="hs-identifier hs-var">get</span></span><span>
-</span><span id="line-143"></span><span>  </span><span id="local-6989586621679135743"><span class="annot"><span class="annottext">[(FourCC, [Value])]
-</span><a href="#local-6989586621679135743"><span class="hs-identifier hs-var">xs</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">Parser [(FourCC, [Value])]
+</span><span id="line-143"></span><span>  </span><span id="local-6989586621679136621"><span class="annot"><span class="annottext">[(FourCC, [Value])]
+</span><a href="#local-6989586621679136621"><span class="hs-identifier hs-var">xs</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">Parser [(FourCC, [Value])]
 -&gt; ByteString -&gt; Either String [(FourCC, [Value])]
 forall a. Parser a -&gt; ByteString -&gt; Either String a
 </span><span class="hs-identifier hs-var">A.parseOnly</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">StateT String Parser [(FourCC, [Value])]
@@ -544,29 +544,29 @@ forall (m :: * -&gt; *) s a. Monad m =&gt; StateT s m a -&gt; s -&gt; m a
 forall (f :: * -&gt; *) a. Alternative f =&gt; f a -&gt; f [a]
 </span><span class="hs-identifier hs-var">A.many1</span></span><span> </span><span class="annot"><span class="annottext">StateT String Parser (FourCC, [Value])
 </span><a href="GoPro.GPMF.html#parseNested"><span class="hs-identifier hs-var">parseNested</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679135744"><span class="hs-identifier hs-var">t</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">ByteString
-</span><a href="#local-6989586621679135745"><span class="hs-identifier hs-var">inp</span></a></span><span> </span><span class="hs-keyword">of</span><span>
-</span><span id="line-144"></span><span>          </span><span class="annot"><span class="hs-identifier hs-type">Left</span></span><span> </span><span id="local-6989586621679135742"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679135742"><span class="hs-identifier hs-var">y</span></a></span></span><span>   </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">String -&gt; StateT String Parser [(FourCC, [Value])]
+</span><a href="#local-6989586621679136622"><span class="hs-identifier hs-var">t</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">ByteString
+</span><a href="#local-6989586621679136623"><span class="hs-identifier hs-var">inp</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><span id="line-144"></span><span>          </span><span class="annot"><span class="hs-identifier hs-type">Left</span></span><span> </span><span id="local-6989586621679136620"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679136620"><span class="hs-identifier hs-var">y</span></a></span></span><span>   </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">String -&gt; StateT String Parser [(FourCC, [Value])]
 forall (m :: * -&gt; *) a. MonadFail m =&gt; String -&gt; m a
 </span><span class="hs-identifier hs-var">fail</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679135742"><span class="hs-identifier hs-var">y</span></a></span><span>
-</span><span id="line-145"></span><span>          </span><span class="annot"><span class="hs-identifier hs-type">Right</span></span><span> </span><span id="local-6989586621679135741"><span class="annot"><span class="annottext">[(FourCC, [Value])]
-</span><a href="#local-6989586621679135741"><span class="hs-identifier hs-var">xs</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">[(FourCC, [Value])] -&gt; StateT String Parser [(FourCC, [Value])]
+</span><a href="#local-6989586621679136620"><span class="hs-identifier hs-var">y</span></a></span><span>
+</span><span id="line-145"></span><span>          </span><span class="annot"><span class="hs-identifier hs-type">Right</span></span><span> </span><span id="local-6989586621679136619"><span class="annot"><span class="annottext">[(FourCC, [Value])]
+</span><a href="#local-6989586621679136619"><span class="hs-identifier hs-var">xs</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">[(FourCC, [Value])] -&gt; StateT String Parser [(FourCC, [Value])]
 forall (f :: * -&gt; *) a. Applicative f =&gt; a -&gt; f a
 </span><span class="hs-identifier hs-var">pure</span></span><span> </span><span class="annot"><span class="annottext">[(FourCC, [Value])]
-</span><a href="#local-6989586621679135741"><span class="hs-identifier hs-var">xs</span></a></span><span>
+</span><a href="#local-6989586621679136619"><span class="hs-identifier hs-var">xs</span></a></span><span>
 </span><span id="line-146"></span><span>  </span><span class="annot"><span class="annottext">[Value] -&gt; Parser [Value]
 forall (f :: * -&gt; *) a. Applicative f =&gt; a -&gt; f a
 </span><span class="hs-identifier hs-var">pure</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">(FourCC, [Value]) -&gt; Value
 </span><a href="GoPro.GPMF.html#GNested"><span class="hs-identifier hs-var">GNested</span></a></span><span> </span><span class="annot"><span class="annottext">((FourCC, [Value]) -&gt; Value) -&gt; [(FourCC, [Value])] -&gt; [Value]
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-operator hs-var">&lt;$&gt;</span></span><span> </span><span class="annot"><span class="annottext">[(FourCC, [Value])]
-</span><a href="#local-6989586621679135743"><span class="hs-identifier hs-var">xs</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679136621"><span class="hs-identifier hs-var">xs</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-147"></span><span class="annot"><a href="GoPro.GPMF.html#parseValue"><span class="hs-identifier hs-var">parseValue</span></a></span><span> </span><span class="annot"><span class="annottext">Char
 </span><span class="hs-char">'F'</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><span class="hs-number">4</span></span><span> </span><span id="local-6989586621679135740"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135740"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Parser ByteString [Value] -&gt; Parser [Value]
+</span><span class="hs-number">4</span></span><span> </span><span id="local-6989586621679136618"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136618"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Parser ByteString [Value] -&gt; Parser [Value]
 forall (t :: (* -&gt; *) -&gt; * -&gt; *) (m :: * -&gt; *) a.
 (MonadTrans t, Monad m) =&gt;
 m a -&gt; t m a
@@ -576,15 +576,15 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Parser Value -&gt; Parser ByteString [Value]
 forall (m :: * -&gt; *) a. Applicative m =&gt; Int -&gt; m a -&gt; m [a]
 </span><span class="hs-identifier hs-var">replicateM</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135740"><span class="hs-identifier hs-var">rpt</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">FourCC -&gt; Value
+</span><a href="#local-6989586621679136618"><span class="hs-identifier hs-var">rpt</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">FourCC -&gt; Value
 </span><a href="GoPro.GPMF.html#GFourCC"><span class="hs-identifier hs-var">GFourCC</span></a></span><span> </span><span class="annot"><span class="annottext">(FourCC -&gt; Value) -&gt; Parser ByteString FourCC -&gt; Parser Value
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-operator hs-var">&lt;$&gt;</span></span><span> </span><span class="annot"><span class="annottext">Parser ByteString FourCC
 </span><a href="GoPro.GPMF.html#parseFourCC"><span class="hs-identifier hs-var">parseFourCC</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-148"></span><span class="annot"><a href="GoPro.GPMF.html#parseValue"><span class="hs-identifier hs-var">parseValue</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><span class="hs-char">'L'</span></span><span> </span><span id="local-6989586621679135739"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135739"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679135738"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135738"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-char">'L'</span></span><span> </span><span id="local-6989586621679136617"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136617"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679136616"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136616"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int
 -&gt; Int
 -&gt; Int
 -&gt; Parser ByteString Word32
@@ -594,14 +594,14 @@ forall a.
 Int -&gt; Int -&gt; Int -&gt; Parser a -&gt; ([a] -&gt; Value) -&gt; Parser [Value]
 </span><a href="GoPro.GPMF.html#replicatedParser"><span class="hs-identifier hs-var">replicatedParser</span></a></span><span> </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">4</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135739"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135738"><span class="hs-identifier hs-var">rpt</span></a></span><span> </span><span class="annot"><span class="annottext">Parser ByteString Word32
+</span><a href="#local-6989586621679136617"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136616"><span class="hs-identifier hs-var">rpt</span></a></span><span> </span><span class="annot"><span class="annottext">Parser ByteString Word32
 </span><span class="hs-identifier hs-var">anyWord32be</span></span><span> </span><span class="annot"><span class="annottext">[Word32] -&gt; Value
 </span><a href="GoPro.GPMF.html#GUint32"><span class="hs-identifier hs-var">GUint32</span></a></span><span>
 </span><span id="line-149"></span><span class="annot"><a href="GoPro.GPMF.html#parseValue"><span class="hs-identifier hs-var">parseValue</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><span class="hs-char">'l'</span></span><span> </span><span id="local-6989586621679135737"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135737"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679135736"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135736"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-char">'l'</span></span><span> </span><span id="local-6989586621679136615"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136615"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679136614"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136614"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int
 -&gt; Int
 -&gt; Int
 -&gt; Parser Int32
@@ -611,8 +611,8 @@ forall a.
 Int -&gt; Int -&gt; Int -&gt; Parser a -&gt; ([a] -&gt; Value) -&gt; Parser [Value]
 </span><a href="GoPro.GPMF.html#replicatedParser"><span class="hs-identifier hs-var">replicatedParser</span></a></span><span> </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">4</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135737"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135736"><span class="hs-identifier hs-var">rpt</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Word32 -&gt; Int32
+</span><a href="#local-6989586621679136615"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136614"><span class="hs-identifier hs-var">rpt</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Word32 -&gt; Int32
 forall a b. (Integral a, Num b) =&gt; a -&gt; b
 </span><span class="hs-identifier hs-var">fromIntegral</span></span><span> </span><span class="annot"><span class="annottext">(Word32 -&gt; Int32) -&gt; Parser ByteString Word32 -&gt; Parser Int32
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
@@ -620,9 +620,9 @@ forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-identifier hs-var">anyWord32be</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[Int32] -&gt; Value
 </span><a href="GoPro.GPMF.html#GInt32"><span class="hs-identifier hs-var">GInt32</span></a></span><span>
 </span><span id="line-150"></span><span class="annot"><a href="GoPro.GPMF.html#parseValue"><span class="hs-identifier hs-var">parseValue</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><span class="hs-char">'c'</span></span><span> </span><span id="local-6989586621679135735"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135735"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679135734"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135734"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Value -&gt; [Value] -&gt; [Value]
+</span><span class="hs-char">'c'</span></span><span> </span><span id="local-6989586621679136613"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136613"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679136612"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136612"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Value -&gt; [Value] -&gt; [Value]
 forall a. a -&gt; [a] -&gt; [a]
 </span><span class="hs-glyph hs-var">:</span></span><span class="hs-special">[</span><span class="hs-special">]</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">(Value -&gt; [Value]) -&gt; StateT String Parser Value -&gt; Parser [Value]
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
@@ -638,14 +638,14 @@ forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 -&gt; Int -&gt; StateT String Parser Value
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135735"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><a href="#local-6989586621679136613"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">*</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135734"><span class="hs-identifier hs-var">rpt</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679136612"><span class="hs-identifier hs-var">rpt</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span>
 </span><span id="line-151"></span><span class="annot"><a href="GoPro.GPMF.html#parseValue"><span class="hs-identifier hs-var">parseValue</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><span class="hs-char">'s'</span></span><span> </span><span id="local-6989586621679135733"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135733"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679135732"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135732"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-char">'s'</span></span><span> </span><span id="local-6989586621679136611"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136611"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679136610"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136610"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int
 -&gt; Int
 -&gt; Int
 -&gt; Parser Int16
@@ -655,8 +655,8 @@ forall a.
 Int -&gt; Int -&gt; Int -&gt; Parser a -&gt; ([a] -&gt; Value) -&gt; Parser [Value]
 </span><a href="GoPro.GPMF.html#replicatedParser"><span class="hs-identifier hs-var">replicatedParser</span></a></span><span> </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">2</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135733"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135732"><span class="hs-identifier hs-var">rpt</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Word16 -&gt; Int16
+</span><a href="#local-6989586621679136611"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136610"><span class="hs-identifier hs-var">rpt</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Word16 -&gt; Int16
 forall a b. (Integral a, Num b) =&gt; a -&gt; b
 </span><span class="hs-identifier hs-var">fromIntegral</span></span><span> </span><span class="annot"><span class="annottext">(Word16 -&gt; Int16) -&gt; Parser ByteString Word16 -&gt; Parser Int16
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
@@ -664,9 +664,9 @@ forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-identifier hs-var">anyWord16be</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[Int16] -&gt; Value
 </span><a href="GoPro.GPMF.html#GInt16"><span class="hs-identifier hs-var">GInt16</span></a></span><span>
 </span><span id="line-152"></span><span class="annot"><a href="GoPro.GPMF.html#parseValue"><span class="hs-identifier hs-var">parseValue</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><span class="hs-char">'S'</span></span><span> </span><span id="local-6989586621679135731"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135731"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679135730"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135730"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-char">'S'</span></span><span> </span><span id="local-6989586621679136609"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136609"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679136608"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136608"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int
 -&gt; Int
 -&gt; Int
 -&gt; Parser ByteString Word16
@@ -676,14 +676,14 @@ forall a.
 Int -&gt; Int -&gt; Int -&gt; Parser a -&gt; ([a] -&gt; Value) -&gt; Parser [Value]
 </span><a href="GoPro.GPMF.html#replicatedParser"><span class="hs-identifier hs-var">replicatedParser</span></a></span><span> </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">2</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135731"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135730"><span class="hs-identifier hs-var">rpt</span></a></span><span> </span><span class="annot"><span class="annottext">Parser ByteString Word16
+</span><a href="#local-6989586621679136609"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136608"><span class="hs-identifier hs-var">rpt</span></a></span><span> </span><span class="annot"><span class="annottext">Parser ByteString Word16
 </span><span class="hs-identifier hs-var">anyWord16be</span></span><span> </span><span class="annot"><span class="annottext">[Word16] -&gt; Value
 </span><a href="GoPro.GPMF.html#GUint16"><span class="hs-identifier hs-var">GUint16</span></a></span><span>
 </span><span id="line-153"></span><span class="annot"><a href="GoPro.GPMF.html#parseValue"><span class="hs-identifier hs-var">parseValue</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><span class="hs-char">'J'</span></span><span> </span><span id="local-6989586621679135729"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135729"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679135728"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135728"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-char">'J'</span></span><span> </span><span id="local-6989586621679136607"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136607"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679136606"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136606"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int
 -&gt; Int
 -&gt; Int
 -&gt; Parser Word64
@@ -693,14 +693,14 @@ forall a.
 Int -&gt; Int -&gt; Int -&gt; Parser a -&gt; ([a] -&gt; Value) -&gt; Parser [Value]
 </span><a href="GoPro.GPMF.html#replicatedParser"><span class="hs-identifier hs-var">replicatedParser</span></a></span><span> </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">8</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135729"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135728"><span class="hs-identifier hs-var">rpt</span></a></span><span> </span><span class="annot"><span class="annottext">Parser Word64
+</span><a href="#local-6989586621679136607"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136606"><span class="hs-identifier hs-var">rpt</span></a></span><span> </span><span class="annot"><span class="annottext">Parser Word64
 </span><span class="hs-identifier hs-var">anyWord64be</span></span><span> </span><span class="annot"><span class="annottext">[Word64] -&gt; Value
 </span><a href="GoPro.GPMF.html#GUint64"><span class="hs-identifier hs-var">GUint64</span></a></span><span>
 </span><span id="line-154"></span><span class="annot"><a href="GoPro.GPMF.html#parseValue"><span class="hs-identifier hs-var">parseValue</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><span class="hs-char">'f'</span></span><span> </span><span id="local-6989586621679135727"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135727"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679135726"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135726"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-char">'f'</span></span><span> </span><span id="local-6989586621679136605"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136605"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679136604"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136604"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int
 -&gt; Int
 -&gt; Int
 -&gt; Parser Float
@@ -710,14 +710,14 @@ forall a.
 Int -&gt; Int -&gt; Int -&gt; Parser a -&gt; ([a] -&gt; Value) -&gt; Parser [Value]
 </span><a href="GoPro.GPMF.html#replicatedParser"><span class="hs-identifier hs-var">replicatedParser</span></a></span><span> </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">4</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135727"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135726"><span class="hs-identifier hs-var">rpt</span></a></span><span> </span><span class="annot"><span class="annottext">Parser Float
+</span><a href="#local-6989586621679136605"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136604"><span class="hs-identifier hs-var">rpt</span></a></span><span> </span><span class="annot"><span class="annottext">Parser Float
 </span><a href="GoPro.GPMF.html#parseFloat"><span class="hs-identifier hs-var">parseFloat</span></a></span><span> </span><span class="annot"><span class="annottext">[Float] -&gt; Value
 </span><a href="GoPro.GPMF.html#GFloat"><span class="hs-identifier hs-var">GFloat</span></a></span><span>
 </span><span id="line-155"></span><span class="annot"><a href="GoPro.GPMF.html#parseValue"><span class="hs-identifier hs-var">parseValue</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><span class="hs-char">'b'</span></span><span> </span><span id="local-6989586621679135725"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135725"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679135724"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135724"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Parser ByteString [Value] -&gt; Parser [Value]
+</span><span class="hs-char">'b'</span></span><span> </span><span id="local-6989586621679136603"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136603"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679136602"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136602"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Parser ByteString [Value] -&gt; Parser [Value]
 forall (t :: (* -&gt; *) -&gt; * -&gt; *) (m :: * -&gt; *) a.
 (MonadTrans t, Monad m) =&gt;
 m a -&gt; t m a
@@ -727,18 +727,18 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Parser Value -&gt; Parser ByteString [Value]
 forall (m :: * -&gt; *) a. Applicative m =&gt; Int -&gt; m a -&gt; m [a]
 </span><span class="hs-identifier hs-var">replicateM</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135724"><span class="hs-identifier hs-var">rpt</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[Int8] -&gt; Value
+</span><a href="#local-6989586621679136602"><span class="hs-identifier hs-var">rpt</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[Int8] -&gt; Value
 </span><a href="GoPro.GPMF.html#GInt8"><span class="hs-identifier hs-var">GInt8</span></a></span><span> </span><span class="annot"><span class="annottext">([Int8] -&gt; Value) -&gt; Parser ByteString [Int8] -&gt; Parser Value
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-operator hs-var">&lt;$&gt;</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Parser Int8 -&gt; Parser ByteString [Int8]
 forall (m :: * -&gt; *) a. Applicative m =&gt; Int -&gt; m a -&gt; m [a]
 </span><span class="hs-identifier hs-var">replicateM</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135725"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Parser Int8
+</span><a href="#local-6989586621679136603"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Parser Int8
 </span><a href="GoPro.GPMF.html#int8"><span class="hs-identifier hs-var">int8</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-156"></span><span class="annot"><a href="GoPro.GPMF.html#parseValue"><span class="hs-identifier hs-var">parseValue</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><span class="hs-char">'B'</span></span><span> </span><span id="local-6989586621679135723"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135723"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679135722"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135722"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Parser ByteString [Value] -&gt; Parser [Value]
+</span><span class="hs-char">'B'</span></span><span> </span><span id="local-6989586621679136601"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136601"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679136600"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136600"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Parser ByteString [Value] -&gt; Parser [Value]
 forall (t :: (* -&gt; *) -&gt; * -&gt; *) (m :: * -&gt; *) a.
 (MonadTrans t, Monad m) =&gt;
 m a -&gt; t m a
@@ -748,13 +748,13 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Parser Value -&gt; Parser ByteString [Value]
 forall (m :: * -&gt; *) a. Applicative m =&gt; Int -&gt; m a -&gt; m [a]
 </span><span class="hs-identifier hs-var">replicateM</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135722"><span class="hs-identifier hs-var">rpt</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[Word8] -&gt; Value
+</span><a href="#local-6989586621679136600"><span class="hs-identifier hs-var">rpt</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[Word8] -&gt; Value
 </span><a href="GoPro.GPMF.html#GUint8"><span class="hs-identifier hs-var">GUint8</span></a></span><span> </span><span class="annot"><span class="annottext">([Word8] -&gt; Value) -&gt; Parser ByteString [Word8] -&gt; Parser Value
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-operator hs-var">&lt;$&gt;</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Parser ByteString Word8 -&gt; Parser ByteString [Word8]
 forall (m :: * -&gt; *) a. Applicative m =&gt; Int -&gt; m a -&gt; m [a]
 </span><span class="hs-identifier hs-var">replicateM</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135723"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Parser ByteString Word8
+</span><a href="#local-6989586621679136601"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Parser ByteString Word8
 </span><span class="hs-identifier hs-var">A.anyWord8</span></span><span class="hs-special">)</span><span>
 </span><span id="line-157"></span><span class="annot"><a href="GoPro.GPMF.html#parseValue"><span class="hs-identifier hs-var">parseValue</span></a></span><span> </span><span class="annot"><span class="annottext">Char
 </span><span class="hs-char">'U'</span></span><span> </span><span class="annot"><span class="annottext">Int
@@ -774,18 +774,18 @@ m a -&gt; t m a
 </span><span class="hs-identifier hs-var">lift</span></span><span> </span><span class="annot"><span class="annottext">Parser UTCTime
 </span><a href="GoPro.GPMF.html#parseTimestamp"><span class="hs-identifier hs-var">parseTimestamp</span></a></span><span>
 </span><span id="line-158"></span><span class="annot"><a href="GoPro.GPMF.html#parseValue"><span class="hs-identifier hs-var">parseValue</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><span class="hs-char">'?'</span></span><span> </span><span id="local-6989586621679135721"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135721"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679135720"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135720"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Parser [Value]
+</span><span class="hs-char">'?'</span></span><span> </span><span id="local-6989586621679136599"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136599"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679136598"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136598"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Parser [Value]
 </span><a href="GoPro.GPMF.html#parseComplex"><span class="hs-identifier hs-var">parseComplex</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135721"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135720"><span class="hs-identifier hs-var">rpt</span></a></span><span>
-</span><span id="line-159"></span><span class="annot"><a href="GoPro.GPMF.html#parseValue"><span class="hs-identifier hs-var">parseValue</span></a></span><span> </span><span id="local-6989586621679135719"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679135719"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span id="local-6989586621679135718"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135718"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679135717"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135717"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-160"></span><span>  </span><span id="local-6989586621679135716"><span class="annot"><span class="annottext">[[Word8]]
-</span><a href="#local-6989586621679135716"><span class="hs-identifier hs-var">u</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Parser ByteString [[Word8]] -&gt; StateT String Parser [[Word8]]
+</span><a href="#local-6989586621679136599"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136598"><span class="hs-identifier hs-var">rpt</span></a></span><span>
+</span><span id="line-159"></span><span class="annot"><a href="GoPro.GPMF.html#parseValue"><span class="hs-identifier hs-var">parseValue</span></a></span><span> </span><span id="local-6989586621679136597"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679136597"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span id="local-6989586621679136596"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136596"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621679136595"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136595"><span class="hs-identifier hs-var">rpt</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-160"></span><span>  </span><span id="local-6989586621679136594"><span class="annot"><span class="annottext">[[Word8]]
+</span><a href="#local-6989586621679136594"><span class="hs-identifier hs-var">u</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Parser ByteString [[Word8]] -&gt; StateT String Parser [[Word8]]
 forall (t :: (* -&gt; *) -&gt; * -&gt; *) (m :: * -&gt; *) a.
 (MonadTrans t, Monad m) =&gt;
 m a -&gt; t m a
@@ -795,34 +795,34 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Parser ByteString [Word8] -&gt; Parser ByteString [[Word8]]
 forall (m :: * -&gt; *) a. Applicative m =&gt; Int -&gt; m a -&gt; m [a]
 </span><span class="hs-identifier hs-var">replicateM</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135717"><span class="hs-identifier hs-var">rpt</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int -&gt; Parser ByteString Word8 -&gt; Parser ByteString [Word8]
+</span><a href="#local-6989586621679136595"><span class="hs-identifier hs-var">rpt</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int -&gt; Parser ByteString Word8 -&gt; Parser ByteString [Word8]
 forall (m :: * -&gt; *) a. Applicative m =&gt; Int -&gt; m a -&gt; m [a]
 </span><span class="hs-identifier hs-var">replicateM</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135718"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Parser ByteString Word8
+</span><a href="#local-6989586621679136596"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Parser ByteString Word8
 </span><span class="hs-identifier hs-var">A.anyWord8</span></span><span class="hs-special">)</span><span>
 </span><span id="line-161"></span><span>  </span><span class="annot"><span class="annottext">[Value] -&gt; Parser [Value]
 forall (f :: * -&gt; *) a. Applicative f =&gt; a -&gt; f a
 </span><span class="hs-identifier hs-var">pure</span></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">(Char, Int, Int, [[Word8]]) -&gt; Value
 </span><a href="GoPro.GPMF.html#GUnknown"><span class="hs-identifier hs-var">GUnknown</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679135719"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135718"><span class="hs-identifier hs-var">l</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621679135717"><span class="hs-identifier hs-var">rpt</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">[[Word8]]
-</span><a href="#local-6989586621679135716"><span class="hs-identifier hs-var">u</span></a></span><span class="hs-special">)</span><span class="hs-special">]</span><span>
+</span><a href="#local-6989586621679136597"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136596"><span class="hs-identifier hs-var">l</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679136595"><span class="hs-identifier hs-var">rpt</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">[[Word8]]
+</span><a href="#local-6989586621679136594"><span class="hs-identifier hs-var">u</span></a></span><span class="hs-special">)</span><span class="hs-special">]</span><span>
 </span><span id="line-162"></span><span>
 </span><span id="line-163"></span><span class="annot"><a href="GoPro.GPMF.html#parseFourCC"><span class="hs-identifier hs-type">parseFourCC</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">A.Parser</span></span><span> </span><span class="annot"><a href="GoPro.GPMF.html#FourCC"><span class="hs-identifier hs-type">FourCC</span></a></span><span>
 </span><span id="line-164"></span><span id="parseFourCC"><span class="annot"><span class="annottext">parseFourCC :: Parser ByteString FourCC
 </span><a href="GoPro.GPMF.html#parseFourCC"><span class="hs-identifier hs-var hs-var">parseFourCC</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-165"></span><span>  </span><span id="local-6989586621679135715"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679135715"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Parser ByteString Char
+</span><span id="line-165"></span><span>  </span><span id="local-6989586621679136593"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679136593"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Parser ByteString Char
 </span><span class="hs-identifier hs-var">AC.anyChar</span></span><span>
-</span><span id="line-166"></span><span>  </span><span id="local-6989586621679135714"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679135714"><span class="hs-identifier hs-var">b</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Parser ByteString Char
+</span><span id="line-166"></span><span>  </span><span id="local-6989586621679136592"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679136592"><span class="hs-identifier hs-var">b</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Parser ByteString Char
 </span><span class="hs-identifier hs-var">AC.anyChar</span></span><span>
-</span><span id="line-167"></span><span>  </span><span id="local-6989586621679135713"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679135713"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Parser ByteString Char
+</span><span id="line-167"></span><span>  </span><span id="local-6989586621679136591"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679136591"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Parser ByteString Char
 </span><span class="hs-identifier hs-var">AC.anyChar</span></span><span>
-</span><span id="line-168"></span><span>  </span><span id="local-6989586621679135712"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679135712"><span class="hs-identifier hs-var">d</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Parser ByteString Char
+</span><span id="line-168"></span><span>  </span><span id="local-6989586621679136590"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679136590"><span class="hs-identifier hs-var">d</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Parser ByteString Char
 </span><span class="hs-identifier hs-var">AC.anyChar</span></span><span>
 </span><span id="line-169"></span><span>  </span><span class="annot"><span class="annottext">FourCC -&gt; Parser ByteString FourCC
 forall (f :: * -&gt; *) a. Applicative f =&gt; a -&gt; f a
@@ -831,9 +831,9 @@ forall (f :: * -&gt; *) a. Applicative f =&gt; a -&gt; f a
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">(Char, Char, Char, Char) -&gt; FourCC
 </span><a href="GoPro.GPMF.html#FourCC"><span class="hs-identifier hs-var">FourCC</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679135715"><span class="hs-identifier hs-var">a</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679135714"><span class="hs-identifier hs-var">b</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679135713"><span class="hs-identifier hs-var">c</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621679135712"><span class="hs-identifier hs-var">d</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621679136593"><span class="hs-identifier hs-var">a</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679136592"><span class="hs-identifier hs-var">b</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679136591"><span class="hs-identifier hs-var">c</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621679136590"><span class="hs-identifier hs-var">d</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-170"></span><span>
 </span><span id="line-171"></span></pre></body></html>

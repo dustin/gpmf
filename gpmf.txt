@@ -166,3 +166,13 @@ instance GHC.Show.Show GoPro.DEVC.GPSReading
 instance GHC.Show.Show GoPro.DEVC.Face
 instance GHC.Show.Show GoPro.DEVC.Gyroscope
 instance GHC.Show.Show GoPro.DEVC.Accelerometer
+
+module GoPro.Command.DEVCString
+fourcc :: FourCC -> ByteString
+cval :: Value -> ByteString
+showValues :: Int -> [Value] -> ByteString
+showTelemetry :: Int -> (FourCC, [Value]) -> ByteString
+tshow :: Show a => a -> ByteString
+joinMap :: Foldable f => (a -> ByteString) -> f a -> ByteString
+showDEVC :: DEVC -> ByteString
+showGPS :: GPSReading -> ByteString
