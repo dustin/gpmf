@@ -100,8 +100,8 @@ parseNested = do
   stuffs <- parseValue t ss rpt
 
   case (fourcc, stuffs) of
-    (FourCC ('T', 'Y', 'P', 'E'), [GString x]) -> put x
-    _                                          -> pure ()
+    ("TYPE", [GString x]) -> put x
+    _                     -> pure ()
 
   _ <- lift $ replicateM padding A.anyWord8
   pure (fourcc, stuffs)
@@ -114,9 +114,8 @@ parseFloat = runGet getFloat32be . BL.fromStrict <$> A.take 4
 
 replicatedParser :: Int -> Int -> Int -> A.Parser a -> ([a] -> Value) -> Parser [Value]
 replicatedParser 0 l rpt _ _ = lift $ replicateM (l*rpt) A.anyWord8 >> pure []
-replicatedParser one l rpt p cons = do
-  ns <- lift $ replicateM rpt (replicateM (l `div` one) p)
-  pure (cons <$> ns)
+replicatedParser one l rpt p cons =
+  fmap cons <$> lift (replicateM rpt (replicateM (l `div` one) p))
 
 parseTimestamp :: A.Parser UTCTime
 parseTimestamp = parseTimeM False defaultTimeLocale "%y%m%d%H%M%S%Q" =<< replicateM 16 AC.anyChar
@@ -140,10 +139,7 @@ parseValue :: Char -> Int -> Int -> Parser [Value]
 parseValue '\0' l rpt = do
   inp <- lift $ A.take (l * rpt)
   t <- get
-  xs <- case A.parseOnly (evalStateT (A.many1 parseNested) t) inp of
-          Left y   -> fail y
-          Right xs -> pure xs
-  pure (GNested <$> xs)
+  fmap GNested <$> either fail pure (A.parseOnly (evalStateT (A.many1 parseNested) t) inp)
 parseValue 'F' 4 rpt = lift $ replicateM rpt (GFourCC <$> parseFourCC)
 parseValue 'L' l rpt = replicatedParser 4 l rpt anyWord32be GUint32
 parseValue 'l' l rpt = replicatedParser 4 l rpt (fromIntegral <$> anyWord32be) GInt32
