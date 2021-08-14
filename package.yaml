@@ -67,4 +67,5 @@ tests:
     - HUnit
     - tasty
     - tasty-hunit
+    - tasty-golden
     - tasty-quickcheck

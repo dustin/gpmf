@@ -1,0 +1,5219 @@
+Device 1: HERO8 Black
+  AGC audio level[rms_level ,peak_level] - stmp:65052 tsmp:10
+    Audio levels:
+      rms:  [-128,-128,-35,-20,-19,-27,-20,-26,-28,-32]
+      peak: [-128,-128,-29,-10,-10,-15,-12,-17,-21,-25]
+  Accelerometer - stmp:60497 tsmp:203
+    Temp: 33.09375 and 203 values like (-6.177458,-0.38369304,8.0)
+  CameraOrientation - stmp:65052 tsmp:60
+    Unknown type
+        STMP
+          GUint64 [65052]
+        TSMP
+          GUint32 [60]
+        STNM
+          GString "CameraOrientation"
+        SCAL
+          GInt16 [32767]
+        CORI
+          GInt16 [32766,-5,-14,138]
+          GInt16 [32766,-29,22,193]
+          GInt16 [32766,-44,49,217]
+          GInt16 [32765,-60,106,253]
+          GInt16 [32765,-58,163,290]
+          GInt16 [32764,-26,221,330]
+          GInt16 [32763,44,285,363]
+          GInt16 [32762,135,368,390]
+          GInt16 [32760,203,437,420]
+          GInt16 [32759,226,455,451]
+          GInt16 [32759,212,439,485]
+          GInt16 [32759,200,427,518]
+          GInt16 [32758,208,433,548]
+          GInt16 [32758,218,438,573]
+          GInt16 [32757,207,443,601]
+          GInt16 [32757,184,448,618]
+          GInt16 [32757,155,450,626]
+          GInt16 [32757,132,451,629]
+          GInt16 [32757,133,445,634]
+          GInt16 [32757,142,442,641]
+          GInt16 [32757,139,445,646]
+          GInt16 [32757,124,448,644]
+          GInt16 [32757,103,453,642]
+          GInt16 [32757,99,469,635]
+          GInt16 [32757,100,486,639]
+          GInt16 [32756,84,489,650]
+          GInt16 [32756,73,497,651]
+          GInt16 [32756,80,525,646]
+          GInt16 [32755,79,552,657]
+          GInt16 [32754,48,558,692]
+          GInt16 [32753,4,571,735]
+          GInt16 [32752,-30,602,763]
+          GInt16 [32751,-62,630,778]
+          GInt16 [32750,-83,646,792]
+          GInt16 [32750,-87,652,804]
+          GInt16 [32750,-69,655,808]
+          GInt16 [32750,-52,666,816]
+          GInt16 [32749,-60,672,837]
+          GInt16 [32748,-87,676,875]
+          GInt16 [32746,-111,693,917]
+          GInt16 [32744,-139,707,968]
+          GInt16 [32742,-175,712,1029]
+          GInt16 [32740,-209,729,1082]
+          GInt16 [32738,-225,775,1116]
+          GInt16 [32735,-241,810,1148]
+          GInt16 [32734,-278,823,1185]
+          GInt16 [32732,-322,826,1216]
+          GInt16 [32731,-363,827,1240]
+          GInt16 [32729,-384,836,1260]
+          GInt16 [32728,-395,850,1282]
+          GInt16 [32727,-414,855,1308]
+          GInt16 [32725,-446,845,1336]
+          GInt16 [32724,-478,821,1364]
+          GInt16 [32723,-492,801,1392]
+          GInt16 [32723,-493,790,1416]
+          GInt16 [32722,-490,780,1426]
+          GInt16 [32722,-489,777,1430]
+          GInt16 [32723,-480,781,1418]
+          GInt16 [32724,-472,774,1405]
+          GInt16 [32725,-462,760,1385]
+  Exposure time (shutter speed) - stmp:65052 tsmp:30
+    Unknown type
+        STMP
+          GUint64 [65052]
+        TSMP
+          GUint32 [30]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+  Face Coordinates and details - stmp:65052 tsmp:10
+    Faces:
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:77639 tsmp:16
+    GPS time=2020-03-07 03:02:59.015 UTC p=9999, len(rs)=16
+        hd=(39.1519262,-121.6406192) alt=-24.776 spd2d=0.0 spd3d=0.0
+  Gravity Vector - stmp:65052 tsmp:60
+    Unknown type
+        STMP
+          GUint64 [65052]
+        TSMP
+          GUint32 [60]
+        STNM
+          GString "Gravity Vector"
+        SCAL
+          GInt16 [32767]
+        GRAV
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+  Gyroscope - stmp:60497 tsmp:203
+    Temp: 33.09375 and 203 values like (-1.0649627e-3,-4.259851e-2,0.18317358)
+  Image uniformity - stmp:65052 tsmp:10
+    Unknown type
+        STMP
+          GUint64 [65052]
+        TSMP
+          GUint32 [10]
+        STNM
+          GString "Image uniformity"
+        UNIF
+          GFloat [0.62890625]
+          GFloat [0.62890625]
+          GFloat [0.62890625]
+          GFloat [0.62890625]
+          GFloat [0.60058594]
+          GFloat [0.60058594]
+          GFloat [0.60058594]
+          GFloat [0.60058594]
+          GFloat [0.62890625]
+          GFloat [0.60058594]
+  ImageOrientation - stmp:65052 tsmp:60
+    Unknown type
+        STMP
+          GUint64 [65052]
+        TSMP
+          GUint32 [60]
+        STNM
+          GString "ImageOrientation"
+        SCAL
+          GInt16 [32767]
+        IORI
+          GInt16 [32766,-6,24,27]
+          GInt16 [32767,12,7,0]
+          GInt16 [32766,22,-7,-6]
+          GInt16 [32766,31,-49,-23]
+          GInt16 [32766,24,-95,-45]
+          GInt16 [32766,-12,-142,-67]
+          GInt16 [32766,-84,-193,-83]
+          GInt16 [32765,-170,-258,-93]
+          GInt16 [32764,-230,-312,-112]
+          GInt16 [32764,-250,-321,-133]
+          GInt16 [32764,-240,-300,-157]
+          GInt16 [32764,-232,-284,-177]
+          GInt16 [32764,-239,-281,-194]
+          GInt16 [32764,-247,-276,-205]
+          GInt16 [32764,-236,-272,-219]
+          GInt16 [32764,-217,-267,-223]
+          GInt16 [32764,-194,-264,-223]
+          GInt16 [32764,-177,-259,-220]
+          GInt16 [32764,-179,-249,-218]
+          GInt16 [32764,-186,-242,-218]
+          GInt16 [32764,-184,-240,-215]
+          GInt16 [32765,-173,-238,-207]
+          GInt16 [32765,-158,-237,-198]
+          GInt16 [32765,-157,-246,-186]
+          GInt16 [32765,-155,-255,-185]
+          GInt16 [32765,-140,-253,-191]
+          GInt16 [32765,-131,-257,-188]
+          GInt16 [32765,-136,-276,-182]
+          GInt16 [32764,-132,-294,-188]
+          GInt16 [32764,-105,-294,-214]
+          GInt16 [32764,-70,-302,-245]
+          GInt16 [32764,-41,-323,-263]
+          GInt16 [32764,-15,-341,-270]
+          GInt16 [32763,2,-349,-277]
+          GInt16 [32763,4,-350,-282]
+          GInt16 [32763,-8,-349,-281]
+          GInt16 [32763,-20,-355,-284]
+          GInt16 [32763,-12,-356,-298]
+          GInt16 [32763,9,-355,-325]
+          GInt16 [32763,29,-366,-356]
+          GInt16 [32762,51,-372,-394]
+          GInt16 [32761,78,-373,-439]
+          GInt16 [32761,105,-385,-479]
+          GInt16 [32760,117,-419,-503]
+          GInt16 [32759,132,-443,-526]
+          GInt16 [32758,162,-450,-553]
+          GInt16 [32758,197,-449,-575]
+          GInt16 [32757,229,-448,-593]
+          GInt16 [32757,242,-453,-606]
+          GInt16 [32756,249,-462,-622]
+          GInt16 [32756,263,-463,-641]
+          GInt16 [32755,287,-452,-663]
+          GInt16 [32755,309,-432,-684]
+          GInt16 [32755,319,-415,-706]
+          GInt16 [32754,318,-405,-724]
+          GInt16 [32754,315,-396,-733]
+          GInt16 [32754,312,-396,-738]
+          GInt16 [32754,301,-402,-731]
+          GInt16 [32755,293,-398,-723]
+          GInt16 [32755,282,-389,-710]
+  Microphone Wet[mic_wet, all_mics, confidence] - stmp:65052 tsmp:10
+    Unknown type
+        STMP
+          GUint64 [65052]
+        TSMP
+          GUint32 [10]
+        STNM
+          GString "Microphone Wet[mic_wet, all_mics, confidence]"
+        MWET
+          GUint8 [0,0,0]
+          GUint8 [0,0,0]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+  Sensor ISO - stmp:65052 tsmp:30
+    Unknown type
+        STMP
+          GUint64 [65052]
+        TSMP
+          GUint32 [30]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+  White Balance RGB gains - stmp:65052 tsmp:10
+    Unknown type
+        STMP
+          GUint64 [65052]
+        TSMP
+          GUint32 [10]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.640625,1.0,2.671875]
+          GFloat [1.6328125,1.0,2.6601563]
+          GFloat [1.6210938,1.0,2.6523438]
+          GFloat [1.6171875,1.0,2.640625]
+          GFloat [1.609375,1.0,2.6328125]
+          GFloat [1.6015625,1.0,2.6210938]
+          GFloat [1.59375,1.0,2.6171875]
+          GFloat [1.5859375,1.0,2.6054688]
+          GFloat [1.5820313,1.0,2.6015625]
+          GFloat [1.5742188,1.0,2.5976563]
+  White Balance temperature (Kelvin) - stmp:65052 tsmp:10
+    Unknown type
+        STMP
+          GUint64 [65052]
+        TSMP
+          GUint32 [10]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [4549]
+          GUint16 [4518]
+          GUint16 [4471]
+          GUint16 [4455]
+          GUint16 [4424]
+          GUint16 [4392]
+          GUint16 [4361]
+          GUint16 [4330]
+          GUint16 [4314]
+          GUint16 [4283]
+  Wind Processing[wind_enable, meter_value(0 - 100)] - stmp:65052 tsmp:10
+    Unknown type
+        STMP
+          GUint64 [65052]
+        TSMP
+          GUint32 [10]
+        STNM
+          GString "Wind Processing[wind_enable, meter_value(0 - 100)]"
+        WNDM
+          GUint8 [0,0]
+          GUint8 [0,0]
+          GUint8 [1,82]
+          GUint8 [1,75]
+          GUint8 [1,68]
+          GUint8 [1,63]
+          GUint8 [1,57]
+          GUint8 [1,52]
+          GUint8 [1,47]
+          GUint8 [1,43]
+Device 1: HERO8 Black
+  AGC audio level[rms_level ,peak_level] - stmp:1065052 tsmp:20
+    Audio levels:
+      rms:  [-38,-38,-38,-35,-36,-37,-38,-34,-37,-35]
+      peak: [-30,-31,-30,-28,-28,-30,-26,-28,-28,-27]
+  Accelerometer - stmp:1065867 tsmp:405
+    Temp: 33.445313 and 202 values like (-6.5755396,0.6498801,7.3453236)
+  CameraOrientation - stmp:1066052 tsmp:120
+    Unknown type
+        STMP
+          GUint64 [1066052]
+        TSMP
+          GUint32 [120]
+        STNM
+          GString "CameraOrientation"
+        SCAL
+          GInt16 [32767]
+        CORI
+          GInt16 [32727,-448,753,1352]
+          GInt16 [32729,-431,749,1309]
+          GInt16 [32731,-422,734,1276]
+          GInt16 [32732,-412,716,1246]
+          GInt16 [32734,-397,697,1218]
+          GInt16 [32735,-381,677,1196]
+          GInt16 [32737,-366,660,1178]
+          GInt16 [32737,-364,646,1164]
+          GInt16 [32738,-382,629,1158]
+          GInt16 [32738,-393,619,1146]
+          GInt16 [32739,-390,624,1130]
+          GInt16 [32739,-384,633,1116]
+          GInt16 [32740,-377,636,1098]
+          GInt16 [32740,-373,637,1082]
+          GInt16 [32741,-364,636,1064]
+          GInt16 [32742,-332,642,1034]
+          GInt16 [32744,-277,654,986]
+          GInt16 [32746,-209,665,913]
+          GInt16 [32749,-126,670,812]
+          GInt16 [32752,-45,674,710]
+          GInt16 [32754,37,655,640]
+          GInt16 [32755,119,623,603]
+          GInt16 [32755,193,598,586]
+          GInt16 [32755,249,573,581]
+          GInt16 [32756,307,549,563]
+          GInt16 [32756,354,528,536]
+          GInt16 [32757,382,497,506]
+          GInt16 [32757,398,466,479]
+          GInt16 [32758,415,455,443]
+          GInt16 [32758,430,442,404]
+          GInt16 [32759,436,421,362]
+          GInt16 [32760,425,402,314]
+          GInt16 [32761,416,388,254]
+          GInt16 [32761,402,375,198]
+          GInt16 [32762,381,354,146]
+          GInt16 [32763,355,318,97]
+          GInt16 [32764,331,276,46]
+          GInt16 [32764,319,243,-1]
+          GInt16 [32764,325,224,-51]
+          GInt16 [32764,318,196,-109]
+          GInt16 [32765,282,150,-155]
+          GInt16 [32765,246,91,-196]
+          GInt16 [32765,225,33,-239]
+          GInt16 [32764,214,-7,-293]
+          GInt16 [32764,191,-48,-346]
+          GInt16 [32764,153,-104,-388]
+          GInt16 [32763,108,-165,-426]
+          GInt16 [32762,56,-217,-473]
+          GInt16 [32761,4,-260,-531]
+          GInt16 [32760,-45,-313,-584]
+          GInt16 [32758,-95,-377,-619]
+          GInt16 [32757,-142,-446,-650]
+          GInt16 [32754,-175,-525,-697]
+          GInt16 [32751,-204,-618,-759]
+          GInt16 [32747,-228,-721,-835]
+          GInt16 [32742,-229,-820,-928]
+          GInt16 [32737,-214,-908,-1019]
+          GInt16 [32732,-196,-994,-1102]
+          GInt16 [32727,-173,-1070,-1191]
+          GInt16 [32722,-151,-1128,-1280]
+  Exposure time (shutter speed) - stmp:1066050 tsmp:60
+    Unknown type
+        STMP
+          GUint64 [1066050]
+        TSMP
+          GUint32 [60]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+  Face Coordinates and details - stmp:1066052 tsmp:20
+    Faces:
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:957022 tsmp:36
+    GPS time=2020-03-07 03:03:01.325 UTC p=9999, len(rs)=20
+        hd=(39.1519148,-121.6405719) alt=-24.475 spd2d=0.0 spd3d=0.0
+  Gravity Vector - stmp:1066052 tsmp:120
+    Unknown type
+        STMP
+          GUint64 [1066052]
+        TSMP
+          GUint32 [120]
+        STNM
+          GString "Gravity Vector"
+        SCAL
+          GInt16 [32767]
+        GRAV
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+  Gyroscope - stmp:1065867 tsmp:405
+    Temp: 33.445313 and 202 values like (3.1948881e-3,-5.2183174e-2,-0.14483494)
+  Image uniformity - stmp:1066052 tsmp:20
+    Unknown type
+        STMP
+          GUint64 [1066052]
+        TSMP
+          GUint32 [20]
+        STNM
+          GString "Image uniformity"
+        UNIF
+          GFloat [0.60058594]
+          GFloat [0.60058594]
+          GFloat [0.5722656]
+          GFloat [0.5722656]
+          GFloat [0.5722656]
+          GFloat [0.60058594]
+          GFloat [0.5722656]
+          GFloat [0.5722656]
+          GFloat [0.5722656]
+          GFloat [0.54296875]
+  ImageOrientation - stmp:1066052 tsmp:120
+    Unknown type
+        STMP
+          GUint64 [1066052]
+        TSMP
+          GUint32 [120]
+        STNM
+          GString "ImageOrientation"
+        SCAL
+          GInt16 [32767]
+        IORI
+          GInt16 [32756,270,-387,-686]
+          GInt16 [32757,256,-387,-657]
+          GInt16 [32757,248,-377,-635]
+          GInt16 [32758,240,-366,-616]
+          GInt16 [32758,226,-356,-602]
+          GInt16 [32759,212,-347,-593]
+          GInt16 [32759,200,-340,-587]
+          GInt16 [32759,199,-336,-586]
+          GInt16 [32759,212,-328,-591]
+          GInt16 [32759,220,-328,-591]
+          GInt16 [32759,218,-339,-589]
+          GInt16 [32759,215,-353,-588]
+          GInt16 [32759,211,-363,-585]
+          GInt16 [32759,209,-372,-583]
+          GInt16 [32759,202,-380,-579]
+          GInt16 [32759,177,-394,-565]
+          GInt16 [32759,134,-413,-536]
+          GInt16 [32760,80,-431,-488]
+          GInt16 [32761,14,-445,-419]
+          GInt16 [32761,-48,-458,-353]
+          GInt16 [32762,-111,-451,-311]
+          GInt16 [32762,-172,-436,-294]
+          GInt16 [32762,-227,-426,-292]
+          GInt16 [32761,-268,-416,-300]
+          GInt16 [32761,-313,-407,-298]
+          GInt16 [32761,-346,-401,-291]
+          GInt16 [32761,-366,-388,-283]
+          GInt16 [32761,-377,-376,-277]
+          GInt16 [32761,-381,-385,-268]
+          GInt16 [32761,-383,-391,-256]
+          GInt16 [32761,-377,-393,-242]
+          GInt16 [32761,-361,-396,-222]
+          GInt16 [32762,-346,-403,-193]
+          GInt16 [32762,-328,-411,-169]
+          GInt16 [32762,-306,-413,-148]
+          GInt16 [32763,-279,-405,-129]
+          GInt16 [32763,-252,-393,-115]
+          GInt16 [32763,-235,-390,-105]
+          GInt16 [32763,-231,-396,-92]
+          GInt16 [32763,-216,-394,-73]
+          GInt16 [32764,-180,-380,-63]
+          GInt16 [32764,-146,-357,-57]
+          GInt16 [32764,-124,-338,-50]
+          GInt16 [32765,-109,-332,-34]
+          GInt16 [32765,-88,-326,-28]
+          GInt16 [32765,-56,-308,-31]
+          GInt16 [32765,-18,-288,-35]
+          GInt16 [32765,25,-276,-32]
+          GInt16 [32765,69,-271,-19]
+          GInt16 [32765,112,-259,-13]
+          GInt16 [32765,156,-241,-20]
+          GInt16 [32765,197,-219,-30]
+          GInt16 [32765,224,-188,-29]
+          GInt16 [32765,248,-146,-18]
+          GInt16 [32765,269,-96,5]
+          GInt16 [32765,271,-49,42]
+          GInt16 [32765,261,-10,77]
+          GInt16 [32765,250,25,106]
+          GInt16 [32765,235,51,139]
+          GInt16 [32765,222,63,171]
+  Microphone Wet[mic_wet, all_mics, confidence] - stmp:1065052 tsmp:20
+    Unknown type
+        STMP
+          GUint64 [1065052]
+        TSMP
+          GUint32 [20]
+        STNM
+          GString "Microphone Wet[mic_wet, all_mics, confidence]"
+        MWET
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+  Sensor ISO - stmp:1066050 tsmp:60
+    Unknown type
+        STMP
+          GUint64 [1066050]
+        TSMP
+          GUint32 [60]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+  White Balance RGB gains - stmp:1066052 tsmp:20
+    Unknown type
+        STMP
+          GUint64 [1066052]
+        TSMP
+          GUint32 [20]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.5703125,1.0,2.5859375]
+          GFloat [1.5625,1.0,2.5820313]
+          GFloat [1.5585938,1.0,2.578125]
+          GFloat [1.5546875,1.0,2.5703125]
+          GFloat [1.5507813,1.0,2.5625]
+          GFloat [1.546875,1.0,2.5625]
+          GFloat [1.546875,1.0,2.5585938]
+          GFloat [1.5429688,1.0,2.5546875]
+          GFloat [1.5390625,1.0,2.5546875]
+          GFloat [1.5351563,1.0,2.546875]
+  White Balance temperature (Kelvin) - stmp:1066052 tsmp:20
+    Unknown type
+        STMP
+          GUint64 [1066052]
+        TSMP
+          GUint32 [20]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [4267]
+          GUint16 [4235]
+          GUint16 [4220]
+          GUint16 [4204]
+          GUint16 [4188]
+          GUint16 [4173]
+          GUint16 [4173]
+          GUint16 [4157]
+          GUint16 [4141]
+          GUint16 [4126]
+  Wind Processing[wind_enable, meter_value(0 - 100)] - stmp:1065052 tsmp:20
+    Unknown type
+        STMP
+          GUint64 [1065052]
+        TSMP
+          GUint32 [20]
+        STNM
+          GString "Wind Processing[wind_enable, meter_value(0 - 100)]"
+        WNDM
+          GUint8 [1,39]
+          GUint8 [1,36]
+          GUint8 [1,33]
+          GUint8 [1,30]
+          GUint8 [1,27]
+          GUint8 [1,25]
+          GUint8 [1,23]
+          GUint8 [1,20]
+          GUint8 [1,19]
+          GUint8 [1,17]
+Device 1: HERO8 Black
+  AGC audio level[rms_level ,peak_level] - stmp:2065052 tsmp:30
+    Audio levels:
+      rms:  [-39,-37,-39,-33,-35,-34,-35,-39,-35,-34]
+      peak: [-28,-29,-31,-26,-25,-26,-21,-29,-25,-27]
+  Accelerometer - stmp:2066306 tsmp:607
+    Temp: 33.740234 and 202 values like (-6.1414866,-0.8968825,7.918465)
+  CameraOrientation - stmp:2067052 tsmp:180
+    Unknown type
+        STMP
+          GUint64 [2067052]
+        TSMP
+          GUint32 [180]
+        STNM
+          GString "CameraOrientation"
+        SCAL
+          GInt16 [32767]
+        CORI
+          GInt16 [32717,-145,-1185,-1345]
+          GInt16 [32713,-142,-1242,-1404]
+          GInt16 [32708,-138,-1288,-1456]
+          GInt16 [32705,-134,-1320,-1498]
+          GInt16 [32702,-130,-1354,-1533]
+          GInt16 [32699,-114,-1392,-1563]
+          GInt16 [32697,-90,-1432,-1585]
+          GInt16 [32694,-70,-1471,-1595]
+          GInt16 [32693,-45,-1490,-1608]
+          GInt16 [32692,-10,-1492,-1625]
+          GInt16 [32691,33,-1500,-1638]
+          GInt16 [32690,85,-1523,-1642]
+          GInt16 [32688,137,-1555,-1640]
+          GInt16 [32686,178,-1597,-1643]
+          GInt16 [32683,211,-1646,-1649]
+          GInt16 [32680,248,-1701,-1650]
+          GInt16 [32676,292,-1769,-1649]
+          GInt16 [32671,333,-1844,-1645]
+          GInt16 [32667,368,-1928,-1633]
+          GInt16 [32661,417,-2020,-1627]
+          GInt16 [32655,471,-2111,-1622]
+          GInt16 [32647,525,-2204,-1632]
+          GInt16 [32637,583,-2310,-1679]
+          GInt16 [32623,634,-2425,-1761]
+          GInt16 [32608,670,-2535,-1872]
+          GInt16 [32590,705,-2640,-2013]
+          GInt16 [32569,776,-2741,-2182]
+          GInt16 [32546,892,-2830,-2367]
+          GInt16 [32523,1002,-2901,-2546]
+          GInt16 [32504,1070,-2929,-2722]
+          GInt16 [32489,1101,-2928,-2888]
+          GInt16 [32476,1097,-2955,-3005]
+          GInt16 [32464,1071,-3011,-3087]
+          GInt16 [32453,1037,-3060,-3166]
+          GInt16 [32442,993,-3100,-3252]
+          GInt16 [32428,945,-3146,-3355]
+          GInt16 [32411,892,-3212,-3473]
+          GInt16 [32390,841,-3294,-3596]
+          GInt16 [32367,802,-3383,-3728]
+          GInt16 [32343,775,-3470,-3863]
+          GInt16 [32318,740,-3560,-3993]
+          GInt16 [32294,713,-3633,-4124]
+          GInt16 [32272,710,-3682,-4254]
+          GInt16 [32250,708,-3748,-4358]
+          GInt16 [32232,694,-3823,-4434]
+          GInt16 [32216,685,-3877,-4501]
+          GInt16 [32205,680,-3886,-4575]
+          GInt16 [32197,661,-3884,-4632]
+          GInt16 [32195,637,-3867,-4665]
+          GInt16 [32196,638,-3827,-4688]
+          GInt16 [32201,665,-3774,-4694]
+          GInt16 [32209,700,-3731,-4671]
+          GInt16 [32220,749,-3692,-4617]
+          GInt16 [32234,819,-3649,-4542]
+          GInt16 [32249,907,-3609,-4452]
+          GInt16 [32263,1000,-3597,-4335]
+          GInt16 [32278,1079,-3612,-4193]
+          GInt16 [32290,1144,-3636,-4060]
+          GInt16 [32298,1208,-3661,-3948]
+          GInt16 [32305,1275,-3694,-3842]
+  Exposure time (shutter speed) - stmp:2067048 tsmp:90
+    Unknown type
+        STMP
+          GUint64 [2067048]
+        TSMP
+          GUint32 [90]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+  Face Coordinates and details - stmp:2067052 tsmp:30
+    Faces:
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:2055186 tsmp:54
+    GPS time=2020-03-07 03:03:02.315 UTC p=9999, len(rs)=18
+        hd=(39.150405,-121.6449322) alt=-34.395 spd2d=0.0 spd3d=0.0
+  Gravity Vector - stmp:2067052 tsmp:180
+    Unknown type
+        STMP
+          GUint64 [2067052]
+        TSMP
+          GUint32 [180]
+        STNM
+          GString "Gravity Vector"
+        SCAL
+          GInt16 [32767]
+        GRAV
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+  Gyroscope - stmp:2066306 tsmp:607
+    Temp: 33.740234 and 202 values like (0.22044729,-6.3897762e-3,-0.22257721)
+  Image uniformity - stmp:2067052 tsmp:30
+    Unknown type
+        STMP
+          GUint64 [2067052]
+        TSMP
+          GUint32 [30]
+        STNM
+          GString "Image uniformity"
+        UNIF
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.51464844]
+          GFloat [0.54296875]
+          GFloat [0.51464844]
+          GFloat [0.51464844]
+          GFloat [0.54296875]
+  ImageOrientation - stmp:2067052 tsmp:180
+    Unknown type
+        STMP
+          GUint64 [2067052]
+        TSMP
+          GUint32 [180]
+        STNM
+          GString "ImageOrientation"
+        SCAL
+          GInt16 [32767]
+        IORI
+          GInt16 [32765,220,73,183]
+          GInt16 [32765,220,83,191]
+          GInt16 [32765,220,85,195]
+          GInt16 [32765,221,76,191]
+          GInt16 [32765,222,69,183]
+          GInt16 [32765,215,66,169]
+          GInt16 [32765,204,63,148]
+          GInt16 [32766,196,58,118]
+          GInt16 [32766,183,35,90]
+          GInt16 [32766,161,1,66]
+          GInt16 [32766,132,-27,37]
+          GInt16 [32766,99,-44,2]
+          GInt16 [32766,67,-54,-37]
+          GInt16 [32766,46,-57,-73]
+          GInt16 [32766,30,-56,-108]
+          GInt16 [32766,13,-49,-148]
+          GInt16 [32766,-5,-32,-187]
+          GInt16 [32766,-20,-11,-230]
+          GInt16 [32765,-30,18,-281]
+          GInt16 [32765,-51,55,-328]
+          GInt16 [32764,-76,90,-378]
+          GInt16 [32763,-101,129,-416]
+          GInt16 [32763,-131,177,-426]
+          GInt16 [32763,-155,231,-409]
+          GInt16 [32763,-166,276,-367]
+          GInt16 [32763,-182,320,-302]
+          GInt16 [32763,-232,364,-215]
+          GInt16 [32762,-319,403,-119]
+          GInt16 [32761,-401,427,-29]
+          GInt16 [32761,-454,416,59]
+          GInt16 [32760,-481,383,138]
+          GInt16 [32760,-476,372,179]
+          GInt16 [32761,-445,375,190]
+          GInt16 [32761,-410,371,203]
+          GInt16 [32762,-370,363,223]
+          GInt16 [32762,-327,361,260]
+          GInt16 [32762,-282,376,309]
+          GInt16 [32761,-240,406,364]
+          GInt16 [32760,-209,443,426]
+          GInt16 [32759,-188,482,492]
+          GInt16 [32757,-159,516,549]
+          GInt16 [32756,-139,540,609]
+          GInt16 [32755,-139,553,671]
+          GInt16 [32753,-133,583,717]
+          GInt16 [32752,-117,622,748]
+          GInt16 [32751,-104,646,778]
+          GInt16 [32750,-97,641,818]
+          GInt16 [32749,-75,629,850]
+          GInt16 [32750,-39,601,866]
+          GInt16 [32750,-21,560,879]
+          GInt16 [32751,-19,514,884]
+          GInt16 [32751,-20,480,873]
+          GInt16 [32752,-28,453,843]
+          GInt16 [32754,-51,428,802]
+          GInt16 [32755,-85,413,754]
+          GInt16 [32756,-117,425,689]
+          GInt16 [32758,-128,450,605]
+          GInt16 [32758,-128,482,529]
+          GInt16 [32759,-130,519,472]
+          GInt16 [32759,-136,566,420]
+  Microphone Wet[mic_wet, all_mics, confidence] - stmp:2065052 tsmp:30
+    Unknown type
+        STMP
+          GUint64 [2065052]
+        TSMP
+          GUint32 [30]
+        STNM
+          GString "Microphone Wet[mic_wet, all_mics, confidence]"
+        MWET
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+  Sensor ISO - stmp:2067048 tsmp:90
+    Unknown type
+        STMP
+          GUint64 [2067048]
+        TSMP
+          GUint32 [90]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+  White Balance RGB gains - stmp:2067052 tsmp:30
+    Unknown type
+        STMP
+          GUint64 [2067052]
+        TSMP
+          GUint32 [30]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.53125,1.0,2.546875]
+          GFloat [1.5273438,1.0,2.5429688]
+          GFloat [1.5273438,1.0,2.5429688]
+          GFloat [1.5234375,1.0,2.5390625]
+          GFloat [1.5195313,1.0,2.5351563]
+          GFloat [1.5195313,1.0,2.5351563]
+          GFloat [1.5195313,1.0,2.5351563]
+          GFloat [1.515625,1.0,2.5273438]
+          GFloat [1.515625,1.0,2.5273438]
+          GFloat [1.5117188,1.0,2.5273438]
+  White Balance temperature (Kelvin) - stmp:2067052 tsmp:30
+    Unknown type
+        STMP
+          GUint64 [2067052]
+        TSMP
+          GUint32 [30]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [4110]
+          GUint16 [4094]
+          GUint16 [4094]
+          GUint16 [4079]
+          GUint16 [4063]
+          GUint16 [4063]
+          GUint16 [4063]
+          GUint16 [4047]
+          GUint16 [4047]
+          GUint16 [4031]
+  Wind Processing[wind_enable, meter_value(0 - 100)] - stmp:2065052 tsmp:30
+    Unknown type
+        STMP
+          GUint64 [2065052]
+        TSMP
+          GUint32 [30]
+        STNM
+          GString "Wind Processing[wind_enable, meter_value(0 - 100)]"
+        WNDM
+          GUint8 [1,15]
+          GUint8 [1,14]
+          GUint8 [1,13]
+          GUint8 [1,11]
+          GUint8 [1,11]
+          GUint8 [0,10]
+          GUint8 [0,9]
+          GUint8 [0,9]
+          GUint8 [0,8]
+          GUint8 [0,8]
+Device 1: HERO8 Black
+  AGC audio level[rms_level ,peak_level] - stmp:3065052 tsmp:40
+    Audio levels:
+      rms:  [-34,-37,-34,-35,-31,-34,-37,-32,-29,-36]
+      peak: [-24,-31,-28,-28,-18,-26,-29,-24,-18,-28]
+  Accelerometer - stmp:3066773 tsmp:809
+    Temp: 34.01367 and 202 values like (-5.8944845,1.2853717,8.285372)
+  CameraOrientation - stmp:3068052 tsmp:240
+    Unknown type
+        STMP
+          GUint64 [3068052]
+        TSMP
+          GUint32 [240]
+        STNM
+          GString "CameraOrientation"
+        SCAL
+          GInt16 [32767]
+        CORI
+          GInt16 [32311,1347,-3718,-3740]
+          GInt16 [32317,1428,-3717,-3656]
+          GInt16 [32323,1514,-3690,-3598]
+          GInt16 [32329,1591,-3650,-3552]
+          GInt16 [32335,1661,-3604,-3514]
+          GInt16 [32342,1735,-3543,-3468]
+          GInt16 [32354,1821,-3453,-3405]
+          GInt16 [32372,1912,-3326,-3313]
+          GInt16 [32393,2005,-3161,-3213]
+          GInt16 [32414,2088,-2983,-3112]
+          GInt16 [32436,2151,-2815,-2997]
+          GInt16 [32457,2199,-2653,-2881]
+          GInt16 [32477,2234,-2487,-2770]
+          GInt16 [32496,2253,-2334,-2667]
+          GInt16 [32514,2243,-2199,-2568]
+          GInt16 [32530,2227,-2078,-2475]
+          GInt16 [32547,2209,-1950,-2375]
+          GInt16 [32564,2189,-1811,-2263]
+          GInt16 [32581,2168,-1674,-2143]
+          GInt16 [32597,2134,-1558,-2017]
+          GInt16 [32610,2104,-1489,-1890]
+          GInt16 [32622,2087,-1438,-1745]
+          GInt16 [32634,2095,-1313,-1591]
+          GInt16 [32644,2120,-1203,-1449]
+          GInt16 [32650,2149,-1138,-1308]
+          GInt16 [32656,2175,-1074,-1168]
+          GInt16 [32661,2195,-1015,-1031]
+          GInt16 [32666,2204,-952,-886]
+          GInt16 [32671,2217,-884,-746]
+          GInt16 [32675,2222,-816,-611]
+          GInt16 [32679,2222,-746,-479]
+          GInt16 [32682,2226,-659,-360]
+          GInt16 [32686,2211,-568,-244]
+          GInt16 [32691,2170,-485,-129]
+          GInt16 [32694,2131,-417,-19]
+          GInt16 [32697,2099,-375,89]
+          GInt16 [32698,2076,-349,186]
+          GInt16 [32698,2075,-323,256]
+          GInt16 [32697,2082,-300,308]
+          GInt16 [32696,2104,-271,332]
+          GInt16 [32694,2137,-222,338]
+          GInt16 [32692,2182,-153,326]
+          GInt16 [32689,2224,-81,316]
+          GInt16 [32688,2244,-36,337]
+          GInt16 [32686,2256,-22,388]
+          GInt16 [32685,2268,-31,459]
+          GInt16 [32683,2281,-43,534]
+          GInt16 [32681,2290,-58,604]
+          GInt16 [32680,2286,-79,666]
+          GInt16 [32679,2288,-88,696]
+          GInt16 [32678,2297,-75,695]
+          GInt16 [32679,2300,-46,673]
+          GInt16 [32680,2298,-10,633]
+          GInt16 [32681,2290,25,579]
+          GInt16 [32683,2279,50,519]
+          GInt16 [32684,2276,66,457]
+          GInt16 [32685,2271,78,401]
+          GInt16 [32685,2275,89,350]
+          GInt16 [32686,2277,105,316]
+          GInt16 [32686,2277,122,292]
+  Exposure time (shutter speed) - stmp:3068052 tsmp:120
+    Unknown type
+        STMP
+          GUint64 [3068052]
+        TSMP
+          GUint32 [120]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+  Face Coordinates and details - stmp:3068052 tsmp:40
+    Faces:
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:3088211 tsmp:70
+    GPS time=2020-03-07 03:03:03.36 UTC p=9999, len(rs)=16
+        hd=(39.1506965,-121.6451371) alt=-22.85 spd2d=0.0 spd3d=0.0
+  Gravity Vector - stmp:3068052 tsmp:240
+    Unknown type
+        STMP
+          GUint64 [3068052]
+        TSMP
+          GUint32 [240]
+        STNM
+          GString "Gravity Vector"
+        SCAL
+          GInt16 [32767]
+        GRAV
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+  Gyroscope - stmp:3066773 tsmp:809
+    Temp: 34.01367 and 202 values like (0.106496274,-0.23961662,0.37486687)
+  Image uniformity - stmp:3068052 tsmp:40
+    Unknown type
+        STMP
+          GUint64 [3068052]
+        TSMP
+          GUint32 [40]
+        STNM
+          GString "Image uniformity"
+        UNIF
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.5722656]
+          GFloat [0.5722656]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+  ImageOrientation - stmp:3068052 tsmp:240
+    Unknown type
+        STMP
+          GUint64 [3068052]
+        TSMP
+          GUint32 [240]
+        STNM
+          GString "ImageOrientation"
+        SCAL
+          GInt16 [32767]
+        IORI
+          GInt16 [32758,-148,610,374]
+          GInt16 [32758,-171,639,348]
+          GInt16 [32758,-201,652,344]
+          GInt16 [32757,-227,659,355]
+          GInt16 [32757,-242,653,369]
+          GInt16 [32757,-263,637,376]
+          GInt16 [32758,-297,601,367]
+          GInt16 [32759,-338,540,337]
+          GInt16 [32760,-385,455,302]
+          GInt16 [32761,-426,365,268]
+          GInt16 [32761,-453,286,229]
+          GInt16 [32762,-469,214,193]
+          GInt16 [32762,-467,143,166]
+          GInt16 [32763,-453,80,144]
+          GInt16 [32764,-419,26,128]
+          GInt16 [32764,-383,-18,117]
+          GInt16 [32764,-348,-69,101]
+          GInt16 [32765,-314,-127,77]
+          GInt16 [32765,-282,-181,49]
+          GInt16 [32765,-240,-217,21]
+          GInt16 [32765,-197,-208,-1]
+          GInt16 [32766,-164,-188,-40]
+          GInt16 [32765,-153,-229,-91]
+          GInt16 [32765,-156,-253,-134]
+          GInt16 [32765,-162,-248,-176]
+          GInt16 [32764,-168,-243,-217]
+          GInt16 [32764,-171,-237,-255]
+          GInt16 [32764,-167,-235,-301]
+          GInt16 [32764,-164,-231,-332]
+          GInt16 [32763,-155,-227,-362]
+          GInt16 [32763,-142,-230,-396]
+          GInt16 [32762,-135,-249,-425]
+          GInt16 [32762,-112,-274,-456]
+          GInt16 [32761,-72,-295,-490]
+          GInt16 [32761,-34,-306,-522]
+          GInt16 [32760,-2,-299,-556]
+          GInt16 [32760,21,-273,-569]
+          GInt16 [32761,29,-251,-562]
+          GInt16 [32761,31,-230,-545]
+          GInt16 [32762,19,-218,-512]
+          GInt16 [32762,0,-227,-470]
+          GInt16 [32763,-30,-256,-421]
+          GInt16 [32763,-56,-287,-380]
+          GInt16 [32763,-64,-297,-368]
+          GInt16 [32763,-65,-278,-369]
+          GInt16 [32763,-67,-241,-387]
+          GInt16 [32763,-71,-203,-412]
+          GInt16 [32763,-72,-163,-439]
+          GInt16 [32763,-63,-121,-463]
+          GInt16 [32763,-62,-93,-469]
+          GInt16 [32763,-66,-86,-456]
+          GInt16 [32763,-67,-95,-433]
+          GInt16 [32764,-62,-108,-390]
+          GInt16 [32764,-53,-122,-337]
+          GInt16 [32765,-43,-128,-281]
+          GInt16 [32765,-39,-130,-223]
+          GInt16 [32766,-35,-130,-173]
+          GInt16 [32766,-39,-131,-130]
+          GInt16 [32766,-41,-136,-105]
+          GInt16 [32766,-42,-143,-91]
+  Microphone Wet[mic_wet, all_mics, confidence] - stmp:3065052 tsmp:40
+    Unknown type
+        STMP
+          GUint64 [3065052]
+        TSMP
+          GUint32 [40]
+        STNM
+          GString "Microphone Wet[mic_wet, all_mics, confidence]"
+        MWET
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+  Sensor ISO - stmp:3068052 tsmp:120
+    Unknown type
+        STMP
+          GUint64 [3068052]
+        TSMP
+          GUint32 [120]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+  White Balance RGB gains - stmp:3068052 tsmp:40
+    Unknown type
+        STMP
+          GUint64 [3068052]
+        TSMP
+          GUint32 [40]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.5117188,1.0,2.5273438]
+          GFloat [1.5078125,1.0,2.5273438]
+          GFloat [1.5078125,1.0,2.5273438]
+          GFloat [1.5039063,1.0,2.5234375]
+          GFloat [1.5039063,1.0,2.5234375]
+          GFloat [1.5,1.0,2.5234375]
+          GFloat [1.4960938,1.0,2.5234375]
+          GFloat [1.4960938,1.0,2.5195313]
+          GFloat [1.4960938,1.0,2.515625]
+          GFloat [1.4960938,1.0,2.515625]
+  White Balance temperature (Kelvin) - stmp:3068052 tsmp:40
+    Unknown type
+        STMP
+          GUint64 [3068052]
+        TSMP
+          GUint32 [40]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [4031]
+          GUint16 [4016]
+          GUint16 [4016]
+          GUint16 [4000]
+          GUint16 [4000]
+          GUint16 [3984]
+          GUint16 [3969]
+          GUint16 [3969]
+          GUint16 [3969]
+          GUint16 [3969]
+  Wind Processing[wind_enable, meter_value(0 - 100)] - stmp:3065052 tsmp:40
+    Unknown type
+        STMP
+          GUint64 [3065052]
+        TSMP
+          GUint32 [40]
+        STNM
+          GString "Wind Processing[wind_enable, meter_value(0 - 100)]"
+        WNDM
+          GUint8 [0,7]
+          GUint8 [0,7]
+          GUint8 [0,7]
+          GUint8 [0,7]
+          GUint8 [0,10]
+          GUint8 [0,14]
+          GUint8 [0,14]
+          GUint8 [0,14]
+          GUint8 [0,15]
+          GUint8 [0,15]
+Device 1: HERO8 Black
+  AGC audio level[rms_level ,peak_level] - stmp:4065052 tsmp:50
+    Audio levels:
+      rms:  [-35,-33,-37,-38,-38,-40,-35,-39,-25,-26]
+      peak: [-25,-20,-29,-27,-31,-30,-29,-32,-12,-18]
+  Accelerometer - stmp:4067187 tsmp:1011
+    Temp: 34.20703 and 202 values like (-4.736211,-0.8441247,8.2230215)
+  CameraOrientation - stmp:4069052 tsmp:300
+    Unknown type
+        STMP
+          GUint64 [4069052]
+        TSMP
+          GUint32 [300]
+        STNM
+          GString "CameraOrientation"
+        SCAL
+          GInt16 [32767]
+        CORI
+          GInt16 [32686,2274,129,284]
+          GInt16 [32687,2264,125,286]
+          GInt16 [32688,2252,116,285]
+          GInt16 [32689,2238,112,284]
+          GInt16 [32690,2220,102,276]
+          GInt16 [32692,2190,78,265]
+          GInt16 [32694,2159,48,244]
+          GInt16 [32696,2145,13,202]
+          GInt16 [32695,2162,-11,140]
+          GInt16 [32691,2215,-15,63]
+          GInt16 [32688,2263,-3,-12]
+          GInt16 [32687,2276,21,-69]
+          GInt16 [32687,2279,71,-107]
+          GInt16 [32687,2271,112,-103]
+          GInt16 [32689,2248,120,-59]
+          GInt16 [32690,2230,108,-4]
+          GInt16 [32691,2224,91,42]
+          GInt16 [32691,2225,72,69]
+          GInt16 [32690,2235,56,67]
+          GInt16 [32689,2245,40,49]
+          GInt16 [32689,2251,17,23]
+          GInt16 [32689,2256,-1,-10]
+          GInt16 [32689,2256,-6,-50]
+          GInt16 [32689,2253,-1,-95]
+          GInt16 [32689,2246,12,-142]
+          GInt16 [32689,2238,28,-187]
+          GInt16 [32690,2230,38,-222]
+          GInt16 [32690,2225,40,-249]
+          GInt16 [32690,2222,32,-265]
+          GInt16 [32690,2217,12,-268]
+          GInt16 [32690,2222,-7,-267]
+          GInt16 [32690,2227,-35,-259]
+          GInt16 [32690,2224,-74,-246]
+          GInt16 [32690,2224,-109,-237]
+          GInt16 [32689,2229,-127,-236]
+          GInt16 [32689,2228,-139,-236]
+          GInt16 [32690,2217,-155,-235]
+          GInt16 [32691,2206,-168,-235]
+          GInt16 [32692,2190,-171,-238]
+          GInt16 [32693,2170,-168,-247]
+          GInt16 [32694,2150,-161,-256]
+          GInt16 [32696,2129,-156,-263]
+          GInt16 [32697,2109,-155,-267]
+          GInt16 [32699,2086,-159,-265]
+          GInt16 [32700,2062,-165,-261]
+          GInt16 [32701,2041,-157,-263]
+          GInt16 [32703,2017,-152,-266]
+          GInt16 [32704,1991,-159,-261]
+          GInt16 [32705,1977,-157,-259]
+          GInt16 [32706,1970,-146,-260]
+          GInt16 [32707,1959,-142,-258]
+          GInt16 [32707,1953,-139,-254]
+          GInt16 [32708,1942,-140,-242]
+          GInt16 [32709,1925,-147,-225]
+          GInt16 [32709,1916,-150,-211]
+          GInt16 [32710,1915,-147,-197]
+          GInt16 [32710,1910,-149,-183]
+          GInt16 [32710,1905,-157,-169]
+          GInt16 [32711,1899,-166,-153]
+          GInt16 [32711,1897,-169,-143]
+  Exposure time (shutter speed) - stmp:4069052 tsmp:150
+    Unknown type
+        STMP
+          GUint64 [4069052]
+        TSMP
+          GUint32 [150]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+  Face Coordinates and details - stmp:4069052 tsmp:50
+    Faces:
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:3958323 tsmp:90
+    GPS time=2020-03-07 03:03:04.35 UTC p=9999, len(rs)=20
+        hd=(39.1507663,-121.6451179) alt=-22.577 spd2d=0.0 spd3d=0.0
+  Gravity Vector - stmp:4069052 tsmp:300
+    Unknown type
+        STMP
+          GUint64 [4069052]
+        TSMP
+          GUint32 [300]
+        STNM
+          GString "Gravity Vector"
+        SCAL
+          GInt16 [32767]
+        GRAV
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+  Gyroscope - stmp:4067187 tsmp:1011
+    Temp: 34.20703 and 202 values like (-4.259851e-3,3.514377e-2,2.0234292e-2)
+  Image uniformity - stmp:4069052 tsmp:50
+    Unknown type
+        STMP
+          GUint64 [4069052]
+        TSMP
+          GUint32 [50]
+        STNM
+          GString "Image uniformity"
+        UNIF
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+  ImageOrientation - stmp:4069052 tsmp:300
+    Unknown type
+        STMP
+          GUint64 [4069052]
+        TSMP
+          GUint32 [300]
+        STNM
+          GString "ImageOrientation"
+        SCAL
+          GInt16 [32767]
+        IORI
+          GInt16 [32766,-40,-139,-90]
+          GInt16 [32766,-34,-127,-96]
+          GInt16 [32766,-24,-111,-101]
+          GInt16 [32766,-12,-100,-107]
+          GInt16 [32766,3,-86,-109]
+          GInt16 [32766,28,-61,-109]
+          GInt16 [32766,52,-34,-102]
+          GInt16 [32766,63,-7,-79]
+          GInt16 [32766,47,11,-42]
+          GInt16 [32766,5,12,7]
+          GInt16 [32766,-30,0,56]
+          GInt16 [32766,-40,-21,92]
+          GInt16 [32766,-44,-62,111]
+          GInt16 [32766,-37,-92,98]
+          GInt16 [32766,-20,-96,56]
+          GInt16 [32766,-7,-85,8]
+          GInt16 [32766,-2,-69,-33]
+          GInt16 [32766,-3,-52,-59]
+          GInt16 [32766,-12,-39,-66]
+          GInt16 [32766,-21,-27,-62]
+          GInt16 [32766,-27,-9,-51]
+          GInt16 [32766,-33,2,-35]
+          GInt16 [32766,-35,2,-16]
+          GInt16 [32766,-35,-5,7]
+          GInt16 [32766,-35,-22,44]
+          GInt16 [32766,-36,-41,83]
+          GInt16 [32766,-36,-55,114]
+          GInt16 [32766,-38,-61,139]
+          GInt16 [32766,-41,-57,154]
+          GInt16 [32766,-43,-44,157]
+          GInt16 [32766,-53,-30,157]
+          GInt16 [32766,-61,-9,150]
+          GInt16 [32766,-61,22,144]
+          GInt16 [32766,-62,50,142]
+          GInt16 [32766,-66,64,144]
+          GInt16 [32766,-66,75,146]
+          GInt16 [32766,-58,88,146]
+          GInt16 [32766,-51,97,149]
+          GInt16 [32766,-40,98,153]
+          GInt16 [32766,-25,94,161]
+          GInt16 [32766,-8,85,167]
+          GInt16 [32766,10,78,174]
+          GInt16 [32766,27,74,177]
+          GInt16 [32766,47,76,177]
+          GInt16 [32766,67,77,175]
+          GInt16 [32766,85,68,176]
+          GInt16 [32766,105,62,178]
+          GInt16 [32766,126,65,175]
+          GInt16 [32766,137,60,175]
+          GInt16 [32766,143,49,176]
+          GInt16 [32766,152,44,175]
+          GInt16 [32766,157,40,172]
+          GInt16 [32766,166,39,163]
+          GInt16 [32766,180,43,151]
+          GInt16 [32766,186,43,140]
+          GInt16 [32766,187,39,130]
+          GInt16 [32766,185,40,121]
+          GInt16 [32766,182,46,114]
+          GInt16 [32766,180,53,105]
+          GInt16 [32766,176,54,101]
+  Microphone Wet[mic_wet, all_mics, confidence] - stmp:4065052 tsmp:50
+    Unknown type
+        STMP
+          GUint64 [4065052]
+        TSMP
+          GUint32 [50]
+        STNM
+          GString "Microphone Wet[mic_wet, all_mics, confidence]"
+        MWET
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+  Sensor ISO - stmp:4069052 tsmp:150
+    Unknown type
+        STMP
+          GUint64 [4069052]
+        TSMP
+          GUint32 [150]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+  White Balance RGB gains - stmp:4069052 tsmp:50
+    Unknown type
+        STMP
+          GUint64 [4069052]
+        TSMP
+          GUint32 [50]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.4960938,1.0,2.515625]
+          GFloat [1.4921875,1.0,2.515625]
+          GFloat [1.4921875,1.0,2.515625]
+          GFloat [1.4921875,1.0,2.515625]
+          GFloat [1.4882813,1.0,2.515625]
+          GFloat [1.4882813,1.0,2.5117188]
+          GFloat [1.4882813,1.0,2.5117188]
+          GFloat [1.4882813,1.0,2.5117188]
+          GFloat [1.484375,1.0,2.5078125]
+          GFloat [1.484375,1.0,2.5078125]
+  White Balance temperature (Kelvin) - stmp:4069052 tsmp:50
+    Unknown type
+        STMP
+          GUint64 [4069052]
+        TSMP
+          GUint32 [50]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [3969]
+          GUint16 [3953]
+          GUint16 [3953]
+          GUint16 [3953]
+          GUint16 [3941]
+          GUint16 [3941]
+          GUint16 [3941]
+          GUint16 [3941]
+          GUint16 [3930]
+          GUint16 [3930]
+  Wind Processing[wind_enable, meter_value(0 - 100)] - stmp:4065052 tsmp:50
+    Unknown type
+        STMP
+          GUint64 [4065052]
+        TSMP
+          GUint32 [50]
+        STNM
+          GString "Wind Processing[wind_enable, meter_value(0 - 100)]"
+        WNDM
+          GUint8 [0,15]
+          GUint8 [0,15]
+          GUint8 [0,15]
+          GUint8 [0,14]
+          GUint8 [0,14]
+          GUint8 [0,14]
+          GUint8 [0,13]
+          GUint8 [0,13]
+          GUint8 [0,12]
+          GUint8 [0,12]
+Device 1: HERO8 Black
+  AGC audio level[rms_level ,peak_level] - stmp:5065052 tsmp:60
+    Audio levels:
+      rms:  [-26,-30,-34,-37,-24,-22,-23,-28,-28,-23]
+      peak: [-12,-20,-28,-30,-13,-11,-13,-18,-19,-13]
+  Accelerometer - stmp:5067701 tsmp:1213
+    Temp: 34.50586 and 202 values like (-5.2158275,0.25419664,8.29976)
+  CameraOrientation - stmp:5070052 tsmp:360
+    Unknown type
+        STMP
+          GUint64 [5070052]
+        TSMP
+          GUint32 [360]
+        STNM
+          GString "CameraOrientation"
+        SCAL
+          GInt16 [32767]
+        CORI
+          GInt16 [32711,1894,-174,-134]
+          GInt16 [32712,1885,-182,-121]
+          GInt16 [32712,1874,-191,-112]
+          GInt16 [32713,1860,-205,-104]
+          GInt16 [32713,1851,-218,-99]
+          GInt16 [32713,1849,-222,-97]
+          GInt16 [32713,1848,-225,-96]
+          GInt16 [32714,1843,-230,-96]
+          GInt16 [32714,1838,-228,-100]
+          GInt16 [32714,1831,-232,-102]
+          GInt16 [32715,1820,-245,-96]
+          GInt16 [32715,1811,-250,-92]
+          GInt16 [32716,1808,-242,-91]
+          GInt16 [32716,1802,-236,-86]
+          GInt16 [32717,1790,-247,-75]
+          GInt16 [32717,1777,-260,-65]
+          GInt16 [32718,1766,-262,-64]
+          GInt16 [32718,1754,-262,-66]
+          GInt16 [32720,1730,-271,-64]
+          GInt16 [32722,1686,-296,-48]
+          GInt16 [32725,1619,-325,-23]
+          GInt16 [32729,1539,-236,42]
+          GInt16 [32733,1456,-155,144]
+          GInt16 [32737,1367,-144,242]
+          GInt16 [32738,1334,-104,296]
+          GInt16 [32736,1374,-74,292]
+          GInt16 [32734,1432,-113,267]
+          GInt16 [32732,1468,-242,250]
+          GInt16 [32729,1499,-410,250]
+          GInt16 [32725,1554,-522,244]
+          GInt16 [32719,1647,-567,206]
+          GInt16 [32715,1738,-571,184]
+          GInt16 [32710,1813,-618,170]
+          GInt16 [32704,1885,-734,163]
+          GInt16 [32696,1970,-826,168]
+          GInt16 [32688,2078,-883,167]
+          GInt16 [32679,2188,-949,172]
+          GInt16 [32671,2265,-1032,189]
+          GInt16 [32666,2299,-1104,202]
+          GInt16 [32664,2316,-1137,193]
+          GInt16 [32663,2322,-1157,183]
+          GInt16 [32663,2306,-1193,193]
+          GInt16 [32665,2262,-1215,226]
+          GInt16 [32672,2180,-1176,271]
+          GInt16 [32683,2060,-1066,328]
+          GInt16 [32697,1903,-889,388]
+          GInt16 [32710,1750,-689,430]
+          GInt16 [32719,1631,-513,441]
+          GInt16 [32727,1513,-336,420]
+          GInt16 [32734,1377,-223,414]
+          GInt16 [32738,1260,-246,442]
+          GInt16 [32741,1168,-281,491]
+          GInt16 [32742,1101,-312,546]
+          GInt16 [32743,1057,-319,575]
+          GInt16 [32743,1034,-298,590]
+          GInt16 [32744,1025,-252,622]
+          GInt16 [32742,1041,-208,684]
+          GInt16 [32740,1065,-159,770]
+          GInt16 [32737,1080,-108,863]
+          GInt16 [32735,1091,-43,934]
+  Exposure time (shutter speed) - stmp:5070052 tsmp:180
+    Unknown type
+        STMP
+          GUint64 [5070052]
+        TSMP
+          GUint32 [180]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+  Face Coordinates and details - stmp:5070052 tsmp:60
+    Faces:
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:5109159 tsmp:106
+    GPS time=2020-03-07 03:03:05.34 UTC p=9999, len(rs)=16
+        hd=(39.1507033,-121.6451237) alt=-22.65 spd2d=0.0 spd3d=0.0
+  Gravity Vector - stmp:5070052 tsmp:360
+    Unknown type
+        STMP
+          GUint64 [5070052]
+        TSMP
+          GUint32 [360]
+        STNM
+          GString "Gravity Vector"
+        SCAL
+          GInt16 [32767]
+        GRAV
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+  Gyroscope - stmp:5067701 tsmp:1213
+    Temp: 34.50586 and 202 values like (2.8753994e-2,2.342918e-2,3.940362e-2)
+  Image uniformity - stmp:5070052 tsmp:60
+    Unknown type
+        STMP
+          GUint64 [5070052]
+        TSMP
+          GUint32 [60]
+        STNM
+          GString "Image uniformity"
+        UNIF
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.51464844]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+  ImageOrientation - stmp:5070052 tsmp:360
+    Unknown type
+        STMP
+          GUint64 [5070052]
+        TSMP
+          GUint32 [360]
+        STNM
+          GString "ImageOrientation"
+        SCAL
+          GInt16 [32767]
+        IORI
+          GInt16 [32766,173,58,97]
+          GInt16 [32766,176,63,89]
+          GInt16 [32766,179,70,86]
+          GInt16 [32766,185,80,83]
+          GInt16 [32766,186,90,86]
+          GInt16 [32766,180,95,92]
+          GInt16 [32766,175,99,98]
+          GInt16 [32766,173,103,105]
+          GInt16 [32766,170,102,115]
+          GInt16 [32766,170,107,122]
+          GInt16 [32766,172,117,125]
+          GInt16 [32766,173,121,128]
+          GInt16 [32766,167,121,139]
+          GInt16 [32766,164,124,149]
+          GInt16 [32765,165,141,155]
+          GInt16 [32765,168,157,162]
+          GInt16 [32765,169,164,173]
+          GInt16 [32765,172,169,187]
+          GInt16 [32765,184,182,197]
+          GInt16 [32765,213,208,196]
+          GInt16 [32764,262,234,191]
+          GInt16 [32764,321,166,147]
+          GInt16 [32764,381,117,77]
+          GInt16 [32763,444,117,15]
+          GInt16 [32763,460,90,-11]
+          GInt16 [32764,420,74,5]
+          GInt16 [32764,367,114,41]
+          GInt16 [32764,328,225,75]
+          GInt16 [32763,291,363,102]
+          GInt16 [32762,235,453,134]
+          GInt16 [32762,150,492,185]
+          GInt16 [32762,70,503,221]
+          GInt16 [32761,0,551,254]
+          GInt16 [32759,-72,649,284]
+          GInt16 [32757,-154,723,303]
+          GInt16 [32755,-253,772,325]
+          GInt16 [32752,-350,829,341]
+          GInt16 [32750,-418,898,349]
+          GInt16 [32747,-453,956,359]
+          GInt16 [32746,-474,981,383]
+          GInt16 [32745,-485,996,407]
+          GInt16 [32744,-477,1026,415]
+          GInt16 [32744,-446,1048,408]
+          GInt16 [32745,-386,1035,393]
+          GInt16 [32749,-289,960,362]
+          GInt16 [32754,-162,833,328]
+          GInt16 [32758,-40,688,307]
+          GInt16 [32760,55,561,312]
+          GInt16 [32761,154,433,341]
+          GInt16 [32761,262,363,360]
+          GInt16 [32760,351,399,358]
+          GInt16 [32759,419,443,343]
+          GInt16 [32758,468,487,324]
+          GInt16 [32757,499,512,325]
+          GInt16 [32757,514,513,333]
+          GInt16 [32757,516,497,326]
+          GInt16 [32758,498,481,295]
+          GInt16 [32759,474,462,247]
+          GInt16 [32760,456,442,194]
+          GInt16 [32761,442,408,159]
+  Microphone Wet[mic_wet, all_mics, confidence] - stmp:5065052 tsmp:60
+    Unknown type
+        STMP
+          GUint64 [5065052]
+        TSMP
+          GUint32 [60]
+        STNM
+          GString "Microphone Wet[mic_wet, all_mics, confidence]"
+        MWET
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+  Sensor ISO - stmp:5070052 tsmp:180
+    Unknown type
+        STMP
+          GUint64 [5070052]
+        TSMP
+          GUint32 [180]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+  White Balance RGB gains - stmp:5070052 tsmp:60
+    Unknown type
+        STMP
+          GUint64 [5070052]
+        TSMP
+          GUint32 [60]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.484375,1.0,2.5078125]
+          GFloat [1.4804688,1.0,2.5078125]
+          GFloat [1.4804688,1.0,2.5078125]
+          GFloat [1.4804688,1.0,2.5078125]
+          GFloat [1.4804688,1.0,2.5039063]
+          GFloat [1.4804688,1.0,2.5039063]
+          GFloat [1.4804688,1.0,2.5078125]
+          GFloat [1.4804688,1.0,2.5078125]
+          GFloat [1.4765625,1.0,2.5078125]
+          GFloat [1.4765625,1.0,2.5078125]
+  White Balance temperature (Kelvin) - stmp:5070052 tsmp:60
+    Unknown type
+        STMP
+          GUint64 [5070052]
+        TSMP
+          GUint32 [60]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [3930]
+          GUint16 [3918]
+          GUint16 [3918]
+          GUint16 [3918]
+          GUint16 [3918]
+          GUint16 [3918]
+          GUint16 [3918]
+          GUint16 [3918]
+          GUint16 [3907]
+          GUint16 [3907]
+  Wind Processing[wind_enable, meter_value(0 - 100)] - stmp:5065052 tsmp:60
+    Unknown type
+        STMP
+          GUint64 [5065052]
+        TSMP
+          GUint32 [60]
+        STNM
+          GString "Wind Processing[wind_enable, meter_value(0 - 100)]"
+        WNDM
+          GUint8 [0,14]
+          GUint8 [0,14]
+          GUint8 [0,14]
+          GUint8 [0,14]
+          GUint8 [0,13]
+          GUint8 [0,13]
+          GUint8 [0,13]
+          GUint8 [0,13]
+          GUint8 [0,15]
+          GUint8 [0,15]
+Device 1: HERO8 Black
+  AGC audio level[rms_level ,peak_level] - stmp:6065052 tsmp:70
+    Audio levels:
+      rms:  [-23,-25,-25,-25,-26,-28,-26,-22,-25,-32]
+      peak: [-12,-18,-18,-15,-17,-18,-17,-11,-17,-22]
+  Accelerometer - stmp:6068170 tsmp:1415
+    Temp: 34.73633 and 202 values like (-5.585132,0.70023984,8.359713)
+  CameraOrientation - stmp:6071052 tsmp:420
+    Unknown type
+        STMP
+          GUint64 [6071052]
+        TSMP
+          GUint32 [420]
+        STNM
+          GString "CameraOrientation"
+        SCAL
+          GInt16 [32767]
+        CORI
+          GInt16 [32733,1100,40,992]
+          GInt16 [32731,1108,121,1047]
+          GInt16 [32728,1112,205,1112]
+          GInt16 [32725,1107,303,1192]
+          GInt16 [32721,1098,420,1271]
+          GInt16 [32716,1081,529,1356]
+          GInt16 [32711,1053,619,1457]
+          GInt16 [32705,1033,720,1561]
+          GInt16 [32699,1023,820,1652]
+          GInt16 [32692,1022,898,1734]
+          GInt16 [32685,1019,968,1827]
+          GInt16 [32679,1033,1034,1899]
+          GInt16 [32673,1066,1090,1954]
+          GInt16 [32666,1076,1142,2022]
+          GInt16 [32660,1062,1202,2101]
+          GInt16 [32653,1042,1273,2170]
+          GInt16 [32647,1032,1318,2233]
+          GInt16 [32642,1041,1336,2292]
+          GInt16 [32636,1058,1377,2349]
+          GInt16 [32628,1064,1446,2409]
+          GInt16 [32622,1084,1466,2475]
+          GInt16 [32615,1110,1491,2543]
+          GInt16 [32607,1138,1508,2613]
+          GInt16 [32600,1167,1521,2687]
+          GInt16 [32592,1204,1536,2758]
+          GInt16 [32584,1229,1576,2814]
+          GInt16 [32576,1230,1647,2868]
+          GInt16 [32571,1229,1712,2889]
+          GInt16 [32569,1252,1772,2862]
+          GInt16 [32570,1302,1808,2811]
+          GInt16 [32571,1351,1830,2755]
+          GInt16 [32573,1385,1840,2707]
+          GInt16 [32574,1425,1861,2658]
+          GInt16 [32575,1474,1881,2611]
+          GInt16 [32574,1523,1899,2579]
+          GInt16 [32572,1587,1927,2541]
+          GInt16 [32570,1648,1954,2511]
+          GInt16 [32567,1694,1975,2496]
+          GInt16 [32564,1745,2011,2483]
+          GInt16 [32558,1801,2053,2477]
+          GInt16 [32552,1849,2092,2493]
+          GInt16 [32545,1906,2143,2502]
+          GInt16 [32537,1954,2191,2525]
+          GInt16 [32529,2010,2228,2552]
+          GInt16 [32520,2081,2272,2575]
+          GInt16 [32510,2127,2313,2617]
+          GInt16 [32503,2155,2335,2665]
+          GInt16 [32496,2194,2374,2687]
+          GInt16 [32488,2232,2424,2698]
+          GInt16 [32482,2249,2463,2724]
+          GInt16 [32477,2254,2492,2755]
+          GInt16 [32472,2262,2524,2777]
+          GInt16 [32467,2271,2555,2799]
+          GInt16 [32462,2273,2590,2823]
+          GInt16 [32457,2266,2624,2856]
+          GInt16 [32451,2255,2656,2899]
+          GInt16 [32445,2237,2690,2954]
+          GInt16 [32438,2211,2731,3012]
+          GInt16 [32432,2189,2767,3062]
+          GInt16 [32427,2161,2789,3114]
+  Exposure time (shutter speed) - stmp:6071048 tsmp:210
+    Unknown type
+        STMP
+          GUint64 [6071048]
+        TSMP
+          GUint32 [210]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+  Face Coordinates and details - stmp:6071052 tsmp:70
+    Faces:
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:6055158 tsmp:123
+    GPS time=2020-03-07 03:03:06.33 UTC p=9999, len(rs)=17
+        hd=(39.1507267,-121.6451172) alt=-22.636 spd2d=0.0 spd3d=0.0
+  Gravity Vector - stmp:6071052 tsmp:420
+    Unknown type
+        STMP
+          GUint64 [6071052]
+        TSMP
+          GUint32 [420]
+        STNM
+          GString "Gravity Vector"
+        SCAL
+          GInt16 [32767]
+        GRAV
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+  Gyroscope - stmp:6068170 tsmp:1415
+    Temp: 34.73633 and 202 values like (-0.30777422,-1.3844515e-2,0.2172524)
+  Image uniformity - stmp:6071052 tsmp:70
+    Unknown type
+        STMP
+          GUint64 [6071052]
+        TSMP
+          GUint32 [70]
+        STNM
+          GString "Image uniformity"
+        UNIF
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+  ImageOrientation - stmp:6071052 tsmp:420
+    Unknown type
+        STMP
+          GUint64 [6071052]
+        TSMP
+          GUint32 [420]
+        STNM
+          GString "ImageOrientation"
+        SCAL
+          GInt16 [32767]
+        IORI
+          GInt16 [32761,430,362,133]
+          GInt16 [32762,420,317,108]
+          GInt16 [32763,413,269,74]
+          GInt16 [32763,413,210,28]
+          GInt16 [32764,418,138,-16]
+          GInt16 [32764,429,73,-66]
+          GInt16 [32763,448,22,-129]
+          GInt16 [32763,460,-35,-191]
+          GInt16 [32762,464,-91,-243]
+          GInt16 [32762,460,-130,-288]
+          GInt16 [32761,459,-163,-342]
+          GInt16 [32761,442,-194,-377]
+          GInt16 [32761,414,-219,-401]
+          GInt16 [32760,403,-239,-434]
+          GInt16 [32759,411,-264,-476]
+          GInt16 [32758,423,-296,-509]
+          GInt16 [32758,424,-306,-535]
+          GInt16 [32758,409,-298,-556]
+          GInt16 [32758,391,-310,-578]
+          GInt16 [32757,381,-341,-604]
+          GInt16 [32757,357,-332,-631]
+          GInt16 [32756,330,-330,-661]
+          GInt16 [32756,301,-320,-692]
+          GInt16 [32756,271,-308,-728]
+          GInt16 [32755,237,-300,-759]
+          GInt16 [32755,217,-314,-782]
+          GInt16 [32754,217,-349,-807]
+          GInt16 [32754,221,-383,-808]
+          GInt16 [32754,209,-416,-773]
+          GInt16 [32755,179,-434,-721]
+          GInt16 [32756,150,-440,-665]
+          GInt16 [32758,131,-437,-615]
+          GInt16 [32759,109,-440,-560]
+          GInt16 [32759,78,-442,-508]
+          GInt16 [32760,47,-442,-466]
+          GInt16 [32761,5,-453,-421]
+          GInt16 [32761,-33,-461,-383]
+          GInt16 [32761,-62,-465,-359]
+          GInt16 [32761,-94,-482,-335]
+          GInt16 [32761,-130,-503,-320]
+          GInt16 [32760,-157,-517,-321]
+          GInt16 [32760,-190,-542,-317]
+          GInt16 [32759,-218,-562,-326]
+          GInt16 [32759,-255,-577,-337]
+          GInt16 [32758,-301,-598,-345]
+          GInt16 [32757,-328,-615,-371]
+          GInt16 [32756,-345,-617,-399]
+          GInt16 [32756,-367,-636,-407]
+          GInt16 [32755,-382,-658,-407]
+          GInt16 [32755,-382,-669,-421]
+          GInt16 [32754,-375,-674,-437]
+          GInt16 [32754,-370,-683,-446]
+          GInt16 [32754,-366,-691,-457]
+          GInt16 [32754,-358,-703,-471]
+          GInt16 [32753,-342,-715,-492]
+          GInt16 [32753,-324,-725,-523]
+          GInt16 [32752,-297,-731,-559]
+          GInt16 [32752,-264,-742,-597]
+          GInt16 [32751,-234,-750,-630]
+          GInt16 [32751,-202,-748,-667]
+  Microphone Wet[mic_wet, all_mics, confidence] - stmp:6065052 tsmp:70
+    Unknown type
+        STMP
+          GUint64 [6065052]
+        TSMP
+          GUint32 [70]
+        STNM
+          GString "Microphone Wet[mic_wet, all_mics, confidence]"
+        MWET
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+  Sensor ISO - stmp:6071048 tsmp:210
+    Unknown type
+        STMP
+          GUint64 [6071048]
+        TSMP
+          GUint32 [210]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+  White Balance RGB gains - stmp:6071052 tsmp:70
+    Unknown type
+        STMP
+          GUint64 [6071052]
+        TSMP
+          GUint32 [70]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.4765625,1.0,2.5078125]
+          GFloat [1.4765625,1.0,2.5078125]
+          GFloat [1.4765625,1.0,2.5078125]
+          GFloat [1.4765625,1.0,2.5078125]
+          GFloat [1.4726563,1.0,2.5039063]
+          GFloat [1.4726563,1.0,2.5039063]
+          GFloat [1.4726563,1.0,2.5039063]
+          GFloat [1.4726563,1.0,2.5039063]
+          GFloat [1.46875,1.0,2.5039063]
+          GFloat [1.46875,1.0,2.5039063]
+  White Balance temperature (Kelvin) - stmp:6071052 tsmp:70
+    Unknown type
+        STMP
+          GUint64 [6071052]
+        TSMP
+          GUint32 [70]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [3907]
+          GUint16 [3907]
+          GUint16 [3907]
+          GUint16 [3907]
+          GUint16 [3895]
+          GUint16 [3895]
+          GUint16 [3895]
+          GUint16 [3895]
+          GUint16 [3884]
+          GUint16 [3884]
+  Wind Processing[wind_enable, meter_value(0 - 100)] - stmp:6065052 tsmp:70
+    Unknown type
+        STMP
+          GUint64 [6065052]
+        TSMP
+          GUint32 [70]
+        STNM
+          GString "Wind Processing[wind_enable, meter_value(0 - 100)]"
+        WNDM
+          GUint8 [0,17]
+          GUint8 [0,20]
+          GUint8 [0,23]
+          GUint8 [0,23]
+          GUint8 [0,22]
+          GUint8 [0,22]
+          GUint8 [0,22]
+          GUint8 [0,21]
+          GUint8 [0,21]
+          GUint8 [0,20]
+Device 1: HERO8 Black
+  AGC audio level[rms_level ,peak_level] - stmp:7065052 tsmp:80
+    Audio levels:
+      rms:  [-34,-34,-38,-38,-38,-39,-33,-28,-30,-23]
+      peak: [-26,-25,-26,-30,-30,-29,-20,-17,-22,-14]
+  Accelerometer - stmp:7068637 tsmp:1617
+    Temp: 34.89258 and 202 values like (-5.5107913,0.19424461,8.494005)
+  CameraOrientation - stmp:7072052 tsmp:480
+    Unknown type
+        STMP
+          GUint64 [7072052]
+        TSMP
+          GUint32 [480]
+        STNM
+          GString "CameraOrientation"
+        SCAL
+          GInt16 [32767]
+        CORI
+          GInt16 [32422,2136,2806,3162]
+          GInt16 [32418,2136,2833,3180]
+          GInt16 [32415,2150,2855,3183]
+          GInt16 [32413,2162,2865,3186]
+          GInt16 [32411,2170,2881,3184]
+          GInt16 [32409,2170,2905,3184]
+          GInt16 [32407,2161,2928,3192]
+          GInt16 [32406,2150,2945,3195]
+          GInt16 [32406,2138,2957,3184]
+          GInt16 [32410,2126,2957,3159]
+          GInt16 [32415,2112,2949,3119]
+          GInt16 [32422,2107,2931,3072]
+          GInt16 [32428,2116,2903,3022]
+          GInt16 [32434,2126,2870,2983]
+          GInt16 [32439,2139,2836,2954]
+          GInt16 [32444,2152,2798,2927]
+          GInt16 [32448,2167,2754,2907]
+          GInt16 [32449,2182,2717,2924]
+          GInt16 [32445,2189,2688,2987]
+          GInt16 [32441,2196,2667,3049]
+          GInt16 [32441,2208,2645,3063]
+          GInt16 [32445,2211,2623,3036]
+          GInt16 [32449,2207,2601,3012]
+          GInt16 [32449,2215,2589,3010]
+          GInt16 [32446,2236,2593,3023]
+          GInt16 [32443,2256,2595,3040]
+          GInt16 [32443,2265,2581,3046]
+          GInt16 [32447,2270,2563,3016]
+          GInt16 [32452,2295,2556,2947]
+          GInt16 [32456,2336,2563,2868]
+          GInt16 [32458,2385,2571,2792]
+          GInt16 [32460,2430,2582,2722]
+          GInt16 [32463,2457,2596,2654]
+          GInt16 [32469,2470,2593,2569]
+          GInt16 [32477,2468,2568,2485]
+          GInt16 [32485,2474,2526,2427]
+          GInt16 [32487,2515,2495,2390]
+          GInt16 [32487,2566,2456,2376]
+          GInt16 [32489,2588,2405,2372]
+          GInt16 [32495,2599,2354,2324]
+          GInt16 [32503,2620,2314,2236]
+          GInt16 [32510,2637,2259,2160]
+          GInt16 [32518,2656,2181,2101]
+          GInt16 [32523,2684,2123,2047]
+          GInt16 [32527,2728,2080,1973]
+          GInt16 [32532,2769,2006,1900]
+          GInt16 [32537,2808,1926,1837]
+          GInt16 [32539,2847,1870,1796]
+          GInt16 [32539,2894,1828,1776]
+          GInt16 [32537,2941,1790,1773]
+          GInt16 [32534,2987,1757,1787]
+          GInt16 [32529,3029,1738,1818]
+          GInt16 [32524,3072,1717,1861]
+          GInt16 [32518,3111,1692,1913]
+          GInt16 [32513,3148,1676,1961]
+          GInt16 [32507,3184,1674,1998]
+          GInt16 [32501,3215,1672,2044]
+          GInt16 [32495,3241,1673,2098]
+          GInt16 [32489,3265,1689,2149]
+          GInt16 [32482,3288,1717,2192]
+  Exposure time (shutter speed) - stmp:7072052 tsmp:240
+    Unknown type
+        STMP
+          GUint64 [7072052]
+        TSMP
+          GUint32 [240]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+  Face Coordinates and details - stmp:7072052 tsmp:80
+    Faces:
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:7003014 tsmp:142
+    GPS time=2020-03-07 03:03:07.375 UTC p=9999, len(rs)=19
+        hd=(39.150753,-121.645099) alt=-22.346 spd2d=0.0 spd3d=0.0
+  Gravity Vector - stmp:7072052 tsmp:480
+    Unknown type
+        STMP
+          GUint64 [7072052]
+        TSMP
+          GUint32 [480]
+        STNM
+          GString "Gravity Vector"
+        SCAL
+          GInt16 [32767]
+        GRAV
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+  Gyroscope - stmp:7068637 tsmp:1617
+    Temp: 34.89258 and 202 values like (-5.0053246e-2,6.3897766e-2,0.17039403)
+  Image uniformity - stmp:7072052 tsmp:80
+    Unknown type
+        STMP
+          GUint64 [7072052]
+        TSMP
+          GUint32 [80]
+        STNM
+          GString "Image uniformity"
+        UNIF
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.5722656]
+          GFloat [0.5722656]
+          GFloat [0.5722656]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+  ImageOrientation - stmp:7072052 tsmp:480
+    Unknown type
+        STMP
+          GUint64 [7072052]
+        TSMP
+          GUint32 [480]
+        STNM
+          GString "ImageOrientation"
+        SCAL
+          GInt16 [32767]
+        IORI
+          GInt16 [32750,-173,-745,-699]
+          GInt16 [32750,-162,-753,-709]
+          GInt16 [32750,-162,-759,-707]
+          GInt16 [32750,-161,-757,-707]
+          GInt16 [32750,-154,-754,-694]
+          GInt16 [32750,-140,-756,-684]
+          GInt16 [32750,-120,-758,-681]
+          GInt16 [32751,-99,-757,-675]
+          GInt16 [32751,-77,-755,-660]
+          GInt16 [32752,-53,-745,-634]
+          GInt16 [32753,-30,-731,-599]
+          GInt16 [32754,-14,-712,-557]
+          GInt16 [32756,-9,-678,-505]
+          GInt16 [32757,-6,-640,-462]
+          GInt16 [32758,-5,-602,-427]
+          GInt16 [32759,-5,-562,-395]
+          GInt16 [32760,-7,-520,-371]
+          GInt16 [32761,-11,-483,-380]
+          GInt16 [32761,-11,-452,-426]
+          GInt16 [32760,-10,-428,-470]
+          GInt16 [32761,-10,-400,-469]
+          GInt16 [32761,-1,-373,-440]
+          GInt16 [32762,12,-347,-418]
+          GInt16 [32762,14,-330,-413]
+          GInt16 [32762,8,-327,-422]
+          GInt16 [32762,4,-322,-434]
+          GInt16 [32762,8,-306,-438]
+          GInt16 [32763,15,-292,-414]
+          GInt16 [32763,10,-284,-356]
+          GInt16 [32764,-4,-288,-293]
+          GInt16 [32764,-26,-296,-230]
+          GInt16 [32765,-44,-306,-173]
+          GInt16 [32765,-48,-319,-119]
+          GInt16 [32765,-42,-319,-51]
+          GInt16 [32765,-24,-301,11]
+          GInt16 [32765,-17,-272,55]
+          GInt16 [32765,-37,-249,80]
+          GInt16 [32766,-63,-218,90]
+          GInt16 [32766,-67,-177,93]
+          GInt16 [32766,-63,-139,133]
+          GInt16 [32766,-63,-112,201]
+          GInt16 [32765,-62,-72,260]
+          GInt16 [32765,-65,-17,309]
+          GInt16 [32764,-74,21,355]
+          GInt16 [32764,-90,47,413]
+          GInt16 [32763,-106,99,473]
+          GInt16 [32762,-122,155,527]
+          GInt16 [32761,-139,194,565]
+          GInt16 [32760,-163,224,588]
+          GInt16 [32759,-189,252,599]
+          GInt16 [32759,-215,278,599]
+          GInt16 [32759,-238,295,585]
+          GInt16 [32759,-268,321,572]
+          GInt16 [32759,-297,354,555]
+          GInt16 [32758,-325,379,541]
+          GInt16 [32758,-351,392,534]
+          GInt16 [32758,-374,406,518]
+          GInt16 [32758,-393,419,497]
+          GInt16 [32758,-409,420,480]
+          GInt16 [32758,-425,413,469]
+  Microphone Wet[mic_wet, all_mics, confidence] - stmp:7065052 tsmp:80
+    Unknown type
+        STMP
+          GUint64 [7065052]
+        TSMP
+          GUint32 [80]
+        STNM
+          GString "Microphone Wet[mic_wet, all_mics, confidence]"
+        MWET
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+  Sensor ISO - stmp:7072052 tsmp:240
+    Unknown type
+        STMP
+          GUint64 [7072052]
+        TSMP
+          GUint32 [240]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+  White Balance RGB gains - stmp:7072052 tsmp:80
+    Unknown type
+        STMP
+          GUint64 [7072052]
+        TSMP
+          GUint32 [80]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.46875,1.0,2.5039063]
+          GFloat [1.46875,1.0,2.5039063]
+          GFloat [1.46875,1.0,2.5039063]
+          GFloat [1.46875,1.0,2.5039063]
+          GFloat [1.46875,1.0,2.5039063]
+          GFloat [1.46875,1.0,2.5039063]
+          GFloat [1.46875,1.0,2.5039063]
+          GFloat [1.46875,1.0,2.5039063]
+          GFloat [1.46875,1.0,2.5039063]
+          GFloat [1.46875,1.0,2.5039063]
+  White Balance temperature (Kelvin) - stmp:7072052 tsmp:80
+    Unknown type
+        STMP
+          GUint64 [7072052]
+        TSMP
+          GUint32 [80]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [3884]
+          GUint16 [3884]
+          GUint16 [3884]
+          GUint16 [3884]
+          GUint16 [3884]
+          GUint16 [3884]
+          GUint16 [3884]
+          GUint16 [3884]
+          GUint16 [3884]
+          GUint16 [3884]
+  Wind Processing[wind_enable, meter_value(0 - 100)] - stmp:7065052 tsmp:80
+    Unknown type
+        STMP
+          GUint64 [7065052]
+        TSMP
+          GUint32 [80]
+        STNM
+          GString "Wind Processing[wind_enable, meter_value(0 - 100)]"
+        WNDM
+          GUint8 [0,20]
+          GUint8 [0,19]
+          GUint8 [0,18]
+          GUint8 [0,17]
+          GUint8 [0,15]
+          GUint8 [0,14]
+          GUint8 [0,13]
+          GUint8 [0,12]
+          GUint8 [0,11]
+          GUint8 [0,10]
+Device 1: HERO8 Black
+  AGC audio level[rms_level ,peak_level] - stmp:8065052 tsmp:89
+    Audio levels:
+      rms:  [-22,-20,-27,-25,-30,-37,-34,-35,-31]
+      peak: [-10,-10,-17,-16,-23,-26,-23,-26,-22]
+  Accelerometer - stmp:8069118 tsmp:1816
+    Temp: 35.125 and 199 values like (-4.4604316,-0.33333334,8.793765)
+  CameraOrientation - stmp:8081462 tsmp:539
+    Unknown type
+        STMP
+          GUint64 [8081462]
+        TSMP
+          GUint32 [539]
+        STNM
+          GString "CameraOrientation"
+        SCAL
+          GInt16 [32767]
+        CORI
+          GInt16 [32475,3311,1736,2241]
+          GInt16 [32469,3324,1748,2305]
+          GInt16 [32463,3327,1756,2377]
+          GInt16 [32457,3325,1773,2447]
+          GInt16 [32451,3328,1793,2504]
+          GInt16 [32447,3321,1809,2557]
+          GInt16 [32444,3294,1815,2616]
+          GInt16 [32443,3262,1834,2663]
+          GInt16 [32442,3228,1869,2691]
+          GInt16 [32441,3185,1915,2716]
+          GInt16 [32441,3146,1959,2735]
+          GInt16 [32439,3114,2011,2758]
+          GInt16 [32436,3081,2069,2790]
+          GInt16 [32432,3058,2131,2811]
+          GInt16 [32427,3039,2203,2835]
+          GInt16 [32420,3026,2280,2863]
+          GInt16 [32412,3025,2356,2895]
+          GInt16 [32403,3028,2422,2942]
+          GInt16 [32392,3032,2476,3007]
+          GInt16 [32380,3042,2535,3076]
+          GInt16 [32369,3055,2595,3134]
+          GInt16 [32360,3052,2646,3186]
+          GInt16 [32353,3039,2684,3232]
+          GInt16 [32347,3019,2726,3276]
+          GInt16 [32341,2991,2781,3318]
+          GInt16 [32335,2954,2834,3364]
+          GInt16 [32330,2923,2880,3406]
+          GInt16 [32324,2897,2924,3438]
+          GInt16 [32319,2879,2977,3462]
+          GInt16 [32311,2878,3046,3476]
+          GInt16 [32303,2880,3118,3487]
+          GInt16 [32294,2874,3178,3515]
+          GInt16 [32284,2869,3236,3556]
+          GInt16 [32273,2870,3298,3603]
+          GInt16 [32258,2879,3375,3652]
+          GInt16 [32241,2896,3463,3710]
+          GInt16 [32222,2913,3551,3782]
+          GInt16 [32201,2929,3631,3872]
+          GInt16 [32178,2931,3700,3991]
+          GInt16 [32152,2935,3787,4112]
+          GInt16 [32124,2948,3886,4228]
+          GInt16 [32096,2946,3978,4359]
+          GInt16 [32065,2931,4081,4493]
+          GInt16 [32032,2925,4210,4615]
+          GInt16 [31997,2910,4338,4746]
+          GInt16 [31961,2875,4454,4898]
+          GInt16 [31924,2835,4572,5056]
+          GInt16 [31884,2787,4694,5220]
+          GInt16 [31844,2726,4809,5388]
+          GInt16 [31804,2663,4923,5548]
+          GInt16 [31766,2599,5040,5692]
+          GInt16 [31739,2559,5127,5781]
+          GInt16 [31734,2599,5141,5777]
+          GInt16 [31743,2712,5102,5712]
+          GInt16 [31745,2804,5062,5694]
+          GInt16 [31745,2804,5062,5694]
+          GInt16 [31730,2829,5081,5744]
+          GInt16 [31703,2814,5148,5844]
+          GInt16 [31678,2785,5178,5966]
+  Exposure time (shutter speed) - stmp:8073050 tsmp:269
+    Unknown type
+        STMP
+          GUint64 [8073050]
+        TSMP
+          GUint32 [269]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+  Face Coordinates and details - stmp:8073052 tsmp:89
+    Faces:
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:8055992 tsmp:159
+    GPS time=2020-03-07 03:03:08.31 UTC p=9999, len(rs)=17
+        hd=(39.1507184,-121.645173) alt=-22.765 spd2d=0.0 spd3d=0.0
+  Gravity Vector - stmp:8081462 tsmp:539
+    Unknown type
+        STMP
+          GUint64 [8081462]
+        TSMP
+          GUint32 [539]
+        STNM
+          GString "Gravity Vector"
+        SCAL
+          GInt16 [32767]
+        GRAV
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+  Gyroscope - stmp:8069118 tsmp:1816
+    Temp: 35.125 and 199 values like (-4.7923323e-2,-8.945687e-2,0.18317358)
+  Image uniformity - stmp:8073052 tsmp:89
+    Unknown type
+        STMP
+          GUint64 [8073052]
+        TSMP
+          GUint32 [89]
+        STNM
+          GString "Image uniformity"
+        UNIF
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.5722656]
+          GFloat [0.5722656]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+  ImageOrientation - stmp:8081462 tsmp:539
+    Unknown type
+        STMP
+          GUint64 [8081462]
+        TSMP
+          GUint32 [539]
+        STNM
+          GString "ImageOrientation"
+        SCAL
+          GInt16 [32767]
+        IORI
+          GInt16 [32757,-454,428,466]
+          GInt16 [32757,-478,451,452]
+          GInt16 [32756,-494,478,430]
+          GInt16 [32756,-504,494,408]
+          GInt16 [32756,-514,506,394]
+          GInt16 [32756,-514,521,382]
+          GInt16 [32756,-500,545,365]
+          GInt16 [32756,-479,558,359]
+          GInt16 [32757,-457,557,365]
+          GInt16 [32757,-428,548,371]
+          GInt16 [32757,-402,539,381]
+          GInt16 [32758,-379,524,389]
+          GInt16 [32758,-356,504,389]
+          GInt16 [32759,-341,480,400]
+          GInt16 [32759,-328,447,407]
+          GInt16 [32760,-320,412,412]
+          GInt16 [32760,-321,379,412]
+          GInt16 [32760,-327,354,400]
+          GInt16 [32761,-336,338,374]
+          GInt16 [32761,-350,318,347]
+          GInt16 [32761,-365,297,328]
+          GInt16 [32762,-368,286,314]
+          GInt16 [32762,-364,285,306]
+          GInt16 [32762,-353,282,300]
+          GInt16 [32762,-335,267,296]
+          GInt16 [32763,-311,253,287]
+          GInt16 [32763,-291,245,284]
+          GInt16 [32763,-275,237,288]
+          GInt16 [32763,-264,220,299]
+          GInt16 [32763,-263,189,319]
+          GInt16 [32763,-265,157,341]
+          GInt16 [32763,-263,137,351]
+          GInt16 [32763,-264,118,349]
+          GInt16 [32763,-271,95,343]
+          GInt16 [32764,-282,57,333]
+          GInt16 [32764,-299,13,316]
+          GInt16 [32764,-317,-30,287]
+          GInt16 [32764,-337,-66,243]
+          GInt16 [32764,-351,-92,178]
+          GInt16 [32764,-365,-132,111]
+          GInt16 [32764,-384,-182,46]
+          GInt16 [32763,-393,-224,-31]
+          GInt16 [32763,-392,-276,-112]
+          GInt16 [32762,-394,-348,-184]
+          GInt16 [32760,-390,-415,-263]
+          GInt16 [32759,-375,-468,-357]
+          GInt16 [32757,-357,-521,-452]
+          GInt16 [32755,-332,-574,-554]
+          GInt16 [32753,-296,-620,-659]
+          GInt16 [32750,-258,-670,-763]
+          GInt16 [32746,-216,-726,-860]
+          GInt16 [32744,-191,-765,-914]
+          GInt16 [32745,-226,-762,-885]
+          GInt16 [32747,-312,-731,-804]
+          GInt16 [32748,-387,-696,-767]
+          GInt16 [32748,-387,-696,-767]
+          GInt16 [32747,-412,-698,-794]
+          GInt16 [32744,-413,-729,-867]
+          GInt16 [32742,-412,-730,-955]
+  Microphone Wet[mic_wet, all_mics, confidence] - stmp:8065052 tsmp:89
+    Unknown type
+        STMP
+          GUint64 [8065052]
+        TSMP
+          GUint32 [89]
+        STNM
+          GString "Microphone Wet[mic_wet, all_mics, confidence]"
+        MWET
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+  Sensor ISO - stmp:8073050 tsmp:269
+    Unknown type
+        STMP
+          GUint64 [8073050]
+        TSMP
+          GUint32 [269]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+  White Balance RGB gains - stmp:8073052 tsmp:89
+    Unknown type
+        STMP
+          GUint64 [8073052]
+        TSMP
+          GUint32 [89]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.46875,1.0,2.5039063]
+          GFloat [1.46875,1.0,2.5039063]
+          GFloat [1.46875,1.0,2.5039063]
+          GFloat [1.46875,1.0,2.5039063]
+          GFloat [1.46875,1.0,2.5039063]
+          GFloat [1.46875,1.0,2.5]
+          GFloat [1.46875,1.0,2.5]
+          GFloat [1.46875,1.0,2.5]
+          GFloat [1.46875,1.0,2.5]
+  White Balance temperature (Kelvin) - stmp:8073052 tsmp:89
+    Unknown type
+        STMP
+          GUint64 [8073052]
+        TSMP
+          GUint32 [89]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [3884]
+          GUint16 [3884]
+          GUint16 [3884]
+          GUint16 [3884]
+          GUint16 [3884]
+          GUint16 [3884]
+          GUint16 [3884]
+          GUint16 [3884]
+          GUint16 [3884]
+  Wind Processing[wind_enable, meter_value(0 - 100)] - stmp:8065052 tsmp:89
+    Unknown type
+        STMP
+          GUint64 [8065052]
+        TSMP
+          GUint32 [89]
+        STNM
+          GString "Wind Processing[wind_enable, meter_value(0 - 100)]"
+        WNDM
+          GUint8 [0,9]
+          GUint8 [0,10]
+          GUint8 [0,10]
+          GUint8 [0,12]
+          GUint8 [0,13]
+          GUint8 [0,13]
+          GUint8 [0,13]
+          GUint8 [0,13]
+          GUint8 [0,13]
+Device 1: HERO8 Black
+  AGC audio level[rms_level ,peak_level] - stmp:8965052 tsmp:99
+    Audio levels:
+      rms:  [-27,-25,-29,-30,-33,-32,-36,-34,-30,-32]
+      peak: [-19,-15,-19,-21,-24,-22,-26,-25,-16,-14]
+  Accelerometer - stmp:9054768 tsmp:2018
+    Temp: 35.345703 and 202 values like (-6.678657,2.7146282,10.059952)
+  CameraOrientation - stmp:9040686 tsmp:600
+    Unknown type
+        STMP
+          GUint64 [9040686]
+        TSMP
+          GUint32 [600]
+        STNM
+          GString "CameraOrientation"
+        SCAL
+          GInt16 [32767]
+        CORI
+          GInt16 [31670,2756,5157,6036]
+          GInt16 [31688,2708,5096,6015]
+          GInt16 [31730,2617,5002,5912]
+          GInt16 [31782,2488,4914,5760]
+          GInt16 [31831,2335,4847,5611]
+          GInt16 [31876,2151,4771,5494]
+          GInt16 [31923,1949,4661,5389]
+          GInt16 [31974,1753,4530,5264]
+          GInt16 [32029,1573,4402,5093]
+          GInt16 [32088,1431,4280,4863]
+          GInt16 [32149,1344,4156,4582]
+          GInt16 [32212,1293,4027,4255]
+          GInt16 [32273,1281,3906,3900]
+          GInt16 [32323,1273,3786,3591]
+          GInt16 [32369,1250,3641,3322]
+          GInt16 [32413,1249,3491,3045]
+          GInt16 [32451,1273,3356,2772]
+          GInt16 [32485,1309,3230,2499]
+          GInt16 [32513,1339,3112,2246]
+          GInt16 [32538,1374,3004,2003]
+          GInt16 [32559,1405,2901,1783]
+          GInt16 [32576,1423,2790,1613]
+          GInt16 [32593,1447,2662,1461]
+          GInt16 [32607,1488,2548,1305]
+          GInt16 [32618,1544,2452,1138]
+          GInt16 [32627,1597,2364,985]
+          GInt16 [32635,1642,2274,834]
+          GInt16 [32642,1679,2197,689]
+          GInt16 [32648,1720,2128,536]
+          GInt16 [32652,1758,2065,391]
+          GInt16 [32657,1783,1978,263]
+          GInt16 [32662,1796,1896,138]
+          GInt16 [32665,1802,1843,-4]
+          GInt16 [32667,1809,1792,-170]
+          GInt16 [32670,1795,1718,-326]
+          GInt16 [32674,1764,1641,-474]
+          GInt16 [32676,1747,1573,-648]
+          GInt16 [32676,1725,1496,-826]
+          GInt16 [32677,1693,1413,-1006]
+          GInt16 [32675,1655,1331,-1205]
+          GInt16 [32672,1613,1251,-1415]
+          GInt16 [32670,1554,1156,-1608]
+          GInt16 [32668,1472,1031,-1786]
+          GInt16 [32665,1382,897,-1972]
+          GInt16 [32660,1293,788,-2157]
+          GInt16 [32654,1204,686,-2330]
+          GInt16 [32650,1101,563,-2468]
+          GInt16 [32646,989,431,-2588]
+          GInt16 [32641,880,300,-2708]
+          GInt16 [32635,777,176,-2827]
+          GInt16 [32628,668,42,-2929]
+          GInt16 [32621,545,-91,-3030]
+          GInt16 [32611,410,-221,-3153]
+          GInt16 [32600,264,-382,-3266]
+          GInt16 [32589,121,-555,-3356]
+          GInt16 [32576,-4,-729,-3450]
+          GInt16 [32563,-124,-877,-3537]
+          GInt16 [32545,-222,-1033,-3650]
+          GInt16 [32522,-294,-1218,-3790]
+          GInt16 [32495,-336,-1395,-3957]
+          GInt16 [32463,-352,-1546,-4155]
+  Exposure time (shutter speed) - stmp:9040685 tsmp:299
+    Unknown type
+        STMP
+          GUint64 [9040685]
+        TSMP
+          GUint32 [299]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+  Face Coordinates and details - stmp:8973952 tsmp:99
+    Faces:
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:8989664 tsmp:178
+    GPS time=2020-03-07 03:03:09.355 UTC p=9999, len(rs)=19
+        hd=(39.1505002,-121.6453902) alt=-23.738 spd2d=0.0 spd3d=0.0
+  Gravity Vector - stmp:9040686 tsmp:600
+    Unknown type
+        STMP
+          GUint64 [9040686]
+        TSMP
+          GUint32 [600]
+        STNM
+          GString "Gravity Vector"
+        SCAL
+          GInt16 [32767]
+        GRAV
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+  Gyroscope - stmp:9054768 tsmp:2018
+    Temp: 35.345703 and 202 values like (0.2886049,0.18636848,-0.22044729)
+  Image uniformity - stmp:8973952 tsmp:99
+    Unknown type
+        STMP
+          GUint64 [8973952]
+        TSMP
+          GUint32 [99]
+        STNM
+          GString "Image uniformity"
+        UNIF
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.54296875]
+          GFloat [0.51464844]
+          GFloat [0.51464844]
+          GFloat [0.51464844]
+          GFloat [0.51464844]
+  ImageOrientation - stmp:9040686 tsmp:600
+    Unknown type
+        STMP
+          GUint64 [9040686]
+        TSMP
+          GUint32 [600]
+        STNM
+          GString "ImageOrientation"
+        SCAL
+          GInt16 [32767]
+        IORI
+          GInt16 [32741,-415,-705,-1009]
+          GInt16 [32740,-412,-687,-1030]
+          GInt16 [32742,-377,-650,-1009]
+          GInt16 [32745,-311,-617,-964]
+          GInt16 [32747,-226,-592,-928]
+          GInt16 [32749,-124,-552,-918]
+          GInt16 [32750,-17,-488,-915]
+          GInt16 [32752,86,-413,-895]
+          GInt16 [32753,190,-346,-845]
+          GInt16 [32755,289,-298,-774]
+          GInt16 [32757,353,-257,-664]
+          GInt16 [32759,390,-219,-516]
+          GInt16 [32762,396,-191,-343]
+          GInt16 [32763,392,-162,-209]
+          GInt16 [32764,393,-115,-101]
+          GInt16 [32764,376,-69,17]
+          GInt16 [32764,340,-36,132]
+          GInt16 [32764,296,-8,247]
+          GInt16 [32764,252,13,342]
+          GInt16 [32763,204,26,426]
+          GInt16 [32762,156,37,486]
+          GInt16 [32762,113,56,502]
+          GInt16 [32762,67,87,510]
+          GInt16 [32762,11,106,524]
+          GInt16 [32762,-54,110,546]
+          GInt16 [32761,-120,111,554]
+          GInt16 [32761,-180,112,559]
+          GInt16 [32761,-235,103,554]
+          GInt16 [32760,-295,85,552]
+          GInt16 [32760,-352,64,540]
+          GInt16 [32760,-393,50,517]
+          GInt16 [32760,-424,29,494]
+          GInt16 [32760,-448,-13,485]
+          GInt16 [32759,-472,-54,493]
+          GInt16 [32759,-480,-76,489]
+          GInt16 [32759,-477,-97,477]
+          GInt16 [32759,-484,-127,484]
+          GInt16 [32759,-487,-150,489]
+          GInt16 [32759,-482,-171,500]
+          GInt16 [32758,-472,-192,530]
+          GInt16 [32758,-461,-215,573]
+          GInt16 [32757,-441,-226,607]
+          GInt16 [32757,-406,-217,636]
+          GInt16 [32757,-369,-206,674]
+          GInt16 [32756,-338,-218,710]
+          GInt16 [32756,-308,-237,737]
+          GInt16 [32757,-260,-233,726]
+          GInt16 [32758,-203,-222,702]
+          GInt16 [32758,-148,-213,680]
+          GInt16 [32759,-100,-209,658]
+          GInt16 [32760,-44,-199,621]
+          GInt16 [32761,21,-193,586]
+          GInt16 [32761,95,-193,566]
+          GInt16 [32761,179,-170,535]
+          GInt16 [32761,264,-139,490]
+          GInt16 [32762,337,-107,450]
+          GInt16 [32761,402,-94,406]
+          GInt16 [32761,449,-71,384]
+          GInt16 [32761,476,-27,382]
+          GInt16 [32761,478,8,401]
+          GInt16 [32760,457,28,448]
+  Microphone Wet[mic_wet, all_mics, confidence] - stmp:8965052 tsmp:99
+    Unknown type
+        STMP
+          GUint64 [8965052]
+        TSMP
+          GUint32 [99]
+        STNM
+          GString "Microphone Wet[mic_wet, all_mics, confidence]"
+        MWET
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+  Sensor ISO - stmp:9040685 tsmp:299
+    Unknown type
+        STMP
+          GUint64 [9040685]
+        TSMP
+          GUint32 [299]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+  White Balance RGB gains - stmp:8973952 tsmp:99
+    Unknown type
+        STMP
+          GUint64 [8973952]
+        TSMP
+          GUint32 [99]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.46875,1.0,2.5]
+          GFloat [1.46875,1.0,2.5]
+          GFloat [1.46875,1.0,2.5]
+          GFloat [1.46875,1.0,2.5]
+          GFloat [1.46875,1.0,2.5039063]
+          GFloat [1.4648438,1.0,2.5039063]
+          GFloat [1.4648438,1.0,2.5039063]
+          GFloat [1.4648438,1.0,2.5078125]
+          GFloat [1.4648438,1.0,2.5078125]
+          GFloat [1.4648438,1.0,2.5117188]
+  White Balance temperature (Kelvin) - stmp:8973952 tsmp:99
+    Unknown type
+        STMP
+          GUint64 [8973952]
+        TSMP
+          GUint32 [99]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [3884]
+          GUint16 [3884]
+          GUint16 [3884]
+          GUint16 [3884]
+          GUint16 [3884]
+          GUint16 [3872]
+          GUint16 [3872]
+          GUint16 [3872]
+          GUint16 [3872]
+          GUint16 [3872]
+  Wind Processing[wind_enable, meter_value(0 - 100)] - stmp:8965052 tsmp:99
+    Unknown type
+        STMP
+          GUint64 [8965052]
+        TSMP
+          GUint32 [99]
+        STNM
+          GString "Wind Processing[wind_enable, meter_value(0 - 100)]"
+        WNDM
+          GUint8 [0,12]
+          GUint8 [0,12]
+          GUint8 [0,12]
+          GUint8 [0,12]
+          GUint8 [0,12]
+          GUint8 [0,11]
+          GUint8 [0,11]
+          GUint8 [0,11]
+          GUint8 [0,10]
+          GUint8 [0,10]
+Device 1: HERO8 Black
+  AGC audio level[rms_level ,peak_level] - stmp:9965052 tsmp:109
+    Audio levels:
+      rms:  [-31,-34,-32,-33,-34,-34,-25,-30,-28,-25]
+      peak: [-19,-26,-21,-24,-26,-25,-14,-21,-18,-15]
+  Accelerometer - stmp:10055267 tsmp:2220
+    Temp: 35.470703 and 202 values like (-5.17506,-1.088729,7.8992805)
+  CameraOrientation - stmp:10058369 tsmp:660
+    Unknown type
+        STMP
+          GUint64 [10058369]
+        TSMP
+          GUint32 [660]
+        STNM
+          GString "CameraOrientation"
+        SCAL
+          GInt16 [32767]
+        CORI
+          GInt16 [32427,-342,-1702,-4370]
+          GInt16 [32390,-312,-1866,-4576]
+          GInt16 [32356,-281,-2022,-4751]
+          GInt16 [32325,-259,-2173,-4891]
+          GInt16 [32300,-261,-2327,-4984]
+          GInt16 [32281,-286,-2468,-5043]
+          GInt16 [32263,-321,-2567,-5103]
+          GInt16 [32245,-350,-2648,-5172]
+          GInt16 [32227,-364,-2731,-5242]
+          GInt16 [32208,-364,-2814,-5313]
+          GInt16 [32191,-360,-2882,-5382]
+          GInt16 [32175,-355,-2937,-5447]
+          GInt16 [32159,-345,-2996,-5507]
+          GInt16 [32145,-327,-3090,-5538]
+          GInt16 [32132,-294,-3198,-5552]
+          GInt16 [32117,-248,-3314,-5577]
+          GInt16 [32097,-199,-3436,-5617]
+          GInt16 [32075,-167,-3551,-5674]
+          GInt16 [32044,-134,-3674,-5773]
+          GInt16 [32005,-106,-3824,-5889]
+          GInt16 [31963,-88,-4007,-5995]
+          GInt16 [31905,-54,-4227,-6152]
+          GInt16 [31830,-15,-4471,-6365]
+          GInt16 [31748,8,-4722,-6587]
+          GInt16 [31655,54,-4973,-6844]
+          GInt16 [31545,150,-5267,-7125]
+          GInt16 [31433,236,-5577,-7380]
+          GInt16 [31342,314,-5812,-7581]
+          GInt16 [31291,361,-5940,-7689]
+          GInt16 [31270,373,-6003,-7725]
+          GInt16 [31260,372,-6035,-7738]
+          GInt16 [31259,346,-6035,-7745]
+          GInt16 [31257,319,-6027,-7760]
+          GInt16 [31254,281,-6041,-7762]
+          GInt16 [31248,239,-6071,-7763]
+          GInt16 [31239,201,-6091,-7784]
+          GInt16 [31228,162,-6109,-7815]
+          GInt16 [31215,119,-6138,-7848]
+          GInt16 [31197,75,-6189,-7880]
+          GInt16 [31176,35,-6251,-7914]
+          GInt16 [31153,-2,-6321,-7947]
+          GInt16 [31129,-39,-6392,-7983]
+          GInt16 [31106,-92,-6457,-8021]
+          GInt16 [31084,-149,-6505,-8069]
+          GInt16 [31062,-198,-6551,-8115]
+          GInt16 [31036,-228,-6628,-8150]
+          GInt16 [31001,-222,-6730,-8200]
+          GInt16 [30958,-184,-6849,-8264]
+          GInt16 [30907,-118,-6988,-8340]
+          GInt16 [30848,-17,-7145,-8426]
+          GInt16 [30782,106,-7314,-8520]
+          GInt16 [30727,195,-7409,-8633]
+          GInt16 [30678,263,-7445,-8773]
+          GInt16 [30634,306,-7467,-8905]
+          GInt16 [30590,358,-7506,-9023]
+          GInt16 [30547,425,-7544,-9132]
+          GInt16 [30503,498,-7595,-9233]
+          GInt16 [30454,572,-7649,-9346]
+          GInt16 [30398,637,-7682,-9497]
+          GInt16 [30332,687,-7690,-9695]
+  Exposure time (shutter speed) - stmp:10041682 tsmp:329
+    Unknown type
+        STMP
+          GUint64 [10041682]
+        TSMP
+          GUint32 [329]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+  Face Coordinates and details - stmp:9974952 tsmp:109
+    Faces:
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:10037198 tsmp:196
+    GPS time=2020-03-07 03:03:10.345 UTC p=9999, len(rs)=18
+        hd=(39.1505195,-121.6453218) alt=-22.86 spd2d=0.0 spd3d=0.0
+  Gravity Vector - stmp:10058369 tsmp:660
+    Unknown type
+        STMP
+          GUint64 [10058369]
+        TSMP
+          GUint32 [660]
+        STNM
+          GString "Gravity Vector"
+        SCAL
+          GInt16 [32767]
+        GRAV
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+  Gyroscope - stmp:10055267 tsmp:2220
+    Temp: 35.470703 and 202 values like (0.6048988,-2.8753994e-2,-0.78487754)
+  Image uniformity - stmp:9974952 tsmp:109
+    Unknown type
+        STMP
+          GUint64 [9974952]
+        TSMP
+          GUint32 [109]
+        STNM
+          GString "Image uniformity"
+        UNIF
+          GFloat [0.51464844]
+          GFloat [0.51464844]
+          GFloat [0.51464844]
+          GFloat [0.51464844]
+          GFloat [0.51464844]
+          GFloat [0.51464844]
+          GFloat [0.48632813]
+          GFloat [0.48632813]
+          GFloat [0.51464844]
+          GFloat [0.48632813]
+  ImageOrientation - stmp:10058369 tsmp:660
+    Unknown type
+        STMP
+          GUint64 [10058369]
+        TSMP
+          GUint32 [660]
+        STNM
+          GString "ImageOrientation"
+        SCAL
+          GInt16 [32767]
+        IORI
+          GInt16 [32760,420,55,510]
+          GInt16 [32759,374,94,571]
+          GInt16 [32759,332,131,612]
+          GInt16 [32759,303,165,632]
+          GInt16 [32759,300,199,619]
+          GInt16 [32759,317,220,585]
+          GInt16 [32759,339,205,553]
+          GInt16 [32760,354,176,527]
+          GInt16 [32760,360,148,500]
+          GInt16 [32761,360,124,474]
+          GInt16 [32761,357,89,447]
+          GInt16 [32762,352,47,418]
+          GInt16 [32762,343,10,383]
+          GInt16 [32763,333,0,325]
+          GInt16 [32764,314,0,252]
+          GInt16 [32765,285,7,185]
+          GInt16 [32765,255,18,129]
+          GInt16 [32766,236,22,85]
+          GInt16 [32766,214,35,75]
+          GInt16 [32766,198,68,75]
+          GInt16 [32766,192,124,69]
+          GInt16 [32765,173,207,103]
+          GInt16 [32764,150,308,179]
+          GInt16 [32763,140,411,264]
+          GInt16 [32760,111,521,382]
+          GInt16 [32756,56,645,506]
+          GInt16 [32751,17,787,616]
+          GInt16 [32747,-23,891,694]
+          GInt16 [32746,-45,933,707]
+          GInt16 [32746,-46,937,676]
+          GInt16 [32747,-38,921,628]
+          GInt16 [32750,-16,875,577]
+          GInt16 [32752,7,820,530]
+          GInt16 [32754,51,772,475]
+          GInt16 [32755,100,733,424]
+          GInt16 [32757,143,687,388]
+          GInt16 [32758,185,639,360]
+          GInt16 [32758,233,600,334]
+          GInt16 [32759,284,576,308]
+          GInt16 [32759,336,560,281]
+          GInt16 [32759,387,549,254]
+          GInt16 [32758,437,540,232]
+          GInt16 [32758,497,523,214]
+          GInt16 [32757,555,494,205]
+          GInt16 [32757,607,467,192]
+          GInt16 [32756,650,467,170]
+          GInt16 [32756,669,493,156]
+          GInt16 [32755,666,539,148]
+          GInt16 [32754,642,606,145]
+          GInt16 [32753,592,696,148]
+          GInt16 [32752,528,797,156]
+          GInt16 [32752,473,832,182]
+          GInt16 [32753,416,822,228]
+          GInt16 [32754,377,796,269]
+          GInt16 [32754,335,783,297]
+          GInt16 [32755,284,769,315]
+          GInt16 [32755,232,766,327]
+          GInt16 [32755,179,766,349]
+          GInt16 [32755,121,749,404]
+          GInt16 [32755,62,713,498]
+  Microphone Wet[mic_wet, all_mics, confidence] - stmp:9965052 tsmp:109
+    Unknown type
+        STMP
+          GUint64 [9965052]
+        TSMP
+          GUint32 [109]
+        STNM
+          GString "Microphone Wet[mic_wet, all_mics, confidence]"
+        MWET
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+  Sensor ISO - stmp:10041682 tsmp:329
+    Unknown type
+        STMP
+          GUint64 [10041682]
+        TSMP
+          GUint32 [329]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+  White Balance RGB gains - stmp:9974952 tsmp:109
+    Unknown type
+        STMP
+          GUint64 [9974952]
+        TSMP
+          GUint32 [109]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.4648438,1.0,2.515625]
+          GFloat [1.46875,1.0,2.5195313]
+          GFloat [1.46875,1.0,2.5195313]
+          GFloat [1.46875,1.0,2.5195313]
+          GFloat [1.46875,1.0,2.5195313]
+          GFloat [1.4726563,1.0,2.5195313]
+          GFloat [1.4765625,1.0,2.5234375]
+          GFloat [1.4804688,1.0,2.5234375]
+          GFloat [1.484375,1.0,2.5234375]
+          GFloat [1.4882813,1.0,2.5273438]
+  White Balance temperature (Kelvin) - stmp:9974952 tsmp:109
+    Unknown type
+        STMP
+          GUint64 [9974952]
+        TSMP
+          GUint32 [109]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [3872]
+          GUint16 [3884]
+          GUint16 [3884]
+          GUint16 [3884]
+          GUint16 [3884]
+          GUint16 [3895]
+          GUint16 [3907]
+          GUint16 [3918]
+          GUint16 [3930]
+          GUint16 [3941]
+  Wind Processing[wind_enable, meter_value(0 - 100)] - stmp:9965052 tsmp:109
+    Unknown type
+        STMP
+          GUint64 [9965052]
+        TSMP
+          GUint32 [109]
+        STNM
+          GString "Wind Processing[wind_enable, meter_value(0 - 100)]"
+        WNDM
+          GUint8 [0,9]
+          GUint8 [0,9]
+          GUint8 [0,8]
+          GUint8 [0,8]
+          GUint8 [0,7]
+          GUint8 [0,6]
+          GUint8 [0,6]
+          GUint8 [0,5]
+          GUint8 [0,5]
+          GUint8 [0,9]
+Device 1: HERO8 Black
+  AGC audio level[rms_level ,peak_level] - stmp:10965052 tsmp:119
+    Audio levels:
+      rms:  [-22,-23,-27,-29,-25,-28,-25,-29,-28,-29]
+      peak: [-11,-11,-16,-17,-16,-17,-12,-15,-16,-20]
+  Accelerometer - stmp:11055781 tsmp:2422
+    Temp: 35.69922 and 202 values like (-4.839329,-0.1822542,9.2494)
+  CameraOrientation - stmp:11059369 tsmp:720
+    Unknown type
+        STMP
+          GUint64 [11059369]
+        TSMP
+          GUint32 [720]
+        STNM
+          GString "CameraOrientation"
+        SCAL
+          GInt16 [32767]
+        CORI
+          GInt16 [30262,740,-7689,-9908]
+          GInt16 [30209,777,-7696,-10060]
+          GInt16 [30164,781,-7706,-10187]
+          GInt16 [30120,756,-7730,-10299]
+          GInt16 [30074,732,-7755,-10415]
+          GInt16 [30035,716,-7799,-10497]
+          GInt16 [30004,721,-7886,-10522]
+          GInt16 [29965,768,-7979,-10559]
+          GInt16 [29921,843,-8040,-10630]
+          GInt16 [29885,909,-8089,-10690]
+          GInt16 [29850,958,-8154,-10733]
+          GInt16 [29801,1007,-8226,-10810]
+          GInt16 [29737,1061,-8312,-10914]
+          GInt16 [29668,1122,-8407,-11023]
+          GInt16 [29602,1187,-8494,-11127]
+          GInt16 [29542,1253,-8567,-11221]
+          GInt16 [29487,1312,-8630,-11312]
+          GInt16 [29429,1366,-8700,-11402]
+          GInt16 [29371,1411,-8776,-11488]
+          GInt16 [29316,1448,-8846,-11568]
+          GInt16 [29270,1480,-8905,-11637]
+          GInt16 [29224,1510,-8974,-11695]
+          GInt16 [29178,1546,-9059,-11739]
+          GInt16 [29127,1586,-9151,-11789]
+          GInt16 [29074,1621,-9226,-11857]
+          GInt16 [29019,1659,-9283,-11942]
+          GInt16 [28960,1707,-9350,-12025]
+          GInt16 [28895,1750,-9427,-12114]
+          GInt16 [28827,1786,-9499,-12215]
+          GInt16 [28759,1821,-9565,-12319]
+          GInt16 [28707,1837,-9620,-12395]
+          GInt16 [28671,1818,-9657,-12450]
+          GInt16 [28645,1763,-9698,-12487]
+          GInt16 [28624,1675,-9748,-12508]
+          GInt16 [28602,1584,-9790,-12537]
+          GInt16 [28579,1519,-9819,-12574]
+          GInt16 [28551,1487,-9852,-12618]
+          GInt16 [28516,1481,-9886,-12670]
+          GInt16 [28482,1501,-9906,-12728]
+          GInt16 [28452,1544,-9919,-12780]
+          GInt16 [28427,1602,-9927,-12822]
+          GInt16 [28408,1666,-9930,-12854]
+          GInt16 [28393,1727,-9946,-12867]
+          GInt16 [28380,1787,-9955,-12880]
+          GInt16 [28373,1828,-9966,-12882]
+          GInt16 [28365,1838,-10001,-12870]
+          GInt16 [28350,1839,-10022,-12888]
+          GInt16 [28330,1841,-10020,-12932]
+          GInt16 [28307,1842,-10027,-12976]
+          GInt16 [28276,1836,-10046,-13030]
+          GInt16 [28234,1826,-10064,-13108]
+          GInt16 [28186,1817,-10080,-13200]
+          GInt16 [28135,1811,-10107,-13290]
+          GInt16 [28085,1799,-10139,-13372]
+          GInt16 [28040,1770,-10153,-13460]
+          GInt16 [28002,1719,-10148,-13548]
+          GInt16 [27973,1646,-10138,-13625]
+          GInt16 [27952,1561,-10135,-13680]
+          GInt16 [27942,1463,-10119,-13723]
+          GInt16 [27937,1363,-10072,-13778]
+  Exposure time (shutter speed) - stmp:11042685 tsmp:359
+    Unknown type
+        STMP
+          GUint64 [11042685]
+        TSMP
+          GUint32 [359]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+  Face Coordinates and details - stmp:10975952 tsmp:119
+    Faces:
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:11014933 tsmp:215
+    GPS time=2020-03-07 03:03:11.335 UTC p=9999, len(rs)=19
+        hd=(39.1506044,-121.645235) alt=-23.857 spd2d=0.0 spd3d=0.0
+  Gravity Vector - stmp:11059369 tsmp:720
+    Unknown type
+        STMP
+          GUint64 [11059369]
+        TSMP
+          GUint32 [720]
+        STNM
+          GString "Gravity Vector"
+        SCAL
+          GInt16 [32767]
+        GRAV
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+  Gyroscope - stmp:11055781 tsmp:2422
+    Temp: 35.69922 and 202 values like (0.111821085,-0.38658148,-0.7113951)
+  Image uniformity - stmp:10975952 tsmp:119
+    Unknown type
+        STMP
+          GUint64 [10975952]
+        TSMP
+          GUint32 [119]
+        STNM
+          GString "Image uniformity"
+        UNIF
+          GFloat [0.48632813]
+          GFloat [0.51464844]
+          GFloat [0.48632813]
+          GFloat [0.48632813]
+          GFloat [0.51464844]
+          GFloat [0.51464844]
+          GFloat [0.48632813]
+          GFloat [0.48632813]
+          GFloat [0.48632813]
+          GFloat [0.48632813]
+  ImageOrientation - stmp:11059369 tsmp:720
+    Unknown type
+        STMP
+          GUint64 [11059369]
+        TSMP
+          GUint32 [720]
+        STNM
+          GString "ImageOrientation"
+        SCAL
+          GInt16 [32767]
+        IORI
+          GInt16 [32754,-2,673,600]
+          GInt16 [32754,-42,632,657]
+          GInt16 [32754,-51,584,701]
+          GInt16 [32754,-35,539,736]
+          GInt16 [32754,-19,495,774]
+          GInt16 [32754,2,470,778]
+          GInt16 [32755,25,480,739]
+          GInt16 [32755,16,505,707]
+          GInt16 [32755,-23,513,693]
+          GInt16 [32756,-56,512,669]
+          GInt16 [32756,-72,519,637]
+          GInt16 [32756,-92,531,634]
+          GInt16 [32755,-118,557,651]
+          GInt16 [32754,-152,591,668]
+          GInt16 [32753,-191,619,679]
+          GInt16 [32752,-232,639,683]
+          GInt16 [32752,-270,650,686]
+          GInt16 [32751,-301,667,691]
+          GInt16 [32750,-323,686,694]
+          GInt16 [32750,-340,697,692]
+          GInt16 [32750,-354,699,680]
+          GInt16 [32750,-364,711,657]
+          GInt16 [32750,-372,738,625]
+          GInt16 [32750,-382,768,596]
+          GInt16 [32750,-395,783,582]
+          GInt16 [32749,-419,787,576]
+          GInt16 [32749,-446,803,570]
+          GInt16 [32748,-469,828,573]
+          GInt16 [32746,-494,854,592]
+          GInt16 [32745,-527,881,613]
+          GInt16 [32744,-544,896,616]
+          GInt16 [32744,-536,891,612]
+          GInt16 [32745,-498,881,605]
+          GInt16 [32747,-431,870,594]
+          GInt16 [32748,-370,853,591]
+          GInt16 [32749,-331,835,587]
+          GInt16 [32749,-317,831,583]
+          GInt16 [32749,-326,832,580]
+          GInt16 [32749,-360,829,575]
+          GInt16 [32749,-410,829,559]
+          GInt16 [32748,-470,831,531]
+          GInt16 [32748,-534,830,493]
+          GInt16 [32748,-587,837,438]
+          GInt16 [32747,-642,837,383]
+          GInt16 [32747,-679,832,321]
+          GInt16 [32748,-684,830,257]
+          GInt16 [32748,-696,813,219]
+          GInt16 [32749,-720,784,199]
+          GInt16 [32749,-740,763,181]
+          GInt16 [32749,-755,749,176]
+          GInt16 [32748,-775,736,191]
+          GInt16 [32748,-799,722,215]
+          GInt16 [32747,-820,717,239]
+          GInt16 [32747,-833,710,257]
+          GInt16 [32747,-842,684,282]
+          GInt16 [32748,-844,636,311]
+          GInt16 [32749,-833,577,333]
+          GInt16 [32751,-807,516,341]
+          GInt16 [32753,-774,437,339]
+          GInt16 [32754,-752,333,343]
+  Microphone Wet[mic_wet, all_mics, confidence] - stmp:10965052 tsmp:119
+    Unknown type
+        STMP
+          GUint64 [10965052]
+        TSMP
+          GUint32 [119]
+        STNM
+          GString "Microphone Wet[mic_wet, all_mics, confidence]"
+        MWET
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+  Sensor ISO - stmp:11042685 tsmp:359
+    Unknown type
+        STMP
+          GUint64 [11042685]
+        TSMP
+          GUint32 [359]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+  White Balance RGB gains - stmp:10975952 tsmp:119
+    Unknown type
+        STMP
+          GUint64 [10975952]
+        TSMP
+          GUint32 [119]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.4921875,1.0,2.5273438]
+          GFloat [1.4960938,1.0,2.5234375]
+          GFloat [1.4960938,1.0,2.5234375]
+          GFloat [1.4960938,1.0,2.5273438]
+          GFloat [1.5,1.0,2.5273438]
+          GFloat [1.5,1.0,2.5273438]
+          GFloat [1.5039063,1.0,2.5273438]
+          GFloat [1.5078125,1.0,2.5351563]
+          GFloat [1.5078125,1.0,2.5351563]
+          GFloat [1.5117188,1.0,2.5351563]
+  White Balance temperature (Kelvin) - stmp:10975952 tsmp:119
+    Unknown type
+        STMP
+          GUint64 [10975952]
+        TSMP
+          GUint32 [119]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [3953]
+          GUint16 [3969]
+          GUint16 [3969]
+          GUint16 [3969]
+          GUint16 [3984]
+          GUint16 [3984]
+          GUint16 [4000]
+          GUint16 [4016]
+          GUint16 [4016]
+          GUint16 [4031]
+  Wind Processing[wind_enable, meter_value(0 - 100)] - stmp:10965052 tsmp:119
+    Unknown type
+        STMP
+          GUint64 [10965052]
+        TSMP
+          GUint32 [119]
+        STNM
+          GString "Wind Processing[wind_enable, meter_value(0 - 100)]"
+        WNDM
+          GUint8 [0,14]
+          GUint8 [0,15]
+          GUint8 [0,15]
+          GUint8 [0,16]
+          GUint8 [0,21]
+          GUint8 [0,21]
+          GUint8 [0,21]
+          GUint8 [0,20]
+          GUint8 [0,19]
+          GUint8 [0,19]
+Device 1: HERO8 Black
+  AGC audio level[rms_level ,peak_level] - stmp:11965052 tsmp:129
+    Audio levels:
+      rms:  [-28,-28,-30,-27,-26,-32,-30,-25,-26,-27]
+      peak: [-19,-19,-20,-13,-12,-20,-20,-16,-17,-14]
+  Accelerometer - stmp:12056290 tsmp:2624
+    Temp: 35.83203 and 202 values like (-6.2230215,-0.8177458,7.798561)
+  CameraOrientation - stmp:12060369 tsmp:780
+    Unknown type
+        STMP
+          GUint64 [12060369]
+        TSMP
+          GUint32 [780]
+        STNM
+          GString "CameraOrientation"
+        SCAL
+          GInt16 [32767]
+        CORI
+          GInt16 [27944,1263,-10014,-13817]
+          GInt16 [27955,1155,-9977,-13831]
+          GInt16 [27961,1029,-9951,-13846]
+          GInt16 [27965,893,-9914,-13874]
+          GInt16 [27972,761,-9876,-13895]
+          GInt16 [27974,638,-9836,-13927]
+          GInt16 [27955,519,-9791,-14000]
+          GInt16 [27914,437,-9772,-14098]
+          GInt16 [27851,393,-9795,-14208]
+          GInt16 [27769,359,-9808,-14358]
+          GInt16 [27684,343,-9812,-14519]
+          GInt16 [27604,354,-9864,-14636]
+          GInt16 [27542,340,-9950,-14694]
+          GInt16 [27508,273,-10027,-14708]
+          GInt16 [27491,186,-10118,-14679]
+          GInt16 [27486,114,-10226,-14614]
+          GInt16 [27477,73,-10335,-14554]
+          GInt16 [27462,63,-10454,-14497]
+          GInt16 [27442,81,-10591,-14436]
+          GInt16 [27424,98,-10700,-14390]
+          GInt16 [27393,101,-10788,-14383]
+          GInt16 [27349,78,-10902,-14381]
+          GInt16 [27292,49,-11052,-14375]
+          GInt16 [27211,41,-11198,-14415]
+          GInt16 [27107,42,-11342,-14498]
+          GInt16 [26982,31,-11483,-14620]
+          GInt16 [26847,6,-11611,-14766]
+          GInt16 [26713,-22,-11754,-14896]
+          GInt16 [26593,-60,-11893,-14999]
+          GInt16 [26489,-101,-12023,-15080]
+          GInt16 [26391,-131,-12150,-15150]
+          GInt16 [26307,-158,-12244,-15220]
+          GInt16 [26219,-183,-12340,-15293]
+          GInt16 [26113,-195,-12468,-15370]
+          GInt16 [26015,-206,-12580,-15445]
+          GInt16 [25938,-215,-12679,-15494]
+          GInt16 [25874,-224,-12765,-15528]
+          GInt16 [25814,-241,-12840,-15567]
+          GInt16 [25749,-269,-12924,-15605]
+          GInt16 [25679,-305,-13010,-15647]
+          GInt16 [25604,-334,-13094,-15701]
+          GInt16 [25523,-353,-13181,-15759]
+          GInt16 [25433,-370,-13288,-15813]
+          GInt16 [25346,-407,-13400,-15859]
+          GInt16 [25257,-464,-13489,-15923]
+          GInt16 [25178,-528,-13573,-15974]
+          GInt16 [25104,-589,-13656,-16019]
+          GInt16 [25030,-648,-13727,-16072]
+          GInt16 [24950,-693,-13804,-16127]
+          GInt16 [24880,-707,-13854,-16192]
+          GInt16 [24826,-701,-13851,-16277]
+          GInt16 [24759,-692,-13847,-16384]
+          GInt16 [24661,-668,-13874,-16508]
+          GInt16 [24567,-656,-13901,-16626]
+          GInt16 [24499,-687,-13923,-16707]
+          GInt16 [24440,-721,-13982,-16742]
+          GInt16 [24379,-755,-14053,-16770]
+          GInt16 [24321,-779,-14106,-16809]
+          GInt16 [24260,-822,-14164,-16845]
+          GInt16 [24216,-901,-14179,-16892]
+  Exposure time (shutter speed) - stmp:12043684 tsmp:389
+    Unknown type
+        STMP
+          GUint64 [12043684]
+        TSMP
+          GUint32 [389]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+          GFloat [1.6655626e-2]
+  Face Coordinates and details - stmp:11976952 tsmp:129
+    Faces:
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:12065224 tsmp:232
+    GPS time=2020-03-07 03:03:12.325 UTC p=9999, len(rs)=17
+        hd=(39.1506066,-121.6451872) alt=-23.298 spd2d=0.0 spd3d=0.0
+  Gravity Vector - stmp:12060369 tsmp:780
+    Unknown type
+        STMP
+          GUint64 [12060369]
+        TSMP
+          GUint32 [780]
+        STNM
+          GString "Gravity Vector"
+        SCAL
+          GInt16 [32767]
+        GRAV
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+          GInt16 [0,0,0]
+  Gyroscope - stmp:12056290 tsmp:2624
+    Temp: 35.83203 and 202 values like (-0.3514377,0.18317358,-0.18530351)
+  Image uniformity - stmp:11976952 tsmp:129
+    Unknown type
+        STMP
+          GUint64 [11976952]
+        TSMP
+          GUint32 [129]
+        STNM
+          GString "Image uniformity"
+        UNIF
+          GFloat [0.48632813]
+          GFloat [0.48632813]
+          GFloat [0.48632813]
+          GFloat [0.48632813]
+          GFloat [0.4580078]
+          GFloat [0.4580078]
+          GFloat [0.42871094]
+          GFloat [0.42871094]
+          GFloat [0.42871094]
+          GFloat [0.42871094]
+  ImageOrientation - stmp:12060369 tsmp:780
+    Unknown type
+        STMP
+          GUint64 [12060369]
+        TSMP
+          GUint32 [780]
+        STNM
+          GString "ImageOrientation"
+        SCAL
+          GInt16 [32767]
+        IORI
+          GInt16 [32756,-727,221,329]
+          GInt16 [32758,-684,118,299]
+          GInt16 [32759,-627,16,278]
+          GInt16 [32760,-570,-94,268]
+          GInt16 [32761,-514,-204,249]
+          GInt16 [32761,-467,-311,238]
+          GInt16 [32760,-435,-414,259]
+          GInt16 [32759,-429,-480,293]
+          GInt16 [32758,-438,-503,333]
+          GInt16 [32757,-463,-519,402]
+          GInt16 [32755,-502,-530,472]
+          GInt16 [32754,-531,-501,505]
+          GInt16 [32755,-517,-466,503]
+          GInt16 [32757,-463,-462,475]
+          GInt16 [32758,-381,-457,416]
+          GInt16 [32761,-294,-441,324]
+          GInt16 [32762,-230,-414,227]
+          GInt16 [32764,-182,-367,126]
+          GInt16 [32765,-145,-300,18]
+          GInt16 [32765,-119,-252,-77]
+          GInt16 [32765,-101,-218,-139]
+          GInt16 [32765,-58,-171,-189]
+          GInt16 [32766,0,-100,-234]
+          GInt16 [32766,28,-20,-245]
+          GInt16 [32766,41,67,-222]
+          GInt16 [32766,49,152,-160]
+          GInt16 [32766,54,227,-76]
+          GInt16 [32765,74,311,-2]
+          GInt16 [32764,105,384,51]
+          GInt16 [32763,140,446,86]
+          GInt16 [32762,170,507,106]
+          GInt16 [32761,186,542,120]
+          GInt16 [32760,201,583,133]
+          GInt16 [32759,224,655,153]
+          GInt16 [32757,242,713,169]
+          GInt16 [32756,261,759,159]
+          GInt16 [32755,280,792,137]
+          GInt16 [32755,298,814,117]
+          GInt16 [32754,326,838,100]
+          GInt16 [32753,358,860,86]
+          GInt16 [32752,380,884,79]
+          GInt16 [32751,394,916,72]
+          GInt16 [32750,418,963,66]
+          GInt16 [32748,457,1003,61]
+          GInt16 [32747,494,1022,73]
+          GInt16 [32746,539,1034,75]
+          GInt16 [32745,585,1044,71]
+          GInt16 [32744,625,1048,72]
+          GInt16 [32742,661,1063,73]
+          GInt16 [32742,662,1071,65]
+          GInt16 [32744,625,1053,62]
+          GInt16 [32745,583,1041,77]
+          GInt16 [32745,541,1063,111]
+          GInt16 [32745,510,1075,141]
+          GInt16 [32745,515,1062,148]
+          GInt16 [32744,553,1072,122]
+          GInt16 [32743,598,1095,91]
+          GInt16 [32741,634,1118,50]
+          GInt16 [32739,687,1145,17]
+          GInt16 [32738,741,1143,0]
+  Microphone Wet[mic_wet, all_mics, confidence] - stmp:11965052 tsmp:129
+    Unknown type
+        STMP
+          GUint64 [11965052]
+        TSMP
+          GUint32 [129]
+        STNM
+          GString "Microphone Wet[mic_wet, all_mics, confidence]"
+        MWET
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+          GUint8 [0,1,100]
+  Sensor ISO - stmp:12043684 tsmp:389
+    Unknown type
+        STMP
+          GUint64 [12043684]
+        TSMP
+          GUint32 [389]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+          GUint16 [1601]
+  White Balance RGB gains - stmp:11976952 tsmp:129
+    Unknown type
+        STMP
+          GUint64 [11976952]
+        TSMP
+          GUint32 [129]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.5117188,1.0,2.5351563]
+          GFloat [1.5117188,1.0,2.5351563]
+          GFloat [1.515625,1.0,2.5351563]
+          GFloat [1.5195313,1.0,2.5390625]
+          GFloat [1.5195313,1.0,2.5351563]
+          GFloat [1.5234375,1.0,2.5390625]
+          GFloat [1.5234375,1.0,2.5390625]
+          GFloat [1.5273438,1.0,2.5351563]
+          GFloat [1.53125,1.0,2.5351563]
+          GFloat [1.5351563,1.0,2.53125]
+  White Balance temperature (Kelvin) - stmp:11976952 tsmp:129
+    Unknown type
+        STMP
+          GUint64 [11976952]
+        TSMP
+          GUint32 [129]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [4031]
+          GUint16 [4031]
+          GUint16 [4047]
+          GUint16 [4063]
+          GUint16 [4063]
+          GUint16 [4079]
+          GUint16 [4079]
+          GUint16 [4094]
+          GUint16 [4110]
+          GUint16 [4126]
+  Wind Processing[wind_enable, meter_value(0 - 100)] - stmp:11965052 tsmp:129
+    Unknown type
+        STMP
+          GUint64 [11965052]
+        TSMP
+          GUint32 [129]
+        STNM
+          GString "Wind Processing[wind_enable, meter_value(0 - 100)]"
+        WNDM
+          GUint8 [0,18]
+          GUint8 [0,18]
+          GUint8 [0,18]
+          GUint8 [0,17]
+          GUint8 [0,17]
+          GUint8 [0,17]
+          GUint8 [0,16]
+          GUint8 [0,16]
+          GUint8 [0,16]
+          GUint8 [0,16]

@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: d27b078786d307d19ca405f2ca1f1fa3c9431ae90723df1f1410523abee3bab0
+-- hash: b516c7c9c68c8770857c00c849edab0bec5b38d0f4517ef1711ea91b557a5f2f
 
 name:           gpmf
 version:        0.1.0.2
@@ -27,6 +27,7 @@ source-repository head
 
 library
   exposed-modules:
+      GoPro.Command.DEVCString
       GoPro.DEVC
       GoPro.GPMF
   other-modules:
@@ -103,6 +104,7 @@ test-suite gpmf-test
     , lens
     , mtl
     , tasty
+    , tasty-golden
     , tasty-hunit
     , tasty-quickcheck
     , time

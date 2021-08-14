@@ -1,0 +1,4732 @@
+Device 1: Hero6 Black
+  3A STATS - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "3A STATS"
+  Accelerometer (up/down, right/left, forward/back) - stmp:0 tsmp:197
+    Temp: 25.0 and 197 values like (6.102871,-1.0119617,15.777512)
+  Auto Low Light frame Duration - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "Auto Low Light frame Duration"
+  Exposure time (shutter speed) - stmp:0 tsmp:29
+    Unknown type
+        TSMP
+          GUint32 [29]
+        TICK
+          GUint32 [339463]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [2.5462953e-3]
+          GFloat [2.52063e-3]
+          GFloat [2.4949647e-3]
+          GFloat [2.4729616e-3]
+          GFloat [2.4399569e-3]
+          GFloat [2.4142915e-3]
+          GFloat [2.388626e-3]
+          GFloat [2.362961e-3]
+          GFloat [2.3409578e-3]
+          GFloat [2.322632e-3]
+          GFloat [2.304291e-3]
+          GFloat [2.2896272e-3]
+          GFloat [2.2749635e-3]
+          GFloat [2.2639618e-3]
+          GFloat [2.2566225e-3]
+          GFloat [2.2456208e-3]
+          GFloat [2.2419586e-3]
+          GFloat [2.2419586e-3]
+          GFloat [2.2382967e-3]
+          GFloat [2.2419586e-3]
+          GFloat [2.2492982e-3]
+          GFloat [2.2529603e-3]
+          GFloat [2.267624e-3]
+          GFloat [2.2822877e-3]
+          GFloat [2.2969514e-3]
+          GFloat [2.322632e-3]
+          GFloat [2.34462e-3]
+          GFloat [2.3666231e-3]
+          GFloat [2.406952e-3]
+  Face Coordinates and details - stmp:0 tsmp:14
+    Faces:
+  Face numbers - stmp:0 tsmp:14
+    Unknown type
+        TSMP
+          GUint32 [14]
+        TICK
+          GUint32 [339496]
+        STNM
+          GString "Face numbers"
+        FCNM
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:0 tsmp:17
+    GPS time=2018-01-24 19:27:58.674 UTC p=372, len(rs)=17
+        hd=(33.126515,-117.3271676) alt=-17.228 spd2d=1.221 spd3d=1.23
+  Gyroscope (z,x,y) - stmp:0 tsmp:198
+    Temp: 25.0 and 198 values like (0.13578275,-0.29233226,-0.743344)
+  Sensor ISO - stmp:0 tsmp:29
+    Unknown type
+        TSMP
+          GUint32 [29]
+        TICK
+          GUint32 [339463]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+  White Balance RGB gains - stmp:0 tsmp:29
+    Unknown type
+        TSMP
+          GUint32 [29]
+        TICK
+          GUint32 [339463]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.9296875,1.0,1.9257813]
+          GFloat [1.9296875,1.0,1.9296875]
+          GFloat [1.9296875,1.0,1.9296875]
+          GFloat [1.9296875,1.0,1.9296875]
+          GFloat [1.9296875,1.0,1.9296875]
+          GFloat [1.9296875,1.0,1.9296875]
+          GFloat [1.9296875,1.0,1.9296875]
+          GFloat [1.9335938,1.0,1.9296875]
+          GFloat [1.9335938,1.0,1.9296875]
+          GFloat [1.9335938,1.0,1.9296875]
+          GFloat [1.9335938,1.0,1.9296875]
+          GFloat [1.9335938,1.0,1.9296875]
+          GFloat [1.9335938,1.0,1.9296875]
+          GFloat [1.9335938,1.0,1.9335938]
+          GFloat [1.9335938,1.0,1.9335938]
+          GFloat [1.9335938,1.0,1.9335938]
+          GFloat [1.9375,1.0,1.9296875]
+          GFloat [1.9375,1.0,1.9296875]
+          GFloat [1.9375,1.0,1.9296875]
+          GFloat [1.9375,1.0,1.9296875]
+          GFloat [1.9375,1.0,1.9296875]
+          GFloat [1.9375,1.0,1.9296875]
+          GFloat [1.9375,1.0,1.9296875]
+          GFloat [1.9375,1.0,1.9296875]
+          GFloat [1.9375,1.0,1.9296875]
+          GFloat [1.9414063,1.0,1.9296875]
+          GFloat [1.9414063,1.0,1.9296875]
+          GFloat [1.9414063,1.0,1.9296875]
+          GFloat [1.9414063,1.0,1.9257813]
+  White Balance temperature (Kelvin) - stmp:0 tsmp:29
+    Unknown type
+        TSMP
+          GUint32 [29]
+        TICK
+          GUint32 [339463]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [6596]
+          GUint16 [6596]
+          GUint16 [6596]
+          GUint16 [6596]
+          GUint16 [6596]
+          GUint16 [6596]
+          GUint16 [6596]
+          GUint16 [6620]
+          GUint16 [6620]
+          GUint16 [6620]
+          GUint16 [6620]
+          GUint16 [6620]
+          GUint16 [6620]
+          GUint16 [6620]
+          GUint16 [6620]
+          GUint16 [6620]
+          GUint16 [6644]
+          GUint16 [6644]
+          GUint16 [6644]
+          GUint16 [6644]
+          GUint16 [6644]
+          GUint16 [6644]
+          GUint16 [6644]
+          GUint16 [6644]
+          GUint16 [6644]
+          GUint16 [6668]
+          GUint16 [6668]
+          GUint16 [6668]
+          GUint16 [6668]
+Device 1: Hero6 Black
+  3A STATS - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "3A STATS"
+  Accelerometer (up/down, right/left, forward/back) - stmp:0 tsmp:401
+    Temp: 25.0 and 204 values like (4.437799,-0.23684211,8.677033)
+  Auto Low Light frame Duration - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "Auto Low Light frame Duration"
+  Exposure time (shutter speed) - stmp:0 tsmp:59
+    Unknown type
+        TSMP
+          GUint32 [59]
+        TICK
+          GUint32 [340431]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [2.4436188e-3]
+          GFloat [2.4729616e-3]
+          GFloat [2.5499575e-3]
+          GFloat [2.6159517e-3]
+          GFloat [2.678299e-3]
+          GFloat [2.8322907e-3]
+          GFloat [2.9642945e-3]
+          GFloat [3.0852968e-3]
+          GFloat [3.323624e-3]
+          GFloat [3.5326234e-3]
+          GFloat [3.7122958e-3]
+          GFloat [3.935959e-3]
+          GFloat [4.133957e-3]
+          GFloat [4.309952e-3]
+          GFloat [4.5189518e-3]
+          GFloat [4.705963e-3]
+          GFloat [4.8709568e-3]
+          GFloat [5.032288e-3]
+          GFloat [5.1826327e-3]
+          GFloat [5.314621e-3]
+          GFloat [5.442963e-3]
+          GFloat [5.556626e-3]
+          GFloat [5.659287e-3]
+          GFloat [5.7546236e-3]
+          GFloat [5.842621e-3]
+          GFloat [5.919632e-3]
+          GFloat [6.011292e-3]
+          GFloat [6.0956273e-3]
+          GFloat [6.172623e-3]
+          GFloat [6.297287e-3]
+  Face Coordinates and details - stmp:0 tsmp:29
+    Faces:
+  Face numbers - stmp:0 tsmp:29
+    Unknown type
+        TSMP
+          GUint32 [29]
+        TICK
+          GUint32 [340431]
+        STNM
+          GString "Face numbers"
+        FCNM
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:0 tsmp:36
+    GPS time=2018-01-24 19:27:59.609 UTC p=9999, len(rs)=19
+        hd=(33.1265426,-117.3271529) alt=-18.199 spd2d=2.212 spd3d=2.17
+  Gyroscope (z,x,y) - stmp:0 tsmp:402
+    Temp: 25.0 and 204 values like (-1.0511183,-0.3919063,-0.22310969)
+  Sensor ISO - stmp:0 tsmp:59
+    Unknown type
+        TSMP
+          GUint32 [59]
+        TICK
+          GUint32 [340431]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+  White Balance RGB gains - stmp:0 tsmp:59
+    Unknown type
+        TSMP
+          GUint32 [59]
+        TICK
+          GUint32 [340431]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.9414063,1.0,1.9257813]
+          GFloat [1.9414063,1.0,1.9257813]
+          GFloat [1.9414063,1.0,1.9257813]
+          GFloat [1.9414063,1.0,1.9257813]
+          GFloat [1.9414063,1.0,1.9257813]
+          GFloat [1.9453125,1.0,1.921875]
+          GFloat [1.9453125,1.0,1.921875]
+          GFloat [1.9453125,1.0,1.921875]
+          GFloat [1.9453125,1.0,1.9179688]
+          GFloat [1.9453125,1.0,1.9179688]
+          GFloat [1.9453125,1.0,1.9179688]
+          GFloat [1.9453125,1.0,1.9140625]
+          GFloat [1.9453125,1.0,1.9140625]
+          GFloat [1.9453125,1.0,1.9140625]
+          GFloat [1.9492188,1.0,1.90625]
+          GFloat [1.9492188,1.0,1.90625]
+          GFloat [1.9492188,1.0,1.90625]
+          GFloat [1.9492188,1.0,1.9023438]
+          GFloat [1.9492188,1.0,1.9023438]
+          GFloat [1.9492188,1.0,1.9023438]
+          GFloat [1.9492188,1.0,1.8984375]
+          GFloat [1.9492188,1.0,1.8984375]
+          GFloat [1.9492188,1.0,1.8984375]
+          GFloat [1.953125,1.0,1.890625]
+          GFloat [1.953125,1.0,1.890625]
+          GFloat [1.953125,1.0,1.890625]
+          GFloat [1.953125,1.0,1.8867188]
+          GFloat [1.953125,1.0,1.8867188]
+          GFloat [1.953125,1.0,1.8867188]
+          GFloat [1.953125,1.0,1.8828125]
+  White Balance temperature (Kelvin) - stmp:0 tsmp:59
+    Unknown type
+        TSMP
+          GUint32 [59]
+        TICK
+          GUint32 [340431]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [6668]
+          GUint16 [6668]
+          GUint16 [6668]
+          GUint16 [6668]
+          GUint16 [6668]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6739]
+          GUint16 [6739]
+          GUint16 [6739]
+          GUint16 [6739]
+          GUint16 [6739]
+          GUint16 [6739]
+          GUint16 [6739]
+Device 1: Hero6 Black
+  3A STATS - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "3A STATS"
+  Accelerometer (up/down, right/left, forward/back) - stmp:0 tsmp:602
+    Temp: 25.0 and 201 values like (8.504785,9.330144e-2,7.337321)
+  Auto Low Light frame Duration - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "Auto Low Light frame Duration"
+  Exposure time (shutter speed) - stmp:0 tsmp:89
+    Unknown type
+        TSMP
+          GUint32 [89]
+        TICK
+          GUint32 [341432]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [6.414627e-3]
+          GFloat [6.5172887e-3]
+          GFloat [6.6712955e-3]
+          GFloat [6.8069613e-3]
+          GFloat [6.931626e-3]
+          GFloat [7.11496e-3]
+          GFloat [7.276291e-3]
+          GFloat [7.426621e-3]
+          GFloat [7.609955e-3]
+          GFloat [7.778626e-3]
+          GFloat [7.928955e-3]
+          GFloat [8.145294e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+  Face Coordinates and details - stmp:0 tsmp:44
+    Faces:
+  Face numbers - stmp:0 tsmp:44
+    Unknown type
+        TSMP
+          GUint32 [44]
+        TICK
+          GUint32 [341432]
+        STNM
+          GString "Face numbers"
+        FCNM
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:0 tsmp:55
+    GPS time=2018-01-24 19:28:00.654 UTC p=9999, len(rs)=19
+        hd=(33.1265444,-117.3271431) alt=-18.183 spd2d=1.573 spd3d=1.57
+  Gyroscope (z,x,y) - stmp:0 tsmp:603
+    Temp: 25.0 and 201 values like (-0.69648564,0.27316293,-0.49520767)
+  Sensor ISO - stmp:0 tsmp:89
+    Unknown type
+        TSMP
+          GUint32 [89]
+        TICK
+          GUint32 [341432]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [102]
+          GUint32 [106]
+          GUint32 [109]
+          GUint32 [111]
+          GUint32 [116]
+          GUint32 [120]
+          GUint32 [123]
+          GUint32 [129]
+          GUint32 [134]
+          GUint32 [139]
+          GUint32 [146]
+          GUint32 [152]
+          GUint32 [158]
+          GUint32 [164]
+          GUint32 [170]
+          GUint32 [175]
+  White Balance RGB gains - stmp:0 tsmp:89
+    Unknown type
+        TSMP
+          GUint32 [89]
+        TICK
+          GUint32 [341432]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.953125,1.0,1.8828125]
+          GFloat [1.953125,1.0,1.8828125]
+          GFloat [1.9570313,1.0,1.875]
+          GFloat [1.9570313,1.0,1.875]
+          GFloat [1.9570313,1.0,1.875]
+          GFloat [1.9570313,1.0,1.8710938]
+          GFloat [1.9570313,1.0,1.8710938]
+          GFloat [1.9570313,1.0,1.8710938]
+          GFloat [1.9570313,1.0,1.8671875]
+          GFloat [1.9570313,1.0,1.8671875]
+          GFloat [1.9570313,1.0,1.8671875]
+          GFloat [1.9570313,1.0,1.8632813]
+          GFloat [1.9570313,1.0,1.8632813]
+          GFloat [1.9570313,1.0,1.8632813]
+          GFloat [1.9570313,1.0,1.859375]
+          GFloat [1.9570313,1.0,1.859375]
+          GFloat [1.9570313,1.0,1.859375]
+          GFloat [1.9570313,1.0,1.8554688]
+          GFloat [1.9570313,1.0,1.8554688]
+          GFloat [1.9570313,1.0,1.8554688]
+          GFloat [1.953125,1.0,1.8515625]
+          GFloat [1.953125,1.0,1.8515625]
+          GFloat [1.953125,1.0,1.8515625]
+          GFloat [1.953125,1.0,1.8515625]
+          GFloat [1.953125,1.0,1.8515625]
+          GFloat [1.953125,1.0,1.8515625]
+          GFloat [1.9492188,1.0,1.8515625]
+          GFloat [1.9492188,1.0,1.8515625]
+          GFloat [1.9492188,1.0,1.8515625]
+          GFloat [1.9492188,1.0,1.8515625]
+  White Balance temperature (Kelvin) - stmp:0 tsmp:89
+    Unknown type
+        TSMP
+          GUint32 [89]
+        TICK
+          GUint32 [341432]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [6739]
+          GUint16 [6739]
+          GUint16 [6763]
+          GUint16 [6763]
+          GUint16 [6763]
+          GUint16 [6763]
+          GUint16 [6763]
+          GUint16 [6763]
+          GUint16 [6763]
+          GUint16 [6763]
+          GUint16 [6763]
+          GUint16 [6763]
+          GUint16 [6763]
+          GUint16 [6763]
+          GUint16 [6763]
+          GUint16 [6763]
+          GUint16 [6763]
+          GUint16 [6763]
+          GUint16 [6763]
+          GUint16 [6763]
+          GUint16 [6739]
+          GUint16 [6739]
+          GUint16 [6739]
+          GUint16 [6739]
+          GUint16 [6739]
+          GUint16 [6739]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+Device 1: Hero6 Black
+  3A STATS - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "3A STATS"
+  Accelerometer (up/down, right/left, forward/back) - stmp:0 tsmp:806
+    Temp: 25.0 and 204 values like (9.978469,5.5023924e-2,3.145933)
+  Auto Low Light frame Duration - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "Auto Low Light frame Duration"
+  Exposure time (shutter speed) - stmp:0 tsmp:119
+    Unknown type
+        TSMP
+          GUint32 [119]
+        TICK
+          GUint32 [342433]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+  Face Coordinates and details - stmp:0 tsmp:59
+    Faces:
+        0.3453125x0.29074073, 2.9166669e-2x5.185185e-2, smile=0.0
+        0.3453125x0.29074073, 2.9166669e-2x5.185185e-2, smile=0.0
+        0.33593753x0.28796294, 3.4375e-2x6.111111e-2, smile=0.0
+        0.3234375x0.29074073, 3.2812502e-2x5.8333334e-2, smile=0.0
+        0.31822917x0.2851852, 3.4375e-2x6.111111e-2, smile=0.0
+        0.28593752x0.27685183, 4.479167e-2x7.962963e-2, smile=0.0
+        0.27968752x0.27685183, 4.8437502e-2x8.6111106e-2, smile=0.0
+  Face numbers - stmp:0 tsmp:59
+    Unknown type
+        TSMP
+          GUint32 [59]
+        TICK
+          GUint32 [342433]
+        STNM
+          GString "Face numbers"
+        FCNM
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [2]
+          GUint32 [2]
+          GUint32 [2]
+          GUint32 [2]
+          GUint32 [2]
+          GUint32 [1]
+          GUint32 [1]
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:0 tsmp:72
+    GPS time=2018-01-24 19:28:01.699 UTC p=9999, len(rs)=17
+        hd=(33.1265542,-117.3271299) alt=-18.172 spd2d=1.573 spd3d=1.57
+  Gyroscope (z,x,y) - stmp:0 tsmp:807
+    Temp: 25.0 and 204 values like (-0.64483494,-0.18370607,-0.27050054)
+  Sensor ISO - stmp:0 tsmp:119
+    Unknown type
+        TSMP
+          GUint32 [119]
+        TICK
+          GUint32 [342433]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint32 [181]
+          GUint32 [186]
+          GUint32 [190]
+          GUint32 [194]
+          GUint32 [198]
+          GUint32 [202]
+          GUint32 [206]
+          GUint32 [209]
+          GUint32 [211]
+          GUint32 [214]
+          GUint32 [216]
+          GUint32 [219]
+          GUint32 [221]
+          GUint32 [223]
+          GUint32 [225]
+          GUint32 [226]
+          GUint32 [228]
+          GUint32 [229]
+          GUint32 [230]
+          GUint32 [232]
+          GUint32 [233]
+          GUint32 [234]
+          GUint32 [235]
+          GUint32 [235]
+          GUint32 [236]
+          GUint32 [237]
+          GUint32 [237]
+          GUint32 [238]
+          GUint32 [238]
+          GUint32 [239]
+  White Balance RGB gains - stmp:0 tsmp:119
+    Unknown type
+        TSMP
+          GUint32 [119]
+        TICK
+          GUint32 [342433]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.9492188,1.0,1.8515625]
+          GFloat [1.9492188,1.0,1.8515625]
+          GFloat [1.9492188,1.0,1.8515625]
+          GFloat [1.9492188,1.0,1.8515625]
+          GFloat [1.9492188,1.0,1.8515625]
+          GFloat [1.9453125,1.0,1.8515625]
+          GFloat [1.9453125,1.0,1.8515625]
+          GFloat [1.9453125,1.0,1.8515625]
+          GFloat [1.9453125,1.0,1.8476563]
+          GFloat [1.9453125,1.0,1.8476563]
+          GFloat [1.9453125,1.0,1.8476563]
+          GFloat [1.9414063,1.0,1.8476563]
+          GFloat [1.9414063,1.0,1.8476563]
+          GFloat [1.9414063,1.0,1.8476563]
+          GFloat [1.9414063,1.0,1.84375]
+          GFloat [1.9414063,1.0,1.84375]
+          GFloat [1.9414063,1.0,1.84375]
+          GFloat [1.9375,1.0,1.84375]
+          GFloat [1.9375,1.0,1.84375]
+          GFloat [1.9375,1.0,1.84375]
+          GFloat [1.9375,1.0,1.8398438]
+          GFloat [1.9375,1.0,1.8398438]
+          GFloat [1.9375,1.0,1.8398438]
+          GFloat [1.9335938,1.0,1.8398438]
+          GFloat [1.9335938,1.0,1.8398438]
+          GFloat [1.9335938,1.0,1.8398438]
+          GFloat [1.9335938,1.0,1.8359375]
+          GFloat [1.9335938,1.0,1.8359375]
+          GFloat [1.9335938,1.0,1.8359375]
+          GFloat [1.9296875,1.0,1.8320313]
+  White Balance temperature (Kelvin) - stmp:0 tsmp:119
+    Unknown type
+        TSMP
+          GUint32 [119]
+        TICK
+          GUint32 [342433]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6668]
+          GUint16 [6668]
+          GUint16 [6668]
+          GUint16 [6668]
+          GUint16 [6668]
+          GUint16 [6668]
+          GUint16 [6644]
+          GUint16 [6644]
+          GUint16 [6644]
+          GUint16 [6644]
+          GUint16 [6644]
+          GUint16 [6644]
+          GUint16 [6620]
+          GUint16 [6620]
+          GUint16 [6620]
+          GUint16 [6620]
+          GUint16 [6620]
+          GUint16 [6620]
+          GUint16 [6596]
+Device 1: Hero6 Black
+  3A STATS - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "3A STATS"
+  Accelerometer (up/down, right/left, forward/back) - stmp:0 tsmp:1010
+    Temp: 25.0 and 204 values like (9.921053,0.38995215,2.8492823)
+  Auto Low Light frame Duration - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "Auto Low Light frame Duration"
+  Exposure time (shutter speed) - stmp:0 tsmp:149
+    Unknown type
+        TSMP
+          GUint32 [149]
+        TICK
+          GUint32 [343434]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+  Face Coordinates and details - stmp:0 tsmp:74
+    Faces:
+        0.27812502x0.27685183, 4.8437502e-2x8.6111106e-2, smile=0.0
+        0.2734375x0.2824074, 5.104167e-2x9.074074e-2, smile=0.0
+        0.27239585x0.28796294, 4.9479168e-2x8.796296e-2, smile=0.0
+        0.26666668x0.2935185, 4.8437502e-2x8.6111106e-2, smile=0.0
+        0.26666668x0.2935185, 4.8437502e-2x8.6111106e-2, smile=0.0
+        0.265625x0.29074073, 4.8437502e-2x8.6111106e-2, smile=0.0
+        0.27239585x0.27685183, 4.9479168e-2x8.796296e-2, smile=0.0
+        0.27239585x0.27685183, 4.9479168e-2x8.796296e-2, smile=0.0
+        0.27239585x0.27685183, 4.9479168e-2x8.796296e-2, smile=0.0
+        0.27708334x0.27962962, 5.104167e-2x9.074074e-2, smile=0.0
+        0.28125x0.2935185, 5.104167e-2x9.074074e-2, smile=0.0
+        0.28906253x0.30185184, 4.9479168e-2x8.796296e-2, smile=0.0
+        0.3x0.3101852, 5.260417e-2x9.351852e-2, smile=0.0
+        0.30677086x0.31851852, 4.9479168e-2x8.796296e-2, smile=0.0
+        0.31041667x0.3212963, 5.4687504e-2x9.7222224e-2, smile=0.0
+  Face numbers - stmp:0 tsmp:74
+    Unknown type
+        TSMP
+          GUint32 [74]
+        TICK
+          GUint32 [343434]
+        STNM
+          GString "Face numbers"
+        FCNM
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:0 tsmp:91
+    GPS time=2018-01-24 19:28:02.634 UTC p=9999, len(rs)=19
+        hd=(33.1265629,-117.3271181) alt=-18.162 spd2d=1.573 spd3d=1.57
+  Gyroscope (z,x,y) - stmp:0 tsmp:1011
+    Temp: 25.0 and 204 values like (3.887114e-2,-1.2247072e-2,-6.9755055e-2)
+  Sensor ISO - stmp:0 tsmp:149
+    Unknown type
+        TSMP
+          GUint32 [149]
+        TICK
+          GUint32 [343434]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint32 [239]
+          GUint32 [239]
+          GUint32 [239]
+          GUint32 [239]
+          GUint32 [239]
+          GUint32 [239]
+          GUint32 [239]
+          GUint32 [239]
+          GUint32 [239]
+          GUint32 [239]
+          GUint32 [239]
+          GUint32 [238]
+          GUint32 [238]
+          GUint32 [238]
+          GUint32 [237]
+          GUint32 [237]
+          GUint32 [237]
+          GUint32 [237]
+          GUint32 [238]
+          GUint32 [238]
+          GUint32 [239]
+          GUint32 [239]
+          GUint32 [239]
+          GUint32 [240]
+          GUint32 [240]
+          GUint32 [241]
+          GUint32 [242]
+          GUint32 [243]
+          GUint32 [243]
+          GUint32 [243]
+  White Balance RGB gains - stmp:0 tsmp:149
+    Unknown type
+        TSMP
+          GUint32 [149]
+        TICK
+          GUint32 [343434]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.9296875,1.0,1.8320313]
+          GFloat [1.9296875,1.0,1.8320313]
+          GFloat [1.9296875,1.0,1.8320313]
+          GFloat [1.9296875,1.0,1.8320313]
+          GFloat [1.9296875,1.0,1.8320313]
+          GFloat [1.9257813,1.0,1.828125]
+          GFloat [1.9257813,1.0,1.828125]
+          GFloat [1.9257813,1.0,1.828125]
+          GFloat [1.9257813,1.0,1.828125]
+          GFloat [1.9257813,1.0,1.828125]
+          GFloat [1.9257813,1.0,1.828125]
+          GFloat [1.921875,1.0,1.8242188]
+          GFloat [1.921875,1.0,1.8242188]
+          GFloat [1.921875,1.0,1.8242188]
+          GFloat [1.921875,1.0,1.8242188]
+          GFloat [1.921875,1.0,1.8242188]
+          GFloat [1.921875,1.0,1.8242188]
+          GFloat [1.9179688,1.0,1.8242188]
+          GFloat [1.9179688,1.0,1.8242188]
+          GFloat [1.9179688,1.0,1.8242188]
+          GFloat [1.9179688,1.0,1.8203125]
+          GFloat [1.9179688,1.0,1.8203125]
+          GFloat [1.9179688,1.0,1.8203125]
+          GFloat [1.9140625,1.0,1.8203125]
+          GFloat [1.9140625,1.0,1.8203125]
+          GFloat [1.9140625,1.0,1.8203125]
+          GFloat [1.9140625,1.0,1.8203125]
+          GFloat [1.9140625,1.0,1.8203125]
+          GFloat [1.9140625,1.0,1.8203125]
+          GFloat [1.9101563,1.0,1.8203125]
+  White Balance temperature (Kelvin) - stmp:0 tsmp:149
+    Unknown type
+        TSMP
+          GUint32 [149]
+        TICK
+          GUint32 [343434]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [6596]
+          GUint16 [6596]
+          GUint16 [6596]
+          GUint16 [6596]
+          GUint16 [6596]
+          GUint16 [6573]
+          GUint16 [6573]
+          GUint16 [6573]
+          GUint16 [6573]
+          GUint16 [6573]
+          GUint16 [6573]
+          GUint16 [6549]
+          GUint16 [6549]
+          GUint16 [6549]
+          GUint16 [6549]
+          GUint16 [6549]
+          GUint16 [6549]
+          GUint16 [6525]
+          GUint16 [6525]
+          GUint16 [6525]
+          GUint16 [6525]
+          GUint16 [6525]
+          GUint16 [6525]
+          GUint16 [6465]
+          GUint16 [6465]
+          GUint16 [6465]
+          GUint16 [6465]
+          GUint16 [6465]
+          GUint16 [6465]
+          GUint16 [6405]
+Device 1: Hero6 Black
+  3A STATS - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "3A STATS"
+  Accelerometer (up/down, right/left, forward/back) - stmp:0 tsmp:1214
+    Temp: 25.0 and 204 values like (9.021531,1.9497608,3.3564594)
+  Auto Low Light frame Duration - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "Auto Low Light frame Duration"
+  Exposure time (shutter speed) - stmp:0 tsmp:179
+    Unknown type
+        TSMP
+          GUint32 [179]
+        TICK
+          GUint32 [344435]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+  Face Coordinates and details - stmp:0 tsmp:89
+    Faces:
+        0.31250003x0.33240741, 5.260417e-2x9.351852e-2, smile=0.0
+        0.31302086x0.35462964, 4.9479168e-2x8.796296e-2, smile=0.0
+        0.3088542x0.35462964, 5.4687504e-2x9.7222224e-2, smile=0.0
+        0.30312502x0.35462964, 5.7291668e-2x0.10185185, smile=0.0
+        0.30312502x0.36018518, 5.7291668e-2x0.10185185, smile=0.0
+        0.30625x0.36574075, 5.885417e-2x0.10462963, smile=0.0
+        0.30468753x0.3712963, 5.885417e-2x0.10462963, smile=0.0
+        0.30937502x0.38796297, 5.104167e-2x9.074074e-2, smile=0.0
+        0.3078125x0.39074072, 5.104167e-2x9.074074e-2, smile=0.0
+        0.30156252x0.38796297, 5.885417e-2x0.10462963, smile=0.0
+        0.30156252x0.38796297, 5.885417e-2x0.10462963, smile=0.0
+        0.31250003x0.40185183, 5.260417e-2x9.351852e-2, smile=0.0
+        0.3296875x0.40185183, 5.885417e-2x0.10462963, smile=0.0
+        0.34218752x0.4101852, 5.885417e-2x0.10462963, smile=0.0
+        0.37187502x0.41296294, 5.104167e-2x9.074074e-2, smile=0.0
+  Face numbers - stmp:0 tsmp:89
+    Unknown type
+        TSMP
+          GUint32 [89]
+        TICK
+          GUint32 [344435]
+        STNM
+          GString "Face numbers"
+        FCNM
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:0 tsmp:109
+    GPS time=2018-01-24 19:28:03.679 UTC p=9999, len(rs)=18
+        hd=(33.1265728,-117.3271049) alt=-18.151 spd2d=1.573 spd3d=1.57
+  Gyroscope (z,x,y) - stmp:0 tsmp:1215
+    Temp: 25.0 and 204 values like (-0.38445154,-5.484558e-2,-0.2342918)
+  Sensor ISO - stmp:0 tsmp:179
+    Unknown type
+        TSMP
+          GUint32 [179]
+        TICK
+          GUint32 [344435]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint32 [244]
+          GUint32 [244]
+          GUint32 [245]
+          GUint32 [246]
+          GUint32 [247]
+          GUint32 [247]
+          GUint32 [248]
+          GUint32 [249]
+          GUint32 [250]
+          GUint32 [250]
+          GUint32 [251]
+          GUint32 [252]
+          GUint32 [251]
+          GUint32 [251]
+          GUint32 [250]
+          GUint32 [250]
+          GUint32 [249]
+          GUint32 [248]
+          GUint32 [246]
+          GUint32 [245]
+          GUint32 [243]
+          GUint32 [240]
+          GUint32 [238]
+          GUint32 [236]
+          GUint32 [234]
+          GUint32 [233]
+          GUint32 [232]
+          GUint32 [231]
+          GUint32 [231]
+          GUint32 [230]
+  White Balance RGB gains - stmp:0 tsmp:179
+    Unknown type
+        TSMP
+          GUint32 [179]
+        TICK
+          GUint32 [344435]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.9101563,1.0,1.8203125]
+          GFloat [1.9101563,1.0,1.8203125]
+          GFloat [1.9101563,1.0,1.8203125]
+          GFloat [1.9101563,1.0,1.8203125]
+          GFloat [1.9101563,1.0,1.8203125]
+          GFloat [1.90625,1.0,1.8203125]
+          GFloat [1.90625,1.0,1.8203125]
+          GFloat [1.90625,1.0,1.8203125]
+          GFloat [1.9023438,1.0,1.8203125]
+          GFloat [1.9023438,1.0,1.8203125]
+          GFloat [1.9023438,1.0,1.8203125]
+          GFloat [1.8984375,1.0,1.8242188]
+          GFloat [1.8984375,1.0,1.8242188]
+          GFloat [1.8984375,1.0,1.8242188]
+          GFloat [1.8984375,1.0,1.8242188]
+          GFloat [1.8984375,1.0,1.8242188]
+          GFloat [1.8984375,1.0,1.8242188]
+          GFloat [1.8945313,1.0,1.8242188]
+          GFloat [1.8945313,1.0,1.8242188]
+          GFloat [1.8945313,1.0,1.8242188]
+          GFloat [1.8945313,1.0,1.8242188]
+          GFloat [1.8945313,1.0,1.8242188]
+          GFloat [1.8945313,1.0,1.8242188]
+          GFloat [1.890625,1.0,1.828125]
+          GFloat [1.890625,1.0,1.828125]
+          GFloat [1.890625,1.0,1.828125]
+          GFloat [1.890625,1.0,1.828125]
+          GFloat [1.890625,1.0,1.828125]
+          GFloat [1.890625,1.0,1.828125]
+          GFloat [1.8867188,1.0,1.828125]
+  White Balance temperature (Kelvin) - stmp:0 tsmp:179
+    Unknown type
+        TSMP
+          GUint32 [179]
+        TICK
+          GUint32 [344435]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [6405]
+          GUint16 [6405]
+          GUint16 [6405]
+          GUint16 [6405]
+          GUint16 [6405]
+          GUint16 [6344]
+          GUint16 [6344]
+          GUint16 [6344]
+          GUint16 [6284]
+          GUint16 [6284]
+          GUint16 [6284]
+          GUint16 [6224]
+          GUint16 [6224]
+          GUint16 [6224]
+          GUint16 [6224]
+          GUint16 [6224]
+          GUint16 [6224]
+          GUint16 [6164]
+          GUint16 [6164]
+          GUint16 [6164]
+          GUint16 [6164]
+          GUint16 [6164]
+          GUint16 [6164]
+          GUint16 [6104]
+          GUint16 [6104]
+          GUint16 [6104]
+          GUint16 [6104]
+          GUint16 [6104]
+          GUint16 [6104]
+          GUint16 [6043]
+Device 1: Hero6 Black
+  3A STATS - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "3A STATS"
+  Accelerometer (up/down, right/left, forward/back) - stmp:0 tsmp:1415
+    Temp: 25.0 and 201 values like (9.547847,0.8588517,4.208134)
+  Auto Low Light frame Duration - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "Auto Low Light frame Duration"
+  Exposure time (shutter speed) - stmp:0 tsmp:209
+    Unknown type
+        TSMP
+          GUint32 [209]
+        TICK
+          GUint32 [345436]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+  Face Coordinates and details - stmp:0 tsmp:104
+    Faces:
+        0.39687502x0.41296294, 5.104167e-2x9.074074e-2, smile=0.0
+        0.43750003x0.4212963, 5.104167e-2x9.074074e-2, smile=0.0
+        0.47500002x0.4287037, 4.479167e-2x7.962963e-2, smile=0.0
+        0.5197917x0.45185184, 4.0625002e-2x7.222222e-2, smile=0.0
+        0.5588542x0.46018517, 4.0625002e-2x7.222222e-2, smile=0.0
+        0.5885417x0.47129628, 4.1666668e-2x7.4999996e-2, smile=0.0
+        0.6276042x0.4824074, 3.8541667e-2x6.851852e-2, smile=0.0
+        0.7041667x0.5175926, 3.0729169e-2x5.4629628e-2, smile=0.0
+  Face numbers - stmp:0 tsmp:104
+    Unknown type
+        TSMP
+          GUint32 [104]
+        TICK
+          GUint32 [345436]
+        STNM
+          GString "Face numbers"
+        FCNM
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [1]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:0 tsmp:127
+    GPS time=2018-01-24 19:28:04.669 UTC p=9999, len(rs)=18
+        hd=(33.1265821,-117.3270924) alt=-18.14 spd2d=1.573 spd3d=1.57
+  Gyroscope (z,x,y) - stmp:0 tsmp:1416
+    Temp: 25.0 and 201 values like (-0.34984025,9.691161e-2,0.20127796)
+  Sensor ISO - stmp:0 tsmp:209
+    Unknown type
+        TSMP
+          GUint32 [209]
+        TICK
+          GUint32 [345436]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint32 [231]
+          GUint32 [232]
+          GUint32 [232]
+          GUint32 [234]
+          GUint32 [235]
+          GUint32 [236]
+          GUint32 [239]
+          GUint32 [240]
+          GUint32 [243]
+          GUint32 [245]
+          GUint32 [247]
+          GUint32 [250]
+          GUint32 [253]
+          GUint32 [255]
+          GUint32 [258]
+          GUint32 [260]
+          GUint32 [263]
+          GUint32 [265]
+          GUint32 [268]
+          GUint32 [270]
+          GUint32 [273]
+          GUint32 [277]
+          GUint32 [280]
+          GUint32 [284]
+          GUint32 [291]
+          GUint32 [296]
+          GUint32 [301]
+          GUint32 [305]
+          GUint32 [309]
+          GUint32 [312]
+  White Balance RGB gains - stmp:0 tsmp:209
+    Unknown type
+        TSMP
+          GUint32 [209]
+        TICK
+          GUint32 [345436]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.8867188,1.0,1.828125]
+          GFloat [1.8867188,1.0,1.828125]
+          GFloat [1.8867188,1.0,1.8320313]
+          GFloat [1.8867188,1.0,1.8320313]
+          GFloat [1.8867188,1.0,1.8320313]
+          GFloat [1.8828125,1.0,1.8320313]
+          GFloat [1.8828125,1.0,1.8320313]
+          GFloat [1.8828125,1.0,1.8320313]
+          GFloat [1.8828125,1.0,1.8320313]
+          GFloat [1.8828125,1.0,1.8320313]
+          GFloat [1.8828125,1.0,1.8320313]
+          GFloat [1.8828125,1.0,1.8320313]
+          GFloat [1.8828125,1.0,1.8320313]
+          GFloat [1.8828125,1.0,1.8320313]
+          GFloat [1.8828125,1.0,1.8359375]
+          GFloat [1.8828125,1.0,1.8359375]
+          GFloat [1.8828125,1.0,1.8359375]
+          GFloat [1.8828125,1.0,1.8359375]
+          GFloat [1.8828125,1.0,1.8359375]
+          GFloat [1.8828125,1.0,1.8359375]
+          GFloat [1.8828125,1.0,1.8359375]
+          GFloat [1.8828125,1.0,1.8359375]
+          GFloat [1.8828125,1.0,1.8359375]
+          GFloat [1.8828125,1.0,1.8359375]
+          GFloat [1.8828125,1.0,1.8359375]
+          GFloat [1.8828125,1.0,1.8359375]
+          GFloat [1.8828125,1.0,1.8398438]
+          GFloat [1.8828125,1.0,1.8398438]
+          GFloat [1.8828125,1.0,1.8398438]
+          GFloat [1.8828125,1.0,1.8398438]
+  White Balance temperature (Kelvin) - stmp:0 tsmp:209
+    Unknown type
+        TSMP
+          GUint32 [209]
+        TICK
+          GUint32 [345436]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [6043]
+          GUint16 [6043]
+          GUint16 [6043]
+          GUint16 [6043]
+          GUint16 [6043]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+Device 1: Hero6 Black
+  3A STATS - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "3A STATS"
+  Accelerometer (up/down, right/left, forward/back) - stmp:0 tsmp:1619
+    Temp: 25.0 and 204 values like (8.600478,-1.7966508,7.7679424)
+  Auto Low Light frame Duration - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "Auto Low Light frame Duration"
+  Exposure time (shutter speed) - stmp:0 tsmp:239
+    Unknown type
+        TSMP
+          GUint32 [239]
+        TICK
+          GUint32 [346437]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+  Face Coordinates and details - stmp:0 tsmp:119
+    Faces:
+  Face numbers - stmp:0 tsmp:119
+    Unknown type
+        TSMP
+          GUint32 [119]
+        TICK
+          GUint32 [346437]
+        STNM
+          GString "Face numbers"
+        FCNM
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:0 tsmp:145
+    GPS time=2018-01-24 19:28:05.659 UTC p=9999, len(rs)=18
+        hd=(33.1265913,-117.3270798) alt=-18.13 spd2d=1.573 spd3d=1.57
+  Gyroscope (z,x,y) - stmp:0 tsmp:1620
+    Temp: 25.0 and 204 values like (0.59797657,0.56922257,0.62673056)
+  Sensor ISO - stmp:0 tsmp:239
+    Unknown type
+        TSMP
+          GUint32 [239]
+        TICK
+          GUint32 [346437]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint32 [316]
+          GUint32 [320]
+          GUint32 [324]
+          GUint32 [326]
+          GUint32 [328]
+          GUint32 [330]
+          GUint32 [329]
+          GUint32 [329]
+          GUint32 [328]
+          GUint32 [324]
+          GUint32 [321]
+          GUint32 [319]
+          GUint32 [311]
+          GUint32 [305]
+          GUint32 [300]
+          GUint32 [289]
+          GUint32 [282]
+          GUint32 [276]
+          GUint32 [267]
+          GUint32 [260]
+          GUint32 [255]
+          GUint32 [247]
+          GUint32 [242]
+          GUint32 [237]
+          GUint32 [232]
+          GUint32 [227]
+          GUint32 [223]
+          GUint32 [218]
+          GUint32 [214]
+          GUint32 [211]
+  White Balance RGB gains - stmp:0 tsmp:239
+    Unknown type
+        TSMP
+          GUint32 [239]
+        TICK
+          GUint32 [346437]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.8828125,1.0,1.8398438]
+          GFloat [1.8828125,1.0,1.8398438]
+          GFloat [1.8828125,1.0,1.8398438]
+          GFloat [1.8828125,1.0,1.8398438]
+          GFloat [1.8828125,1.0,1.8398438]
+          GFloat [1.8867188,1.0,1.8398438]
+          GFloat [1.8867188,1.0,1.8398438]
+          GFloat [1.8867188,1.0,1.8398438]
+          GFloat [1.8867188,1.0,1.84375]
+          GFloat [1.8867188,1.0,1.84375]
+          GFloat [1.8867188,1.0,1.84375]
+          GFloat [1.890625,1.0,1.84375]
+          GFloat [1.890625,1.0,1.84375]
+          GFloat [1.890625,1.0,1.84375]
+          GFloat [1.890625,1.0,1.84375]
+          GFloat [1.890625,1.0,1.84375]
+          GFloat [1.890625,1.0,1.84375]
+          GFloat [1.8945313,1.0,1.8476563]
+          GFloat [1.8945313,1.0,1.8476563]
+          GFloat [1.8945313,1.0,1.8476563]
+          GFloat [1.8945313,1.0,1.8515625]
+          GFloat [1.8945313,1.0,1.8515625]
+          GFloat [1.8945313,1.0,1.8515625]
+          GFloat [1.8984375,1.0,1.8515625]
+          GFloat [1.8984375,1.0,1.8515625]
+          GFloat [1.8984375,1.0,1.8515625]
+          GFloat [1.8984375,1.0,1.8554688]
+          GFloat [1.8984375,1.0,1.8554688]
+          GFloat [1.8984375,1.0,1.8554688]
+          GFloat [1.9023438,1.0,1.859375]
+  White Balance temperature (Kelvin) - stmp:0 tsmp:239
+    Unknown type
+        TSMP
+          GUint32 [239]
+        TICK
+          GUint32 [346437]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [5983]
+          GUint16 [6043]
+          GUint16 [6043]
+          GUint16 [6043]
+          GUint16 [6043]
+          GUint16 [6043]
+          GUint16 [6043]
+          GUint16 [6104]
+          GUint16 [6104]
+          GUint16 [6104]
+          GUint16 [6104]
+          GUint16 [6104]
+          GUint16 [6104]
+          GUint16 [6164]
+          GUint16 [6164]
+          GUint16 [6164]
+          GUint16 [6164]
+          GUint16 [6164]
+          GUint16 [6164]
+          GUint16 [6224]
+          GUint16 [6224]
+          GUint16 [6224]
+          GUint16 [6224]
+          GUint16 [6224]
+          GUint16 [6224]
+          GUint16 [6284]
+Device 1: Hero6 Black
+  3A STATS - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "3A STATS"
+  Accelerometer (up/down, right/left, forward/back) - stmp:0 tsmp:1823
+    Temp: 25.0 and 204 values like (3.423445,-6.45933e-2,11.873206)
+  Auto Low Light frame Duration - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "Auto Low Light frame Duration"
+  Exposure time (shutter speed) - stmp:0 tsmp:269
+    Unknown type
+        TSMP
+          GUint32 [269]
+        TICK
+          GUint32 [347438]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+  Face Coordinates and details - stmp:0 tsmp:134
+    Faces:
+  Face numbers - stmp:0 tsmp:134
+    Unknown type
+        TSMP
+          GUint32 [134]
+        TICK
+          GUint32 [347438]
+        STNM
+          GString "Face numbers"
+        FCNM
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:0 tsmp:164
+    GPS time=2018-01-24 19:28:06.649 UTC p=9999, len(rs)=19
+        hd=(33.1266006,-117.3270673) alt=-18.119 spd2d=1.573 spd3d=1.57
+  Gyroscope (z,x,y) - stmp:0 tsmp:1824
+    Temp: 25.0 and 204 values like (0.6789137,0.36261982,0.6192758)
+  Sensor ISO - stmp:0 tsmp:269
+    Unknown type
+        TSMP
+          GUint32 [269]
+        TICK
+          GUint32 [347438]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint32 [205]
+          GUint32 [201]
+          GUint32 [198]
+          GUint32 [193]
+          GUint32 [189]
+          GUint32 [186]
+          GUint32 [180]
+          GUint32 [176]
+          GUint32 [172]
+          GUint32 [168]
+          GUint32 [165]
+          GUint32 [162]
+          GUint32 [158]
+          GUint32 [155]
+          GUint32 [153]
+          GUint32 [150]
+          GUint32 [147]
+          GUint32 [145]
+          GUint32 [143]
+          GUint32 [141]
+          GUint32 [139]
+          GUint32 [137]
+          GUint32 [135]
+          GUint32 [133]
+          GUint32 [131]
+          GUint32 [130]
+          GUint32 [128]
+          GUint32 [126]
+          GUint32 [125]
+          GUint32 [123]
+  White Balance RGB gains - stmp:0 tsmp:269
+    Unknown type
+        TSMP
+          GUint32 [269]
+        TICK
+          GUint32 [347438]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.9023438,1.0,1.859375]
+          GFloat [1.9023438,1.0,1.859375]
+          GFloat [1.9023438,1.0,1.8632813]
+          GFloat [1.9023438,1.0,1.8632813]
+          GFloat [1.9023438,1.0,1.8632813]
+          GFloat [1.9023438,1.0,1.8632813]
+          GFloat [1.9023438,1.0,1.8632813]
+          GFloat [1.9023438,1.0,1.8632813]
+          GFloat [1.9023438,1.0,1.8671875]
+          GFloat [1.9023438,1.0,1.8671875]
+          GFloat [1.9023438,1.0,1.8671875]
+          GFloat [1.9023438,1.0,1.8671875]
+          GFloat [1.9023438,1.0,1.8671875]
+          GFloat [1.9023438,1.0,1.8671875]
+          GFloat [1.90625,1.0,1.8710938]
+          GFloat [1.90625,1.0,1.8710938]
+          GFloat [1.90625,1.0,1.8710938]
+          GFloat [1.9101563,1.0,1.8710938]
+          GFloat [1.9101563,1.0,1.8710938]
+          GFloat [1.9101563,1.0,1.8710938]
+          GFloat [1.9101563,1.0,1.8710938]
+          GFloat [1.9101563,1.0,1.8710938]
+          GFloat [1.9101563,1.0,1.8710938]
+          GFloat [1.9140625,1.0,1.8710938]
+          GFloat [1.9140625,1.0,1.8710938]
+          GFloat [1.9140625,1.0,1.8710938]
+          GFloat [1.9179688,1.0,1.8710938]
+          GFloat [1.9179688,1.0,1.8710938]
+          GFloat [1.9179688,1.0,1.8710938]
+          GFloat [1.921875,1.0,1.8710938]
+  White Balance temperature (Kelvin) - stmp:0 tsmp:269
+    Unknown type
+        TSMP
+          GUint32 [269]
+        TICK
+          GUint32 [347438]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [6284]
+          GUint16 [6284]
+          GUint16 [6284]
+          GUint16 [6284]
+          GUint16 [6284]
+          GUint16 [6284]
+          GUint16 [6284]
+          GUint16 [6284]
+          GUint16 [6284]
+          GUint16 [6284]
+          GUint16 [6284]
+          GUint16 [6284]
+          GUint16 [6284]
+          GUint16 [6284]
+          GUint16 [6344]
+          GUint16 [6344]
+          GUint16 [6344]
+          GUint16 [6405]
+          GUint16 [6405]
+          GUint16 [6405]
+          GUint16 [6405]
+          GUint16 [6405]
+          GUint16 [6405]
+          GUint16 [6465]
+          GUint16 [6465]
+          GUint16 [6465]
+          GUint16 [6525]
+          GUint16 [6525]
+          GUint16 [6525]
+          GUint16 [6549]
+Device 1: Hero6 Black
+  3A STATS - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "3A STATS"
+  Accelerometer (up/down, right/left, forward/back) - stmp:0 tsmp:2024
+    Temp: 25.0 and 201 values like (1.1555024,9.330144e-2,11.078947)
+  Auto Low Light frame Duration - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "Auto Low Light frame Duration"
+  Exposure time (shutter speed) - stmp:0 tsmp:299
+    Unknown type
+        TSMP
+          GUint32 [299]
+        TICK
+          GUint32 [348439]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.332291e-3]
+          GFloat [8.266297e-3]
+          GFloat [8.189286e-3]
+          GFloat [8.0902865e-3]
+          GFloat [8.005966e-3]
+          GFloat [7.928955e-3]
+          GFloat [7.851959e-3]
+          GFloat [7.782288e-3]
+          GFloat [7.723633e-3]
+          GFloat [7.6136324e-3]
+          GFloat [7.5219576e-3]
+          GFloat [7.4376226e-3]
+          GFloat [7.2982945e-3]
+          GFloat [7.1809543e-3]
+          GFloat [7.081955e-3]
+          GFloat [6.9059604e-3]
+  Face Coordinates and details - stmp:0 tsmp:149
+    Faces:
+  Face numbers - stmp:0 tsmp:149
+    Unknown type
+        TSMP
+          GUint32 [149]
+        TICK
+          GUint32 [348439]
+        STNM
+          GString "Face numbers"
+        FCNM
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:0 tsmp:181
+    GPS time=2018-01-24 19:28:07.694 UTC p=9999, len(rs)=17
+        hd=(33.1266366,-117.3272033) alt=-18.121 spd2d=2.447 spd3d=2.45
+  Gyroscope (z,x,y) - stmp:0 tsmp:2025
+    Temp: 25.0 and 201 values like (0.22790202,0.28434506,0.2912673)
+  Sensor ISO - stmp:0 tsmp:299
+    Unknown type
+        TSMP
+          GUint32 [299]
+        TICK
+          GUint32 [348439]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint32 [121]
+          GUint32 [120]
+          GUint32 [119]
+          GUint32 [117]
+          GUint32 [116]
+          GUint32 [114]
+          GUint32 [113]
+          GUint32 [112]
+          GUint32 [111]
+          GUint32 [109]
+          GUint32 [107]
+          GUint32 [106]
+          GUint32 [104]
+          GUint32 [103]
+          GUint32 [102]
+          GUint32 [101]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+  White Balance RGB gains - stmp:0 tsmp:299
+    Unknown type
+        TSMP
+          GUint32 [299]
+        TICK
+          GUint32 [348439]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.921875,1.0,1.8710938]
+          GFloat [1.921875,1.0,1.8710938]
+          GFloat [1.921875,1.0,1.875]
+          GFloat [1.921875,1.0,1.875]
+          GFloat [1.921875,1.0,1.875]
+          GFloat [1.9257813,1.0,1.875]
+          GFloat [1.9257813,1.0,1.875]
+          GFloat [1.9257813,1.0,1.875]
+          GFloat [1.9296875,1.0,1.875]
+          GFloat [1.9296875,1.0,1.875]
+          GFloat [1.9296875,1.0,1.875]
+          GFloat [1.9296875,1.0,1.875]
+          GFloat [1.9296875,1.0,1.875]
+          GFloat [1.9296875,1.0,1.875]
+          GFloat [1.9335938,1.0,1.875]
+          GFloat [1.9335938,1.0,1.875]
+          GFloat [1.9335938,1.0,1.875]
+          GFloat [1.9335938,1.0,1.875]
+          GFloat [1.9335938,1.0,1.875]
+          GFloat [1.9335938,1.0,1.875]
+          GFloat [1.9335938,1.0,1.875]
+          GFloat [1.9335938,1.0,1.875]
+          GFloat [1.9335938,1.0,1.875]
+          GFloat [1.9375,1.0,1.875]
+          GFloat [1.9375,1.0,1.875]
+          GFloat [1.9375,1.0,1.875]
+          GFloat [1.9375,1.0,1.875]
+          GFloat [1.9375,1.0,1.875]
+          GFloat [1.9375,1.0,1.875]
+          GFloat [1.9375,1.0,1.8710938]
+  White Balance temperature (Kelvin) - stmp:0 tsmp:299
+    Unknown type
+        TSMP
+          GUint32 [299]
+        TICK
+          GUint32 [348439]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [6549]
+          GUint16 [6549]
+          GUint16 [6549]
+          GUint16 [6549]
+          GUint16 [6549]
+          GUint16 [6573]
+          GUint16 [6573]
+          GUint16 [6573]
+          GUint16 [6596]
+          GUint16 [6596]
+          GUint16 [6596]
+          GUint16 [6596]
+          GUint16 [6596]
+          GUint16 [6596]
+          GUint16 [6620]
+          GUint16 [6620]
+          GUint16 [6620]
+          GUint16 [6620]
+          GUint16 [6620]
+          GUint16 [6620]
+          GUint16 [6620]
+          GUint16 [6620]
+          GUint16 [6620]
+          GUint16 [6644]
+          GUint16 [6644]
+          GUint16 [6644]
+          GUint16 [6644]
+          GUint16 [6644]
+          GUint16 [6644]
+          GUint16 [6644]
+Device 1: Hero6 Black
+  3A STATS - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "3A STATS"
+  Accelerometer (up/down, right/left, forward/back) - stmp:0 tsmp:2228
+    Temp: 25.0 and 204 values like (0.3708134,0.12200957,9.0311)
+  Auto Low Light frame Duration - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "Auto Low Light frame Duration"
+  Exposure time (shutter speed) - stmp:0 tsmp:329
+    Unknown type
+        TSMP
+          GUint32 [329]
+        TICK
+          GUint32 [349441]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [6.759293e-3]
+          GFloat [6.638291e-3]
+          GFloat [6.410965e-3]
+          GFloat [6.231293e-3]
+          GFloat [6.0846256e-3]
+          GFloat [5.8536227e-3]
+          GFloat [5.6702886e-3]
+          GFloat [5.5272984e-3]
+          GFloat [5.2559664e-3]
+          GFloat [5.050629e-3]
+          GFloat [4.8929597e-3]
+          GFloat [4.6069645e-3]
+          GFloat [4.401627e-3]
+          GFloat [4.24762e-3]
+          GFloat [4.0056305e-3]
+          GFloat [3.8332979e-3]
+          GFloat [3.697632e-3]
+          GFloat [3.4666292e-3]
+          GFloat [3.3016207e-3]
+          GFloat [3.1769564e-3]
+          GFloat [2.98996e-3]
+          GFloat [2.857956e-3]
+          GFloat [2.755295e-3]
+          GFloat [2.6086275e-3]
+          GFloat [2.502289e-3]
+          GFloat [2.421631e-3]
+          GFloat [2.322632e-3]
+          GFloat [2.2456208e-3]
+          GFloat [2.1832886e-3]
+          GFloat [2.1172944e-3]
+  Face Coordinates and details - stmp:0 tsmp:164
+    Faces:
+  Face numbers - stmp:0 tsmp:164
+    Unknown type
+        TSMP
+          GUint32 [164]
+        TICK
+          GUint32 [349441]
+        STNM
+          GString "Face numbers"
+        FCNM
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:0 tsmp:200
+    GPS time=2018-01-24 19:28:08.629 UTC p=9999, len(rs)=19
+        hd=(33.1266512,-117.3272206) alt=-18.121 spd2d=2.447 spd3d=2.45
+  Gyroscope (z,x,y) - stmp:0 tsmp:2229
+    Temp: 25.0 and 204 values like (4.313099e-2,9.318424e-2,0.1368477)
+  Sensor ISO - stmp:0 tsmp:329
+    Unknown type
+        TSMP
+          GUint32 [329]
+        TICK
+          GUint32 [349441]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+  White Balance RGB gains - stmp:0 tsmp:329
+    Unknown type
+        TSMP
+          GUint32 [329]
+        TICK
+          GUint32 [349441]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.9375,1.0,1.8710938]
+          GFloat [1.9375,1.0,1.8710938]
+          GFloat [1.9414063,1.0,1.8710938]
+          GFloat [1.9414063,1.0,1.8710938]
+          GFloat [1.9414063,1.0,1.8710938]
+          GFloat [1.9414063,1.0,1.8671875]
+          GFloat [1.9414063,1.0,1.8671875]
+          GFloat [1.9414063,1.0,1.8671875]
+          GFloat [1.9453125,1.0,1.8671875]
+          GFloat [1.9453125,1.0,1.8671875]
+          GFloat [1.9453125,1.0,1.8671875]
+          GFloat [1.9453125,1.0,1.8710938]
+          GFloat [1.9453125,1.0,1.8710938]
+          GFloat [1.9453125,1.0,1.8710938]
+          GFloat [1.9453125,1.0,1.8710938]
+          GFloat [1.9453125,1.0,1.8710938]
+          GFloat [1.9453125,1.0,1.8710938]
+          GFloat [1.9453125,1.0,1.875]
+          GFloat [1.9453125,1.0,1.875]
+          GFloat [1.9453125,1.0,1.875]
+          GFloat [1.9492188,1.0,1.8789063]
+          GFloat [1.9492188,1.0,1.8789063]
+          GFloat [1.9492188,1.0,1.8789063]
+          GFloat [1.9492188,1.0,1.8828125]
+          GFloat [1.9492188,1.0,1.8828125]
+          GFloat [1.9492188,1.0,1.8828125]
+          GFloat [1.9492188,1.0,1.8867188]
+          GFloat [1.9492188,1.0,1.8867188]
+          GFloat [1.9492188,1.0,1.8867188]
+          GFloat [1.9492188,1.0,1.890625]
+  White Balance temperature (Kelvin) - stmp:0 tsmp:329
+    Unknown type
+        TSMP
+          GUint32 [329]
+        TICK
+          GUint32 [349441]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [6644]
+          GUint16 [6644]
+          GUint16 [6668]
+          GUint16 [6668]
+          GUint16 [6668]
+          GUint16 [6668]
+          GUint16 [6668]
+          GUint16 [6668]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+Device 1: Hero6 Black
+  3A STATS - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "3A STATS"
+  Accelerometer (up/down, right/left, forward/back) - stmp:0 tsmp:2432
+    Temp: 25.0 and 204 values like (-0.5813397,0.24641149,8.648325)
+  Auto Low Light frame Duration - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "Auto Low Light frame Duration"
+  Exposure time (shutter speed) - stmp:0 tsmp:359
+    Unknown type
+        TSMP
+          GUint32 [359]
+        TICK
+          GUint32 [350441]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [2.0659638e-3]
+          GFloat [2.0219574e-3]
+          GFloat [1.974289e-3]
+          GFloat [1.9376222e-3]
+          GFloat [1.9046327e-3]
+          GFloat [1.8679658e-3]
+          GFloat [1.8386231e-3]
+          GFloat [1.8092957e-3]
+          GFloat [1.7836305e-3]
+          GFloat [1.7579652e-3]
+          GFloat [1.735962e-3]
+          GFloat [1.7066194e-3]
+          GFloat [1.6846315e-3]
+          GFloat [1.6626283e-3]
+          GFloat [1.6332855e-3]
+          GFloat [1.6076203e-3]
+          GFloat [1.5856324e-3]
+          GFloat [1.5709534e-3]
+          GFloat [1.5562897e-3]
+          GFloat [1.5452881e-3]
+          GFloat [1.5269624e-3]
+          GFloat [1.5122987e-3]
+          GFloat [1.5012971e-3]
+          GFloat [1.4646302e-3]
+          GFloat [1.4352875e-3]
+          GFloat [1.4096223e-3]
+          GFloat [1.3802949e-3]
+          GFloat [1.3582917e-3]
+          GFloat [1.3399658e-3]
+          GFloat [1.3252869e-3]
+  Face Coordinates and details - stmp:0 tsmp:179
+    Faces:
+  Face numbers - stmp:0 tsmp:179
+    Unknown type
+        TSMP
+          GUint32 [179]
+        TICK
+          GUint32 [350441]
+        STNM
+          GString "Face numbers"
+        FCNM
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:0 tsmp:218
+    GPS time=2018-01-24 19:28:09.674 UTC p=9999, len(rs)=18
+        hd=(33.1266675,-117.32724) alt=-18.12 spd2d=2.447 spd3d=2.45
+  Gyroscope (z,x,y) - stmp:0 tsmp:2433
+    Temp: 25.0 and 204 values like (2.1831736e-2,0.108093716,0.21246007)
+  Sensor ISO - stmp:0 tsmp:359
+    Unknown type
+        TSMP
+          GUint32 [359]
+        TICK
+          GUint32 [350441]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+  White Balance RGB gains - stmp:0 tsmp:359
+    Unknown type
+        TSMP
+          GUint32 [359]
+        TICK
+          GUint32 [350441]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.9492188,1.0,1.890625]
+          GFloat [1.9492188,1.0,1.890625]
+          GFloat [1.9492188,1.0,1.8945313]
+          GFloat [1.9492188,1.0,1.8945313]
+          GFloat [1.9492188,1.0,1.8945313]
+          GFloat [1.9492188,1.0,1.9023438]
+          GFloat [1.9492188,1.0,1.9023438]
+          GFloat [1.9492188,1.0,1.9023438]
+          GFloat [1.9492188,1.0,1.90625]
+          GFloat [1.9492188,1.0,1.90625]
+          GFloat [1.9492188,1.0,1.90625]
+          GFloat [1.9453125,1.0,1.9101563]
+          GFloat [1.9453125,1.0,1.9101563]
+          GFloat [1.9453125,1.0,1.9101563]
+          GFloat [1.9453125,1.0,1.9179688]
+          GFloat [1.9453125,1.0,1.9179688]
+          GFloat [1.9453125,1.0,1.9179688]
+          GFloat [1.9453125,1.0,1.921875]
+          GFloat [1.9453125,1.0,1.921875]
+          GFloat [1.9453125,1.0,1.921875]
+          GFloat [1.9453125,1.0,1.9257813]
+          GFloat [1.9453125,1.0,1.9257813]
+          GFloat [1.9453125,1.0,1.9257813]
+          GFloat [1.9453125,1.0,1.9296875]
+          GFloat [1.9453125,1.0,1.9296875]
+          GFloat [1.9453125,1.0,1.9296875]
+          GFloat [1.9453125,1.0,1.9335938]
+          GFloat [1.9453125,1.0,1.9335938]
+          GFloat [1.9453125,1.0,1.9335938]
+          GFloat [1.9453125,1.0,1.9375]
+  White Balance temperature (Kelvin) - stmp:0 tsmp:359
+    Unknown type
+        TSMP
+          GUint32 [359]
+        TICK
+          GUint32 [350441]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+Device 1: Hero6 Black
+  3A STATS - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "3A STATS"
+  Accelerometer (up/down, right/left, forward/back) - stmp:0 tsmp:2636
+    Temp: 25.0 and 204 values like (2.7535884,-1.8253589,10.102871)
+  Auto Low Light frame Duration - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "Auto Low Light frame Duration"
+  Exposure time (shutter speed) - stmp:0 tsmp:389
+    Unknown type
+        TSMP
+          GUint32 [389]
+        TICK
+          GUint32 [351442]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [1.3179627e-3]
+          GFloat [1.3069612e-3]
+          GFloat [1.3106233e-3]
+          GFloat [1.3142853e-3]
+          GFloat [1.3142853e-3]
+          GFloat [1.3106233e-3]
+          GFloat [1.303299e-3]
+          GFloat [1.2996217e-3]
+          GFloat [1.2556305e-3]
+          GFloat [1.2226258e-3]
+          GFloat [1.1969605e-3]
+          GFloat [1.1676179e-3]
+          GFloat [1.1456299e-3]
+          GFloat [1.1236267e-3]
+          GFloat [1.0979614e-3]
+          GFloat [1.0759583e-3]
+          GFloat [1.0576325e-3]
+          GFloat [1.0392914e-3]
+          GFloat [1.0246277e-3]
+          GFloat [1.0136261e-3]
+          GFloat [9.842988e-4]
+          GFloat [9.6229557e-4]
+          GFloat [9.439545e-4]
+          GFloat [9.036255e-4]
+          GFloat [8.7429816e-4]
+          GFloat [8.486176e-4]
+          GFloat [8.009644e-4]
+          GFloat [7.6795963e-4]
+          GFloat [7.386322e-4]
+          GFloat [7.2029117e-4]
+  Face Coordinates and details - stmp:0 tsmp:194
+    Faces:
+  Face numbers - stmp:0 tsmp:194
+    Unknown type
+        TSMP
+          GUint32 [194]
+        TICK
+          GUint32 [351442]
+        STNM
+          GString "Face numbers"
+        FCNM
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:0 tsmp:236
+    GPS time=2018-01-24 19:28:10.664 UTC p=9999, len(rs)=18
+        hd=(33.126683,-117.3272583) alt=-18.12 spd2d=2.447 spd3d=2.45
+  Gyroscope (z,x,y) - stmp:0 tsmp:2637
+    Temp: 25.0 and 204 values like (-0.12619808,-5.857295e-3,-3.887114e-2)
+  Sensor ISO - stmp:0 tsmp:389
+    Unknown type
+        TSMP
+          GUint32 [389]
+        TICK
+          GUint32 [351442]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+  White Balance RGB gains - stmp:0 tsmp:389
+    Unknown type
+        TSMP
+          GUint32 [389]
+        TICK
+          GUint32 [351442]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.9453125,1.0,1.9375]
+          GFloat [1.9453125,1.0,1.9375]
+          GFloat [1.9492188,1.0,1.9375]
+          GFloat [1.9492188,1.0,1.9375]
+          GFloat [1.9492188,1.0,1.9375]
+          GFloat [1.9453125,1.0,1.9414063]
+          GFloat [1.9453125,1.0,1.9414063]
+          GFloat [1.9453125,1.0,1.9414063]
+          GFloat [1.9414063,1.0,1.9414063]
+          GFloat [1.9414063,1.0,1.9414063]
+          GFloat [1.9414063,1.0,1.9414063]
+          GFloat [1.9414063,1.0,1.9414063]
+          GFloat [1.9414063,1.0,1.9414063]
+          GFloat [1.9414063,1.0,1.9414063]
+          GFloat [1.9335938,1.0,1.9453125]
+          GFloat [1.9335938,1.0,1.9453125]
+          GFloat [1.9335938,1.0,1.9453125]
+          GFloat [1.9296875,1.0,1.9453125]
+          GFloat [1.9296875,1.0,1.9453125]
+          GFloat [1.9296875,1.0,1.9453125]
+          GFloat [1.921875,1.0,1.9453125]
+          GFloat [1.921875,1.0,1.9453125]
+          GFloat [1.921875,1.0,1.9453125]
+          GFloat [1.9179688,1.0,1.9453125]
+          GFloat [1.9179688,1.0,1.9453125]
+          GFloat [1.9179688,1.0,1.9453125]
+          GFloat [1.9101563,1.0,1.9453125]
+          GFloat [1.9101563,1.0,1.9453125]
+          GFloat [1.9101563,1.0,1.9453125]
+          GFloat [1.90625,1.0,1.9414063]
+  White Balance temperature (Kelvin) - stmp:0 tsmp:389
+    Unknown type
+        TSMP
+          GUint32 [389]
+        TICK
+          GUint32 [351442]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6715]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6691]
+          GUint16 [6668]
+          GUint16 [6668]
+          GUint16 [6668]
+          GUint16 [6668]
+          GUint16 [6668]
+          GUint16 [6668]
+          GUint16 [6620]
+          GUint16 [6620]
+          GUint16 [6620]
+          GUint16 [6596]
+          GUint16 [6596]
+          GUint16 [6596]
+          GUint16 [6549]
+          GUint16 [6549]
+          GUint16 [6549]
+          GUint16 [6525]
+          GUint16 [6525]
+          GUint16 [6525]
+          GUint16 [6405]
+          GUint16 [6405]
+          GUint16 [6405]
+          GUint16 [6344]
+Device 1: Hero6 Black
+  3A STATS - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "3A STATS"
+  Accelerometer (up/down, right/left, forward/back) - stmp:0 tsmp:2837
+    Temp: 25.0 and 201 values like (-0.51435405,-0.36124402,10.590909)
+  Auto Low Light frame Duration - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "Auto Low Light frame Duration"
+  Exposure time (shutter speed) - stmp:0 tsmp:419
+    Unknown type
+        TSMP
+          GUint32 [419]
+        TICK
+          GUint32 [352443]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [7.0196536e-4]
+          GFloat [6.8728643e-4]
+          GFloat [6.7996216e-4]
+          GFloat [6.689606e-4]
+          GFloat [6.616211e-4]
+          GFloat [6.616211e-4]
+          GFloat [6.57959e-4]
+          GFloat [6.57959e-4]
+          GFloat [6.57959e-4]
+          GFloat [6.57959e-4]
+          GFloat [6.616211e-4]
+          GFloat [6.616211e-4]
+          GFloat [6.652985e-4]
+          GFloat [6.652985e-4]
+          GFloat [6.689606e-4]
+          GFloat [6.689606e-4]
+          GFloat [6.726227e-4]
+          GFloat [6.7628484e-4]
+          GFloat [6.7996216e-4]
+          GFloat [6.836243e-4]
+          GFloat [6.8728643e-4]
+          GFloat [6.9096376e-4]
+          GFloat [6.946259e-4]
+          GFloat [6.98288e-4]
+          GFloat [7.0196536e-4]
+          GFloat [7.056275e-4]
+          GFloat [7.129517e-4]
+          GFloat [7.166291e-4]
+          GFloat [7.2029117e-4]
+          GFloat [7.239533e-4]
+  Face Coordinates and details - stmp:0 tsmp:209
+    Faces:
+  Face numbers - stmp:0 tsmp:209
+    Unknown type
+        TSMP
+          GUint32 [209]
+        TICK
+          GUint32 [352443]
+        STNM
+          GString "Face numbers"
+        FCNM
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:0 tsmp:254
+    GPS time=2018-01-24 19:28:11.654 UTC p=9999, len(rs)=18
+        hd=(33.1266985,-117.3272767) alt=-18.119 spd2d=2.447 spd3d=2.45
+  Gyroscope (z,x,y) - stmp:0 tsmp:2838
+    Temp: 25.0 and 201 values like (5.0053246e-2,0.28541002,-0.15814696)
+  Sensor ISO - stmp:0 tsmp:419
+    Unknown type
+        TSMP
+          GUint32 [419]
+        TICK
+          GUint32 [352443]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+  White Balance RGB gains - stmp:0 tsmp:419
+    Unknown type
+        TSMP
+          GUint32 [419]
+        TICK
+          GUint32 [352443]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.90625,1.0,1.9414063]
+          GFloat [1.90625,1.0,1.9414063]
+          GFloat [1.8984375,1.0,1.9414063]
+          GFloat [1.8984375,1.0,1.9414063]
+          GFloat [1.8984375,1.0,1.9414063]
+          GFloat [1.8945313,1.0,1.9375]
+          GFloat [1.8945313,1.0,1.9375]
+          GFloat [1.8945313,1.0,1.9375]
+          GFloat [1.8945313,1.0,1.9335938]
+          GFloat [1.8945313,1.0,1.9335938]
+          GFloat [1.8945313,1.0,1.9335938]
+          GFloat [1.890625,1.0,1.9296875]
+          GFloat [1.890625,1.0,1.9296875]
+          GFloat [1.890625,1.0,1.9296875]
+          GFloat [1.8867188,1.0,1.9257813]
+          GFloat [1.8867188,1.0,1.9257813]
+          GFloat [1.8867188,1.0,1.9257813]
+          GFloat [1.8867188,1.0,1.921875]
+          GFloat [1.8867188,1.0,1.921875]
+          GFloat [1.8867188,1.0,1.921875]
+          GFloat [1.8789063,1.0,1.9257813]
+          GFloat [1.8789063,1.0,1.9257813]
+          GFloat [1.8789063,1.0,1.9257813]
+          GFloat [1.875,1.0,1.9257813]
+          GFloat [1.875,1.0,1.9257813]
+          GFloat [1.875,1.0,1.9257813]
+          GFloat [1.8710938,1.0,1.921875]
+          GFloat [1.8710938,1.0,1.921875]
+          GFloat [1.8710938,1.0,1.921875]
+          GFloat [1.8671875,1.0,1.9257813]
+  White Balance temperature (Kelvin) - stmp:0 tsmp:419
+    Unknown type
+        TSMP
+          GUint32 [419]
+        TICK
+          GUint32 [352443]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [6344]
+          GUint16 [6344]
+          GUint16 [6224]
+          GUint16 [6224]
+          GUint16 [6224]
+          GUint16 [6164]
+          GUint16 [6164]
+          GUint16 [6164]
+          GUint16 [6164]
+          GUint16 [6164]
+          GUint16 [6164]
+          GUint16 [6104]
+          GUint16 [6104]
+          GUint16 [6104]
+          GUint16 [6043]
+          GUint16 [6043]
+          GUint16 [6043]
+          GUint16 [6043]
+          GUint16 [6043]
+          GUint16 [6043]
+          GUint16 [5923]
+          GUint16 [5923]
+          GUint16 [5923]
+          GUint16 [5863]
+          GUint16 [5863]
+          GUint16 [5863]
+          GUint16 [5803]
+          GUint16 [5803]
+          GUint16 [5803]
+          GUint16 [5742]
+Device 1: Hero6 Black
+  3A STATS - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "3A STATS"
+  Accelerometer (up/down, right/left, forward/back) - stmp:0 tsmp:3041
+    Temp: 25.0 and 204 values like (0.51435405,0.17942584,9.184211)
+  Auto Low Light frame Duration - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "Auto Low Light frame Duration"
+  Exposure time (shutter speed) - stmp:0 tsmp:449
+    Unknown type
+        TSMP
+          GUint32 [449]
+        TICK
+          GUint32 [353445]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [7.276306e-4]
+          GFloat [7.3129276e-4]
+          GFloat [7.349549e-4]
+          GFloat [7.386322e-4]
+          GFloat [7.4229436e-4]
+          GFloat [7.4595644e-4]
+          GFloat [7.496186e-4]
+          GFloat [7.5329596e-4]
+          GFloat [7.6062017e-4]
+          GFloat [7.642975e-4]
+          GFloat [7.6795963e-4]
+          GFloat [7.752991e-4]
+          GFloat [7.789612e-4]
+          GFloat [7.8628544e-4]
+          GFloat [7.899628e-4]
+          GFloat [7.936249e-4]
+          GFloat [7.9728704e-4]
+          GFloat [8.009644e-4]
+          GFloat [8.046265e-4]
+          GFloat [8.0828863e-4]
+          GFloat [8.156281e-4]
+          GFloat [8.192902e-4]
+          GFloat [8.229523e-4]
+          GFloat [8.3029177e-4]
+          GFloat [8.339539e-4]
+          GFloat [8.4129337e-4]
+          GFloat [8.449555e-4]
+          GFloat [8.5229496e-4]
+          GFloat [8.596192e-4]
+          GFloat [8.6695864e-4]
+  Face Coordinates and details - stmp:0 tsmp:224
+    Faces:
+  Face numbers - stmp:0 tsmp:224
+    Unknown type
+        TSMP
+          GUint32 [224]
+        TICK
+          GUint32 [353445]
+        STNM
+          GString "Face numbers"
+        FCNM
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:0 tsmp:273
+    GPS time=2018-01-24 19:28:12.644 UTC p=373, len(rs)=19
+        hd=(33.1266157,-117.3256902) alt=-18.44 spd2d=1.442 spd3d=1.96
+  Gyroscope (z,x,y) - stmp:0 tsmp:3042
+    Temp: 25.0 and 204 values like (0.21512248,5.2183174e-2,-0.43077743)
+  Sensor ISO - stmp:0 tsmp:449
+    Unknown type
+        TSMP
+          GUint32 [449]
+        TICK
+          GUint32 [353445]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+  White Balance RGB gains - stmp:0 tsmp:449
+    Unknown type
+        TSMP
+          GUint32 [449]
+        TICK
+          GUint32 [353445]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.8671875,1.0,1.9257813]
+          GFloat [1.8671875,1.0,1.9257813]
+          GFloat [1.8632813,1.0,1.921875]
+          GFloat [1.8632813,1.0,1.921875]
+          GFloat [1.8632813,1.0,1.921875]
+          GFloat [1.8632813,1.0,1.921875]
+          GFloat [1.8632813,1.0,1.921875]
+          GFloat [1.8632813,1.0,1.921875]
+          GFloat [1.859375,1.0,1.9179688]
+          GFloat [1.859375,1.0,1.9179688]
+          GFloat [1.859375,1.0,1.9179688]
+          GFloat [1.859375,1.0,1.9140625]
+          GFloat [1.859375,1.0,1.9140625]
+          GFloat [1.859375,1.0,1.9140625]
+          GFloat [1.859375,1.0,1.9101563]
+          GFloat [1.859375,1.0,1.9101563]
+          GFloat [1.859375,1.0,1.9101563]
+          GFloat [1.859375,1.0,1.9101563]
+          GFloat [1.859375,1.0,1.9101563]
+          GFloat [1.859375,1.0,1.9101563]
+          GFloat [1.8554688,1.0,1.90625]
+          GFloat [1.8554688,1.0,1.90625]
+          GFloat [1.8554688,1.0,1.90625]
+          GFloat [1.8554688,1.0,1.9023438]
+          GFloat [1.8554688,1.0,1.9023438]
+          GFloat [1.8554688,1.0,1.9023438]
+          GFloat [1.8554688,1.0,1.8984375]
+          GFloat [1.8554688,1.0,1.8984375]
+          GFloat [1.8554688,1.0,1.8984375]
+          GFloat [1.8554688,1.0,1.8945313]
+  White Balance temperature (Kelvin) - stmp:0 tsmp:449
+    Unknown type
+        TSMP
+          GUint32 [449]
+        TICK
+          GUint32 [353445]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [5742]
+          GUint16 [5742]
+          GUint16 [5682]
+          GUint16 [5682]
+          GUint16 [5682]
+          GUint16 [5682]
+          GUint16 [5682]
+          GUint16 [5682]
+          GUint16 [5622]
+          GUint16 [5622]
+          GUint16 [5622]
+          GUint16 [5622]
+          GUint16 [5622]
+          GUint16 [5622]
+          GUint16 [5622]
+          GUint16 [5622]
+          GUint16 [5622]
+          GUint16 [5622]
+          GUint16 [5622]
+          GUint16 [5622]
+          GUint16 [5562]
+          GUint16 [5562]
+          GUint16 [5562]
+          GUint16 [5562]
+          GUint16 [5562]
+          GUint16 [5562]
+          GUint16 [5562]
+          GUint16 [5562]
+          GUint16 [5562]
+          GUint16 [5562]
+Device 1: Hero6 Black
+  3A STATS - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "3A STATS"
+  Accelerometer (up/down, right/left, forward/back) - stmp:0 tsmp:3245
+    Temp: 25.0 and 204 values like (1.4425837,-0.2942584,10.734449)
+  Auto Low Light frame Duration - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "Auto Low Light frame Duration"
+  Exposure time (shutter speed) - stmp:0 tsmp:479
+    Unknown type
+        TSMP
+          GUint32 [479]
+        TICK
+          GUint32 [354445]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [8.7429816e-4]
+          GFloat [8.7796024e-4]
+          GFloat [8.8528445e-4]
+          GFloat [8.9262397e-4]
+          GFloat [8.9996343e-4]
+          GFloat [9.036255e-4]
+          GFloat [9.10965e-4]
+          GFloat [9.146271e-4]
+          GFloat [9.1828924e-4]
+          GFloat [9.256287e-4]
+          GFloat [9.2929084e-4]
+          GFloat [9.329529e-4]
+          GFloat [9.366303e-4]
+          GFloat [9.402924e-4]
+          GFloat [9.439545e-4]
+          GFloat [9.476319e-4]
+          GFloat [9.476319e-4]
+          GFloat [9.51294e-4]
+          GFloat [9.549561e-4]
+          GFloat [9.549561e-4]
+          GFloat [9.586182e-4]
+          GFloat [9.586182e-4]
+          GFloat [9.586182e-4]
+          GFloat [9.6229557e-4]
+          GFloat [9.6229557e-4]
+          GFloat [9.6229557e-4]
+          GFloat [9.6229557e-4]
+          GFloat [9.6229557e-4]
+          GFloat [9.6229557e-4]
+          GFloat [9.6229557e-4]
+  Face Coordinates and details - stmp:0 tsmp:239
+    Faces:
+  Face numbers - stmp:0 tsmp:239
+    Unknown type
+        TSMP
+          GUint32 [239]
+        TICK
+          GUint32 [354445]
+        STNM
+          GString "Face numbers"
+        FCNM
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:0 tsmp:291
+    GPS time=2018-01-24 19:28:13.689 UTC p=326, len(rs)=18
+        hd=(33.1265402,-117.3270719) alt=-19.161 spd2d=1.5 spd3d=1.36
+  Gyroscope (z,x,y) - stmp:0 tsmp:3246
+    Temp: 25.0 and 204 values like (-3.0351438e-2,-0.371672,-0.39776358)
+  Sensor ISO - stmp:0 tsmp:479
+    Unknown type
+        TSMP
+          GUint32 [479]
+        TICK
+          GUint32 [354445]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+  White Balance RGB gains - stmp:0 tsmp:479
+    Unknown type
+        TSMP
+          GUint32 [479]
+        TICK
+          GUint32 [354445]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.8554688,1.0,1.8945313]
+          GFloat [1.8554688,1.0,1.8945313]
+          GFloat [1.8554688,1.0,1.8945313]
+          GFloat [1.8554688,1.0,1.8945313]
+          GFloat [1.8554688,1.0,1.8945313]
+          GFloat [1.8554688,1.0,1.890625]
+          GFloat [1.8554688,1.0,1.890625]
+          GFloat [1.8554688,1.0,1.890625]
+          GFloat [1.8515625,1.0,1.8984375]
+          GFloat [1.8515625,1.0,1.8984375]
+          GFloat [1.8515625,1.0,1.8984375]
+          GFloat [1.8476563,1.0,1.8984375]
+          GFloat [1.8476563,1.0,1.8984375]
+          GFloat [1.8476563,1.0,1.8984375]
+          GFloat [1.8515625,1.0,1.8945313]
+          GFloat [1.8515625,1.0,1.8945313]
+          GFloat [1.8515625,1.0,1.8945313]
+          GFloat [1.84375,1.0,1.9023438]
+          GFloat [1.84375,1.0,1.9023438]
+          GFloat [1.84375,1.0,1.9023438]
+          GFloat [1.8476563,1.0,1.8984375]
+          GFloat [1.8476563,1.0,1.8984375]
+          GFloat [1.8476563,1.0,1.8984375]
+          GFloat [1.8398438,1.0,1.90625]
+          GFloat [1.8398438,1.0,1.90625]
+          GFloat [1.8398438,1.0,1.90625]
+          GFloat [1.84375,1.0,1.9023438]
+          GFloat [1.84375,1.0,1.9023438]
+          GFloat [1.84375,1.0,1.9023438]
+          GFloat [1.84375,1.0,1.8984375]
+  White Balance temperature (Kelvin) - stmp:0 tsmp:479
+    Unknown type
+        TSMP
+          GUint32 [479]
+        TICK
+          GUint32 [354445]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [5562]
+          GUint16 [5562]
+          GUint16 [5562]
+          GUint16 [5562]
+          GUint16 [5562]
+          GUint16 [5562]
+          GUint16 [5562]
+          GUint16 [5562]
+          GUint16 [5502]
+          GUint16 [5502]
+          GUint16 [5502]
+          GUint16 [5441]
+          GUint16 [5441]
+          GUint16 [5441]
+          GUint16 [5502]
+          GUint16 [5502]
+          GUint16 [5502]
+          GUint16 [5381]
+          GUint16 [5381]
+          GUint16 [5381]
+          GUint16 [5441]
+          GUint16 [5441]
+          GUint16 [5441]
+          GUint16 [5321]
+          GUint16 [5321]
+          GUint16 [5321]
+          GUint16 [5381]
+          GUint16 [5381]
+          GUint16 [5381]
+          GUint16 [5381]
+Device 1: Hero6 Black
+  3A STATS - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "3A STATS"
+  Accelerometer (up/down, right/left, forward/back) - stmp:0 tsmp:3449
+    Temp: 25.0 and 204 values like (2.1985645,0.7248804,12.992823)
+  Auto Low Light frame Duration - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "Auto Low Light frame Duration"
+  Exposure time (shutter speed) - stmp:0 tsmp:509
+    Unknown type
+        TSMP
+          GUint32 [509]
+        TICK
+          GUint32 [355446]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [9.6229557e-4]
+          GFloat [9.586182e-4]
+          GFloat [9.586182e-4]
+          GFloat [9.549561e-4]
+          GFloat [9.549561e-4]
+          GFloat [9.51294e-4]
+          GFloat [9.51294e-4]
+          GFloat [9.476319e-4]
+          GFloat [9.476319e-4]
+          GFloat [9.439545e-4]
+          GFloat [9.439545e-4]
+          GFloat [9.402924e-4]
+          GFloat [9.402924e-4]
+          GFloat [9.366303e-4]
+          GFloat [9.366303e-4]
+          GFloat [9.329529e-4]
+          GFloat [9.329529e-4]
+          GFloat [9.329529e-4]
+          GFloat [9.2929084e-4]
+          GFloat [9.2929084e-4]
+          GFloat [9.256287e-4]
+          GFloat [9.256287e-4]
+          GFloat [9.256287e-4]
+          GFloat [9.256287e-4]
+          GFloat [9.256287e-4]
+          GFloat [9.256287e-4]
+          GFloat [9.256287e-4]
+          GFloat [9.256287e-4]
+          GFloat [9.256287e-4]
+          GFloat [9.256287e-4]
+  Face Coordinates and details - stmp:0 tsmp:254
+    Faces:
+  Face numbers - stmp:0 tsmp:254
+    Unknown type
+        TSMP
+          GUint32 [254]
+        TICK
+          GUint32 [355446]
+        STNM
+          GString "Face numbers"
+        FCNM
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:0 tsmp:308
+    GPS time=2018-01-24 19:28:14.679 UTC p=326, len(rs)=17
+        hd=(33.1265393,-117.3272184) alt=-18.472 spd2d=2.15 spd3d=2.0
+  Gyroscope (z,x,y) - stmp:0 tsmp:3450
+    Temp: 25.0 and 204 values like (2.4494143e-2,-0.1682641,-4.6325877e-2)
+  Sensor ISO - stmp:0 tsmp:509
+    Unknown type
+        TSMP
+          GUint32 [509]
+        TICK
+          GUint32 [355446]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+  White Balance RGB gains - stmp:0 tsmp:509
+    Unknown type
+        TSMP
+          GUint32 [509]
+        TICK
+          GUint32 [355446]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.84375,1.0,1.8984375]
+          GFloat [1.84375,1.0,1.8984375]
+          GFloat [1.8359375,1.0,1.90625]
+          GFloat [1.8359375,1.0,1.90625]
+          GFloat [1.8359375,1.0,1.90625]
+          GFloat [1.8320313,1.0,1.9101563]
+          GFloat [1.8320313,1.0,1.9101563]
+          GFloat [1.8320313,1.0,1.9101563]
+          GFloat [1.8320313,1.0,1.9101563]
+          GFloat [1.8320313,1.0,1.9101563]
+          GFloat [1.8320313,1.0,1.9101563]
+          GFloat [1.8320313,1.0,1.90625]
+          GFloat [1.8320313,1.0,1.90625]
+          GFloat [1.8320313,1.0,1.90625]
+          GFloat [1.828125,1.0,1.9101563]
+          GFloat [1.828125,1.0,1.9101563]
+          GFloat [1.828125,1.0,1.9101563]
+          GFloat [1.8242188,1.0,1.9140625]
+          GFloat [1.8242188,1.0,1.9140625]
+          GFloat [1.8242188,1.0,1.9140625]
+          GFloat [1.8203125,1.0,1.9179688]
+          GFloat [1.8203125,1.0,1.9179688]
+          GFloat [1.8203125,1.0,1.9179688]
+          GFloat [1.8164063,1.0,1.9179688]
+          GFloat [1.8164063,1.0,1.9179688]
+          GFloat [1.8164063,1.0,1.9179688]
+          GFloat [1.8125,1.0,1.921875]
+          GFloat [1.8125,1.0,1.921875]
+          GFloat [1.8125,1.0,1.921875]
+          GFloat [1.8125,1.0,1.9257813]
+  White Balance temperature (Kelvin) - stmp:0 tsmp:509
+    Unknown type
+        TSMP
+          GUint32 [509]
+        TICK
+          GUint32 [355446]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [5381]
+          GUint16 [5381]
+          GUint16 [5261]
+          GUint16 [5261]
+          GUint16 [5261]
+          GUint16 [5201]
+          GUint16 [5201]
+          GUint16 [5201]
+          GUint16 [5201]
+          GUint16 [5201]
+          GUint16 [5201]
+          GUint16 [5201]
+          GUint16 [5201]
+          GUint16 [5201]
+          GUint16 [5140]
+          GUint16 [5140]
+          GUint16 [5140]
+          GUint16 [5080]
+          GUint16 [5080]
+          GUint16 [5080]
+          GUint16 [5020]
+          GUint16 [5020]
+          GUint16 [5020]
+          GUint16 [5003]
+          GUint16 [5003]
+          GUint16 [5003]
+          GUint16 [4987]
+          GUint16 [4987]
+          GUint16 [4987]
+          GUint16 [4987]
+Device 1: Hero6 Black
+  3A STATS - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "3A STATS"
+  Accelerometer (up/down, right/left, forward/back) - stmp:0 tsmp:3650
+    Temp: 25.0 and 201 values like (-0.22727273,1.4425837,12.122009)
+  Auto Low Light frame Duration - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "Auto Low Light frame Duration"
+  Exposure time (shutter speed) - stmp:0 tsmp:539
+    Unknown type
+        TSMP
+          GUint32 [539]
+        TICK
+          GUint32 [356448]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [9.256287e-4]
+          GFloat [9.256287e-4]
+          GFloat [9.256287e-4]
+          GFloat [9.256287e-4]
+          GFloat [9.219513e-4]
+          GFloat [9.219513e-4]
+          GFloat [9.219513e-4]
+          GFloat [9.219513e-4]
+          GFloat [9.1828924e-4]
+          GFloat [9.1828924e-4]
+          GFloat [9.146271e-4]
+          GFloat [9.146271e-4]
+          GFloat [9.10965e-4]
+          GFloat [9.10965e-4]
+          GFloat [9.0728764e-4]
+          GFloat [9.0728764e-4]
+          GFloat [9.0728764e-4]
+          GFloat [9.036255e-4]
+          GFloat [9.036255e-4]
+          GFloat [9.036255e-4]
+          GFloat [9.036255e-4]
+          GFloat [8.9996343e-4]
+          GFloat [8.9996343e-4]
+          GFloat [8.9996343e-4]
+          GFloat [8.9628604e-4]
+          GFloat [8.9628604e-4]
+          GFloat [8.9262397e-4]
+          GFloat [8.9262397e-4]
+          GFloat [8.8896183e-4]
+          GFloat [8.8528445e-4]
+  Face Coordinates and details - stmp:0 tsmp:269
+    Faces:
+  Face numbers - stmp:0 tsmp:269
+    Unknown type
+        TSMP
+          GUint32 [269]
+        TICK
+          GUint32 [356448]
+        STNM
+          GString "Face numbers"
+        FCNM
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:0 tsmp:327
+    GPS time=2018-01-24 19:28:15.614 UTC p=326, len(rs)=19
+        hd=(33.1265444,-117.3272498) alt=-18.429 spd2d=1.677 spd3d=1.37
+  Gyroscope (z,x,y) - stmp:0 tsmp:3651
+    Temp: 25.0 and 201 values like (0.12726304,-8.519702e-3,-0.19488817)
+  Sensor ISO - stmp:0 tsmp:539
+    Unknown type
+        TSMP
+          GUint32 [539]
+        TICK
+          GUint32 [356448]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+  White Balance RGB gains - stmp:0 tsmp:539
+    Unknown type
+        TSMP
+          GUint32 [539]
+        TICK
+          GUint32 [356448]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.8125,1.0,1.9257813]
+          GFloat [1.8125,1.0,1.9257813]
+          GFloat [1.8085938,1.0,1.9257813]
+          GFloat [1.8085938,1.0,1.9257813]
+          GFloat [1.8085938,1.0,1.9257813]
+          GFloat [1.8046875,1.0,1.9296875]
+          GFloat [1.8046875,1.0,1.9296875]
+          GFloat [1.8046875,1.0,1.9296875]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8085938,1.0,1.9296875]
+          GFloat [1.8085938,1.0,1.9296875]
+          GFloat [1.8085938,1.0,1.9296875]
+          GFloat [1.8046875,1.0,1.9335938]
+          GFloat [1.8046875,1.0,1.9335938]
+          GFloat [1.8046875,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9375]
+          GFloat [1.8007813,1.0,1.9375]
+          GFloat [1.8007813,1.0,1.9375]
+          GFloat [1.8007813,1.0,1.9375]
+          GFloat [1.8007813,1.0,1.9375]
+          GFloat [1.8007813,1.0,1.9375]
+          GFloat [1.8046875,1.0,1.9335938]
+          GFloat [1.8046875,1.0,1.9335938]
+          GFloat [1.8046875,1.0,1.9335938]
+          GFloat [1.8085938,1.0,1.9296875]
+          GFloat [1.8085938,1.0,1.9296875]
+          GFloat [1.8085938,1.0,1.9296875]
+          GFloat [1.8046875,1.0,1.9296875]
+  White Balance temperature (Kelvin) - stmp:0 tsmp:539
+    Unknown type
+        TSMP
+          GUint32 [539]
+        TICK
+          GUint32 [356448]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [4987]
+          GUint16 [4987]
+          GUint16 [4970]
+          GUint16 [4970]
+          GUint16 [4970]
+          GUint16 [4953]
+          GUint16 [4953]
+          GUint16 [4953]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4970]
+          GUint16 [4970]
+          GUint16 [4970]
+          GUint16 [4953]
+          GUint16 [4953]
+          GUint16 [4953]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4953]
+          GUint16 [4953]
+          GUint16 [4953]
+          GUint16 [4970]
+          GUint16 [4970]
+          GUint16 [4970]
+          GUint16 [4953]
+Device 1: Hero6 Black
+  3A STATS - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "3A STATS"
+  Accelerometer (up/down, right/left, forward/back) - stmp:0 tsmp:3854
+    Temp: 25.0 and 204 values like (0.5717703,1.0311005,12.361244)
+  Auto Low Light frame Duration - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "Auto Low Light frame Duration"
+  Exposure time (shutter speed) - stmp:0 tsmp:569
+    Unknown type
+        TSMP
+          GUint32 [569]
+        TICK
+          GUint32 [357448]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [8.8528445e-4]
+          GFloat [8.8162237e-4]
+          GFloat [8.8162237e-4]
+          GFloat [8.7796024e-4]
+          GFloat [8.7796024e-4]
+          GFloat [8.7429816e-4]
+          GFloat [8.7429816e-4]
+          GFloat [8.706208e-4]
+          GFloat [8.706208e-4]
+          GFloat [8.6695864e-4]
+          GFloat [8.6695864e-4]
+          GFloat [8.6329656e-4]
+          GFloat [8.6329656e-4]
+          GFloat [8.596192e-4]
+          GFloat [8.559571e-4]
+          GFloat [8.559571e-4]
+          GFloat [8.5229496e-4]
+          GFloat [8.5229496e-4]
+          GFloat [8.486176e-4]
+          GFloat [8.486176e-4]
+          GFloat [8.449555e-4]
+          GFloat [8.449555e-4]
+          GFloat [8.449555e-4]
+          GFloat [8.4129337e-4]
+          GFloat [8.4129337e-4]
+          GFloat [8.4129337e-4]
+          GFloat [8.4129337e-4]
+          GFloat [8.376313e-4]
+          GFloat [8.376313e-4]
+          GFloat [8.376313e-4]
+  Face Coordinates and details - stmp:0 tsmp:284
+    Faces:
+  Face numbers - stmp:0 tsmp:284
+    Unknown type
+        TSMP
+          GUint32 [284]
+        TICK
+          GUint32 [357448]
+        STNM
+          GString "Face numbers"
+        FCNM
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:0 tsmp:344
+    GPS time=2018-01-24 19:28:16.659 UTC p=326, len(rs)=17
+        hd=(33.1265496,-117.3272476) alt=-18.678 spd2d=1.165 spd3d=1.13
+  Gyroscope (z,x,y) - stmp:0 tsmp:3855
+    Temp: 25.0 and 204 values like (0.11448349,1.6506921e-2,5.43131e-2)
+  Sensor ISO - stmp:0 tsmp:569
+    Unknown type
+        TSMP
+          GUint32 [569]
+        TICK
+          GUint32 [357448]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+  White Balance RGB gains - stmp:0 tsmp:569
+    Unknown type
+        TSMP
+          GUint32 [569]
+        TICK
+          GUint32 [357448]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.8046875,1.0,1.9296875]
+          GFloat [1.8046875,1.0,1.9296875]
+          GFloat [1.8046875,1.0,1.9335938]
+          GFloat [1.8046875,1.0,1.9335938]
+          GFloat [1.8046875,1.0,1.9335938]
+          GFloat [1.8046875,1.0,1.9335938]
+          GFloat [1.8046875,1.0,1.9335938]
+          GFloat [1.8046875,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+  White Balance temperature (Kelvin) - stmp:0 tsmp:569
+    Unknown type
+        TSMP
+          GUint32 [569]
+        TICK
+          GUint32 [357448]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [4953]
+          GUint16 [4953]
+          GUint16 [4953]
+          GUint16 [4953]
+          GUint16 [4953]
+          GUint16 [4953]
+          GUint16 [4953]
+          GUint16 [4953]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4937]
+Device 1: Hero6 Black
+  3A STATS - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "3A STATS"
+  Accelerometer (up/down, right/left, forward/back) - stmp:0 tsmp:4058
+    Temp: 25.0 and 204 values like (2.631579e-2,0.2751196,10.58134)
+  Auto Low Light frame Duration - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "Auto Low Light frame Duration"
+  Exposure time (shutter speed) - stmp:0 tsmp:599
+    Unknown type
+        TSMP
+          GUint32 [599]
+        TICK
+          GUint32 [358449]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [8.376313e-4]
+          GFloat [8.376313e-4]
+          GFloat [8.376313e-4]
+          GFloat [8.339539e-4]
+          GFloat [8.339539e-4]
+          GFloat [8.339539e-4]
+          GFloat [8.339539e-4]
+          GFloat [8.3029177e-4]
+          GFloat [8.3029177e-4]
+          GFloat [8.3029177e-4]
+          GFloat [8.266297e-4]
+          GFloat [8.266297e-4]
+          GFloat [8.229523e-4]
+          GFloat [8.229523e-4]
+          GFloat [8.229523e-4]
+          GFloat [8.192902e-4]
+          GFloat [8.192902e-4]
+          GFloat [8.192902e-4]
+          GFloat [8.192902e-4]
+          GFloat [8.192902e-4]
+          GFloat [8.192902e-4]
+          GFloat [8.192902e-4]
+          GFloat [8.192902e-4]
+          GFloat [8.192902e-4]
+          GFloat [8.192902e-4]
+          GFloat [8.192902e-4]
+          GFloat [8.192902e-4]
+          GFloat [8.192902e-4]
+          GFloat [8.156281e-4]
+          GFloat [8.156281e-4]
+  Face Coordinates and details - stmp:0 tsmp:299
+    Faces:
+  Face numbers - stmp:0 tsmp:299
+    Unknown type
+        TSMP
+          GUint32 [299]
+        TICK
+          GUint32 [358449]
+        STNM
+          GString "Face numbers"
+        FCNM
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:0 tsmp:362
+    GPS time=2018-01-24 19:28:17.649 UTC p=326, len(rs)=18
+        hd=(33.1265577,-117.3272584) alt=-19.163 spd2d=1.354 spd3d=1.55
+  Gyroscope (z,x,y) - stmp:0 tsmp:4059
+    Temp: 25.0 and 204 values like (4.259851e-3,0.22417465,1.171459e-2)
+  Sensor ISO - stmp:0 tsmp:599
+    Unknown type
+        TSMP
+          GUint32 [599]
+        TICK
+          GUint32 [358449]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+  White Balance RGB gains - stmp:0 tsmp:599
+    Unknown type
+        TSMP
+          GUint32 [599]
+        TICK
+          GUint32 [358449]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.8007813,1.0,1.9335938]
+          GFloat [1.796875,1.0,1.9335938]
+          GFloat [1.796875,1.0,1.9335938]
+          GFloat [1.796875,1.0,1.9335938]
+          GFloat [1.796875,1.0,1.9375]
+          GFloat [1.796875,1.0,1.9375]
+          GFloat [1.796875,1.0,1.9375]
+          GFloat [1.796875,1.0,1.9375]
+          GFloat [1.796875,1.0,1.9375]
+          GFloat [1.796875,1.0,1.9375]
+          GFloat [1.7929688,1.0,1.9375]
+          GFloat [1.7929688,1.0,1.9375]
+          GFloat [1.7929688,1.0,1.9375]
+          GFloat [1.7929688,1.0,1.9414063]
+          GFloat [1.7929688,1.0,1.9414063]
+          GFloat [1.7929688,1.0,1.9414063]
+          GFloat [1.7929688,1.0,1.9414063]
+          GFloat [1.7929688,1.0,1.9414063]
+          GFloat [1.7929688,1.0,1.9414063]
+          GFloat [1.7890625,1.0,1.9453125]
+          GFloat [1.7890625,1.0,1.9453125]
+          GFloat [1.7890625,1.0,1.9453125]
+          GFloat [1.7890625,1.0,1.9453125]
+          GFloat [1.7890625,1.0,1.9453125]
+          GFloat [1.7890625,1.0,1.9453125]
+          GFloat [1.7890625,1.0,1.9492188]
+          GFloat [1.7890625,1.0,1.9492188]
+          GFloat [1.7890625,1.0,1.9492188]
+          GFloat [1.7890625,1.0,1.9492188]
+  White Balance temperature (Kelvin) - stmp:0 tsmp:599
+    Unknown type
+        TSMP
+          GUint32 [599]
+        TICK
+          GUint32 [358449]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [4937]
+          GUint16 [4937]
+          GUint16 [4920]
+          GUint16 [4920]
+          GUint16 [4920]
+          GUint16 [4920]
+          GUint16 [4920]
+          GUint16 [4920]
+          GUint16 [4920]
+          GUint16 [4920]
+          GUint16 [4920]
+          GUint16 [4903]
+          GUint16 [4903]
+          GUint16 [4903]
+          GUint16 [4903]
+          GUint16 [4903]
+          GUint16 [4903]
+          GUint16 [4903]
+          GUint16 [4903]
+          GUint16 [4903]
+          GUint16 [4887]
+          GUint16 [4887]
+          GUint16 [4887]
+          GUint16 [4887]
+          GUint16 [4887]
+          GUint16 [4887]
+          GUint16 [4887]
+          GUint16 [4887]
+          GUint16 [4887]
+          GUint16 [4887]
+Device 1: Hero6 Black
+  3A STATS - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "3A STATS"
+  Accelerometer (up/down, right/left, forward/back) - stmp:0 tsmp:4259
+    Temp: 25.0 and 201 values like (0.17942584,-5.5023924e-2,8.782296)
+  Auto Low Light frame Duration - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "Auto Low Light frame Duration"
+  Exposure time (shutter speed) - stmp:0 tsmp:629
+    Unknown type
+        TSMP
+          GUint32 [629]
+        TICK
+          GUint32 [359450]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [8.156281e-4]
+          GFloat [8.156281e-4]
+          GFloat [8.156281e-4]
+          GFloat [8.156281e-4]
+          GFloat [8.156281e-4]
+          GFloat [8.156281e-4]
+          GFloat [8.156281e-4]
+          GFloat [8.156281e-4]
+          GFloat [8.1196596e-4]
+          GFloat [8.1196596e-4]
+          GFloat [8.1196596e-4]
+          GFloat [8.1196596e-4]
+          GFloat [8.0828863e-4]
+          GFloat [8.0828863e-4]
+          GFloat [8.0828863e-4]
+          GFloat [8.046265e-4]
+          GFloat [8.046265e-4]
+          GFloat [8.046265e-4]
+          GFloat [8.009644e-4]
+          GFloat [8.009644e-4]
+          GFloat [7.9728704e-4]
+          GFloat [7.9728704e-4]
+          GFloat [7.9728704e-4]
+          GFloat [7.936249e-4]
+          GFloat [7.936249e-4]
+          GFloat [7.899628e-4]
+          GFloat [7.899628e-4]
+          GFloat [7.8628544e-4]
+          GFloat [7.8628544e-4]
+          GFloat [7.826233e-4]
+  Face Coordinates and details - stmp:0 tsmp:314
+    Faces:
+  Face numbers - stmp:0 tsmp:314
+    Unknown type
+        TSMP
+          GUint32 [314]
+        TICK
+          GUint32 [359450]
+        STNM
+          GString "Face numbers"
+        FCNM
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:0 tsmp:381
+    GPS time=2018-01-24 19:28:18.639 UTC p=682, len(rs)=19
+        hd=(33.1265662,-117.3272626) alt=-19.362 spd2d=1.581 spd3d=1.51
+  Gyroscope (z,x,y) - stmp:0 tsmp:4260
+    Temp: 25.0 and 201 values like (4.0468585e-2,0.23855165,-8.785942e-2)
+  Sensor ISO - stmp:0 tsmp:629
+    Unknown type
+        TSMP
+          GUint32 [629]
+        TICK
+          GUint32 [359450]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+  White Balance RGB gains - stmp:0 tsmp:629
+    Unknown type
+        TSMP
+          GUint32 [629]
+        TICK
+          GUint32 [359450]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.7890625,1.0,1.9492188]
+          GFloat [1.7890625,1.0,1.9492188]
+          GFloat [1.7890625,1.0,1.9492188]
+          GFloat [1.7890625,1.0,1.9492188]
+          GFloat [1.7890625,1.0,1.9492188]
+          GFloat [1.7890625,1.0,1.953125]
+          GFloat [1.7890625,1.0,1.953125]
+          GFloat [1.7890625,1.0,1.953125]
+          GFloat [1.7851563,1.0,1.953125]
+          GFloat [1.7851563,1.0,1.953125]
+          GFloat [1.7851563,1.0,1.953125]
+          GFloat [1.7851563,1.0,1.9570313]
+          GFloat [1.7851563,1.0,1.9570313]
+          GFloat [1.7851563,1.0,1.9570313]
+          GFloat [1.7851563,1.0,1.9570313]
+          GFloat [1.7851563,1.0,1.9570313]
+          GFloat [1.7851563,1.0,1.9570313]
+          GFloat [1.7851563,1.0,1.9570313]
+          GFloat [1.7851563,1.0,1.9570313]
+          GFloat [1.7851563,1.0,1.9570313]
+          GFloat [1.7851563,1.0,1.9570313]
+          GFloat [1.7851563,1.0,1.9570313]
+          GFloat [1.7851563,1.0,1.9570313]
+          GFloat [1.7851563,1.0,1.9609375]
+          GFloat [1.7851563,1.0,1.9609375]
+          GFloat [1.7851563,1.0,1.9609375]
+          GFloat [1.78125,1.0,1.9609375]
+          GFloat [1.78125,1.0,1.9609375]
+          GFloat [1.78125,1.0,1.9609375]
+          GFloat [1.78125,1.0,1.9609375]
+  White Balance temperature (Kelvin) - stmp:0 tsmp:629
+    Unknown type
+        TSMP
+          GUint32 [629]
+        TICK
+          GUint32 [359450]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [4887]
+          GUint16 [4887]
+          GUint16 [4887]
+          GUint16 [4887]
+          GUint16 [4887]
+          GUint16 [4887]
+          GUint16 [4887]
+          GUint16 [4887]
+          GUint16 [4870]
+          GUint16 [4870]
+          GUint16 [4870]
+          GUint16 [4870]
+          GUint16 [4870]
+          GUint16 [4870]
+          GUint16 [4870]
+          GUint16 [4870]
+          GUint16 [4870]
+          GUint16 [4870]
+          GUint16 [4870]
+          GUint16 [4870]
+          GUint16 [4870]
+          GUint16 [4870]
+          GUint16 [4870]
+          GUint16 [4870]
+          GUint16 [4870]
+          GUint16 [4870]
+          GUint16 [4853]
+          GUint16 [4853]
+          GUint16 [4853]
+          GUint16 [4853]
+Device 1: Hero6 Black
+  3A STATS - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "3A STATS"
+  Accelerometer (up/down, right/left, forward/back) - stmp:0 tsmp:4463
+    Temp: 25.0 and 204 values like (0.13157895,0.39952153,9.882775)
+  Auto Low Light frame Duration - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "Auto Low Light frame Duration"
+  Exposure time (shutter speed) - stmp:0 tsmp:659
+    Unknown type
+        TSMP
+          GUint32 [659]
+        TICK
+          GUint32 [360452]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [7.789612e-4]
+          GFloat [7.789612e-4]
+          GFloat [7.752991e-4]
+          GFloat [7.7162177e-4]
+          GFloat [7.7162177e-4]
+          GFloat [7.6795963e-4]
+          GFloat [7.6795963e-4]
+          GFloat [7.642975e-4]
+          GFloat [7.6062017e-4]
+          GFloat [7.6062017e-4]
+          GFloat [7.5695803e-4]
+          GFloat [7.5695803e-4]
+          GFloat [7.5329596e-4]
+          GFloat [7.496186e-4]
+          GFloat [7.4595644e-4]
+          GFloat [7.4595644e-4]
+          GFloat [7.4229436e-4]
+          GFloat [7.386322e-4]
+          GFloat [7.349549e-4]
+          GFloat [7.349549e-4]
+          GFloat [7.3129276e-4]
+          GFloat [7.276306e-4]
+          GFloat [7.239533e-4]
+          GFloat [7.2029117e-4]
+          GFloat [7.166291e-4]
+          GFloat [7.129517e-4]
+          GFloat [7.129517e-4]
+          GFloat [7.0928957e-4]
+          GFloat [7.056275e-4]
+          GFloat [7.0196536e-4]
+  Face Coordinates and details - stmp:0 tsmp:329
+    Faces:
+  Face numbers - stmp:0 tsmp:329
+    Unknown type
+        TSMP
+          GUint32 [329]
+        TICK
+          GUint32 [360452]
+        STNM
+          GString "Face numbers"
+        FCNM
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:0 tsmp:399
+    GPS time=2018-01-24 19:28:19.684 UTC p=326, len(rs)=18
+        hd=(33.1265785,-117.3272701) alt=-19.731 spd2d=1.439 spd3d=1.43
+  Gyroscope (z,x,y) - stmp:0 tsmp:4464
+    Temp: 25.0 and 204 values like (0.31629393,-0.32055378,-1.4909478e-2)
+  Sensor ISO - stmp:0 tsmp:659
+    Unknown type
+        TSMP
+          GUint32 [659]
+        TICK
+          GUint32 [360452]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+  White Balance RGB gains - stmp:0 tsmp:659
+    Unknown type
+        TSMP
+          GUint32 [659]
+        TICK
+          GUint32 [360452]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.78125,1.0,1.9609375]
+          GFloat [1.78125,1.0,1.9609375]
+          GFloat [1.78125,1.0,1.9609375]
+          GFloat [1.78125,1.0,1.9609375]
+          GFloat [1.78125,1.0,1.9609375]
+          GFloat [1.78125,1.0,1.9609375]
+          GFloat [1.78125,1.0,1.9609375]
+          GFloat [1.78125,1.0,1.9609375]
+          GFloat [1.78125,1.0,1.9609375]
+          GFloat [1.78125,1.0,1.9609375]
+          GFloat [1.78125,1.0,1.9609375]
+          GFloat [1.78125,1.0,1.9609375]
+          GFloat [1.78125,1.0,1.9609375]
+          GFloat [1.78125,1.0,1.9609375]
+          GFloat [1.7773438,1.0,1.9609375]
+          GFloat [1.7773438,1.0,1.9609375]
+          GFloat [1.7773438,1.0,1.9609375]
+          GFloat [1.7773438,1.0,1.9609375]
+          GFloat [1.7773438,1.0,1.9609375]
+          GFloat [1.7773438,1.0,1.9609375]
+          GFloat [1.7773438,1.0,1.9609375]
+          GFloat [1.7773438,1.0,1.9609375]
+          GFloat [1.7773438,1.0,1.9609375]
+          GFloat [1.7773438,1.0,1.9609375]
+          GFloat [1.7773438,1.0,1.9609375]
+          GFloat [1.7773438,1.0,1.9609375]
+          GFloat [1.7773438,1.0,1.9609375]
+          GFloat [1.7773438,1.0,1.9609375]
+          GFloat [1.7773438,1.0,1.9609375]
+          GFloat [1.7734375,1.0,1.9609375]
+  White Balance temperature (Kelvin) - stmp:0 tsmp:659
+    Unknown type
+        TSMP
+          GUint32 [659]
+        TICK
+          GUint32 [360452]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [4853]
+          GUint16 [4853]
+          GUint16 [4853]
+          GUint16 [4853]
+          GUint16 [4853]
+          GUint16 [4853]
+          GUint16 [4853]
+          GUint16 [4853]
+          GUint16 [4853]
+          GUint16 [4853]
+          GUint16 [4853]
+          GUint16 [4853]
+          GUint16 [4853]
+          GUint16 [4853]
+          GUint16 [4837]
+          GUint16 [4837]
+          GUint16 [4837]
+          GUint16 [4837]
+          GUint16 [4837]
+          GUint16 [4837]
+          GUint16 [4837]
+          GUint16 [4837]
+          GUint16 [4837]
+          GUint16 [4837]
+          GUint16 [4837]
+          GUint16 [4837]
+          GUint16 [4837]
+          GUint16 [4837]
+          GUint16 [4837]
+          GUint16 [4820]
+Device 1: Hero6 Black
+  3A STATS - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "3A STATS"
+  Accelerometer (up/down, right/left, forward/back) - stmp:0 tsmp:4667
+    Temp: 25.0 and 204 values like (1.9880383,0.59090906,11.480862)
+  Auto Low Light frame Duration - stmp:0 tsmp:0
+    Unknown type
+        TICK
+          GUint32 [0]
+        STNM
+          GString "Auto Low Light frame Duration"
+  Exposure time (shutter speed) - stmp:0 tsmp:689
+    Unknown type
+        TSMP
+          GUint32 [689]
+        TICK
+          GUint32 [361452]
+        STNM
+          GString "Exposure time (shutter speed)"
+        SIUN
+          GString "s"
+        SHUT
+          GFloat [6.98288e-4]
+          GFloat [6.98288e-4]
+          GFloat [6.946259e-4]
+          GFloat [6.946259e-4]
+          GFloat [6.9096376e-4]
+          GFloat [6.9096376e-4]
+          GFloat [6.8728643e-4]
+          GFloat [6.8728643e-4]
+          GFloat [6.8728643e-4]
+          GFloat [6.8728643e-4]
+          GFloat [6.8728643e-4]
+          GFloat [6.8728643e-4]
+          GFloat [6.8728643e-4]
+          GFloat [6.836243e-4]
+          GFloat [6.8728643e-4]
+          GFloat [6.8728643e-4]
+          GFloat [6.8728643e-4]
+          GFloat [6.8728643e-4]
+          GFloat [6.8728643e-4]
+          GFloat [6.8728643e-4]
+          GFloat [6.8728643e-4]
+          GFloat [6.8728643e-4]
+          GFloat [6.8728643e-4]
+          GFloat [6.8728643e-4]
+          GFloat [6.9096376e-4]
+          GFloat [6.9096376e-4]
+          GFloat [6.946259e-4]
+          GFloat [6.98288e-4]
+          GFloat [7.0196536e-4]
+          GFloat [7.0196536e-4]
+  Face Coordinates and details - stmp:0 tsmp:344
+    Faces:
+  Face numbers - stmp:0 tsmp:344
+    Unknown type
+        TSMP
+          GUint32 [344]
+        TICK
+          GUint32 [361452]
+        STNM
+          GString "Face numbers"
+        FCNM
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+          GUint32 [0]
+  GPS (Lat., Long., Alt., 2D speed, 3D speed) - stmp:0 tsmp:417
+    GPS time=2018-01-24 19:28:20.674 UTC p=326, len(rs)=18
+        hd=(33.1265879,-117.3272817) alt=-19.876 spd2d=1.535 spd3d=1.41
+  Gyroscope (z,x,y) - stmp:0 tsmp:4668
+    Temp: 25.0 and 204 values like (-5.058573e-2,-5.2183174e-2,-0.10330138)
+  Sensor ISO - stmp:0 tsmp:689
+    Unknown type
+        TSMP
+          GUint32 [689]
+        TICK
+          GUint32 [361452]
+        STNM
+          GString "Sensor ISO"
+        ISOE
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+          GUint32 [100]
+  White Balance RGB gains - stmp:0 tsmp:689
+    Unknown type
+        TSMP
+          GUint32 [689]
+        TICK
+          GUint32 [361452]
+        STNM
+          GString "White Balance RGB gains"
+        WRGB
+          GFloat [1.7734375,1.0,1.9609375]
+          GFloat [1.7734375,1.0,1.9609375]
+          GFloat [1.7734375,1.0,1.9609375]
+          GFloat [1.7734375,1.0,1.9609375]
+          GFloat [1.7734375,1.0,1.9609375]
+          GFloat [1.7734375,1.0,1.9609375]
+          GFloat [1.7734375,1.0,1.9609375]
+          GFloat [1.7734375,1.0,1.9609375]
+          GFloat [1.7734375,1.0,1.9609375]
+          GFloat [1.7734375,1.0,1.9609375]
+          GFloat [1.7734375,1.0,1.9609375]
+          GFloat [1.7734375,1.0,1.9609375]
+          GFloat [1.7734375,1.0,1.9609375]
+          GFloat [1.7734375,1.0,1.9609375]
+          GFloat [1.7695313,1.0,1.9609375]
+          GFloat [1.7695313,1.0,1.9609375]
+          GFloat [1.7695313,1.0,1.9609375]
+          GFloat [1.7695313,1.0,1.9609375]
+          GFloat [1.7695313,1.0,1.9609375]
+          GFloat [1.7695313,1.0,1.9609375]
+          GFloat [1.7695313,1.0,1.9609375]
+          GFloat [1.7695313,1.0,1.9609375]
+          GFloat [1.7695313,1.0,1.9609375]
+          GFloat [1.7695313,1.0,1.9648438]
+          GFloat [1.7695313,1.0,1.9648438]
+          GFloat [1.7695313,1.0,1.9648438]
+          GFloat [1.7695313,1.0,1.9648438]
+          GFloat [1.7695313,1.0,1.9648438]
+          GFloat [1.7695313,1.0,1.9648438]
+          GFloat [1.7695313,1.0,1.9648438]
+  White Balance temperature (Kelvin) - stmp:0 tsmp:689
+    Unknown type
+        TSMP
+          GUint32 [689]
+        TICK
+          GUint32 [361452]
+        STNM
+          GString "White Balance temperature (Kelvin)"
+        WBAL
+          GUint16 [4820]
+          GUint16 [4820]
+          GUint16 [4820]
+          GUint16 [4820]
+          GUint16 [4820]
+          GUint16 [4820]
+          GUint16 [4820]
+          GUint16 [4820]
+          GUint16 [4820]
+          GUint16 [4820]
+          GUint16 [4820]
+          GUint16 [4820]
+          GUint16 [4820]
+          GUint16 [4820]
+          GUint16 [4803]
+          GUint16 [4803]
+          GUint16 [4803]
+          GUint16 [4803]
+          GUint16 [4803]
+          GUint16 [4803]
+          GUint16 [4803]
+          GUint16 [4803]
+          GUint16 [4803]
+          GUint16 [4803]
+          GUint16 [4803]
+          GUint16 [4803]
+          GUint16 [4803]
+          GUint16 [4803]
+          GUint16 [4803]
+          GUint16 [4803]
