@@ -34,7 +34,7 @@ import           Control.Monad   (guard)
 import           Data.List       (transpose)
 import           Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
-import           Data.Maybe      (fromMaybe, mapMaybe, listToMaybe)
+import           Data.Maybe      (fromMaybe, listToMaybe, mapMaybe)
 import           Data.Time.Clock (UTCTime (..))
 import           Data.Word       (Word64)
 
@@ -171,20 +171,13 @@ mkDEVC "DEVC" = foldr addItem (DEVC 0 "" mempty)
 mkDEVC f = error ("I can't make a DEVC out of " <> show f)
 
 findVal :: FourCC -> [Value] -> Maybe [Value]
-findVal f = go
-  where go [] = Nothing
-        go (GNested (fc, vs):xs) = if fc == f
-                                   then Just vs
-                                   else go xs
-        go (_:xs) = go xs
+findVal f = listToMaybe . findAll f
 
 findAll :: FourCC -> [Value] -> [[Value]]
-findAll f = go
-  where go [] = []
-        go (GNested (fc, vs):xs) = if fc == f
-                                   then vs : go xs
-                                   else go xs
-        go (_:xs) = go xs
+findAll f = mapMaybe g
+  where
+    g (GNested (fc, vs)) | fc == f = Just vs
+    g _                            = Nothing
 
 grokSens :: FourCC -> (Float -> [(Float, Float, Float)] -> a) -> [Value] -> Maybe a
 grokSens sens cons vals = do
