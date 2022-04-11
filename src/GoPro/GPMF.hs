@@ -78,8 +78,8 @@ data Value = GInt8 [Int8]
 
 type Parser = StateT String A.Parser
 
-int8 :: A.Parser Int8
-int8 = fromIntegral <$> A.anyWord8
+anyInt8 :: A.Parser Int8
+anyInt8 = fromIntegral <$> A.anyWord8
 
 -- | Parse GPMF data from a telemetry stream.  A successful return
 -- value contains a list of FourCC tagged value lists.
@@ -125,7 +125,7 @@ singleParser 'F' = (4, GFourCC <$> parseFourCC)
 singleParser 'f' = (4, GFloat . (:[]) <$> parseFloat)
 singleParser 'L' = (4, GUint32 . (:[]) <$> anyWord32be)
 singleParser 'B' = (1, GUint8 . (:[]) <$> A.anyWord8)
-singleParser 'b' = (1, GInt8 . (:[]) . fromIntegral <$> A.anyWord8)
+singleParser 'b' = (1, GInt8 . (:[]) <$> anyInt8)
 singleParser x   = error ("unsupported parser: " <> show x)
 
 parseComplex :: Int -> Int -> Parser [Value]
@@ -148,7 +148,7 @@ parseValue 's' l rpt = replicatedParser 2 l rpt (fromIntegral <$> anyWord16be) G
 parseValue 'S' l rpt = replicatedParser 2 l rpt anyWord16be GUint16
 parseValue 'J' l rpt = replicatedParser 8 l rpt anyWord64be GUint64
 parseValue 'f' l rpt = replicatedParser 4 l rpt parseFloat GFloat
-parseValue 'b' l rpt = lift $ replicateM rpt (GInt8 <$> replicateM l int8)
+parseValue 'b' l rpt = lift $ replicateM rpt (GInt8 <$> replicateM l anyInt8)
 parseValue 'B' l rpt = lift $ replicateM rpt (GUint8 <$> replicateM l A.anyWord8)
 parseValue 'U' 16 1 = (:[]) . GTimestamp <$> lift parseTimestamp
 parseValue '?' l rpt = parseComplex l rpt
