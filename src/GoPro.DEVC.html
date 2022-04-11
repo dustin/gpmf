@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><link rel="stylesheet" type="text/css" href="style.css" /><script type="text/javascript" src="highlight.js"></script></head><body><pre><span id="%24con2tag_E8FlxUNZr9tBxSYlrHeFpH"></span><span class="hs-comment">{-|
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><link rel="stylesheet" type="text/css" href="style.css" /><script type="text/javascript" src="highlight.js"></script></head><body><pre><span id="local-6989586621679141232"></span><span class="hs-comment">{-|
 Module: GoPro.DEVC
 Description: Higher level representation of GPMF DEVC data.
 Copyright: (c) Dustin Sallings, 2020
@@ -47,7 +47,7 @@ of things that seemed interesting to the author.
 </span><span id="line-46"></span><span>    </span><span class="hs-special">,</span><span> </span><span id="_acc_vals"><span class="annot"><span class="annottext">Accelerometer -&gt; [(Float, Float, Float)]
 </span><a href="GoPro.DEVC.html#_acc_vals"><span class="hs-identifier hs-var hs-var">_acc_vals</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">[</span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span class="hs-special">)</span><span class="hs-special">]</span><span>
 </span><span id="line-47"></span><span>    </span><span class="hs-special">}</span><span>
-</span><span id="line-48"></span><span>    </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679136378"><span id="local-6989586621679136380"><span id="local-6989586621679136382"><span class="annot"><span class="annottext">Int -&gt; Accelerometer -&gt; ShowS
+</span><span id="line-48"></span><span>    </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679141075"><span id="local-6989586621679141077"><span id="local-6989586621679141086"><span class="annot"><span class="annottext">Int -&gt; Accelerometer -&gt; ShowS
 [Accelerometer] -&gt; ShowS
 Accelerometer -&gt; String
 (Int -&gt; Accelerometer -&gt; ShowS)
@@ -72,7 +72,7 @@ $cshowsPrec :: Int -&gt; Accelerometer -&gt; ShowS
 </span><span id="line-54"></span><span>    </span><span class="hs-special">,</span><span> </span><span id="_gyro_vals"><span class="annot"><span class="annottext">Gyroscope -&gt; [(Float, Float, Float)]
 </span><a href="GoPro.DEVC.html#_gyro_vals"><span class="hs-identifier hs-var hs-var">_gyro_vals</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">[</span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span class="hs-special">)</span><span class="hs-special">]</span><span>
 </span><span id="line-55"></span><span>    </span><span class="hs-special">}</span><span>
-</span><span id="line-56"></span><span>    </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679136368"><span id="local-6989586621679136370"><span id="local-6989586621679136372"><span class="annot"><span class="annottext">Int -&gt; Gyroscope -&gt; ShowS
+</span><span id="line-56"></span><span>    </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679141048"><span id="local-6989586621679141050"><span id="local-6989586621679141056"><span class="annot"><span class="annottext">Int -&gt; Gyroscope -&gt; ShowS
 [Gyroscope] -&gt; ShowS
 Gyroscope -&gt; String
 (Int -&gt; Gyroscope -&gt; ShowS)
@@ -105,7 +105,7 @@ $cshowsPrec :: Int -&gt; Gyroscope -&gt; ShowS
 </span><span id="line-66"></span><span>    </span><span class="hs-special">,</span><span> </span><span id="_face_smile"><span class="annot"><span class="annottext">Face -&gt; Float
 </span><a href="GoPro.DEVC.html#_face_smile"><span class="hs-identifier hs-var hs-var">_face_smile</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span>
 </span><span id="line-67"></span><span>    </span><span class="hs-special">}</span><span>
-</span><span id="line-68"></span><span>    </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679136355"><span id="local-6989586621679136357"><span id="local-6989586621679136359"><span class="annot"><span class="annottext">Int -&gt; Face -&gt; ShowS
+</span><span id="line-68"></span><span>    </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679141015"><span id="local-6989586621679141017"><span id="local-6989586621679141027"><span class="annot"><span class="annottext">Int -&gt; Face -&gt; ShowS
 [Face] -&gt; ShowS
 Face -&gt; String
 (Int -&gt; Face -&gt; ShowS)
@@ -134,7 +134,7 @@ $cshowsPrec :: Int -&gt; Face -&gt; ShowS
 </span><span id="line-77"></span><span>    </span><span class="hs-special">,</span><span> </span><span id="_gpsr_speed3d"><span class="annot"><span class="annottext">GPSReading -&gt; Double
 </span><a href="GoPro.DEVC.html#_gpsr_speed3d"><span class="hs-identifier hs-var hs-var">_gpsr_speed3d</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Double</span></span><span>
 </span><span id="line-78"></span><span>    </span><span class="hs-special">}</span><span>
-</span><span id="line-79"></span><span>    </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679136343"><span id="local-6989586621679136345"><span id="local-6989586621679136347"><span class="annot"><span class="annottext">Int -&gt; GPSReading -&gt; ShowS
+</span><span id="line-79"></span><span>    </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679140936"><span id="local-6989586621679140938"><span id="local-6989586621679140947"><span class="annot"><span class="annottext">Int -&gt; GPSReading -&gt; ShowS
 [GPSReading] -&gt; ShowS
 GPSReading -&gt; String
 (Int -&gt; GPSReading -&gt; ShowS)
@@ -161,7 +161,7 @@ $cshowsPrec :: Int -&gt; GPSReading -&gt; ShowS
 </span><span id="line-86"></span><span>    </span><span class="hs-special">,</span><span> </span><span id="_gps_readings"><span class="annot"><span class="annottext">GPS -&gt; [GPSReading]
 </span><a href="GoPro.DEVC.html#_gps_readings"><span class="hs-identifier hs-var hs-var">_gps_readings</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.DEVC.html#GPSReading"><span class="hs-identifier hs-type">GPSReading</span></a></span><span class="hs-special">]</span><span>
 </span><span id="line-87"></span><span>    </span><span class="hs-special">}</span><span>
-</span><span id="line-88"></span><span>    </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679136333"><span id="local-6989586621679136335"><span id="local-6989586621679136337"><span class="annot"><span class="annottext">Int -&gt; GPS -&gt; ShowS
+</span><span id="line-88"></span><span>    </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679140875"><span id="local-6989586621679140877"><span id="local-6989586621679140885"><span class="annot"><span class="annottext">Int -&gt; GPS -&gt; ShowS
 [GPS] -&gt; ShowS
 GPS -&gt; String
 (Int -&gt; GPS -&gt; ShowS)
@@ -184,7 +184,7 @@ $cshowsPrec :: Int -&gt; GPS -&gt; ShowS
 </span><span id="line-94"></span><span>    </span><span class="hs-special">,</span><span> </span><span id="_audio_peak"><span class="annot"><span class="annottext">AudioLevel -&gt; [Int]
 </span><a href="GoPro.DEVC.html#_audio_peak"><span class="hs-identifier hs-var hs-var">_audio_peak</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">[</span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span class="hs-special">]</span><span>
 </span><span id="line-95"></span><span>    </span><span class="hs-special">}</span><span>
-</span><span id="line-96"></span><span>    </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679136324"><span id="local-6989586621679136326"><span id="local-6989586621679136328"><span class="annot"><span class="annottext">Int -&gt; AudioLevel -&gt; ShowS
+</span><span id="line-96"></span><span>    </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679140841"><span id="local-6989586621679140843"><span id="local-6989586621679140849"><span class="annot"><span class="annottext">Int -&gt; AudioLevel -&gt; ShowS
 [AudioLevel] -&gt; ShowS
 AudioLevel -&gt; String
 (Int -&gt; AudioLevel -&gt; ShowS)
@@ -209,7 +209,7 @@ $cshowsPrec :: Int -&gt; AudioLevel -&gt; ShowS
 </span><span id="line-103"></span><span>    </span><span class="hs-glyph">|</span><span> </span><span id="Water"><span class="annot"><a href="GoPro.DEVC.html#Water"><span class="hs-identifier hs-var">Water</span></a></span></span><span>
 </span><span id="line-104"></span><span>    </span><span class="hs-glyph">|</span><span> </span><span id="Vegetation"><span class="annot"><a href="GoPro.DEVC.html#Vegetation"><span class="hs-identifier hs-var">Vegetation</span></a></span></span><span>
 </span><span id="line-105"></span><span>    </span><span class="hs-glyph">|</span><span> </span><span id="Beach"><span class="annot"><a href="GoPro.DEVC.html#Beach"><span class="hs-identifier hs-var">Beach</span></a></span></span><span>
-</span><span id="line-106"></span><span>    </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679136312"><span id="local-6989586621679136314"><span id="local-6989586621679136316"><span class="annot"><span class="annottext">Int -&gt; Location -&gt; ShowS
+</span><span id="line-106"></span><span>    </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621679140817"><span id="local-6989586621679140819"><span id="local-6989586621679140821"><span class="annot"><span class="annottext">Int -&gt; Location -&gt; ShowS
 [Location] -&gt; ShowS
 Location -&gt; String
 (Int -&gt; Location -&gt; ShowS)
@@ -222,7 +222,7 @@ show :: Location -&gt; String
 $cshow :: Location -&gt; String
 showsPrec :: Int -&gt; Location -&gt; ShowS
 $cshowsPrec :: Int -&gt; Location -&gt; ShowS
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679136304"><span id="local-6989586621679136306"><span id="local-6989586621679136308"><span id="local-6989586621679136310"><span class="annot"><span class="annottext">ReadPrec [Location]
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679140801"><span id="local-6989586621679140810"><span id="local-6989586621679140813"><span id="local-6989586621679140815"><span class="annot"><span class="annottext">ReadPrec [Location]
 ReadPrec Location
 Int -&gt; ReadS Location
 ReadS [Location]
@@ -242,7 +242,7 @@ readList :: ReadS [Location]
 $creadList :: ReadS [Location]
 readsPrec :: Int -&gt; ReadS Location
 $creadsPrec :: Int -&gt; ReadS Location
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Read</span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679136299"><span id="local-6989586621679136301"><span class="annot"><span class="annottext">Location -&gt; Location -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Read</span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679140795"><span id="local-6989586621679140797"><span class="annot"><span class="annottext">Location -&gt; Location -&gt; Bool
 (Location -&gt; Location -&gt; Bool)
 -&gt; (Location -&gt; Location -&gt; Bool) -&gt; Eq Location
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -250,7 +250,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: Location -&gt; Location -&gt; Bool
 == :: Location -&gt; Location -&gt; Bool
 $c== :: Location -&gt; Location -&gt; Bool
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679136283"><span id="local-6989586621679136285"><span id="local-6989586621679136287"><span id="local-6989586621679136289"><span id="local-6989586621679136291"><span id="local-6989586621679136293"><span id="local-6989586621679136295"><span class="annot"><span class="annottext">Eq Location
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679140775"><span id="local-6989586621679140777"><span id="local-6989586621679140780"><span id="local-6989586621679140783"><span id="local-6989586621679140786"><span id="local-6989586621679140788"><span id="local-6989586621679140790"><span class="annot"><span class="annottext">Eq Location
 Eq Location
 -&gt; (Location -&gt; Location -&gt; Ordering)
 -&gt; (Location -&gt; Location -&gt; Bool)
@@ -287,7 +287,6 @@ $c&lt;= :: Location -&gt; Location -&gt; Bool
 $c&lt; :: Location -&gt; Location -&gt; Bool
 compare :: Location -&gt; Location -&gt; Ordering
 $ccompare :: Location -&gt; Location -&gt; Ordering
-$cp1Ord :: Eq Location
 </span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Ord</span></span></span></span></span></span></span></span></span><span class="hs-special">)</span><span>
 </span><span id="line-107"></span><span>
 </span><span id="line-108"></span><span id="_Beach"><span id="_Vegetation"><span id="_Water"><span id="_Indoor"><span id="_Urban"><span id="_Snow"><span class="hs-identifier">makePrisms</span><span> </span><span class="hs-special">''</span><span class="hs-identifier">Location</span></span></span></span></span></span></span><span>
@@ -299,7 +298,7 @@ $cp1Ord :: Eq Location
 </span><span id="line-114"></span><span>    </span><span class="hs-glyph">|</span><span> </span><span id="TVGPS"><span class="annot"><a href="GoPro.DEVC.html#TVGPS"><span class="hs-identifier hs-var">TVGPS</span></a></span></span><span> </span><span class="annot"><a href="GoPro.DEVC.html#GPS"><span class="hs-identifier hs-type">GPS</span></a></span><span>
 </span><span id="line-115"></span><span>    </span><span class="hs-glyph">|</span><span> </span><span id="TVAudioLevel"><span class="annot"><a href="GoPro.DEVC.html#TVAudioLevel"><span class="hs-identifier hs-var">TVAudioLevel</span></a></span></span><span> </span><span class="annot"><a href="GoPro.DEVC.html#AudioLevel"><span class="hs-identifier hs-type">AudioLevel</span></a></span><span>
 </span><span id="line-116"></span><span>    </span><span class="hs-glyph">|</span><span> </span><span id="TVScene"><span class="annot"><a href="GoPro.DEVC.html#TVScene"><span class="hs-identifier hs-var">TVScene</span></a></span></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="hs-identifier hs-type">Map</span></span><span> </span><span class="annot"><a href="GoPro.DEVC.html#Location"><span class="hs-identifier hs-type">Location</span></a></span><span> </span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span class="hs-special">]</span><span>
-</span><span id="line-117"></span><span>    </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679136269"><span id="local-6989586621679136271"><span id="local-6989586621679136273"><span class="annot"><span class="annottext">Int -&gt; TVals -&gt; ShowS
+</span><span id="line-117"></span><span>    </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679140713"><span id="local-6989586621679140715"><span id="local-6989586621679140734"><span class="annot"><span class="annottext">Int -&gt; TVals -&gt; ShowS
 [TVals] -&gt; ShowS
 TVals -&gt; String
 (Int -&gt; TVals -&gt; ShowS)
@@ -326,7 +325,7 @@ $cshowsPrec :: Int -&gt; TVals -&gt; ShowS
 </span><span id="line-125"></span><span>    </span><span class="hs-special">,</span><span> </span><span id="_tele_values"><span class="annot"><span class="annottext">Telemetry -&gt; TVals
 </span><a href="GoPro.DEVC.html#_tele_values"><span class="hs-identifier hs-var hs-var">_tele_values</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="GoPro.DEVC.html#TVals"><span class="hs-identifier hs-type">TVals</span></a></span><span>
 </span><span id="line-126"></span><span>    </span><span class="hs-special">}</span><span>
-</span><span id="line-127"></span><span>    </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679136258"><span id="local-6989586621679136260"><span id="local-6989586621679136262"><span class="annot"><span class="annottext">Int -&gt; Telemetry -&gt; ShowS
+</span><span id="line-127"></span><span>    </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679140642"><span id="local-6989586621679140644"><span id="local-6989586621679140653"><span class="annot"><span class="annottext">Int -&gt; Telemetry -&gt; ShowS
 [Telemetry] -&gt; ShowS
 Telemetry -&gt; String
 (Int -&gt; Telemetry -&gt; ShowS)
@@ -353,7 +352,7 @@ $cshowsPrec :: Int -&gt; Telemetry -&gt; ShowS
 </span><span id="line-134"></span><span>    </span><span class="hs-special">,</span><span> </span><span id="_dev_telems"><span class="annot"><span class="annottext">DEVC -&gt; Map String Telemetry
 </span><a href="GoPro.DEVC.html#_dev_telems"><span class="hs-identifier hs-var hs-var">_dev_telems</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Map</span></span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span> </span><span class="annot"><a href="GoPro.DEVC.html#Telemetry"><span class="hs-identifier hs-type">Telemetry</span></a></span><span>
 </span><span id="line-135"></span><span>    </span><span class="hs-special">}</span><span>
-</span><span id="line-136"></span><span>    </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679136248"><span id="local-6989586621679136250"><span id="local-6989586621679136252"><span class="annot"><span class="annottext">Int -&gt; DEVC -&gt; ShowS
+</span><span id="line-136"></span><span>    </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621679140593"><span id="local-6989586621679140595"><span id="local-6989586621679140603"><span class="annot"><span class="annottext">Int -&gt; DEVC -&gt; ShowS
 [DEVC] -&gt; ShowS
 DEVC -&gt; String
 (Int -&gt; DEVC -&gt; ShowS)
@@ -384,34 +383,34 @@ forall (t :: * -&gt; *) a b.
 Foldable t =&gt;
 (a -&gt; b -&gt; b) -&gt; b -&gt; t a -&gt; b
 </span><span class="hs-identifier hs-var">foldr</span></span><span> </span><span class="annot"><span class="annottext">Value -&gt; DEVC -&gt; DEVC
-</span><a href="#local-6989586621679136245"><span class="hs-identifier hs-var">addItem</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int -&gt; String -&gt; Map String Telemetry -&gt; DEVC
+</span><a href="#local-6989586621679140569"><span class="hs-identifier hs-var">addItem</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int -&gt; String -&gt; Map String Telemetry -&gt; DEVC
 </span><a href="GoPro.DEVC.html#DEVC"><span class="hs-identifier hs-var">DEVC</span></a></span><span> </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">0</span></span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;&quot;</span></span><span> </span><span class="annot"><span class="annottext">Map String Telemetry
 forall a. Monoid a =&gt; a
 </span><span class="hs-identifier hs-var">mempty</span></span><span class="hs-special">)</span><span>
 </span><span id="line-144"></span><span>  </span><span class="hs-keyword">where</span><span>
-</span><span id="line-145"></span><span>    </span><span id="local-6989586621679136245"><span class="annot"><span class="annottext">addItem :: Value -&gt; DEVC -&gt; DEVC
-</span><a href="#local-6989586621679136245"><span class="hs-identifier hs-var hs-var">addItem</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GNested"><span class="hs-identifier hs-type">GNested</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">FourCC
-</span><span class="hs-string">&quot;DVID&quot;</span></span><span class="hs-special">,</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#GUint32"><span class="hs-identifier hs-type">GUint32</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679136242"><span class="annot"><span class="annottext">Word32
-</span><a href="#local-6989586621679136242"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">]</span><span class="hs-special">]</span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span id="local-6989586621679136241"><span class="annot"><span class="annottext">DEVC
-</span><a href="#local-6989586621679136241"><span class="hs-identifier hs-var">o</span></a></span></span><span>            </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">DEVC
-</span><a href="#local-6989586621679136241"><span class="hs-identifier hs-var">o</span></a></span><span> </span><span class="hs-special">{</span><span class="annot"><span class="annottext">_dev_id :: Int
+</span><span id="line-145"></span><span>    </span><span id="local-6989586621679140569"><span class="annot"><span class="annottext">addItem :: Value -&gt; DEVC -&gt; DEVC
+</span><a href="#local-6989586621679140569"><span class="hs-identifier hs-var hs-var">addItem</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GNested"><span class="hs-identifier hs-type">GNested</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">FourCC
+</span><span class="hs-string">&quot;DVID&quot;</span></span><span class="hs-special">,</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#GUint32"><span class="hs-identifier hs-type">GUint32</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679140558"><span class="annot"><span class="annottext">Word32
+</span><a href="#local-6989586621679140558"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">]</span><span class="hs-special">]</span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span id="local-6989586621679140557"><span class="annot"><span class="annottext">DEVC
+</span><a href="#local-6989586621679140557"><span class="hs-identifier hs-var">o</span></a></span></span><span>            </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">DEVC
+</span><a href="#local-6989586621679140557"><span class="hs-identifier hs-var">o</span></a></span><span> </span><span class="hs-special">{</span><span class="annot"><span class="annottext">_dev_id :: Int
 </span><a href="GoPro.DEVC.html#_dev_id"><span class="hs-identifier hs-var">_dev_id</span></a></span><span class="hs-glyph">=</span><span class="annot"><span class="annottext">Word32 -&gt; Int
 forall a b. (Integral a, Num b) =&gt; a -&gt; b
 </span><span class="hs-identifier hs-var">fromIntegral</span></span><span> </span><span class="annot"><span class="annottext">Word32
-</span><a href="#local-6989586621679136242"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">}</span><span>
-</span><span id="line-146"></span><span>    </span><span class="annot"><a href="#local-6989586621679136245"><span class="hs-identifier hs-var">addItem</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GNested"><span class="hs-identifier hs-type">GNested</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">FourCC
-</span><span class="hs-string">&quot;DVNM&quot;</span></span><span class="hs-special">,</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#GString"><span class="hs-identifier hs-type">GString</span></a></span><span> </span><span id="local-6989586621679136239"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679136239"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">]</span><span class="hs-special">)</span><span class="hs-special">)</span><span>   </span><span id="local-6989586621679136238"><span class="annot"><span class="annottext">DEVC
-</span><a href="#local-6989586621679136238"><span class="hs-identifier hs-var">o</span></a></span></span><span>            </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">DEVC
-</span><a href="#local-6989586621679136238"><span class="hs-identifier hs-var">o</span></a></span><span> </span><span class="hs-special">{</span><span class="annot"><span class="annottext">_dev_name :: String
+</span><a href="#local-6989586621679140558"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">}</span><span>
+</span><span id="line-146"></span><span>    </span><span class="annot"><a href="#local-6989586621679140569"><span class="hs-identifier hs-var">addItem</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GNested"><span class="hs-identifier hs-type">GNested</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">FourCC
+</span><span class="hs-string">&quot;DVNM&quot;</span></span><span class="hs-special">,</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#GString"><span class="hs-identifier hs-type">GString</span></a></span><span> </span><span id="local-6989586621679140555"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679140555"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">]</span><span class="hs-special">)</span><span class="hs-special">)</span><span>   </span><span id="local-6989586621679140554"><span class="annot"><span class="annottext">DEVC
+</span><a href="#local-6989586621679140554"><span class="hs-identifier hs-var">o</span></a></span></span><span>            </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">DEVC
+</span><a href="#local-6989586621679140554"><span class="hs-identifier hs-var">o</span></a></span><span> </span><span class="hs-special">{</span><span class="annot"><span class="annottext">_dev_name :: String
 </span><a href="GoPro.DEVC.html#_dev_name"><span class="hs-identifier hs-var">_dev_name</span></a></span><span class="hs-glyph">=</span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679136239"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">}</span><span>
-</span><span id="line-147"></span><span>    </span><span class="annot"><a href="#local-6989586621679136245"><span class="hs-identifier hs-var">addItem</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GNested"><span class="hs-identifier hs-type">GNested</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">FourCC
-</span><span class="hs-string">&quot;STRM&quot;</span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679136237"><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679136237"><span class="hs-identifier hs-var">vals</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span>          </span><span id="local-6989586621679136236"><span class="annot"><span class="annottext">o :: DEVC
-</span><a href="#local-6989586621679136236"><span class="hs-identifier hs-var">o</span></a></span></span><span class="hs-glyph">@</span><span class="hs-special">(</span><span class="annot"><a href="GoPro.DEVC.html#DEVC"><span class="hs-identifier hs-type">DEVC</span></a></span><span class="hs-special">{</span><span id="local-6989586621679136233"><span id="local-6989586621679136234"><span id="local-6989586621679136235"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621679140555"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">}</span><span>
+</span><span id="line-147"></span><span>    </span><span class="annot"><a href="#local-6989586621679140569"><span class="hs-identifier hs-var">addItem</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GNested"><span class="hs-identifier hs-type">GNested</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">FourCC
+</span><span class="hs-string">&quot;STRM&quot;</span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679140553"><span class="annot"><span class="annottext">[Value]
+</span><a href="#local-6989586621679140553"><span class="hs-identifier hs-var">vals</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span>          </span><span id="local-6989586621679140552"><span class="annot"><span class="annottext">o :: DEVC
+</span><a href="#local-6989586621679140552"><span class="hs-identifier hs-var">o</span></a></span></span><span class="hs-glyph">@</span><span class="hs-special">(</span><span class="annot"><a href="GoPro.DEVC.html#DEVC"><span class="hs-identifier hs-type">DEVC</span></a></span><span class="hs-special">{</span><span id="local-6989586621679140549"><span id="local-6989586621679140550"><span id="local-6989586621679140551"><span class="annot"><span class="annottext">Int
 String
 Map String Telemetry
 _dev_telems :: Map String Telemetry
@@ -420,78 +419,78 @@ _dev_id :: Int
 _dev_telems :: DEVC -&gt; Map String Telemetry
 _dev_name :: DEVC -&gt; String
 _dev_id :: DEVC -&gt; Int
-</span><a href="#local-6989586621679136233"><span class="hs-glyph hs-var hs-var hs-var hs-var hs-var hs-var">..</span></a></span></span></span></span><span class="hs-special">}</span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">DEVC
-</span><a href="#local-6989586621679136236"><span class="hs-identifier hs-var">o</span></a></span><span> </span><span class="hs-special">{</span><span class="annot"><span class="annottext">_dev_telems :: Map String Telemetry
+</span><a href="#local-6989586621679140549"><span class="hs-glyph hs-var hs-var hs-var hs-var hs-var hs-var">..</span></a></span></span></span></span><span class="hs-special">}</span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">DEVC
+</span><a href="#local-6989586621679140552"><span class="hs-identifier hs-var">o</span></a></span><span> </span><span class="hs-special">{</span><span class="annot"><span class="annottext">_dev_telems :: Map String Telemetry
 </span><a href="GoPro.DEVC.html#_dev_telems"><span class="hs-identifier hs-var">_dev_telems</span></a></span><span class="hs-glyph">=</span><span class="annot"><span class="annottext">Map String Telemetry -&gt; [Value] -&gt; Map String Telemetry
-</span><a href="#local-6989586621679136232"><span class="hs-identifier hs-var">addTelem</span></a></span><span> </span><span class="annot"><span class="annottext">Map String Telemetry
-</span><a href="#local-6989586621679136233"><span class="hs-identifier hs-var">_dev_telems</span></a></span><span> </span><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679136237"><span class="hs-identifier hs-var">vals</span></a></span><span class="hs-special">}</span><span>
-</span><span id="line-148"></span><span>    </span><span class="annot"><a href="#local-6989586621679136245"><span class="hs-identifier hs-var">addItem</span></a></span><span> </span><span class="annot"><span class="annottext">Value
-</span><span class="hs-identifier">_</span></span><span> </span><span id="local-6989586621679136231"><span class="annot"><span class="annottext">DEVC
-</span><a href="#local-6989586621679136231"><span class="hs-identifier hs-var">o</span></a></span></span><span>                                            </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">DEVC
-</span><a href="#local-6989586621679136231"><span class="hs-identifier hs-var">o</span></a></span><span>
+</span><a href="#local-6989586621679140548"><span class="hs-identifier hs-var">addTelem</span></a></span><span> </span><span class="annot"><span class="annottext">Map String Telemetry
+</span><a href="#local-6989586621679140549"><span class="hs-identifier hs-var">_dev_telems</span></a></span><span> </span><span class="annot"><span class="annottext">[Value]
+</span><a href="#local-6989586621679140553"><span class="hs-identifier hs-var">vals</span></a></span><span class="hs-special">}</span><span>
+</span><span id="line-148"></span><span>    </span><span class="annot"><a href="#local-6989586621679140569"><span class="hs-identifier hs-var">addItem</span></a></span><span> </span><span class="annot"><span class="annottext">Value
+</span><span class="hs-identifier">_</span></span><span> </span><span id="local-6989586621679140547"><span class="annot"><span class="annottext">DEVC
+</span><a href="#local-6989586621679140547"><span class="hs-identifier hs-var">o</span></a></span></span><span>                                            </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">DEVC
+</span><a href="#local-6989586621679140547"><span class="hs-identifier hs-var">o</span></a></span><span>
 </span><span id="line-149"></span><span>
-</span><span id="line-150"></span><span>    </span><span id="local-6989586621679136232"><span class="annot"><span class="annottext">addTelem :: Map String Telemetry -&gt; [Value] -&gt; Map String Telemetry
-</span><a href="#local-6989586621679136232"><span class="hs-identifier hs-var hs-var">addTelem</span></a></span></span><span> </span><span id="local-6989586621679136230"><span class="annot"><span class="annottext">Map String Telemetry
-</span><a href="#local-6989586621679136230"><span class="hs-identifier hs-var">m</span></a></span></span><span> </span><span id="local-6989586621679136229"><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679136229"><span class="hs-identifier hs-var">vals</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621679136228"><span class="annot"><span class="annottext">t :: Telemetry
-</span><a href="#local-6989586621679136228"><span class="hs-identifier hs-var hs-var">t</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>  </span><span class="annot"><span class="annottext">(Value -&gt; Telemetry -&gt; Telemetry)
+</span><span id="line-150"></span><span>    </span><span id="local-6989586621679140548"><span class="annot"><span class="annottext">addTelem :: Map String Telemetry -&gt; [Value] -&gt; Map String Telemetry
+</span><a href="#local-6989586621679140548"><span class="hs-identifier hs-var hs-var">addTelem</span></a></span></span><span> </span><span id="local-6989586621679140540"><span class="annot"><span class="annottext">Map String Telemetry
+</span><a href="#local-6989586621679140540"><span class="hs-identifier hs-var">m</span></a></span></span><span> </span><span id="local-6989586621679140539"><span class="annot"><span class="annottext">[Value]
+</span><a href="#local-6989586621679140539"><span class="hs-identifier hs-var">vals</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621679140535"><span class="annot"><span class="annottext">t :: Telemetry
+</span><a href="#local-6989586621679140535"><span class="hs-identifier hs-var hs-var">t</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>  </span><span class="annot"><span class="annottext">(Value -&gt; Telemetry -&gt; Telemetry)
 -&gt; Telemetry -&gt; [Value] -&gt; Telemetry
 forall (t :: * -&gt; *) a b.
 Foldable t =&gt;
 (a -&gt; b -&gt; b) -&gt; b -&gt; t a -&gt; b
 </span><span class="hs-identifier hs-var">foldr</span></span><span> </span><span class="annot"><span class="annottext">Value -&gt; Telemetry -&gt; Telemetry
-</span><a href="#local-6989586621679136227"><span class="hs-identifier hs-var">updTele</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Word64 -&gt; Int -&gt; String -&gt; TVals -&gt; Telemetry
+</span><a href="#local-6989586621679140534"><span class="hs-identifier hs-var">updTele</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Word64 -&gt; Int -&gt; String -&gt; TVals -&gt; Telemetry
 </span><a href="GoPro.DEVC.html#Telemetry"><span class="hs-identifier hs-var">Telemetry</span></a></span><span> </span><span class="annot"><span class="annottext">Word64
 </span><span class="hs-number">0</span></span><span> </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">0</span></span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;&quot;</span></span><span> </span><span class="annot"><span class="annottext">TVals
-</span><a href="#local-6989586621679136226"><span class="hs-identifier hs-var">tvals</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679136229"><span class="hs-identifier hs-var">vals</span></a></span><span> </span><span class="hs-keyword">in</span><span>
+</span><a href="#local-6989586621679140533"><span class="hs-identifier hs-var">tvals</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[Value]
+</span><a href="#local-6989586621679140539"><span class="hs-identifier hs-var">vals</span></a></span><span> </span><span class="hs-keyword">in</span><span>
 </span><span id="line-151"></span><span>                        </span><span class="annot"><span class="annottext">String -&gt; Telemetry -&gt; Map String Telemetry -&gt; Map String Telemetry
 forall k a. Ord k =&gt; k -&gt; a -&gt; Map k a -&gt; Map k a
 </span><span class="hs-identifier hs-var">Map.insert</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Telemetry -&gt; String
 </span><a href="GoPro.DEVC.html#_tele_name"><span class="hs-identifier hs-var hs-var">_tele_name</span></a></span><span> </span><span class="annot"><span class="annottext">Telemetry
-</span><a href="#local-6989586621679136228"><span class="hs-identifier hs-var">t</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Telemetry
-</span><a href="#local-6989586621679136228"><span class="hs-identifier hs-var">t</span></a></span><span> </span><span class="annot"><span class="annottext">Map String Telemetry
-</span><a href="#local-6989586621679136230"><span class="hs-identifier hs-var">m</span></a></span><span>
+</span><a href="#local-6989586621679140535"><span class="hs-identifier hs-var">t</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Telemetry
+</span><a href="#local-6989586621679140535"><span class="hs-identifier hs-var">t</span></a></span><span> </span><span class="annot"><span class="annottext">Map String Telemetry
+</span><a href="#local-6989586621679140540"><span class="hs-identifier hs-var">m</span></a></span><span>
 </span><span id="line-152"></span><span>      </span><span class="hs-keyword">where</span><span>
-</span><span id="line-153"></span><span>        </span><span id="local-6989586621679136227"><span class="annot"><span class="annottext">updTele :: Value -&gt; Telemetry -&gt; Telemetry
-</span><a href="#local-6989586621679136227"><span class="hs-identifier hs-var hs-var">updTele</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GNested"><span class="hs-identifier hs-type">GNested</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">FourCC
-</span><span class="hs-string">&quot;STMP&quot;</span></span><span class="hs-special">,</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#GUint64"><span class="hs-identifier hs-type">GUint64</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679136223"><span class="annot"><span class="annottext">Word64
-</span><a href="#local-6989586621679136223"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">]</span><span class="hs-special">]</span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span id="local-6989586621679136222"><span class="annot"><span class="annottext">Telemetry
-</span><a href="#local-6989586621679136222"><span class="hs-identifier hs-var">o</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Telemetry
-</span><a href="#local-6989586621679136222"><span class="hs-identifier hs-var">o</span></a></span><span> </span><span class="hs-special">{</span><span class="annot"><span class="annottext">_tele_stmp :: Word64
+</span><span id="line-153"></span><span>        </span><span id="local-6989586621679140534"><span class="annot"><span class="annottext">updTele :: Value -&gt; Telemetry -&gt; Telemetry
+</span><a href="#local-6989586621679140534"><span class="hs-identifier hs-var hs-var">updTele</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GNested"><span class="hs-identifier hs-type">GNested</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">FourCC
+</span><span class="hs-string">&quot;STMP&quot;</span></span><span class="hs-special">,</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#GUint64"><span class="hs-identifier hs-type">GUint64</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679140522"><span class="annot"><span class="annottext">Word64
+</span><a href="#local-6989586621679140522"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">]</span><span class="hs-special">]</span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span id="local-6989586621679140521"><span class="annot"><span class="annottext">Telemetry
+</span><a href="#local-6989586621679140521"><span class="hs-identifier hs-var">o</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Telemetry
+</span><a href="#local-6989586621679140521"><span class="hs-identifier hs-var">o</span></a></span><span> </span><span class="hs-special">{</span><span class="annot"><span class="annottext">_tele_stmp :: Word64
 </span><a href="GoPro.DEVC.html#_tele_stmp"><span class="hs-identifier hs-var">_tele_stmp</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Word64
-</span><a href="#local-6989586621679136223"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">}</span><span>
-</span><span id="line-154"></span><span>        </span><span class="annot"><a href="#local-6989586621679136227"><span class="hs-identifier hs-var">updTele</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GNested"><span class="hs-identifier hs-type">GNested</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">FourCC
-</span><span class="hs-string">&quot;TSMP&quot;</span></span><span class="hs-special">,</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#GUint32"><span class="hs-identifier hs-type">GUint32</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679136221"><span class="annot"><span class="annottext">Word32
-</span><a href="#local-6989586621679136221"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">]</span><span class="hs-special">]</span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span id="local-6989586621679136220"><span class="annot"><span class="annottext">Telemetry
-</span><a href="#local-6989586621679136220"><span class="hs-identifier hs-var">o</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Telemetry
-</span><a href="#local-6989586621679136220"><span class="hs-identifier hs-var">o</span></a></span><span> </span><span class="hs-special">{</span><span class="annot"><span class="annottext">_tele_tsmp :: Int
+</span><a href="#local-6989586621679140522"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">}</span><span>
+</span><span id="line-154"></span><span>        </span><span class="annot"><a href="#local-6989586621679140534"><span class="hs-identifier hs-var">updTele</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GNested"><span class="hs-identifier hs-type">GNested</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">FourCC
+</span><span class="hs-string">&quot;TSMP&quot;</span></span><span class="hs-special">,</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#GUint32"><span class="hs-identifier hs-type">GUint32</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679140520"><span class="annot"><span class="annottext">Word32
+</span><a href="#local-6989586621679140520"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">]</span><span class="hs-special">]</span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span id="local-6989586621679140519"><span class="annot"><span class="annottext">Telemetry
+</span><a href="#local-6989586621679140519"><span class="hs-identifier hs-var">o</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Telemetry
+</span><a href="#local-6989586621679140519"><span class="hs-identifier hs-var">o</span></a></span><span> </span><span class="hs-special">{</span><span class="annot"><span class="annottext">_tele_tsmp :: Int
 </span><a href="GoPro.DEVC.html#_tele_tsmp"><span class="hs-identifier hs-var">_tele_tsmp</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Word32 -&gt; Int
 forall a b. (Integral a, Num b) =&gt; a -&gt; b
 </span><span class="hs-identifier hs-var">fromIntegral</span></span><span> </span><span class="annot"><span class="annottext">Word32
-</span><a href="#local-6989586621679136221"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">}</span><span>
-</span><span id="line-155"></span><span>        </span><span class="annot"><a href="#local-6989586621679136227"><span class="hs-identifier hs-var">updTele</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GNested"><span class="hs-identifier hs-type">GNested</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">FourCC
-</span><span class="hs-string">&quot;STNM&quot;</span></span><span class="hs-special">,</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#GString"><span class="hs-identifier hs-type">GString</span></a></span><span> </span><span id="local-6989586621679136219"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679136219"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">]</span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span id="local-6989586621679136218"><span class="annot"><span class="annottext">Telemetry
-</span><a href="#local-6989586621679136218"><span class="hs-identifier hs-var">o</span></a></span></span><span>   </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Telemetry
-</span><a href="#local-6989586621679136218"><span class="hs-identifier hs-var">o</span></a></span><span> </span><span class="hs-special">{</span><span class="annot"><span class="annottext">_tele_name :: String
+</span><a href="#local-6989586621679140520"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">}</span><span>
+</span><span id="line-155"></span><span>        </span><span class="annot"><a href="#local-6989586621679140534"><span class="hs-identifier hs-var">updTele</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GNested"><span class="hs-identifier hs-type">GNested</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">FourCC
+</span><span class="hs-string">&quot;STNM&quot;</span></span><span class="hs-special">,</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#GString"><span class="hs-identifier hs-type">GString</span></a></span><span> </span><span id="local-6989586621679140518"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621679140518"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">]</span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span id="local-6989586621679140517"><span class="annot"><span class="annottext">Telemetry
+</span><a href="#local-6989586621679140517"><span class="hs-identifier hs-var">o</span></a></span></span><span>   </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Telemetry
+</span><a href="#local-6989586621679140517"><span class="hs-identifier hs-var">o</span></a></span><span> </span><span class="hs-special">{</span><span class="annot"><span class="annottext">_tele_name :: String
 </span><a href="GoPro.DEVC.html#_tele_name"><span class="hs-identifier hs-var">_tele_name</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621679136219"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">}</span><span>
-</span><span id="line-156"></span><span>        </span><span class="annot"><a href="#local-6989586621679136227"><span class="hs-identifier hs-var">updTele</span></a></span><span> </span><span class="annot"><span class="annottext">Value
-</span><span class="hs-identifier">_</span></span><span> </span><span id="local-6989586621679136217"><span class="annot"><span class="annottext">Telemetry
-</span><a href="#local-6989586621679136217"><span class="hs-identifier hs-var">o</span></a></span></span><span>                                 </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Telemetry
-</span><a href="#local-6989586621679136217"><span class="hs-identifier hs-var">o</span></a></span><span>
+</span><a href="#local-6989586621679140518"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">}</span><span>
+</span><span id="line-156"></span><span>        </span><span class="annot"><a href="#local-6989586621679140534"><span class="hs-identifier hs-var">updTele</span></a></span><span> </span><span class="annot"><span class="annottext">Value
+</span><span class="hs-identifier">_</span></span><span> </span><span id="local-6989586621679140516"><span class="annot"><span class="annottext">Telemetry
+</span><a href="#local-6989586621679140516"><span class="hs-identifier hs-var">o</span></a></span></span><span>                                 </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Telemetry
+</span><a href="#local-6989586621679140516"><span class="hs-identifier hs-var">o</span></a></span><span>
 </span><span id="line-157"></span><span>
-</span><span id="line-158"></span><span>        </span><span class="annot"><a href="#local-6989586621679136226"><span class="hs-identifier hs-type">tvals</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="GoPro.DEVC.html#TVals"><span class="hs-identifier hs-type">TVals</span></a></span><span>
-</span><span id="line-159"></span><span>        </span><span id="local-6989586621679136226"><span class="annot"><span class="annottext">tvals :: TVals
-</span><a href="#local-6989586621679136226"><span class="hs-identifier hs-var hs-var">tvals</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">TVals -&gt; Maybe TVals -&gt; TVals
+</span><span id="line-158"></span><span>        </span><span class="annot"><a href="#local-6989586621679140533"><span class="hs-identifier hs-type">tvals</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="GoPro.DEVC.html#TVals"><span class="hs-identifier hs-type">TVals</span></a></span><span>
+</span><span id="line-159"></span><span>        </span><span id="local-6989586621679140533"><span class="annot"><span class="annottext">tvals :: TVals
+</span><a href="#local-6989586621679140533"><span class="hs-identifier hs-var hs-var">tvals</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">TVals -&gt; Maybe TVals -&gt; TVals
 forall a. a -&gt; Maybe a -&gt; a
 </span><span class="hs-identifier hs-var">fromMaybe</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[Value] -&gt; TVals
 </span><a href="GoPro.DEVC.html#TVUnknown"><span class="hs-identifier hs-var">TVUnknown</span></a></span><span> </span><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679136229"><span class="hs-identifier hs-var">vals</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">(Maybe TVals -&gt; TVals)
+</span><a href="#local-6989586621679140539"><span class="hs-identifier hs-var">vals</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">(Maybe TVals -&gt; TVals)
 -&gt; (([Value] -&gt; Maybe TVals) -&gt; Maybe TVals)
 -&gt; ([Value] -&gt; Maybe TVals)
 -&gt; TVals
@@ -499,7 +498,7 @@ forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">([Value] -&gt; Maybe TVals) -&gt; [Value] -&gt; Maybe TVals
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679136229"><span class="hs-identifier hs-var">vals</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">(([Value] -&gt; Maybe TVals) -&gt; TVals)
+</span><a href="#local-6989586621679140539"><span class="hs-identifier hs-var">vals</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">(([Value] -&gt; Maybe TVals) -&gt; TVals)
 -&gt; ([Value] -&gt; [Value] -&gt; Maybe TVals) -&gt; [Value] -&gt; TVals
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">(FourCC -&gt; ([Value] -&gt; Maybe TVals) -&gt; [Value] -&gt; Maybe TVals)
@@ -508,10 +507,10 @@ forall (t :: * -&gt; *) a b.
 Foldable t =&gt;
 (a -&gt; b -&gt; b) -&gt; b -&gt; t a -&gt; b
 </span><span class="hs-identifier hs-var">foldr</span></span><span> </span><span class="annot"><span class="annottext">FourCC -&gt; ([Value] -&gt; Maybe TVals) -&gt; [Value] -&gt; Maybe TVals
-forall a.
+forall {a}.
 (Eq a, IsString a) =&gt;
 a -&gt; ([Value] -&gt; Maybe TVals) -&gt; [Value] -&gt; Maybe TVals
-</span><a href="#local-6989586621679136216"><span class="hs-identifier hs-var">findGrokker</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Maybe TVals -&gt; [Value] -&gt; Maybe TVals
+</span><a href="#local-6989586621679140515"><span class="hs-identifier hs-var">findGrokker</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Maybe TVals -&gt; [Value] -&gt; Maybe TVals
 forall a b. a -&gt; b -&gt; a
 </span><span class="hs-identifier hs-var">const</span></span><span> </span><span class="annot"><span class="annottext">Maybe TVals
 forall a. Maybe a
@@ -521,21 +520,21 @@ forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">(Value -&gt; [FourCC]) -&gt; [Value] -&gt; [FourCC]
 forall (t :: * -&gt; *) a b. Foldable t =&gt; (a -&gt; [b]) -&gt; t a -&gt; [b]
 </span><span class="hs-identifier hs-var">concatMap</span></span><span> </span><span class="annot"><span class="annottext">Value -&gt; [FourCC]
-</span><a href="#local-6989586621679136213"><span class="hs-identifier hs-var">four</span></a></span><span> </span><span class="annot"><span class="annottext">([Value] -&gt; TVals) -&gt; [Value] -&gt; TVals
+</span><a href="#local-6989586621679140512"><span class="hs-identifier hs-var">four</span></a></span><span> </span><span class="annot"><span class="annottext">([Value] -&gt; TVals) -&gt; [Value] -&gt; TVals
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679136229"><span class="hs-identifier hs-var">vals</span></a></span><span>
+</span><a href="#local-6989586621679140539"><span class="hs-identifier hs-var">vals</span></a></span><span>
 </span><span id="line-160"></span><span>          </span><span class="hs-keyword">where</span><span>
-</span><span id="line-161"></span><span>            </span><span id="local-6989586621679136213"><span class="annot"><span class="annottext">four :: Value -&gt; [FourCC]
-</span><a href="#local-6989586621679136213"><span class="hs-identifier hs-var hs-var">four</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GNested"><span class="hs-identifier hs-type">GNested</span></a></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679136212"><span class="annot"><span class="annottext">FourCC
-</span><a href="#local-6989586621679136212"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">[Value]
+</span><span id="line-161"></span><span>            </span><span id="local-6989586621679140512"><span class="annot"><span class="annottext">four :: Value -&gt; [FourCC]
+</span><a href="#local-6989586621679140512"><span class="hs-identifier hs-var hs-var">four</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GNested"><span class="hs-identifier hs-type">GNested</span></a></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679140511"><span class="annot"><span class="annottext">FourCC
+</span><a href="#local-6989586621679140511"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">[Value]
 </span><span class="hs-identifier">_</span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">FourCC
-</span><a href="#local-6989586621679136212"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">]</span><span>
-</span><span id="line-162"></span><span>            </span><span class="annot"><a href="#local-6989586621679136213"><span class="hs-identifier hs-var">four</span></a></span><span> </span><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679140511"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">]</span><span>
+</span><span id="line-162"></span><span>            </span><span class="annot"><a href="#local-6989586621679140512"><span class="hs-identifier hs-var">four</span></a></span><span> </span><span class="annot"><span class="annottext">Value
 </span><span class="hs-identifier">_</span></span><span>                </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>
 </span><span id="line-163"></span><span>
-</span><span id="line-164"></span><span>            </span><span id="local-6989586621679136216"><span class="annot"><span class="annottext">findGrokker :: a -&gt; ([Value] -&gt; Maybe TVals) -&gt; [Value] -&gt; Maybe TVals
-</span><a href="#local-6989586621679136216"><span class="hs-identifier hs-var hs-var">findGrokker</span></a></span></span><span> </span><span class="annot"><span class="annottext">a
+</span><span id="line-164"></span><span>            </span><span id="local-6989586621679140515"><span class="annot"><span class="annottext">findGrokker :: a -&gt; ([Value] -&gt; Maybe TVals) -&gt; [Value] -&gt; Maybe TVals
+</span><a href="#local-6989586621679140515"><span class="hs-identifier hs-var hs-var">findGrokker</span></a></span></span><span> </span><span class="annot"><span class="annottext">a
 </span><span class="hs-string">&quot;ACCL&quot;</span></span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe TVals
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Accelerometer -&gt; TVals) -&gt; Maybe Accelerometer -&gt; Maybe TVals
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
@@ -545,7 +544,7 @@ forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe Accelerometer
 </span><a href="GoPro.DEVC.html#grokAccl"><span class="hs-identifier hs-var">grokAccl</span></a></span><span>
-</span><span id="line-165"></span><span>            </span><span class="annot"><a href="#local-6989586621679136216"><span class="hs-identifier hs-var">findGrokker</span></a></span><span> </span><span class="annot"><span class="annottext">a
+</span><span id="line-165"></span><span>            </span><span class="annot"><a href="#local-6989586621679140515"><span class="hs-identifier hs-var">findGrokker</span></a></span><span> </span><span class="annot"><span class="annottext">a
 </span><span class="hs-string">&quot;GYRO&quot;</span></span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe TVals
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Gyroscope -&gt; TVals) -&gt; Maybe Gyroscope -&gt; Maybe TVals
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
@@ -555,7 +554,7 @@ forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe Gyroscope
 </span><a href="GoPro.DEVC.html#grokGyro"><span class="hs-identifier hs-var">grokGyro</span></a></span><span>
-</span><span id="line-166"></span><span>            </span><span class="annot"><a href="#local-6989586621679136216"><span class="hs-identifier hs-var">findGrokker</span></a></span><span> </span><span class="annot"><span class="annottext">a
+</span><span id="line-166"></span><span>            </span><span class="annot"><a href="#local-6989586621679140515"><span class="hs-identifier hs-var">findGrokker</span></a></span><span> </span><span class="annot"><span class="annottext">a
 </span><span class="hs-string">&quot;FACE&quot;</span></span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe TVals
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">([Face] -&gt; TVals) -&gt; Maybe [Face] -&gt; Maybe TVals
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
@@ -565,7 +564,7 @@ forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe [Face]
 </span><a href="GoPro.DEVC.html#grokFaces"><span class="hs-identifier hs-var">grokFaces</span></a></span><span>
-</span><span id="line-167"></span><span>            </span><span class="annot"><a href="#local-6989586621679136216"><span class="hs-identifier hs-var">findGrokker</span></a></span><span> </span><span class="annot"><span class="annottext">a
+</span><span id="line-167"></span><span>            </span><span class="annot"><a href="#local-6989586621679140515"><span class="hs-identifier hs-var">findGrokker</span></a></span><span> </span><span class="annot"><span class="annottext">a
 </span><span class="hs-string">&quot;GPS5&quot;</span></span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe TVals
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(GPS -&gt; TVals) -&gt; Maybe GPS -&gt; Maybe TVals
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
@@ -575,7 +574,7 @@ forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe GPS
 </span><a href="GoPro.DEVC.html#grokGPS"><span class="hs-identifier hs-var">grokGPS</span></a></span><span>
-</span><span id="line-168"></span><span>            </span><span class="annot"><a href="#local-6989586621679136216"><span class="hs-identifier hs-var">findGrokker</span></a></span><span> </span><span class="annot"><span class="annottext">a
+</span><span id="line-168"></span><span>            </span><span class="annot"><a href="#local-6989586621679140515"><span class="hs-identifier hs-var">findGrokker</span></a></span><span> </span><span class="annot"><span class="annottext">a
 </span><span class="hs-string">&quot;AALP&quot;</span></span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe TVals
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(AudioLevel -&gt; TVals) -&gt; Maybe AudioLevel -&gt; Maybe TVals
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
@@ -585,7 +584,7 @@ forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe AudioLevel
 </span><a href="GoPro.DEVC.html#grokAudioLevel"><span class="hs-identifier hs-var">grokAudioLevel</span></a></span><span>
-</span><span id="line-169"></span><span>            </span><span class="annot"><a href="#local-6989586621679136216"><span class="hs-identifier hs-var">findGrokker</span></a></span><span> </span><span class="annot"><span class="annottext">a
+</span><span id="line-169"></span><span>            </span><span class="annot"><a href="#local-6989586621679140515"><span class="hs-identifier hs-var">findGrokker</span></a></span><span> </span><span class="annot"><span class="annottext">a
 </span><span class="hs-string">&quot;SCEN&quot;</span></span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe TVals
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">([Map Location Float] -&gt; TVals)
 -&gt; Maybe [Map Location Float] -&gt; Maybe TVals
@@ -598,10 +597,10 @@ forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe [Map Location Float]
 </span><a href="GoPro.DEVC.html#grokScene"><span class="hs-identifier hs-var">grokScene</span></a></span><span>
-</span><span id="line-170"></span><span>            </span><span class="annot"><a href="#local-6989586621679136216"><span class="hs-identifier hs-var">findGrokker</span></a></span><span> </span><span class="annot"><span class="annottext">a
-</span><span class="hs-identifier">_</span></span><span> </span><span id="local-6989586621679136205"><span class="annot"><span class="annottext">[Value] -&gt; Maybe TVals
-</span><a href="#local-6989586621679136205"><span class="hs-identifier hs-var">o</span></a></span></span><span>      </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe TVals
-</span><a href="#local-6989586621679136205"><span class="hs-identifier hs-var">o</span></a></span><span>
+</span><span id="line-170"></span><span>            </span><span class="annot"><a href="#local-6989586621679140515"><span class="hs-identifier hs-var">findGrokker</span></a></span><span> </span><span class="annot"><span class="annottext">a
+</span><span class="hs-identifier">_</span></span><span> </span><span id="local-6989586621679140484"><span class="annot"><span class="annottext">[Value] -&gt; Maybe TVals
+</span><a href="#local-6989586621679140484"><span class="hs-identifier hs-var">o</span></a></span></span><span>      </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe TVals
+</span><a href="#local-6989586621679140484"><span class="hs-identifier hs-var">o</span></a></span><span>
 </span><span id="line-171"></span><span>
 </span><span id="line-172"></span><span class="annot"><a href="GoPro.DEVC.html#mkDEVC"><span class="hs-identifier hs-var">mkDEVC</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Maybe DEVC -&gt; [Value] -&gt; Maybe DEVC
@@ -612,143 +611,144 @@ forall a. Maybe a
 </span><span id="line-173"></span><span>
 </span><span id="line-174"></span><span class="annot"><a href="GoPro.DEVC.html#findVal"><span class="hs-identifier hs-type">findVal</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#FourCC"><span class="hs-identifier hs-type">FourCC</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Maybe</span></span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span class="hs-special">]</span><span>
 </span><span id="line-175"></span><span id="findVal"><span class="annot"><span class="annottext">findVal :: FourCC -&gt; [Value] -&gt; Maybe [Value]
-</span><a href="GoPro.DEVC.html#findVal"><span class="hs-identifier hs-var hs-var">findVal</span></a></span></span><span> </span><span id="local-6989586621679136203"><span class="annot"><span class="annottext">FourCC
-</span><a href="#local-6989586621679136203"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[[Value]] -&gt; Maybe [Value]
+</span><a href="GoPro.DEVC.html#findVal"><span class="hs-identifier hs-var hs-var">findVal</span></a></span></span><span> </span><span id="local-6989586621679140482"><span class="annot"><span class="annottext">FourCC
+</span><a href="#local-6989586621679140482"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[[Value]] -&gt; Maybe [Value]
 forall a. [a] -&gt; Maybe a
 </span><span class="hs-identifier hs-var">listToMaybe</span></span><span> </span><span class="annot"><span class="annottext">([[Value]] -&gt; Maybe [Value])
 -&gt; ([Value] -&gt; [[Value]]) -&gt; [Value] -&gt; Maybe [Value]
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">FourCC -&gt; [Value] -&gt; [[Value]]
 </span><a href="GoPro.DEVC.html#findAll"><span class="hs-identifier hs-var">findAll</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
-</span><a href="#local-6989586621679136203"><span class="hs-identifier hs-var">f</span></a></span><span>
+</span><a href="#local-6989586621679140482"><span class="hs-identifier hs-var">f</span></a></span><span>
 </span><span id="line-176"></span><span>
 </span><span id="line-177"></span><span class="annot"><a href="GoPro.DEVC.html#findAll"><span class="hs-identifier hs-type">findAll</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#FourCC"><span class="hs-identifier hs-type">FourCC</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span class="hs-special">]</span><span class="hs-special">]</span><span>
 </span><span id="line-178"></span><span id="findAll"><span class="annot"><span class="annottext">findAll :: FourCC -&gt; [Value] -&gt; [[Value]]
-</span><a href="GoPro.DEVC.html#findAll"><span class="hs-identifier hs-var hs-var">findAll</span></a></span></span><span> </span><span id="local-6989586621679136201"><span class="annot"><span class="annottext">FourCC
-</span><a href="#local-6989586621679136201"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Value -&gt; Maybe [Value]) -&gt; [Value] -&gt; [[Value]]
+</span><a href="GoPro.DEVC.html#findAll"><span class="hs-identifier hs-var hs-var">findAll</span></a></span></span><span> </span><span id="local-6989586621679140480"><span class="annot"><span class="annottext">FourCC
+</span><a href="#local-6989586621679140480"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Value -&gt; Maybe [Value]) -&gt; [Value] -&gt; [[Value]]
 forall a b. (a -&gt; Maybe b) -&gt; [a] -&gt; [b]
 </span><span class="hs-identifier hs-var">mapMaybe</span></span><span> </span><span class="annot"><span class="annottext">Value -&gt; Maybe [Value]
-</span><a href="#local-6989586621679136200"><span class="hs-identifier hs-var">g</span></a></span><span>
+</span><a href="#local-6989586621679140479"><span class="hs-identifier hs-var">g</span></a></span><span>
 </span><span id="line-179"></span><span>  </span><span class="hs-keyword">where</span><span>
-</span><span id="line-180"></span><span>    </span><span id="local-6989586621679136200"><span class="annot"><span class="annottext">g :: Value -&gt; Maybe [Value]
-</span><a href="#local-6989586621679136200"><span class="hs-identifier hs-var hs-var">g</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GNested"><span class="hs-identifier hs-type">GNested</span></a></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679136199"><span class="annot"><span class="annottext">FourCC
-</span><a href="#local-6989586621679136199"><span class="hs-identifier hs-var">fc</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679136198"><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679136198"><span class="hs-identifier hs-var">vs</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">FourCC
-</span><a href="#local-6989586621679136199"><span class="hs-identifier hs-var">fc</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC -&gt; FourCC -&gt; Bool
+</span><span id="line-180"></span><span>    </span><span id="local-6989586621679140479"><span class="annot"><span class="annottext">g :: Value -&gt; Maybe [Value]
+</span><a href="#local-6989586621679140479"><span class="hs-identifier hs-var hs-var">g</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GNested"><span class="hs-identifier hs-type">GNested</span></a></span><span> </span><span class="hs-special">(</span><span id="local-6989586621679140477"><span class="annot"><span class="annottext">FourCC
+</span><a href="#local-6989586621679140477"><span class="hs-identifier hs-var">fc</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621679140476"><span class="annot"><span class="annottext">[Value]
+</span><a href="#local-6989586621679140476"><span class="hs-identifier hs-var">vs</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">FourCC
+</span><a href="#local-6989586621679140477"><span class="hs-identifier hs-var">fc</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC -&gt; FourCC -&gt; Bool
 forall a. Eq a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">==</span></span><span> </span><span class="annot"><span class="annottext">FourCC
-</span><a href="#local-6989586621679136201"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe [Value]
+</span><a href="#local-6989586621679140480"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe [Value]
 forall a. a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Just</span></span><span> </span><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679136198"><span class="hs-identifier hs-var">vs</span></a></span><span>
-</span><span id="line-181"></span><span>    </span><span class="annot"><a href="#local-6989586621679136200"><span class="hs-identifier hs-var">g</span></a></span><span> </span><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679140476"><span class="hs-identifier hs-var">vs</span></a></span><span>
+</span><span id="line-181"></span><span>    </span><span class="annot"><a href="#local-6989586621679140479"><span class="hs-identifier hs-var">g</span></a></span><span> </span><span class="annot"><span class="annottext">Value
 </span><span class="hs-identifier">_</span></span><span>                            </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Maybe [Value]
 forall a. Maybe a
 </span><span class="hs-identifier hs-var">Nothing</span></span><span>
 </span><span id="line-182"></span><span>
-</span><span id="line-183"></span><span id="local-6989586621679136450"><span class="annot"><a href="GoPro.DEVC.html#grokSens"><span class="hs-identifier hs-type">grokSens</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#FourCC"><span class="hs-identifier hs-type">FourCC</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span class="hs-special">)</span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621679136450"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Maybe</span></span><span> </span><span class="annot"><a href="#local-6989586621679136450"><span class="hs-identifier hs-type">a</span></a></span></span><span>
-</span><span id="line-184"></span><span id="grokSens"><span class="annot"><span class="annottext">grokSens :: FourCC
+</span><span id="line-183"></span><span id="local-6989586621679141301"><span class="annot"><a href="GoPro.DEVC.html#grokSens"><span class="hs-identifier hs-type">grokSens</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#FourCC"><span class="hs-identifier hs-type">FourCC</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span class="hs-special">)</span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621679141301"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Maybe</span></span><span> </span><span class="annot"><a href="#local-6989586621679141301"><span class="hs-identifier hs-type">a</span></a></span></span><span>
+</span><span id="line-184"></span><span id="grokSens"><span class="annot"><span class="annottext">grokSens :: forall a.
+FourCC
 -&gt; (Float -&gt; [(Float, Float, Float)] -&gt; a) -&gt; [Value] -&gt; Maybe a
-</span><a href="GoPro.DEVC.html#grokSens"><span class="hs-identifier hs-var hs-var">grokSens</span></a></span></span><span> </span><span id="local-6989586621679136196"><span class="annot"><span class="annottext">FourCC
-</span><a href="#local-6989586621679136196"><span class="hs-identifier hs-var">sens</span></a></span></span><span> </span><span id="local-6989586621679136195"><span class="annot"><span class="annottext">Float -&gt; [(Float, Float, Float)] -&gt; a
-</span><a href="#local-6989586621679136195"><span class="hs-identifier hs-var">cons</span></a></span></span><span> </span><span id="local-6989586621679136194"><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679136194"><span class="hs-identifier hs-var">vals</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-185"></span><span>  </span><span class="annot"><a href="GoPro.GPMF.html#GFloat"><span class="hs-identifier hs-type">GFloat</span></a></span><span> </span><span id="local-6989586621679136192"><span class="annot"><span class="annottext">[Float]
-</span><a href="#local-6989586621679136192"><span class="hs-identifier hs-var">templ</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe Value
+</span><a href="GoPro.DEVC.html#grokSens"><span class="hs-identifier hs-var hs-var">grokSens</span></a></span></span><span> </span><span id="local-6989586621679140449"><span class="annot"><span class="annottext">FourCC
+</span><a href="#local-6989586621679140449"><span class="hs-identifier hs-var">sens</span></a></span></span><span> </span><span id="local-6989586621679140448"><span class="annot"><span class="annottext">Float -&gt; [(Float, Float, Float)] -&gt; a
+</span><a href="#local-6989586621679140448"><span class="hs-identifier hs-var">cons</span></a></span></span><span> </span><span id="local-6989586621679140447"><span class="annot"><span class="annottext">[Value]
+</span><a href="#local-6989586621679140447"><span class="hs-identifier hs-var">vals</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-185"></span><span>  </span><span class="annot"><a href="GoPro.GPMF.html#GFloat"><span class="hs-identifier hs-type">GFloat</span></a></span><span> </span><span id="local-6989586621679140445"><span class="annot"><span class="annottext">[Float]
+</span><a href="#local-6989586621679140445"><span class="hs-identifier hs-var">templ</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe Value
 forall a. [a] -&gt; Maybe a
 </span><span class="hs-identifier hs-var">listToMaybe</span></span><span> </span><span class="annot"><span class="annottext">([Value] -&gt; Maybe Value) -&gt; Maybe [Value] -&gt; Maybe Value
 forall (m :: * -&gt; *) a b. Monad m =&gt; (a -&gt; m b) -&gt; m a -&gt; m b
 </span><span class="hs-operator hs-var">=&lt;&lt;</span></span><span> </span><span class="annot"><span class="annottext">FourCC -&gt; [Value] -&gt; Maybe [Value]
 </span><a href="GoPro.DEVC.html#findVal"><span class="hs-identifier hs-var">findVal</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
 </span><span class="hs-string">&quot;TMPC&quot;</span></span><span> </span><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679136194"><span class="hs-identifier hs-var">vals</span></a></span><span>
-</span><span id="line-186"></span><span>  </span><span class="annot"><a href="GoPro.GPMF.html#GInt16"><span class="hs-identifier hs-type">GInt16</span></a></span><span> </span><span id="local-6989586621679136189"><span class="annot"><span class="annottext">[Int16]
-</span><a href="#local-6989586621679136189"><span class="hs-identifier hs-var">scall</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe Value
+</span><a href="#local-6989586621679140447"><span class="hs-identifier hs-var">vals</span></a></span><span>
+</span><span id="line-186"></span><span>  </span><span class="annot"><a href="GoPro.GPMF.html#GInt16"><span class="hs-identifier hs-type">GInt16</span></a></span><span> </span><span id="local-6989586621679140442"><span class="annot"><span class="annottext">[Int16]
+</span><a href="#local-6989586621679140442"><span class="hs-identifier hs-var">scall</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe Value
 forall a. [a] -&gt; Maybe a
 </span><span class="hs-identifier hs-var">listToMaybe</span></span><span> </span><span class="annot"><span class="annottext">([Value] -&gt; Maybe Value) -&gt; Maybe [Value] -&gt; Maybe Value
 forall (m :: * -&gt; *) a b. Monad m =&gt; (a -&gt; m b) -&gt; m a -&gt; m b
 </span><span class="hs-operator hs-var">=&lt;&lt;</span></span><span> </span><span class="annot"><span class="annottext">FourCC -&gt; [Value] -&gt; Maybe [Value]
 </span><a href="GoPro.DEVC.html#findVal"><span class="hs-identifier hs-var">findVal</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
 </span><span class="hs-string">&quot;SCAL&quot;</span></span><span> </span><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679136194"><span class="hs-identifier hs-var">vals</span></a></span><span>
-</span><span id="line-187"></span><span>  </span><span id="local-6989586621679136188"><span class="annot"><span class="annottext">[[Int16]]
-</span><a href="#local-6989586621679136188"><span class="hs-identifier hs-var">readings</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">(Value -&gt; Maybe [Int16]) -&gt; [Value] -&gt; [[Int16]]
+</span><a href="#local-6989586621679140447"><span class="hs-identifier hs-var">vals</span></a></span><span>
+</span><span id="line-187"></span><span>  </span><span id="local-6989586621679140441"><span class="annot"><span class="annottext">[[Int16]]
+</span><a href="#local-6989586621679140441"><span class="hs-identifier hs-var">readings</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">(Value -&gt; Maybe [Int16]) -&gt; [Value] -&gt; [[Int16]]
 forall a b. (a -&gt; Maybe b) -&gt; [a] -&gt; [b]
 </span><span class="hs-identifier hs-var">mapMaybe</span></span><span> </span><span class="annot"><span class="annottext">Value -&gt; Maybe [Int16]
-</span><a href="#local-6989586621679136187"><span class="hs-identifier hs-var">ungint</span></a></span><span> </span><span class="annot"><span class="annottext">([Value] -&gt; [[Int16]]) -&gt; Maybe [Value] -&gt; Maybe [[Int16]]
+</span><a href="#local-6989586621679140440"><span class="hs-identifier hs-var">ungint</span></a></span><span> </span><span class="annot"><span class="annottext">([Value] -&gt; [[Int16]]) -&gt; Maybe [Value] -&gt; Maybe [[Int16]]
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-operator hs-var">&lt;$&gt;</span></span><span> </span><span class="annot"><span class="annottext">FourCC -&gt; [Value] -&gt; Maybe [Value]
 </span><a href="GoPro.DEVC.html#findVal"><span class="hs-identifier hs-var">findVal</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
-</span><a href="#local-6989586621679136196"><span class="hs-identifier hs-var">sens</span></a></span><span> </span><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679136194"><span class="hs-identifier hs-var">vals</span></a></span><span>
+</span><a href="#local-6989586621679140449"><span class="hs-identifier hs-var">sens</span></a></span><span> </span><span class="annot"><span class="annottext">[Value]
+</span><a href="#local-6989586621679140447"><span class="hs-identifier hs-var">vals</span></a></span><span>
 </span><span id="line-188"></span><span>
-</span><span id="line-189"></span><span>  </span><span id="local-6989586621679136185"><span class="annot"><span class="annottext">Float
-</span><a href="#local-6989586621679136185"><span class="hs-identifier hs-var">temp</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">[Float] -&gt; Maybe Float
+</span><span id="line-189"></span><span>  </span><span id="local-6989586621679140438"><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679140438"><span class="hs-identifier hs-var">temp</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">[Float] -&gt; Maybe Float
 forall a. [a] -&gt; Maybe a
 </span><span class="hs-identifier hs-var">listToMaybe</span></span><span> </span><span class="annot"><span class="annottext">[Float]
-</span><a href="#local-6989586621679136192"><span class="hs-identifier hs-var">templ</span></a></span><span>
-</span><span id="line-190"></span><span>  </span><span id="local-6989586621679136184"><span class="annot"><span class="annottext">Float
-</span><a href="#local-6989586621679136184"><span class="hs-identifier hs-var">scal</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Int16 -&gt; Float
+</span><a href="#local-6989586621679140445"><span class="hs-identifier hs-var">templ</span></a></span><span>
+</span><span id="line-190"></span><span>  </span><span id="local-6989586621679140437"><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679140437"><span class="hs-identifier hs-var">scal</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Int16 -&gt; Float
 forall a b. (Real a, Fractional b) =&gt; a -&gt; b
 </span><span class="hs-identifier hs-var">realToFrac</span></span><span> </span><span class="annot"><span class="annottext">(Int16 -&gt; Float) -&gt; Maybe Int16 -&gt; Maybe Float
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-operator hs-var">&lt;$&gt;</span></span><span> </span><span class="annot"><span class="annottext">[Int16] -&gt; Maybe Int16
 forall a. [a] -&gt; Maybe a
 </span><span class="hs-identifier hs-var">listToMaybe</span></span><span> </span><span class="annot"><span class="annottext">[Int16]
-</span><a href="#local-6989586621679136189"><span class="hs-identifier hs-var">scall</span></a></span><span>
-</span><span id="line-191"></span><span>  </span><span id="local-6989586621679136183"><span class="annot"><span class="annottext">[(Float, Float, Float)]
-</span><a href="#local-6989586621679136183"><span class="hs-identifier hs-var">scaled</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">([Int16] -&gt; Maybe (Float, Float, Float))
+</span><a href="#local-6989586621679140442"><span class="hs-identifier hs-var">scall</span></a></span><span>
+</span><span id="line-191"></span><span>  </span><span id="local-6989586621679140436"><span class="annot"><span class="annottext">[(Float, Float, Float)]
+</span><a href="#local-6989586621679140436"><span class="hs-identifier hs-var">scaled</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">([Int16] -&gt; Maybe (Float, Float, Float))
 -&gt; [[Int16]] -&gt; Maybe [(Float, Float, Float)]
 forall (t :: * -&gt; *) (f :: * -&gt; *) a b.
 (Traversable t, Applicative f) =&gt;
 (a -&gt; f b) -&gt; t a -&gt; f (t b)
 </span><span class="hs-identifier hs-var">traverse</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[Float] -&gt; Maybe (Float, Float, Float)
-forall c. [c] -&gt; Maybe (c, c, c)
-</span><a href="#local-6989586621679136181"><span class="hs-identifier hs-var">trip</span></a></span><span> </span><span class="annot"><span class="annottext">([Float] -&gt; Maybe (Float, Float, Float))
+forall {c}. [c] -&gt; Maybe (c, c, c)
+</span><a href="#local-6989586621679140434"><span class="hs-identifier hs-var">trip</span></a></span><span> </span><span class="annot"><span class="annottext">([Float] -&gt; Maybe (Float, Float, Float))
 -&gt; ([Int16] -&gt; [Float]) -&gt; [Int16] -&gt; Maybe (Float, Float, Float)
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">(Int16 -&gt; Float) -&gt; [Int16] -&gt; [Float]
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
-</span><span class="hs-identifier hs-var">fmap</span></span><span> </span><span class="hs-special">(</span><span class="hs-glyph">\</span><span id="local-6989586621679136180"><span class="annot"><span class="annottext">Int16
-</span><a href="#local-6989586621679136180"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Int16 -&gt; Float
+</span><span class="hs-identifier hs-var">fmap</span></span><span> </span><span class="hs-special">(</span><span class="hs-glyph">\</span><span id="local-6989586621679140433"><span class="annot"><span class="annottext">Int16
+</span><a href="#local-6989586621679140433"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Int16 -&gt; Float
 forall a b. (Real a, Fractional b) =&gt; a -&gt; b
 </span><span class="hs-identifier hs-var">realToFrac</span></span><span> </span><span class="annot"><span class="annottext">Int16
-</span><a href="#local-6989586621679136180"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">Float -&gt; Float -&gt; Float
+</span><a href="#local-6989586621679140433"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">Float -&gt; Float -&gt; Float
 forall a. Fractional a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">/</span></span><span> </span><span class="annot"><span class="annottext">Float
-</span><a href="#local-6989586621679136184"><span class="hs-identifier hs-var">scal</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[[Int16]]
-</span><a href="#local-6989586621679136188"><span class="hs-identifier hs-var">readings</span></a></span><span>
+</span><a href="#local-6989586621679140437"><span class="hs-identifier hs-var">scal</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[[Int16]]
+</span><a href="#local-6989586621679140441"><span class="hs-identifier hs-var">readings</span></a></span><span>
 </span><span id="line-192"></span><span>
 </span><span id="line-193"></span><span>  </span><span class="annot"><span class="annottext">a -&gt; Maybe a
 forall (f :: * -&gt; *) a. Applicative f =&gt; a -&gt; f a
 </span><span class="hs-identifier hs-var">pure</span></span><span> </span><span class="annot"><span class="annottext">(a -&gt; Maybe a) -&gt; a -&gt; Maybe a
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">Float -&gt; [(Float, Float, Float)] -&gt; a
-</span><a href="#local-6989586621679136195"><span class="hs-identifier hs-var">cons</span></a></span><span> </span><span class="annot"><span class="annottext">Float
-</span><a href="#local-6989586621679136185"><span class="hs-identifier hs-var">temp</span></a></span><span> </span><span class="annot"><span class="annottext">[(Float, Float, Float)]
-</span><a href="#local-6989586621679136183"><span class="hs-identifier hs-var">scaled</span></a></span><span>
+</span><a href="#local-6989586621679140448"><span class="hs-identifier hs-var">cons</span></a></span><span> </span><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679140438"><span class="hs-identifier hs-var">temp</span></a></span><span> </span><span class="annot"><span class="annottext">[(Float, Float, Float)]
+</span><a href="#local-6989586621679140436"><span class="hs-identifier hs-var">scaled</span></a></span><span>
 </span><span id="line-194"></span><span>
-</span><span id="line-195"></span><span>  </span><span class="hs-keyword">where</span><span> </span><span id="local-6989586621679136187"><span class="annot"><span class="annottext">ungint :: Value -&gt; Maybe [Int16]
-</span><a href="#local-6989586621679136187"><span class="hs-identifier hs-var hs-var">ungint</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GInt16"><span class="hs-identifier hs-type">GInt16</span></a></span><span> </span><span id="local-6989586621679136178"><span class="annot"><span class="annottext">[Int16]
-</span><a href="#local-6989586621679136178"><span class="hs-identifier hs-var">xs</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Int16] -&gt; Maybe [Int16]
+</span><span id="line-195"></span><span>  </span><span class="hs-keyword">where</span><span> </span><span id="local-6989586621679140440"><span class="annot"><span class="annottext">ungint :: Value -&gt; Maybe [Int16]
+</span><a href="#local-6989586621679140440"><span class="hs-identifier hs-var hs-var">ungint</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GInt16"><span class="hs-identifier hs-type">GInt16</span></a></span><span> </span><span id="local-6989586621679140431"><span class="annot"><span class="annottext">[Int16]
+</span><a href="#local-6989586621679140431"><span class="hs-identifier hs-var">xs</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Int16] -&gt; Maybe [Int16]
 forall a. a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Just</span></span><span> </span><span class="annot"><span class="annottext">[Int16]
-</span><a href="#local-6989586621679136178"><span class="hs-identifier hs-var">xs</span></a></span><span>
-</span><span id="line-196"></span><span>        </span><span class="annot"><a href="#local-6989586621679136187"><span class="hs-identifier hs-var">ungint</span></a></span><span> </span><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679140431"><span class="hs-identifier hs-var">xs</span></a></span><span>
+</span><span id="line-196"></span><span>        </span><span class="annot"><a href="#local-6989586621679140440"><span class="hs-identifier hs-var">ungint</span></a></span><span> </span><span class="annot"><span class="annottext">Value
 </span><span class="hs-identifier">_</span></span><span>           </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Maybe [Int16]
 forall a. Maybe a
 </span><span class="hs-identifier hs-var">Nothing</span></span><span>
-</span><span id="line-197"></span><span>        </span><span id="local-6989586621679136181"><span class="annot"><span class="annottext">trip :: [c] -&gt; Maybe (c, c, c)
-</span><a href="#local-6989586621679136181"><span class="hs-identifier hs-var hs-var">trip</span></a></span></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679136177"><span class="annot"><span class="annottext">c
-</span><a href="#local-6989586621679136177"><span class="hs-identifier hs-var">a</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679136176"><span class="annot"><span class="annottext">c
-</span><a href="#local-6989586621679136176"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679136175"><span class="annot"><span class="annottext">c
-</span><a href="#local-6989586621679136175"><span class="hs-identifier hs-var">c</span></a></span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(c, c, c) -&gt; Maybe (c, c, c)
+</span><span id="line-197"></span><span>        </span><span id="local-6989586621679140434"><span class="annot"><span class="annottext">trip :: [c] -&gt; Maybe (c, c, c)
+</span><a href="#local-6989586621679140434"><span class="hs-identifier hs-var hs-var">trip</span></a></span></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679140430"><span class="annot"><span class="annottext">c
+</span><a href="#local-6989586621679140430"><span class="hs-identifier hs-var">a</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679140429"><span class="annot"><span class="annottext">c
+</span><a href="#local-6989586621679140429"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679140428"><span class="annot"><span class="annottext">c
+</span><a href="#local-6989586621679140428"><span class="hs-identifier hs-var">c</span></a></span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(c, c, c) -&gt; Maybe (c, c, c)
 forall a. a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Just</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">c
-</span><a href="#local-6989586621679136177"><span class="hs-identifier hs-var">a</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">c
-</span><a href="#local-6989586621679136176"><span class="hs-identifier hs-var">b</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">c
-</span><a href="#local-6989586621679136175"><span class="hs-identifier hs-var">c</span></a></span><span class="hs-special">)</span><span>
-</span><span id="line-198"></span><span>        </span><span class="annot"><a href="#local-6989586621679136181"><span class="hs-identifier hs-var">trip</span></a></span><span> </span><span class="annot"><span class="annottext">[c]
+</span><a href="#local-6989586621679140430"><span class="hs-identifier hs-var">a</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">c
+</span><a href="#local-6989586621679140429"><span class="hs-identifier hs-var">b</span></a></span><span class="hs-special">,</span><span class="annot"><span class="annottext">c
+</span><a href="#local-6989586621679140428"><span class="hs-identifier hs-var">c</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-198"></span><span>        </span><span class="annot"><a href="#local-6989586621679140434"><span class="hs-identifier hs-var">trip</span></a></span><span> </span><span class="annot"><span class="annottext">[c]
 </span><span class="hs-identifier">_</span></span><span>       </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Maybe (c, c, c)
 forall a. Maybe a
 </span><span class="hs-identifier hs-var">Nothing</span></span><span>
@@ -789,102 +789,102 @@ forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">([Value] -&gt; Maybe Face) -&gt; [[Value]] -&gt; [Face]
 forall a b. (a -&gt; Maybe b) -&gt; [a] -&gt; [b]
 </span><span class="hs-identifier hs-var">mapMaybe</span></span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe Face
-</span><a href="#local-6989586621679136174"><span class="hs-identifier hs-var">mkFace</span></a></span><span> </span><span class="annot"><span class="annottext">([[Value]] -&gt; [Face])
+</span><a href="#local-6989586621679140427"><span class="hs-identifier hs-var">mkFace</span></a></span><span> </span><span class="annot"><span class="annottext">([[Value]] -&gt; [Face])
 -&gt; ([Value] -&gt; [[Value]]) -&gt; [Value] -&gt; [Face]
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">FourCC -&gt; [Value] -&gt; [[Value]]
 </span><a href="GoPro.DEVC.html#findAll"><span class="hs-identifier hs-var">findAll</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
 </span><span class="hs-string">&quot;FACE&quot;</span></span><span>
 </span><span id="line-208"></span><span>    </span><span class="hs-keyword">where</span><span>
-</span><span id="line-209"></span><span>      </span><span class="annot"><a href="#local-6989586621679136174"><span class="hs-identifier hs-type">mkFace</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Maybe</span></span><span> </span><span class="annot"><a href="GoPro.DEVC.html#Face"><span class="hs-identifier hs-type">Face</span></a></span><span>
-</span><span id="line-210"></span><span>      </span><span id="local-6989586621679136174"><span class="annot"><span class="annottext">mkFace :: [Value] -&gt; Maybe Face
-</span><a href="#local-6989586621679136174"><span class="hs-identifier hs-var hs-var">mkFace</span></a></span></span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#GComplex"><span class="hs-identifier hs-type">GComplex</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><span class="hs-string">&quot;Lffffff&quot;</span></span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#GUint32"><span class="hs-identifier hs-type">GUint32</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679136172"><span class="annot"><span class="annottext">Word32
-</span><a href="#local-6989586621679136172"><span class="hs-identifier hs-var">fid</span></a></span></span><span class="hs-special">]</span><span class="hs-special">,</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#GFloat"><span class="hs-identifier hs-type">GFloat</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679136171"><span class="annot"><span class="annottext">Float
-</span><a href="#local-6989586621679136171"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">]</span><span class="hs-special">,</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#GFloat"><span class="hs-identifier hs-type">GFloat</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679136170"><span class="annot"><span class="annottext">Float
-</span><a href="#local-6989586621679136170"><span class="hs-identifier hs-var">y</span></a></span></span><span class="hs-special">]</span><span class="hs-special">,</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#GFloat"><span class="hs-identifier hs-type">GFloat</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679136169"><span class="annot"><span class="annottext">Float
-</span><a href="#local-6989586621679136169"><span class="hs-identifier hs-var">w</span></a></span></span><span class="hs-special">]</span><span class="hs-special">,</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#GFloat"><span class="hs-identifier hs-type">GFloat</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679136168"><span class="annot"><span class="annottext">Float
-</span><a href="#local-6989586621679136168"><span class="hs-identifier hs-var">h</span></a></span></span><span class="hs-special">]</span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Value
-</span><span class="hs-identifier">_</span></span><span class="hs-special">,</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#GFloat"><span class="hs-identifier hs-type">GFloat</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679136167"><span class="annot"><span class="annottext">Float
-</span><a href="#local-6989586621679136167"><span class="hs-identifier hs-var">s</span></a></span></span><span class="hs-special">]</span><span class="hs-special">]</span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span>
+</span><span id="line-209"></span><span>      </span><span class="annot"><a href="#local-6989586621679140427"><span class="hs-identifier hs-type">mkFace</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Maybe</span></span><span> </span><span class="annot"><a href="GoPro.DEVC.html#Face"><span class="hs-identifier hs-type">Face</span></a></span><span>
+</span><span id="line-210"></span><span>      </span><span id="local-6989586621679140427"><span class="annot"><span class="annottext">mkFace :: [Value] -&gt; Maybe Face
+</span><a href="#local-6989586621679140427"><span class="hs-identifier hs-var hs-var">mkFace</span></a></span></span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#GComplex"><span class="hs-identifier hs-type">GComplex</span></a></span><span> </span><span class="annot"><span class="annottext">String
+</span><span class="hs-string">&quot;Lffffff&quot;</span></span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#GUint32"><span class="hs-identifier hs-type">GUint32</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679140425"><span class="annot"><span class="annottext">Word32
+</span><a href="#local-6989586621679140425"><span class="hs-identifier hs-var">fid</span></a></span></span><span class="hs-special">]</span><span class="hs-special">,</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#GFloat"><span class="hs-identifier hs-type">GFloat</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679140424"><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679140424"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">]</span><span class="hs-special">,</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#GFloat"><span class="hs-identifier hs-type">GFloat</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679140423"><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679140423"><span class="hs-identifier hs-var">y</span></a></span></span><span class="hs-special">]</span><span class="hs-special">,</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#GFloat"><span class="hs-identifier hs-type">GFloat</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679140422"><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679140422"><span class="hs-identifier hs-var">w</span></a></span></span><span class="hs-special">]</span><span class="hs-special">,</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#GFloat"><span class="hs-identifier hs-type">GFloat</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679140421"><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679140421"><span class="hs-identifier hs-var">h</span></a></span></span><span class="hs-special">]</span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Value
+</span><span class="hs-identifier">_</span></span><span class="hs-special">,</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#GFloat"><span class="hs-identifier hs-type">GFloat</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679140420"><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679140420"><span class="hs-identifier hs-var">s</span></a></span></span><span class="hs-special">]</span><span class="hs-special">]</span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-211"></span><span>        </span><span class="annot"><span class="annottext">Face -&gt; Maybe Face
 forall a. a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Just</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int -&gt; Float -&gt; Float -&gt; Float -&gt; Float -&gt; Float -&gt; Face
 </span><a href="GoPro.DEVC.html#Face"><span class="hs-identifier hs-var">Face</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Word32 -&gt; Int
 forall a b. (Integral a, Num b) =&gt; a -&gt; b
 </span><span class="hs-identifier hs-var">fromIntegral</span></span><span> </span><span class="annot"><span class="annottext">Word32
-</span><a href="#local-6989586621679136172"><span class="hs-identifier hs-var">fid</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Float
-</span><a href="#local-6989586621679136171"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">Float
-</span><a href="#local-6989586621679136170"><span class="hs-identifier hs-var">y</span></a></span><span> </span><span class="annot"><span class="annottext">Float
-</span><a href="#local-6989586621679136169"><span class="hs-identifier hs-var">w</span></a></span><span> </span><span class="annot"><span class="annottext">Float
-</span><a href="#local-6989586621679136168"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">Float
-</span><a href="#local-6989586621679136167"><span class="hs-identifier hs-var">s</span></a></span><span class="hs-special">)</span><span>
-</span><span id="line-212"></span><span>      </span><span class="annot"><a href="#local-6989586621679136174"><span class="hs-identifier hs-var">mkFace</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#GComplex"><span class="hs-identifier hs-type">GComplex</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><span class="hs-string">&quot;Lffff&quot;</span></span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#GUint32"><span class="hs-identifier hs-type">GUint32</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679136166"><span class="annot"><span class="annottext">Word32
-</span><a href="#local-6989586621679136166"><span class="hs-identifier hs-var">fid</span></a></span></span><span class="hs-special">]</span><span class="hs-special">,</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#GFloat"><span class="hs-identifier hs-type">GFloat</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679136165"><span class="annot"><span class="annottext">Float
-</span><a href="#local-6989586621679136165"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">]</span><span class="hs-special">,</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#GFloat"><span class="hs-identifier hs-type">GFloat</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679136164"><span class="annot"><span class="annottext">Float
-</span><a href="#local-6989586621679136164"><span class="hs-identifier hs-var">y</span></a></span></span><span class="hs-special">]</span><span class="hs-special">,</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#GFloat"><span class="hs-identifier hs-type">GFloat</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679136163"><span class="annot"><span class="annottext">Float
-</span><a href="#local-6989586621679136163"><span class="hs-identifier hs-var">w</span></a></span></span><span class="hs-special">]</span><span class="hs-special">,</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#GFloat"><span class="hs-identifier hs-type">GFloat</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679136162"><span class="annot"><span class="annottext">Float
-</span><a href="#local-6989586621679136162"><span class="hs-identifier hs-var">h</span></a></span></span><span class="hs-special">]</span><span class="hs-special">]</span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span>
+</span><a href="#local-6989586621679140425"><span class="hs-identifier hs-var">fid</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679140424"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679140423"><span class="hs-identifier hs-var">y</span></a></span><span> </span><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679140422"><span class="hs-identifier hs-var">w</span></a></span><span> </span><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679140421"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679140420"><span class="hs-identifier hs-var">s</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-212"></span><span>      </span><span class="annot"><a href="#local-6989586621679140427"><span class="hs-identifier hs-var">mkFace</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#GComplex"><span class="hs-identifier hs-type">GComplex</span></a></span><span> </span><span class="annot"><span class="annottext">String
+</span><span class="hs-string">&quot;Lffff&quot;</span></span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#GUint32"><span class="hs-identifier hs-type">GUint32</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679140419"><span class="annot"><span class="annottext">Word32
+</span><a href="#local-6989586621679140419"><span class="hs-identifier hs-var">fid</span></a></span></span><span class="hs-special">]</span><span class="hs-special">,</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#GFloat"><span class="hs-identifier hs-type">GFloat</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679140418"><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679140418"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">]</span><span class="hs-special">,</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#GFloat"><span class="hs-identifier hs-type">GFloat</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679140417"><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679140417"><span class="hs-identifier hs-var">y</span></a></span></span><span class="hs-special">]</span><span class="hs-special">,</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#GFloat"><span class="hs-identifier hs-type">GFloat</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679140416"><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679140416"><span class="hs-identifier hs-var">w</span></a></span></span><span class="hs-special">]</span><span class="hs-special">,</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#GFloat"><span class="hs-identifier hs-type">GFloat</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679140415"><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679140415"><span class="hs-identifier hs-var">h</span></a></span></span><span class="hs-special">]</span><span class="hs-special">]</span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-213"></span><span>        </span><span class="annot"><span class="annottext">Face -&gt; Maybe Face
 forall a. a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Just</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int -&gt; Float -&gt; Float -&gt; Float -&gt; Float -&gt; Float -&gt; Face
 </span><a href="GoPro.DEVC.html#Face"><span class="hs-identifier hs-var">Face</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Word32 -&gt; Int
 forall a b. (Integral a, Num b) =&gt; a -&gt; b
 </span><span class="hs-identifier hs-var">fromIntegral</span></span><span> </span><span class="annot"><span class="annottext">Word32
-</span><a href="#local-6989586621679136166"><span class="hs-identifier hs-var">fid</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Float
-</span><a href="#local-6989586621679136165"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">Float
-</span><a href="#local-6989586621679136164"><span class="hs-identifier hs-var">y</span></a></span><span> </span><span class="annot"><span class="annottext">Float
-</span><a href="#local-6989586621679136163"><span class="hs-identifier hs-var">w</span></a></span><span> </span><span class="annot"><span class="annottext">Float
-</span><a href="#local-6989586621679136162"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679140419"><span class="hs-identifier hs-var">fid</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679140418"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679140417"><span class="hs-identifier hs-var">y</span></a></span><span> </span><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679140416"><span class="hs-identifier hs-var">w</span></a></span><span> </span><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679140415"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">Float
 </span><span class="hs-number">0</span></span><span class="hs-special">)</span><span>
-</span><span id="line-214"></span><span>      </span><span class="annot"><a href="#local-6989586621679136174"><span class="hs-identifier hs-var">mkFace</span></a></span><span> </span><span class="annot"><span class="annottext">[Value]
+</span><span id="line-214"></span><span>      </span><span class="annot"><a href="#local-6989586621679140427"><span class="hs-identifier hs-var">mkFace</span></a></span><span> </span><span class="annot"><span class="annottext">[Value]
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Maybe Face
 forall a. Maybe a
 </span><span class="hs-identifier hs-var">Nothing</span></span><span>
 </span><span id="line-215"></span><span>
 </span><span id="line-216"></span><span class="annot"><a href="GoPro.DEVC.html#grokGPS"><span class="hs-identifier hs-type">grokGPS</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Maybe</span></span><span> </span><span class="annot"><a href="GoPro.DEVC.html#GPS"><span class="hs-identifier hs-type">GPS</span></a></span><span>
 </span><span id="line-217"></span><span id="grokGPS"><span class="annot"><span class="annottext">grokGPS :: [Value] -&gt; Maybe GPS
-</span><a href="GoPro.DEVC.html#grokGPS"><span class="hs-identifier hs-var hs-var">grokGPS</span></a></span></span><span> </span><span id="local-6989586621679136161"><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679136161"><span class="hs-identifier hs-var">vals</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-218"></span><span>  </span><span class="annot"><a href="GoPro.GPMF.html#GUint16"><span class="hs-identifier hs-type">GUint16</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679136159"><span class="annot"><span class="annottext">Word16
-</span><a href="#local-6989586621679136159"><span class="hs-identifier hs-var">gpsp</span></a></span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe Value
+</span><a href="GoPro.DEVC.html#grokGPS"><span class="hs-identifier hs-var hs-var">grokGPS</span></a></span></span><span> </span><span id="local-6989586621679140414"><span class="annot"><span class="annottext">[Value]
+</span><a href="#local-6989586621679140414"><span class="hs-identifier hs-var">vals</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-218"></span><span>  </span><span class="annot"><a href="GoPro.GPMF.html#GUint16"><span class="hs-identifier hs-type">GUint16</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679140412"><span class="annot"><span class="annottext">Word16
+</span><a href="#local-6989586621679140412"><span class="hs-identifier hs-var">gpsp</span></a></span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe Value
 forall a. [a] -&gt; Maybe a
 </span><span class="hs-identifier hs-var">listToMaybe</span></span><span> </span><span class="annot"><span class="annottext">([Value] -&gt; Maybe Value) -&gt; Maybe [Value] -&gt; Maybe Value
 forall (m :: * -&gt; *) a b. Monad m =&gt; (a -&gt; m b) -&gt; m a -&gt; m b
 </span><span class="hs-operator hs-var">=&lt;&lt;</span></span><span> </span><span class="annot"><span class="annottext">FourCC -&gt; [Value] -&gt; Maybe [Value]
 </span><a href="GoPro.DEVC.html#findVal"><span class="hs-identifier hs-var">findVal</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
 </span><span class="hs-string">&quot;GPSP&quot;</span></span><span> </span><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679136161"><span class="hs-identifier hs-var">vals</span></a></span><span>
-</span><span id="line-219"></span><span>  </span><span class="annot"><a href="GoPro.GPMF.html#GTimestamp"><span class="hs-identifier hs-type">GTimestamp</span></a></span><span> </span><span id="local-6989586621679136157"><span class="annot"><span class="annottext">UTCTime
-</span><a href="#local-6989586621679136157"><span class="hs-identifier hs-var">time</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe Value
+</span><a href="#local-6989586621679140414"><span class="hs-identifier hs-var">vals</span></a></span><span>
+</span><span id="line-219"></span><span>  </span><span class="annot"><a href="GoPro.GPMF.html#GTimestamp"><span class="hs-identifier hs-type">GTimestamp</span></a></span><span> </span><span id="local-6989586621679140410"><span class="annot"><span class="annottext">UTCTime
+</span><a href="#local-6989586621679140410"><span class="hs-identifier hs-var">time</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Maybe Value
 forall a. [a] -&gt; Maybe a
 </span><span class="hs-identifier hs-var">listToMaybe</span></span><span> </span><span class="annot"><span class="annottext">([Value] -&gt; Maybe Value) -&gt; Maybe [Value] -&gt; Maybe Value
 forall (m :: * -&gt; *) a b. Monad m =&gt; (a -&gt; m b) -&gt; m a -&gt; m b
 </span><span class="hs-operator hs-var">=&lt;&lt;</span></span><span> </span><span class="annot"><span class="annottext">FourCC -&gt; [Value] -&gt; Maybe [Value]
 </span><a href="GoPro.DEVC.html#findVal"><span class="hs-identifier hs-var">findVal</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
 </span><span class="hs-string">&quot;GPSU&quot;</span></span><span> </span><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679136161"><span class="hs-identifier hs-var">vals</span></a></span><span>
-</span><span id="line-220"></span><span>  </span><span id="local-6989586621679136156"><span class="annot"><span class="annottext">[Double]
-</span><a href="#local-6989586621679136156"><span class="hs-identifier hs-var">scals</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">(Value -&gt; Double) -&gt; [Value] -&gt; [Double]
+</span><a href="#local-6989586621679140414"><span class="hs-identifier hs-var">vals</span></a></span><span>
+</span><span id="line-220"></span><span>  </span><span id="local-6989586621679140409"><span class="annot"><span class="annottext">[Double]
+</span><a href="#local-6989586621679140409"><span class="hs-identifier hs-var">scals</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">(Value -&gt; Double) -&gt; [Value] -&gt; [Double]
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
-</span><span class="hs-identifier hs-var">fmap</span></span><span> </span><span class="hs-special">(</span><span class="hs-glyph">\</span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GInt32"><span class="hs-identifier hs-type">GInt32</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679136154"><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621679136154"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">]</span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Int32 -&gt; Double
+</span><span class="hs-identifier hs-var">fmap</span></span><span> </span><span class="hs-special">(</span><span class="hs-glyph">\</span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GInt32"><span class="hs-identifier hs-type">GInt32</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679140407"><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621679140407"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">]</span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Int32 -&gt; Double
 forall a b. (Real a, Fractional b) =&gt; a -&gt; b
 </span><span class="hs-identifier hs-var">realToFrac</span></span><span> </span><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621679136154"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">([Value] -&gt; [Double]) -&gt; Maybe [Value] -&gt; Maybe [Double]
+</span><a href="#local-6989586621679140407"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">([Value] -&gt; [Double]) -&gt; Maybe [Value] -&gt; Maybe [Double]
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-operator hs-var">&lt;$&gt;</span></span><span> </span><span class="annot"><span class="annottext">FourCC -&gt; [Value] -&gt; Maybe [Value]
 </span><a href="GoPro.DEVC.html#findVal"><span class="hs-identifier hs-var">findVal</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
 </span><span class="hs-string">&quot;SCAL&quot;</span></span><span> </span><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679136161"><span class="hs-identifier hs-var">vals</span></a></span><span>
-</span><span id="line-221"></span><span>  </span><span id="local-6989586621679136153"><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679136153"><span class="hs-identifier hs-var">g5s</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FourCC -&gt; [Value] -&gt; Maybe [Value]
+</span><a href="#local-6989586621679140414"><span class="hs-identifier hs-var">vals</span></a></span><span>
+</span><span id="line-221"></span><span>  </span><span id="local-6989586621679140406"><span class="annot"><span class="annottext">[Value]
+</span><a href="#local-6989586621679140406"><span class="hs-identifier hs-var">g5s</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">FourCC -&gt; [Value] -&gt; Maybe [Value]
 </span><a href="GoPro.DEVC.html#findVal"><span class="hs-identifier hs-var">findVal</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
 </span><span class="hs-string">&quot;GPS5&quot;</span></span><span> </span><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679136161"><span class="hs-identifier hs-var">vals</span></a></span><span>
-</span><span id="line-222"></span><span>  </span><span id="local-6989586621679136152"><span class="annot"><span class="annottext">[GPSReading]
-</span><a href="#local-6989586621679136152"><span class="hs-identifier hs-var">rs</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">[[GPSReading]] -&gt; [GPSReading]
+</span><a href="#local-6989586621679140414"><span class="hs-identifier hs-var">vals</span></a></span><span>
+</span><span id="line-222"></span><span>  </span><span id="local-6989586621679140405"><span class="annot"><span class="annottext">[GPSReading]
+</span><a href="#local-6989586621679140405"><span class="hs-identifier hs-var">rs</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">[[GPSReading]] -&gt; [GPSReading]
 forall a. Monoid a =&gt; [a] -&gt; a
 </span><span class="hs-identifier hs-var">mconcat</span></span><span> </span><span class="annot"><span class="annottext">([[GPSReading]] -&gt; [GPSReading])
 -&gt; Maybe [[GPSReading]] -&gt; Maybe [GPSReading]
@@ -894,9 +894,9 @@ forall (t :: * -&gt; *) (f :: * -&gt; *) a b.
 (Traversable t, Applicative f) =&gt;
 (a -&gt; f b) -&gt; t a -&gt; f (t b)
 </span><span class="hs-identifier hs-var">traverse</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[Double] -&gt; Value -&gt; Maybe [GPSReading]
-</span><a href="#local-6989586621679136151"><span class="hs-identifier hs-var">readings</span></a></span><span> </span><span class="annot"><span class="annottext">[Double]
-</span><a href="#local-6989586621679136156"><span class="hs-identifier hs-var">scals</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679136153"><span class="hs-identifier hs-var">g5s</span></a></span><span>
+</span><a href="#local-6989586621679140404"><span class="hs-identifier hs-var">readings</span></a></span><span> </span><span class="annot"><span class="annottext">[Double]
+</span><a href="#local-6989586621679140409"><span class="hs-identifier hs-var">scals</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[Value]
+</span><a href="#local-6989586621679140406"><span class="hs-identifier hs-var">g5s</span></a></span><span>
 </span><span id="line-223"></span><span>
 </span><span id="line-224"></span><span>  </span><span class="annot"><span class="annottext">GPS -&gt; Maybe GPS
 forall (f :: * -&gt; *) a. Applicative f =&gt; a -&gt; f a
@@ -906,33 +906,33 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="GoPro.DEVC.html#GPS"><span class="hs-identifier hs-var">GPS</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Word16 -&gt; Int
 forall a b. (Integral a, Num b) =&gt; a -&gt; b
 </span><span class="hs-identifier hs-var">fromIntegral</span></span><span> </span><span class="annot"><span class="annottext">Word16
-</span><a href="#local-6989586621679136159"><span class="hs-identifier hs-var">gpsp</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">UTCTime
-</span><a href="#local-6989586621679136157"><span class="hs-identifier hs-var">time</span></a></span><span> </span><span class="annot"><span class="annottext">[GPSReading]
-</span><a href="#local-6989586621679136152"><span class="hs-identifier hs-var">rs</span></a></span><span>
+</span><a href="#local-6989586621679140412"><span class="hs-identifier hs-var">gpsp</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">UTCTime
+</span><a href="#local-6989586621679140410"><span class="hs-identifier hs-var">time</span></a></span><span> </span><span class="annot"><span class="annottext">[GPSReading]
+</span><a href="#local-6989586621679140405"><span class="hs-identifier hs-var">rs</span></a></span><span>
 </span><span id="line-225"></span><span>
 </span><span id="line-226"></span><span>  </span><span class="hs-keyword">where</span><span>
-</span><span id="line-227"></span><span>    </span><span id="local-6989586621679136151"><span class="annot"><span class="annottext">readings :: [Double] -&gt; Value -&gt; Maybe [GPSReading]
-</span><a href="#local-6989586621679136151"><span class="hs-identifier hs-var hs-var">readings</span></a></span></span><span> </span><span id="local-6989586621679136150"><span class="annot"><span class="annottext">[Double]
-</span><a href="#local-6989586621679136150"><span class="hs-identifier hs-var">scals</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GInt32"><span class="hs-identifier hs-type">GInt32</span></a></span><span> </span><span id="local-6989586621679136149"><span class="annot"><span class="annottext">[Int32]
-</span><a href="#local-6989586621679136149"><span class="hs-identifier hs-var">ns</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">(Double -&gt; Int32 -&gt; Double) -&gt; [Double] -&gt; [Int32] -&gt; [Double]
+</span><span id="line-227"></span><span>    </span><span id="local-6989586621679140404"><span class="annot"><span class="annottext">readings :: [Double] -&gt; Value -&gt; Maybe [GPSReading]
+</span><a href="#local-6989586621679140404"><span class="hs-identifier hs-var hs-var">readings</span></a></span></span><span> </span><span id="local-6989586621679140400"><span class="annot"><span class="annottext">[Double]
+</span><a href="#local-6989586621679140400"><span class="hs-identifier hs-var">scals</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GInt32"><span class="hs-identifier hs-type">GInt32</span></a></span><span> </span><span id="local-6989586621679140399"><span class="annot"><span class="annottext">[Int32]
+</span><a href="#local-6989586621679140399"><span class="hs-identifier hs-var">ns</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">(Double -&gt; Int32 -&gt; Double) -&gt; [Double] -&gt; [Int32] -&gt; [Double]
 forall a b c. (a -&gt; b -&gt; c) -&gt; [a] -&gt; [b] -&gt; [c]
-</span><span class="hs-identifier hs-var">zipWith</span></span><span> </span><span class="hs-special">(</span><span class="hs-glyph">\</span><span id="local-6989586621679136147"><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679136147"><span class="hs-identifier hs-var">s</span></a></span></span><span> </span><span id="local-6989586621679136146"><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621679136146"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Int32 -&gt; Double
+</span><span class="hs-identifier hs-var">zipWith</span></span><span> </span><span class="hs-special">(</span><span class="hs-glyph">\</span><span id="local-6989586621679140397"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679140397"><span class="hs-identifier hs-var">s</span></a></span></span><span> </span><span id="local-6989586621679140396"><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621679140396"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Int32 -&gt; Double
 forall a b. (Real a, Fractional b) =&gt; a -&gt; b
 </span><span class="hs-identifier hs-var">realToFrac</span></span><span> </span><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621679136146"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Double
+</span><a href="#local-6989586621679140396"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">Double -&gt; Double -&gt; Double
 forall a. Fractional a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">/</span></span><span> </span><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679136147"><span class="hs-identifier hs-var">s</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[Double]
-</span><a href="#local-6989586621679136150"><span class="hs-identifier hs-var">scals</span></a></span><span> </span><span class="annot"><span class="annottext">[Int32]
-</span><a href="#local-6989586621679136149"><span class="hs-identifier hs-var">ns</span></a></span><span> </span><span class="hs-keyword">of</span><span>
-</span><span id="line-228"></span><span>                                   </span><span class="hs-special">[</span><span id="local-6989586621679136145"><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679136145"><span class="hs-identifier hs-var">_gpsr_lat</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679136144"><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679136144"><span class="hs-identifier hs-var">_gpsr_lon</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679136143"><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679136143"><span class="hs-identifier hs-var">_gpsr_alt</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679136142"><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679136142"><span class="hs-identifier hs-var">_gpsr_speed2d</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679136141"><span class="annot"><span class="annottext">Double
-</span><a href="#local-6989586621679136141"><span class="hs-identifier hs-var">_gpsr_speed3d</span></a></span></span><span class="hs-special">]</span><span>
+</span><a href="#local-6989586621679140397"><span class="hs-identifier hs-var">s</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[Double]
+</span><a href="#local-6989586621679140400"><span class="hs-identifier hs-var">scals</span></a></span><span> </span><span class="annot"><span class="annottext">[Int32]
+</span><a href="#local-6989586621679140399"><span class="hs-identifier hs-var">ns</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><span id="line-228"></span><span>                                   </span><span class="hs-special">[</span><span id="local-6989586621679140395"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679140395"><span class="hs-identifier hs-var">_gpsr_lat</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679140394"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679140394"><span class="hs-identifier hs-var">_gpsr_lon</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679140393"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679140393"><span class="hs-identifier hs-var">_gpsr_alt</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679140392"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679140392"><span class="hs-identifier hs-var">_gpsr_speed2d</span></a></span></span><span class="hs-special">,</span><span id="local-6989586621679140391"><span class="annot"><span class="annottext">Double
+</span><a href="#local-6989586621679140391"><span class="hs-identifier hs-var">_gpsr_speed3d</span></a></span></span><span class="hs-special">]</span><span>
 </span><span id="line-229"></span><span>                                     </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">[GPSReading] -&gt; Maybe [GPSReading]
 forall a. a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Just</span></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">GPSReading :: Double -&gt; Double -&gt; Double -&gt; Double -&gt; Double -&gt; GPSReading
@@ -947,12 +947,12 @@ _gpsr_speed2d :: Double
 _gpsr_alt :: Double
 _gpsr_lon :: Double
 _gpsr_lat :: Double
-</span><a href="#local-6989586621679136141"><span class="hs-glyph hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">..</span></a></span><span class="hs-special">}</span><span class="hs-special">]</span><span>
+</span><a href="#local-6989586621679140391"><span class="hs-glyph hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">..</span></a></span><span class="hs-special">}</span><span class="hs-special">]</span><span>
 </span><span id="line-230"></span><span>                                   </span><span class="annot"><span class="annottext">[Double]
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Maybe [GPSReading]
 forall a. Maybe a
 </span><span class="hs-identifier hs-var">Nothing</span></span><span>
-</span><span id="line-231"></span><span>    </span><span class="annot"><a href="#local-6989586621679136151"><span class="hs-identifier hs-var">readings</span></a></span><span> </span><span class="annot"><span class="annottext">[Double]
+</span><span id="line-231"></span><span>    </span><span class="annot"><a href="#local-6989586621679140404"><span class="hs-identifier hs-var">readings</span></a></span><span> </span><span class="annot"><span class="annottext">[Double]
 </span><span class="hs-identifier">_</span></span><span> </span><span class="annot"><span class="annottext">Value
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Maybe [GPSReading]
 forall a. Maybe a
@@ -960,23 +960,23 @@ forall a. Maybe a
 </span><span id="line-232"></span><span>
 </span><span id="line-233"></span><span class="annot"><a href="GoPro.DEVC.html#grokAudioLevel"><span class="hs-identifier hs-type">grokAudioLevel</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Maybe</span></span><span> </span><span class="annot"><a href="GoPro.DEVC.html#AudioLevel"><span class="hs-identifier hs-type">AudioLevel</span></a></span><span>
 </span><span id="line-234"></span><span id="grokAudioLevel"><span class="annot"><span class="annottext">grokAudioLevel :: [Value] -&gt; Maybe AudioLevel
-</span><a href="GoPro.DEVC.html#grokAudioLevel"><span class="hs-identifier hs-var hs-var">grokAudioLevel</span></a></span></span><span> </span><span id="local-6989586621679136140"><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679136140"><span class="hs-identifier hs-var">vals</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-235"></span><span>  </span><span id="local-6989586621679136139"><span class="annot"><span class="annottext">[[Int]]
-</span><a href="#local-6989586621679136139"><span class="hs-identifier hs-var">alps</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">[[Int]] -&gt; [[Int]]
+</span><a href="GoPro.DEVC.html#grokAudioLevel"><span class="hs-identifier hs-var hs-var">grokAudioLevel</span></a></span></span><span> </span><span id="local-6989586621679140390"><span class="annot"><span class="annottext">[Value]
+</span><a href="#local-6989586621679140390"><span class="hs-identifier hs-var">vals</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-235"></span><span>  </span><span id="local-6989586621679140389"><span class="annot"><span class="annottext">[[Int]]
+</span><a href="#local-6989586621679140389"><span class="hs-identifier hs-var">alps</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">[[Int]] -&gt; [[Int]]
 forall a. [[a]] -&gt; [[a]]
 </span><span class="hs-identifier hs-var">transpose</span></span><span> </span><span class="annot"><span class="annottext">([[Int]] -&gt; [[Int]]) -&gt; ([Value] -&gt; [[Int]]) -&gt; [Value] -&gt; [[Int]]
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">(Value -&gt; Maybe [Int]) -&gt; [Value] -&gt; [[Int]]
 forall a b. (a -&gt; Maybe b) -&gt; [a] -&gt; [b]
 </span><span class="hs-identifier hs-var">mapMaybe</span></span><span> </span><span class="annot"><span class="annottext">Value -&gt; Maybe [Int]
-forall b. Num b =&gt; Value -&gt; Maybe [b]
-</span><a href="#local-6989586621679136138"><span class="hs-identifier hs-var">de</span></a></span><span> </span><span class="annot"><span class="annottext">([Value] -&gt; [[Int]]) -&gt; Maybe [Value] -&gt; Maybe [[Int]]
+forall {b}. Num b =&gt; Value -&gt; Maybe [b]
+</span><a href="#local-6989586621679140388"><span class="hs-identifier hs-var">de</span></a></span><span> </span><span class="annot"><span class="annottext">([Value] -&gt; [[Int]]) -&gt; Maybe [Value] -&gt; Maybe [[Int]]
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-operator hs-var">&lt;$&gt;</span></span><span> </span><span class="annot"><span class="annottext">FourCC -&gt; [Value] -&gt; Maybe [Value]
 </span><a href="GoPro.DEVC.html#findVal"><span class="hs-identifier hs-var">findVal</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
 </span><span class="hs-string">&quot;AALP&quot;</span></span><span> </span><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679136140"><span class="hs-identifier hs-var">vals</span></a></span><span>
+</span><a href="#local-6989586621679140390"><span class="hs-identifier hs-var">vals</span></a></span><span>
 </span><span id="line-236"></span><span>  </span><span class="annot"><span class="annottext">Bool -&gt; Maybe ()
 forall (f :: * -&gt; *). Alternative f =&gt; Bool -&gt; f ()
 </span><span class="hs-identifier hs-var">guard</span></span><span> </span><span class="annot"><span class="annottext">(Bool -&gt; Maybe ()) -&gt; Bool -&gt; Maybe ()
@@ -984,7 +984,7 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">[[Int]] -&gt; Int
 forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Int
 </span><span class="hs-identifier hs-var">length</span></span><span> </span><span class="annot"><span class="annottext">[[Int]]
-</span><a href="#local-6989586621679136139"><span class="hs-identifier hs-var">alps</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Bool
+</span><a href="#local-6989586621679140389"><span class="hs-identifier hs-var">alps</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Bool
 forall a. Eq a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">==</span></span><span> </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">2</span></span><span>
@@ -994,18 +994,18 @@ forall (f :: * -&gt; *) a. Applicative f =&gt; a -&gt; f a
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">[Int] -&gt; [Int] -&gt; AudioLevel
 </span><a href="GoPro.DEVC.html#AudioLevel"><span class="hs-identifier hs-var">AudioLevel</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[[Int]]
-</span><a href="#local-6989586621679136139"><span class="hs-identifier hs-var">alps</span></a></span><span> </span><span class="annot"><span class="annottext">[[Int]] -&gt; Int -&gt; [Int]
+</span><a href="#local-6989586621679140389"><span class="hs-identifier hs-var">alps</span></a></span><span> </span><span class="annot"><span class="annottext">[[Int]] -&gt; Int -&gt; [Int]
 forall a. [a] -&gt; Int -&gt; a
 </span><span class="hs-operator hs-var">!!</span></span><span> </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">0</span></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[[Int]]
-</span><a href="#local-6989586621679136139"><span class="hs-identifier hs-var">alps</span></a></span><span> </span><span class="annot"><span class="annottext">[[Int]] -&gt; Int -&gt; [Int]
+</span><a href="#local-6989586621679140389"><span class="hs-identifier hs-var">alps</span></a></span><span> </span><span class="annot"><span class="annottext">[[Int]] -&gt; Int -&gt; [Int]
 forall a. [a] -&gt; Int -&gt; a
 </span><span class="hs-operator hs-var">!!</span></span><span> </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">1</span></span><span class="hs-special">)</span><span>
 </span><span id="line-238"></span><span>
-</span><span id="line-239"></span><span>  </span><span class="hs-keyword">where</span><span> </span><span id="local-6989586621679136138"><span class="annot"><span class="annottext">de :: Value -&gt; Maybe [b]
-</span><a href="#local-6989586621679136138"><span class="hs-identifier hs-var hs-var">de</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GInt8"><span class="hs-identifier hs-type">GInt8</span></a></span><span> </span><span id="local-6989586621679136134"><span class="annot"><span class="annottext">[Int8]
-</span><a href="#local-6989586621679136134"><span class="hs-identifier hs-var">xs</span></a></span></span><span class="hs-special">)</span><span>      </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[b] -&gt; Maybe [b]
+</span><span id="line-239"></span><span>  </span><span class="hs-keyword">where</span><span> </span><span id="local-6989586621679140388"><span class="annot"><span class="annottext">de :: Value -&gt; Maybe [b]
+</span><a href="#local-6989586621679140388"><span class="hs-identifier hs-var hs-var">de</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GInt8"><span class="hs-identifier hs-type">GInt8</span></a></span><span> </span><span id="local-6989586621679140377"><span class="annot"><span class="annottext">[Int8]
+</span><a href="#local-6989586621679140377"><span class="hs-identifier hs-var">xs</span></a></span></span><span class="hs-special">)</span><span>      </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[b] -&gt; Maybe [b]
 forall a. a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Just</span></span><span> </span><span class="annot"><span class="annottext">([b] -&gt; Maybe [b]) -&gt; [b] -&gt; Maybe [b]
 forall a b. (a -&gt; b) -&gt; a -&gt; b
@@ -1014,10 +1014,10 @@ forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-identifier hs-var">fmap</span></span><span> </span><span class="annot"><span class="annottext">Int8 -&gt; b
 forall a b. (Integral a, Num b) =&gt; a -&gt; b
 </span><span class="hs-identifier hs-var">fromIntegral</span></span><span> </span><span class="annot"><span class="annottext">[Int8]
-</span><a href="#local-6989586621679136134"><span class="hs-identifier hs-var">xs</span></a></span><span>
-</span><span id="line-240"></span><span>        </span><span class="annot"><a href="#local-6989586621679136138"><span class="hs-identifier hs-var">de</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GComplex"><span class="hs-identifier hs-type">GComplex</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><span class="hs-identifier">_</span></span><span> </span><span id="local-6989586621679136133"><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679136133"><span class="hs-identifier hs-var">xs</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[b] -&gt; Maybe [b]
+</span><a href="#local-6989586621679140377"><span class="hs-identifier hs-var">xs</span></a></span><span>
+</span><span id="line-240"></span><span>        </span><span class="annot"><a href="#local-6989586621679140388"><span class="hs-identifier hs-var">de</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GComplex"><span class="hs-identifier hs-type">GComplex</span></a></span><span> </span><span class="annot"><span class="annottext">String
+</span><span class="hs-identifier">_</span></span><span> </span><span id="local-6989586621679140376"><span class="annot"><span class="annottext">[Value]
+</span><a href="#local-6989586621679140376"><span class="hs-identifier hs-var">xs</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[b] -&gt; Maybe [b]
 forall a. a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Just</span></span><span> </span><span class="annot"><span class="annottext">([b] -&gt; Maybe [b]) -&gt; ([Value] -&gt; [b]) -&gt; [Value] -&gt; Maybe [b]
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
@@ -1028,11 +1028,11 @@ forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">(Value -&gt; Maybe [b]) -&gt; [Value] -&gt; [[b]]
 forall a b. (a -&gt; Maybe b) -&gt; [a] -&gt; [b]
 </span><span class="hs-identifier hs-var">mapMaybe</span></span><span> </span><span class="annot"><span class="annottext">Value -&gt; Maybe [b]
-</span><a href="#local-6989586621679136138"><span class="hs-identifier hs-var">de</span></a></span><span> </span><span class="annot"><span class="annottext">([Value] -&gt; Maybe [b]) -&gt; [Value] -&gt; Maybe [b]
+</span><a href="#local-6989586621679140388"><span class="hs-identifier hs-var">de</span></a></span><span> </span><span class="annot"><span class="annottext">([Value] -&gt; Maybe [b]) -&gt; [Value] -&gt; Maybe [b]
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">[Value]
-</span><a href="#local-6989586621679136133"><span class="hs-identifier hs-var">xs</span></a></span><span>
-</span><span id="line-241"></span><span>        </span><span class="annot"><a href="#local-6989586621679136138"><span class="hs-identifier hs-var">de</span></a></span><span> </span><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679140376"><span class="hs-identifier hs-var">xs</span></a></span><span>
+</span><span id="line-241"></span><span>        </span><span class="annot"><a href="#local-6989586621679140388"><span class="hs-identifier hs-var">de</span></a></span><span> </span><span class="annot"><span class="annottext">Value
 </span><span class="hs-identifier">_</span></span><span>               </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Maybe [b]
 forall a. Maybe a
 </span><span class="hs-identifier hs-var">Nothing</span></span><span>
@@ -1050,16 +1050,16 @@ forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 -&gt; [[Value]] -&gt; [Map Location Float]
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-identifier hs-var">fmap</span></span><span> </span><span class="annot"><span class="annottext">[Value] -&gt; Map Location Float
-</span><a href="#local-6989586621679136132"><span class="hs-identifier hs-var">mkScene</span></a></span><span> </span><span class="annot"><span class="annottext">([[Value]] -&gt; [Map Location Float])
+</span><a href="#local-6989586621679140375"><span class="hs-identifier hs-var">mkScene</span></a></span><span> </span><span class="annot"><span class="annottext">([[Value]] -&gt; [Map Location Float])
 -&gt; ([Value] -&gt; [[Value]]) -&gt; [Value] -&gt; [Map Location Float]
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">FourCC -&gt; [Value] -&gt; [[Value]]
 </span><a href="GoPro.DEVC.html#findAll"><span class="hs-identifier hs-var">findAll</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
 </span><span class="hs-string">&quot;SCEN&quot;</span></span><span>
 </span><span id="line-245"></span><span>  </span><span class="hs-keyword">where</span><span>
-</span><span id="line-246"></span><span>    </span><span class="annot"><a href="#local-6989586621679136132"><span class="hs-identifier hs-type">mkScene</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Map</span></span><span> </span><span class="annot"><a href="GoPro.DEVC.html#Location"><span class="hs-identifier hs-type">Location</span></a></span><span> </span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span>
-</span><span id="line-247"></span><span>    </span><span id="local-6989586621679136132"><span class="annot"><span class="annottext">mkScene :: [Value] -&gt; Map Location Float
-</span><a href="#local-6989586621679136132"><span class="hs-identifier hs-var hs-var">mkScene</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[(Location, Float)] -&gt; Map Location Float
+</span><span id="line-246"></span><span>    </span><span class="annot"><a href="#local-6989586621679140375"><span class="hs-identifier hs-type">mkScene</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Map</span></span><span> </span><span class="annot"><a href="GoPro.DEVC.html#Location"><span class="hs-identifier hs-type">Location</span></a></span><span> </span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span>
+</span><span id="line-247"></span><span>    </span><span id="local-6989586621679140375"><span class="annot"><span class="annottext">mkScene :: [Value] -&gt; Map Location Float
+</span><a href="#local-6989586621679140375"><span class="hs-identifier hs-var hs-var">mkScene</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[(Location, Float)] -&gt; Map Location Float
 forall k a. Ord k =&gt; [(k, a)] -&gt; Map k a
 </span><span class="hs-identifier hs-var">Map.fromList</span></span><span> </span><span class="annot"><span class="annottext">([(Location, Float)] -&gt; Map Location Float)
 -&gt; ([Value] -&gt; [(Location, Float)])
@@ -1070,62 +1070,62 @@ forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 -&gt; [Value] -&gt; [(Location, Float)]
 forall a b. (a -&gt; Maybe b) -&gt; [a] -&gt; [b]
 </span><span class="hs-identifier hs-var">mapMaybe</span></span><span> </span><span class="annot"><span class="annottext">Value -&gt; Maybe (Location, Float)
-</span><a href="#local-6989586621679136130"><span class="hs-identifier hs-var">mkOne</span></a></span><span>
+</span><a href="#local-6989586621679140373"><span class="hs-identifier hs-var">mkOne</span></a></span><span>
 </span><span id="line-248"></span><span>
-</span><span id="line-249"></span><span>    </span><span class="annot"><a href="#local-6989586621679136130"><span class="hs-identifier hs-type">mkOne</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Maybe</span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.DEVC.html#Location"><span class="hs-identifier hs-type">Location</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span class="hs-special">)</span><span>
-</span><span id="line-250"></span><span>    </span><span id="local-6989586621679136130"><span class="annot"><span class="annottext">mkOne :: Value -&gt; Maybe (Location, Float)
-</span><a href="#local-6989586621679136130"><span class="hs-identifier hs-var hs-var">mkOne</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GComplex"><span class="hs-identifier hs-type">GComplex</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><span class="hs-string">&quot;Ff&quot;</span></span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#GFourCC"><span class="hs-identifier hs-type">GFourCC</span></a></span><span> </span><span id="local-6989586621679136128"><span class="annot"><span class="annottext">FourCC
-</span><a href="#local-6989586621679136128"><span class="hs-identifier hs-var">f</span></a></span></span><span class="hs-special">,</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#GFloat"><span class="hs-identifier hs-type">GFloat</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679136127"><span class="annot"><span class="annottext">Float
-</span><a href="#local-6989586621679136127"><span class="hs-identifier hs-var">p</span></a></span></span><span class="hs-special">]</span><span class="hs-special">]</span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">FourCC -&gt; Maybe Location
-</span><a href="#local-6989586621679136126"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
-</span><a href="#local-6989586621679136128"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">Maybe Location
+</span><span id="line-249"></span><span>    </span><span class="annot"><a href="#local-6989586621679140373"><span class="hs-identifier hs-type">mkOne</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#Value"><span class="hs-identifier hs-type">Value</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Maybe</span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.DEVC.html#Location"><span class="hs-identifier hs-type">Location</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Float</span></span><span class="hs-special">)</span><span>
+</span><span id="line-250"></span><span>    </span><span id="local-6989586621679140373"><span class="annot"><span class="annottext">mkOne :: Value -&gt; Maybe (Location, Float)
+</span><a href="#local-6989586621679140373"><span class="hs-identifier hs-var hs-var">mkOne</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="GoPro.GPMF.html#GComplex"><span class="hs-identifier hs-type">GComplex</span></a></span><span> </span><span class="annot"><span class="annottext">String
+</span><span class="hs-string">&quot;Ff&quot;</span></span><span> </span><span class="hs-special">[</span><span class="annot"><a href="GoPro.GPMF.html#GFourCC"><span class="hs-identifier hs-type">GFourCC</span></a></span><span> </span><span id="local-6989586621679140371"><span class="annot"><span class="annottext">FourCC
+</span><a href="#local-6989586621679140371"><span class="hs-identifier hs-var">f</span></a></span></span><span class="hs-special">,</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#GFloat"><span class="hs-identifier hs-type">GFloat</span></a></span><span> </span><span class="hs-special">[</span><span id="local-6989586621679140370"><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679140370"><span class="hs-identifier hs-var">p</span></a></span></span><span class="hs-special">]</span><span class="hs-special">]</span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">FourCC -&gt; Maybe Location
+</span><a href="#local-6989586621679140369"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
+</span><a href="#local-6989586621679140371"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">Maybe Location
 -&gt; (Location -&gt; Maybe (Location, Float)) -&gt; Maybe (Location, Float)
 forall (m :: * -&gt; *) a b. Monad m =&gt; m a -&gt; (a -&gt; m b) -&gt; m b
-</span><span class="hs-operator hs-var">&gt;&gt;=</span></span><span> </span><span class="hs-glyph">\</span><span id="local-6989586621679136125"><span class="annot"><span class="annottext">Location
-</span><a href="#local-6989586621679136125"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">(Location, Float) -&gt; Maybe (Location, Float)
+</span><span class="hs-operator hs-var">&gt;&gt;=</span></span><span> </span><span class="hs-glyph">\</span><span id="local-6989586621679140368"><span class="annot"><span class="annottext">Location
+</span><a href="#local-6989586621679140368"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">(Location, Float) -&gt; Maybe (Location, Float)
 forall a. a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Just</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Location
-</span><a href="#local-6989586621679136125"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Float
-</span><a href="#local-6989586621679136127"><span class="hs-identifier hs-var">p</span></a></span><span class="hs-special">)</span><span>
-</span><span id="line-251"></span><span>    </span><span class="annot"><a href="#local-6989586621679136130"><span class="hs-identifier hs-var">mkOne</span></a></span><span> </span><span class="annot"><span class="annottext">Value
+</span><a href="#local-6989586621679140368"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Float
+</span><a href="#local-6989586621679140370"><span class="hs-identifier hs-var">p</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-251"></span><span>    </span><span class="annot"><a href="#local-6989586621679140373"><span class="hs-identifier hs-var">mkOne</span></a></span><span> </span><span class="annot"><span class="annottext">Value
 </span><span class="hs-identifier">_</span></span><span>                                       </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Maybe (Location, Float)
 forall a. Maybe a
 </span><span class="hs-identifier hs-var">Nothing</span></span><span>
 </span><span id="line-252"></span><span>
-</span><span id="line-253"></span><span>    </span><span class="annot"><a href="#local-6989586621679136126"><span class="hs-identifier hs-type">l</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#FourCC"><span class="hs-identifier hs-type">FourCC</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Maybe</span></span><span> </span><span class="annot"><a href="GoPro.DEVC.html#Location"><span class="hs-identifier hs-type">Location</span></a></span><span>
-</span><span id="line-254"></span><span>    </span><span id="local-6989586621679136126"><span class="annot"><span class="annottext">l :: FourCC -&gt; Maybe Location
-</span><a href="#local-6989586621679136126"><span class="hs-identifier hs-var hs-var">l</span></a></span></span><span> </span><span class="annot"><span class="annottext">FourCC
+</span><span id="line-253"></span><span>    </span><span class="annot"><a href="#local-6989586621679140369"><span class="hs-identifier hs-type">l</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="GoPro.GPMF.html#FourCC"><span class="hs-identifier hs-type">FourCC</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Maybe</span></span><span> </span><span class="annot"><a href="GoPro.DEVC.html#Location"><span class="hs-identifier hs-type">Location</span></a></span><span>
+</span><span id="line-254"></span><span>    </span><span id="local-6989586621679140369"><span class="annot"><span class="annottext">l :: FourCC -&gt; Maybe Location
+</span><a href="#local-6989586621679140369"><span class="hs-identifier hs-var hs-var">l</span></a></span></span><span> </span><span class="annot"><span class="annottext">FourCC
 </span><span class="hs-string">&quot;SNOW&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Location -&gt; Maybe Location
 forall a. a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Just</span></span><span> </span><span class="annot"><span class="annottext">Location
 </span><a href="GoPro.DEVC.html#Snow"><span class="hs-identifier hs-var">Snow</span></a></span><span>
-</span><span id="line-255"></span><span>    </span><span class="annot"><a href="#local-6989586621679136126"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
+</span><span id="line-255"></span><span>    </span><span class="annot"><a href="#local-6989586621679140369"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
 </span><span class="hs-string">&quot;URBA&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Location -&gt; Maybe Location
 forall a. a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Just</span></span><span> </span><span class="annot"><span class="annottext">Location
 </span><a href="GoPro.DEVC.html#Urban"><span class="hs-identifier hs-var">Urban</span></a></span><span>
-</span><span id="line-256"></span><span>    </span><span class="annot"><a href="#local-6989586621679136126"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
+</span><span id="line-256"></span><span>    </span><span class="annot"><a href="#local-6989586621679140369"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
 </span><span class="hs-string">&quot;INDO&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Location -&gt; Maybe Location
 forall a. a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Just</span></span><span> </span><span class="annot"><span class="annottext">Location
 </span><a href="GoPro.DEVC.html#Indoor"><span class="hs-identifier hs-var">Indoor</span></a></span><span>
-</span><span id="line-257"></span><span>    </span><span class="annot"><a href="#local-6989586621679136126"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
+</span><span id="line-257"></span><span>    </span><span class="annot"><a href="#local-6989586621679140369"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
 </span><span class="hs-string">&quot;WATR&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Location -&gt; Maybe Location
 forall a. a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Just</span></span><span> </span><span class="annot"><span class="annottext">Location
 </span><a href="GoPro.DEVC.html#Water"><span class="hs-identifier hs-var">Water</span></a></span><span>
-</span><span id="line-258"></span><span>    </span><span class="annot"><a href="#local-6989586621679136126"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
+</span><span id="line-258"></span><span>    </span><span class="annot"><a href="#local-6989586621679140369"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
 </span><span class="hs-string">&quot;VEGE&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Location -&gt; Maybe Location
 forall a. a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Just</span></span><span> </span><span class="annot"><span class="annottext">Location
 </span><a href="GoPro.DEVC.html#Vegetation"><span class="hs-identifier hs-var">Vegetation</span></a></span><span>
-</span><span id="line-259"></span><span>    </span><span class="annot"><a href="#local-6989586621679136126"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
+</span><span id="line-259"></span><span>    </span><span class="annot"><a href="#local-6989586621679140369"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
 </span><span class="hs-string">&quot;BEAC&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Location -&gt; Maybe Location
 forall a. a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Just</span></span><span> </span><span class="annot"><span class="annottext">Location
 </span><a href="GoPro.DEVC.html#Beach"><span class="hs-identifier hs-var">Beach</span></a></span><span>
-</span><span id="line-260"></span><span>    </span><span class="annot"><a href="#local-6989586621679136126"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
+</span><span id="line-260"></span><span>    </span><span class="annot"><a href="#local-6989586621679140369"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">FourCC
 </span><span class="hs-identifier">_</span></span><span>      </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Maybe Location
 forall a. Maybe a
 </span><span class="hs-identifier hs-var">Nothing</span></span><span>
