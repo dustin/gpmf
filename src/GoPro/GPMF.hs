@@ -126,6 +126,8 @@ singleParser 'f' = (4, GFloat . (:[]) <$> parseFloat)
 singleParser 'L' = (4, GUint32 . (:[]) <$> anyWord32be)
 singleParser 'B' = (1, GUint8 . (:[]) <$> A.anyWord8)
 singleParser 'b' = (1, GInt8 . (:[]) <$> anyInt8)
+singleParser 'S' = (1, GUint16 . (:[]) <$> anyWord16be)
+singleParser 's' = (1, GUint16 . (:[]) . fromIntegral <$> anyWord16be)
 singleParser x   = error ("unsupported parser: " <> show x)
 
 parseComplex :: Int -> Int -> Parser [Value]
