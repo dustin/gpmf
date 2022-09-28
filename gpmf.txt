@@ -5,7 +5,7 @@
 -- | Please see the README on GitHub at
 --   <a>https://github.com/dustin/gpmf#readme</a>
 @package gpmf
-@version 0.1.1.0
+@version 0.1.1.1
 
 
 -- | A low-level parser for <a>GPMF</a> telemetry data.
