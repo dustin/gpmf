@@ -18,7 +18,7 @@ import           Control.Monad.State              (StateT, evalStateT, get, lift
 import           Data.Attoparsec.Binary           (anyWord16be, anyWord32be, anyWord64be)
 import qualified Data.Attoparsec.ByteString       as A
 import qualified Data.Attoparsec.ByteString.Char8 as AC
-import           Data.Binary.Get                  (runGet)
+import           Data.Binary.Get                  (getInt32be, runGet)
 import           Data.Binary.IEEE754              (getFloat32be)
 import qualified Data.ByteString                  as BS
 import qualified Data.ByteString.Lazy             as BL
@@ -112,6 +112,9 @@ parseString l = GString . reverse  . dropWhile (== '\0') . reverse <$> replicate
 parseFloat :: A.Parser Float
 parseFloat = runGet getFloat32be . BL.fromStrict <$> A.take 4
 
+parseInt32 :: A.Parser Int32
+parseInt32 = runGet getInt32be . BL.fromStrict <$> A.take 4
+
 replicatedParser :: Int -> Int -> Int -> A.Parser a -> ([a] -> Value) -> Parser [Value]
 replicatedParser 0 l rpt _ _ = lift $ replicateM (l*rpt) A.anyWord8 >> pure []
 replicatedParser one l rpt p cons =
@@ -124,6 +127,7 @@ singleParser :: Char -> (Int, A.Parser Value)
 singleParser 'F' = (4, GFourCC <$> parseFourCC)
 singleParser 'f' = (4, GFloat . (:[]) <$> parseFloat)
 singleParser 'L' = (4, GUint32 . (:[]) <$> anyWord32be)
+singleParser 'l' = (4, GInt32 . (:[]) <$> parseInt32)
 singleParser 'B' = (1, GUint8 . (:[]) <$> A.anyWord8)
 singleParser 'b' = (1, GInt8 . (:[]) <$> anyInt8)
 singleParser 'S' = (1, GUint16 . (:[]) <$> anyWord16be)
