@@ -11,4 +11,7 @@ import           GoPro.GPMF
 main :: IO ()
 main = do
   [fn] <- getArgs
-  either print (mapM_ (BL.putStrLn . maybe "" showDEVC . uncurry mkDEVC)) . parseGPMF =<< BS.readFile fn
+  either print (mapM_ (ps . maybe "" showDEVC . uncurry mkDEVC)) . parseGPMF =<< BS.readFile fn
+
+  where
+    ps s = BL.putStr s *> BL.putStr "\n"
