@@ -9,6 +9,7 @@ Stability: experimental
 A low-level parser for <https://github.com/gopro/gpmf-parser GPMF> telemetry data.
 -}
 
+{-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE TupleSections #-}
 
 module GoPro.GPMF (parseGPMF, Value(..), FourCC(..)) where
@@ -27,6 +28,8 @@ import           Data.String                      (IsString (..))
 import           Data.Time.Clock                  (UTCTime)
 import           Data.Time.Format                 (defaultTimeLocale, parseTimeM)
 import           Data.Word                        (Word16, Word32, Word64, Word8)
+import           GHC.Generics                     (Generic)
+
 {-
 Type Char	Definition	typedef	Comment
 b	single byte signed integer	int8_t	-128 to 127
@@ -49,7 +52,7 @@ U	UTC Date and Time string	char utcdate[16]	Date + UTC Time format yymmddhhmmss.
 null	Nested metadata	uint32_t	The data within is GPMF structured KLV data
 -}
 
-newtype FourCC = FourCC (Char, Char, Char, Char) deriving (Show, Eq)
+newtype FourCC = FourCC (Char, Char, Char, Char) deriving (Show, Eq, Generic)
 
 instance IsString FourCC where
   fromString [a,b,c,d] = FourCC (a,b,c,d)
@@ -74,7 +77,7 @@ data Value = GInt8 [Int8]
     | GComplex String [Value]
     | GNested (FourCC, [Value])
     | GUnknown (Char, Int, Int, [[Word8]])
-    deriving (Show)
+    deriving (Show, Generic)
 
 type Parser = StateT String A.Parser
 

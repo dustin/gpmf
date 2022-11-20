@@ -29,17 +29,17 @@ module GoPro.DEVC (
   Telemetry(..), tele_stmp, tele_tsmp, tele_name, tele_values
   ) where
 
-import           Control.Lens    hiding (cons)
-import           Control.Monad   (guard)
-import           Data.Foldable   (fold)
-import           Data.List       (transpose)
-import           Data.Map.Strict (Map)
-import qualified Data.Map.Strict as Map
-import           Data.Maybe      (fromMaybe, listToMaybe, mapMaybe)
-import           Data.Time.Clock (UTCTime (..))
-import           Data.Word       (Word64)
+import           Control.Lens      hiding (cons)
+import           Data.Foldable     (fold)
+import           Data.List         (transpose)
+import           Data.Map.Strict   (Map)
+import qualified Data.Map.Strict   as Map
+import           Data.Maybe        (fromMaybe, mapMaybe)
+import           Data.Time.Clock   (UTCTime (..))
+import           Data.Word         (Word64)
 
 import           GoPro.GPMF
+import           GoPro.GPMF.Lenses
 
 data Accelerometer = Accelerometer
     { _acc_temp :: Float
@@ -156,7 +156,7 @@ mkDEVC "DEVC" = Just . foldr addItem (DEVC 0 "" mempty)
         updTele _ o                                 = o
 
         tvals :: TVals
-        tvals = (fromMaybe (TVUnknown vals) . ($ vals)) . foldr findGrokker (const Nothing) . concatMap four $ vals
+        tvals = (fromMaybe (TVUnknown vals) . ($ vals)) . foldr findGrokker (const Nothing) . foldMap four $ vals
           where
             four (GNested (x, _)) = [x]
             four _                = []
@@ -172,22 +172,23 @@ mkDEVC "DEVC" = Just . foldr addItem (DEVC 0 "" mempty)
 mkDEVC _ = const Nothing
 
 findVal :: FourCC -> [Value] -> Maybe [Value]
-findVal f = listToMaybe . findAll f
+findVal f = exactlyOne . findAll f
 
 findAll :: FourCC -> [Value] -> [[Value]]
-findAll f = mapMaybe g
-  where
-    g (GNested (fc, vs)) | fc == f = Just vs
-    g _                            = Nothing
+findAll f = toListOf (folded . _GNested . filtered (\(d,_) -> d == f) . _2)
+
+exactlyOne :: [a] -> Maybe a
+exactlyOne [a] = Just a
+exactlyOne _   = Nothing
 
 grokSens :: FourCC -> (Float -> [(Float, Float, Float)] -> a) -> [Value] -> Maybe a
 grokSens sens cons vals = do
-  GFloat templ <- listToMaybe =<< findVal "TMPC" vals
-  GInt16 scall <- listToMaybe =<< findVal "SCAL" vals
+  GFloat templ <- exactlyOne =<< findVal "TMPC" vals
+  GInt16 scall <- exactlyOne =<< findVal "SCAL" vals
   readings <- mapMaybe ungint <$> findVal sens vals
 
-  temp <- listToMaybe templ
-  scal <- realToFrac <$> listToMaybe scall
+  temp <- exactlyOne templ
+  scal <- realToFrac <$> exactlyOne scall
   scaled <- traverse (trip . fmap (\x -> realToFrac x / scal)) readings
 
   pure $ cons temp scaled
@@ -215,11 +216,11 @@ grokFaces = Just . mapMaybe mkFace . findAll "FACE"
 
 grokGPS :: [Value] -> Maybe GPS
 grokGPS vals = do
-  GUint16 [gpsp] <- listToMaybe =<< findVal "GPSP" vals
-  GTimestamp time <- listToMaybe =<< findVal "GPSU" vals
+  GUint16 [gpsp] <- exactlyOne =<< findVal "GPSP" vals
+  GTimestamp time <- exactlyOne =<< findVal "GPSU" vals
   scals <- mapMaybe (fmap realToFrac . anInt) <$> findVal "SCAL" vals
   g5s <- findVal "GPS5" vals
-  rs <- mconcat <$> traverse (readings scals) g5s
+  rs <- fold <$> traverse (readings scals) g5s
 
   pure $ GPS (fromIntegral gpsp) time rs
 
@@ -231,13 +232,12 @@ grokGPS vals = do
     readings _ _ = Nothing
 
     anInt (GInt32 [x]) = Just x
-    anInt _ = Nothing
+    anInt _            = Nothing
 
 grokAudioLevel :: [Value] -> Maybe AudioLevel
 grokAudioLevel vals = do
-  alps <- transpose . mapMaybe de <$> findVal "AALP" vals
-  guard $ length alps == 2
-  pure $ AudioLevel (alps !! 0) (alps !! 1)
+  [l1, l2] <- transpose . mapMaybe de <$> findVal "AALP" vals
+  pure $ AudioLevel l1 l2
 
   where de (GInt8 xs)      = Just $ fmap fromIntegral xs
         de (GComplex _ xs) = Just . fold . mapMaybe de $ xs
