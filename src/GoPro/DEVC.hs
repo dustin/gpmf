@@ -217,7 +217,7 @@ grokGPS :: [Value] -> Maybe GPS
 grokGPS vals = do
   GUint16 [gpsp] <- listToMaybe =<< findVal "GPSP" vals
   GTimestamp time <- listToMaybe =<< findVal "GPSU" vals
-  scals <- fmap (\(GInt32 [x]) -> realToFrac x) <$> findVal "SCAL" vals
+  scals <- mapMaybe (fmap realToFrac . anInt) <$> findVal "SCAL" vals
   g5s <- findVal "GPS5" vals
   rs <- mconcat <$> traverse (readings scals) g5s
 
@@ -229,6 +229,9 @@ grokGPS vals = do
                                      -> Just [GPSReading{..}]
                                    _ -> Nothing
     readings _ _ = Nothing
+
+    anInt (GInt32 [x]) = Just x
+    anInt _ = Nothing
 
 grokAudioLevel :: [Value] -> Maybe AudioLevel
 grokAudioLevel vals = do
