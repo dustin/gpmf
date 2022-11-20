@@ -5,7 +5,7 @@
 -- | Please see the README on GitHub at
 --   <a>https://github.com/dustin/gpmf#readme</a>
 @package gpmf
-@version 0.1.1.2
+@version 0.1.2.0
 
 
 -- | A low-level parser for <a>GPMF</a> telemetry data.
@@ -39,10 +39,33 @@ GNested :: (FourCC, [Value]) -> Value
 GUnknown :: (Char, Int, Int, [[Word8]]) -> Value
 newtype FourCC
 FourCC :: (Char, Char, Char, Char) -> FourCC
+instance GHC.Generics.Generic GoPro.GPMF.FourCC
 instance GHC.Classes.Eq GoPro.GPMF.FourCC
 instance GHC.Show.Show GoPro.GPMF.FourCC
+instance GHC.Generics.Generic GoPro.GPMF.Value
 instance GHC.Show.Show GoPro.GPMF.Value
 instance Data.String.IsString GoPro.GPMF.FourCC
+
+module GoPro.GPMF.Lenses
+_GUnknown :: Prism' Value (Char, Int, Int, [[Word8]])
+_GNested :: Prism' Value (FourCC, [Value])
+_GComplex :: Prism' Value (String, [Value])
+_GTimestamp :: Prism' Value UTCTime
+_GUint16 :: Prism' Value [Word16]
+_GInt16 :: Prism' Value [Int16]
+_GQ64 :: Prism' Value [Word64]
+_GQ32 :: Prism' Value [Word32]
+_GUint32 :: Prism' Value [Word32]
+_GInt32 :: Prism' Value [Int32]
+_GUint64 :: Prism' Value [Word64]
+_GInt64 :: Prism' Value [Int64]
+_GUUID :: Prism' Value [Word8]
+_GFourCC :: Prism' Value FourCC
+_GFloat :: Prism' Value [Float]
+_GDouble :: Prism' Value Double
+_GString :: Prism' Value String
+_GUint8 :: Prism' Value [Word8]
+_GInt8 :: Prism' Value [Int8]
 
 
 -- | DEVC is one of the GPMF data types that contains the bulk of
