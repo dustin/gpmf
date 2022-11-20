@@ -1,13 +1,13 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.34.7.
+-- This file has been generated from package.yaml by hpack version 0.35.0.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 02deec16ad0ae901f9aab83fe594d492d38e1492ded6e44501c7037008324a53
+-- hash: 7571cd9d9b95b052897d6f76314c207aa300046dabffcdf8131672c4291a2aee
 
 name:           gpmf
-version:        0.1.1.1
+version:        0.1.1.2
 description:    Please see the README on GitHub at <https://github.com/dustin/gpmf#readme>
 homepage:       https://github.com/dustin/gpmf#readme
 bug-reports:    https://github.com/dustin/gpmf/issues
