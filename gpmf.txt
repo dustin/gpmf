@@ -5,7 +5,7 @@
 -- | Please see the README on GitHub at
 --   <a>https://github.com/dustin/gpmf#readme</a>
 @package gpmf
-@version 0.2.0.0
+@version 0.2.1.0
 
 
 -- | A low-level parser for <a>GPMF</a> telemetry data.
@@ -130,6 +130,10 @@ gpsr_speed3d :: Lens' GPSReading Double
 gpsr_time :: Lens' GPSReading UTCTime
 gpsr_dop :: Lens' GPSReading Double
 gpsr_fix :: Lens' GPSReading Int
+
+-- | Get the best GPS readings from a DEVC. This will attempt to return any
+--   TVGPS9 readings, but will fall back to GPS5 readings if available.
+gpsReadings :: Getter DEVC [GPSReading]
 data AudioLevel
 AudioLevel :: [Int] -> [Int] -> AudioLevel
 [_audio_rms] :: AudioLevel -> [Int]
