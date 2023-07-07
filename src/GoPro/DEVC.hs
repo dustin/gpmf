@@ -22,7 +22,7 @@ module GoPro.DEVC (
   Accelerometer(..), acc_temp, acc_vals,
   Gyroscope(..), gyro_temp, gyro_vals,
   Face(..), face_id, face_x, face_y, face_w, face_h, face_smile,
-  GPSReading(..), gpsr_lat, gpsr_lon, gpsr_alt, gpsr_speed2d, gpsr_speed3d, gpsr_time, gpsr_dop, gpsr_fix,
+  GPSReading(..), gpsr_lat, gpsr_lon, gpsr_alt, gpsr_speed2d, gpsr_speed3d, gpsr_time, gpsr_dop, gpsr_fix, gpsReadings,
   AudioLevel(..), audio_rms, audio_peak,
   Location(..), _Snow, _Urban, _Indoor, _Water, _Vegetation, _Beach,
   TVals(..), _TVUnknown, _TVAccl, _TVGyro, _TVFaces, _TVGPS5, _TVGPS9, _TVAudioLevel, _TVScene,
@@ -131,6 +131,16 @@ data DEVC = DEVC
     deriving Show
 
 makeLenses ''DEVC
+
+-- | Get the best GPS readings from a DEVC.
+-- This will attempt to return any TVGPS9 readings,
+-- but will fall back to GPS5 readings if available.
+gpsReadings :: Getter DEVC [GPSReading]
+gpsReadings = to (foldr f [] . _dev_telems)
+  where
+    f (Telemetry _ _ _ (TVGPS9 v)) _  = v
+    f (Telemetry _ _ _ (TVGPS5 v)) [] = v
+    f _ o                             = o
 
 -- | Given a FourCC value (specifically, DEVC) and a list of Values,
 -- produce a DEVC value.
