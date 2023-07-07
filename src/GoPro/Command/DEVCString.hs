@@ -1,9 +1,9 @@
 module GoPro.Command.DEVCString where
 
-import qualified Data.ByteString.Lazy    as BL
-import qualified Data.ByteString.Lazy.Char8    as BC
-import qualified Data.Map.Strict    as Map
-import Data.Foldable (toList)
+import qualified Data.ByteString.Lazy       as BL
+import qualified Data.ByteString.Lazy.Char8 as BC
+import           Data.Foldable              (toList)
+import qualified Data.Map.Strict            as Map
 
 import           GoPro.DEVC
 import           GoPro.GPMF
@@ -48,9 +48,8 @@ showDEVC DEVC{..} = "Device " <> tshow _dev_id <> ": " <> BC.pack _dev_name <> "
                                                      <> tshow _face_x <> "x" <> tshow _face_y
                                                      <> ", " <> tshow _face_w <> "x" <> tshow _face_h
                                                      <> ", smile=" <> tshow _face_smile)) fs
-    showTVal (TVGPS GPS{..})            = "    GPS time=" <> tshow _gps_time <> " p=" <> tshow _gps_p
-                                                    <> ", len(rs)=" <> tshow (length _gps_readings)
-                                                    <> "\n        hd=" <> showGPS (head _gps_readings)
+    showTVal (TVGPS5 readings)          = "    GPS5\n\t" <> BC.intercalate "\n\t" (showGPS <$> readings)
+    showTVal (TVGPS9 readings)          = "    GPS9\n\t" <> BC.intercalate "\n\t" (showGPS <$> readings)
     showTVal (TVScene ss)               = "   Scenes, found " <> tshow (length ss) <> ", first:\n" <>
                                           joinMap ((\(k,v) ->
                                                       "        " <> tshow k <> "=" <> tshow v))
@@ -60,5 +59,5 @@ showDEVC DEVC{..} = "Device " <> tshow _dev_id <> ": " <> BC.pack _dev_name <> "
                                              "      peak: " <> (tshow _audio_peak)
 
 showGPS :: GPSReading -> BL.ByteString
-showGPS GPSReading{..} = "(" <> tshow _gpsr_lat <> "," <> tshow _gpsr_lon <> ") alt=" <> tshow _gpsr_alt
+showGPS GPSReading{..} = "(time=" <> tshow _gpsr_time <> " - (" <> tshow _gpsr_lat <> "," <> tshow _gpsr_lon <> ") alt=" <> tshow _gpsr_alt
                          <> " spd2d=" <> tshow _gpsr_speed2d <> " spd3d=" <> tshow _gpsr_speed3d

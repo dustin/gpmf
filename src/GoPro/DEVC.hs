@@ -13,7 +13,8 @@ of it remains low level), but it currently has useful representations
 of things that seemed interesting to the author.
 -}
 
-{-# LANGUAGE TemplateHaskell #-}
+{-# LANGUAGE TemplateHaskell  #-}
+{-# LANGUAGE TypeApplications #-}
 
 module GoPro.DEVC (
   mkDEVC,
@@ -21,11 +22,10 @@ module GoPro.DEVC (
   Accelerometer(..), acc_temp, acc_vals,
   Gyroscope(..), gyro_temp, gyro_vals,
   Face(..), face_id, face_x, face_y, face_w, face_h, face_smile,
-  GPSReading(..), gpsr_lat, gpsr_lon, gpsr_alt, gpsr_speed2d, gpsr_speed3d,
-  GPS(..), gps_p, gps_time, gps_readings,
+  GPSReading(..), gpsr_lat, gpsr_lon, gpsr_alt, gpsr_speed2d, gpsr_speed3d, gpsr_time, gpsr_dop, gpsr_fix,
   AudioLevel(..), audio_rms, audio_peak,
   Location(..), _Snow, _Urban, _Indoor, _Water, _Vegetation, _Beach,
-  TVals(..), _TVUnknown, _TVAccl, _TVGyro, _TVFaces, _TVGPS, _TVAudioLevel, _TVScene,
+  TVals(..), _TVUnknown, _TVAccl, _TVGyro, _TVFaces, _TVGPS5, _TVGPS9, _TVAudioLevel, _TVScene,
   Telemetry(..), tele_stmp, tele_tsmp, tele_name, tele_values
   ) where
 
@@ -35,7 +35,7 @@ import           Data.List         (transpose)
 import           Data.Map.Strict   (Map)
 import qualified Data.Map.Strict   as Map
 import           Data.Maybe        (fromMaybe, mapMaybe)
-import           Data.Time.Clock   (UTCTime (..))
+import           Data.Time         (UTCTime (..), addDays, addUTCTime, fromGregorian)
 import           Data.Word         (Word64)
 
 import           GoPro.GPMF
@@ -75,19 +75,13 @@ data GPSReading = GPSReading
     , _gpsr_alt     :: Double
     , _gpsr_speed2d :: Double
     , _gpsr_speed3d :: Double
+    , _gpsr_time    :: UTCTime
+    , _gpsr_dop     :: Double
+    , _gpsr_fix     :: Int
     }
     deriving Show
 
 makeLenses ''GPSReading
-
-data GPS = GPS
-    { _gps_p        :: Int
-    , _gps_time     :: UTCTime
-    , _gps_readings :: [GPSReading]
-    }
-    deriving Show
-
-makeLenses ''GPS
 
 data AudioLevel = AudioLevel
     { _audio_rms  :: [Int]
@@ -111,7 +105,8 @@ data TVals = TVUnknown [Value]
     | TVAccl Accelerometer
     | TVGyro Gyroscope
     | TVFaces [Face]
-    | TVGPS GPS
+    | TVGPS5 [GPSReading]
+    | TVGPS9 [GPSReading]
     | TVAudioLevel AudioLevel
     | TVScene [Map Location Float]
     deriving Show
@@ -164,7 +159,8 @@ mkDEVC "DEVC" = Just . foldr addItem (DEVC 0 "" mempty)
             findGrokker "ACCL" _ = fmap TVAccl . grokAccl
             findGrokker "GYRO" _ = fmap TVGyro . grokGyro
             findGrokker "FACE" _ = fmap TVFaces . grokFaces
-            findGrokker "GPS5" _ = fmap TVGPS . grokGPS
+            findGrokker "GPS5" _ = fmap TVGPS5 . grokGPS5
+            findGrokker "GPS9" _ = fmap TVGPS9 . grokGPS9
             findGrokker "AALP" _ = fmap TVAudioLevel . grokAudioLevel
             findGrokker "SCEN" _ = fmap TVScene . grokScene
             findGrokker _ o      = o
@@ -214,25 +210,51 @@ grokFaces = Just . mapMaybe mkFace . findAll "FACE"
         Just (Face (fromIntegral fid) x y w h 0)
       mkFace _ = Nothing
 
-grokGPS :: [Value] -> Maybe GPS
-grokGPS vals = do
-  GUint16 [gpsp] <- exactlyOne =<< findVal "GPSP" vals
-  GTimestamp time <- exactlyOne =<< findVal "GPSU" vals
-  scals <- mapMaybe (fmap realToFrac . anInt) <$> findVal "SCAL" vals
-  g5s <- findVal "GPS5" vals
-  rs <- fold <$> traverse (readings scals) g5s
-
-  pure $ GPS (fromIntegral gpsp) time rs
-
+findSCAL :: Fractional b => [Value] -> Maybe [b]
+findSCAL vals = mapMaybe (fmap realToFrac . anInt) <$> findVal "SCAL" vals
   where
-    readings scals (GInt32 ns) = case zipWith (\s n -> realToFrac n / s) scals ns of
-                                   [_gpsr_lat,_gpsr_lon,_gpsr_alt,_gpsr_speed2d,_gpsr_speed3d]
-                                     -> Just [GPSReading{..}]
-                                   _ -> Nothing
-    readings _ _ = Nothing
-
     anInt (GInt32 [x]) = Just x
     anInt _            = Nothing
+
+grokGPS5 :: [Value] -> Maybe [GPSReading]
+grokGPS5 vals = do
+  GUint16 [gpsp] <- exactlyOne =<< findVal "GPSP" vals
+  GUint32 [gpsf] <- exactlyOne =<< findVal "GPSF" vals
+  GTimestamp time <- exactlyOne =<< findVal "GPSU" vals
+  scals <- findSCAL vals
+  g5s <- findVal "GPS5" vals
+  let timestamps = [addUTCTime (n * 1/realToFrac @Int 10) time | n <- [0, 1 ..]]
+  fold <$> traverse (readings scals (fromIntegral gpsp) (fromIntegral gpsf)) (zip g5s timestamps)
+
+  where
+    readings scals p f (GInt32 ns, ts) = case zipWith (\s n -> realToFrac n / s) scals ns of
+                                     [_gpsr_lat,_gpsr_lon,_gpsr_alt,_gpsr_speed2d,_gpsr_speed3d]
+                                       -> let _gpsr_time=ts; _gpsr_dop=p; _gpsr_fix=f in Just [GPSReading{..}]
+                                     _ -> Nothing
+    readings _ _ _ _ = Nothing
+
+grokGPS9 :: [Value] -> Maybe [GPSReading]
+grokGPS9 vals = do
+  scals <- findSCAL vals
+  gps9 <- findVal "GPS9" vals
+  traverse (oneGPS9 scals) gps9
+
+  where
+    baseDay = fromGregorian 2000 1 1
+
+    oneGPS9 :: [Double] -> Value -> Maybe GPSReading
+    oneGPS9 [lats, lons, alts, s2ds, s3ds, 1, 1000, dops, 1] (GComplex "lllllllSS" [GInt32 [lati], GInt32 [loni], GInt32 [alti], GInt32 [speed2di], GInt32 [speed3di], GInt32 [daysi], GInt32 [secsi], GUint16 [dopi], GUint16 [fixi]]) =
+      Just GPSReading{
+        _gpsr_time = UTCTime (addDays (fromIntegral daysi) baseDay) (realToFrac secsi / 1000),
+        _gpsr_lat = realToFrac lati / lats,
+        _gpsr_lon = realToFrac loni / lons,
+        _gpsr_alt = realToFrac alti / alts,
+        _gpsr_speed2d = realToFrac speed2di / s2ds,
+        _gpsr_speed3d = realToFrac speed3di / s3ds,
+        _gpsr_dop = realToFrac dopi / dops,
+        _gpsr_fix = fromIntegral fixi
+      }
+    oneGPS9 _ _ = Nothing
 
 grokAudioLevel :: [Value] -> Maybe AudioLevel
 grokAudioLevel vals = do
