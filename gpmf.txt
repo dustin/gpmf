@@ -39,10 +39,12 @@ GNested :: (FourCC, [Value]) -> Value
 GUnknown :: (Char, Int, Int, [[Word8]]) -> Value
 newtype FourCC
 FourCC :: (Char, Char, Char, Char) -> FourCC
+singleParser :: Char -> (Int, Parser Value)
 instance GHC.Generics.Generic GoPro.GPMF.FourCC
 instance GHC.Classes.Eq GoPro.GPMF.FourCC
 instance GHC.Show.Show GoPro.GPMF.FourCC
 instance GHC.Generics.Generic GoPro.GPMF.Value
+instance GHC.Classes.Eq GoPro.GPMF.Value
 instance GHC.Show.Show GoPro.GPMF.Value
 instance Data.String.IsString GoPro.GPMF.FourCC
 
