@@ -12,7 +12,9 @@ A low-level parser for <https://github.com/gopro/gpmf-parser GPMF> telemetry dat
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE TupleSections #-}
 
-module GoPro.GPMF (parseGPMF, Value(..), FourCC(..)) where
+module GoPro.GPMF (parseGPMF, Value(..), FourCC(..),
+  singleParser -- for testing
+  ) where
 
 import           Control.Monad                    (replicateM)
 import           Control.Monad.State              (StateT, evalStateT, get, lift, put)
@@ -77,7 +79,7 @@ data Value = GInt8 [Int8]
     | GComplex String [Value]
     | GNested (FourCC, [Value])
     | GUnknown (Char, Int, Int, [[Word8]])
-    deriving (Show, Generic)
+    deriving (Show, Eq, Generic)
 
 type Parser = StateT String A.Parser
 
